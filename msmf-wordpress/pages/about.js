@@ -1,5 +1,5 @@
 const Index = () => (
-  <div>Career Opportunities</div>
+  <div>Updates</div>
 )
 
 export default Index;
