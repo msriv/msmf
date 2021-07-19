@@ -4,6 +4,7 @@ import { manageComponentState } from "../styleUtils";
 
 const TextField = (props) => {
   const {
+    label,
     multiline,
     rows,
     cols,
@@ -34,10 +35,23 @@ const TextField = (props) => {
     setState(event.type === "mouseenter" ? "hover" : "");
   }
 
-
-
   return (
     multiline ? (
+      <textarea 
+        rows={rows || 2}
+        cols={cols || 20}
+        autoComplete={autoComplete}
+        autoFocus={autoFocus}
+        className={manageComponentState(classes, baseClasses, state)}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHover}
+        defaultValue={defaultValue}
+        value={value}
+        disabled={disabled}
+        onError={() => {}}
+        required={required}
+      />
+    ) : (
       <input
         type={type}
         autoComplete={autoComplete}
@@ -45,15 +59,14 @@ const TextField = (props) => {
         className={manageComponentState(classes, baseClasses, state)}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
-      />
-    ) : (
-      <textarea 
-        autoComplete={autoComplete}
-        autoFocus={autoFocus}
-        className={manageComponentState(classes, baseClasses, state)}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
+        defaultValue={defaultValue}
+        value={value}
+        disabled={disabled}
+        onError={() => {}}
+        required={required}
       />
     ) 
   )
 }
+
+export default TextField

@@ -1,6 +1,7 @@
 import ComponentView from '../design-system/ComponentView';
 import Button from '../design-system/Button';
 import Avatar from '../design-system/Avatar';
+import TextField from '../design-system/TextField';
 
 const DesignSystem = () => {
 
@@ -26,10 +27,11 @@ const DesignSystem = () => {
           <Avatar name={"Mihir Srivastava"} />
           <Avatar name={"Nikita Sharma"} />
         </ComponentView>
-        <ComponentView title="Button">
-          <Button type="button" classes={classes.button}>
-            Hello
-          </Button>
+        <ComponentView title="TextField">
+          <TextField type="text" multiline={false}/>
+        </ComponentView>
+        <ComponentView title="TextArea">
+          <TextField type="text" multiline={true}/>
         </ComponentView>
       </div>
       
