@@ -8,7 +8,7 @@ const DesignSystem = () => {
   const classes = {
     button: {
       // root: "bg-red-500 px-5"
-      hover: "hover:bg-blue-500"
+      // hover: ""
     }
   }
 

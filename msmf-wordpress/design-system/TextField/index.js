@@ -14,20 +14,23 @@ const TextField = (props) => {
     defaultValue,
     disabled,
     error,
-    FormHelperTextProps,
+    formHelperText,
     required,
     type,
     value,
-
+    onChange,
+    onBlur,
+    name
   } = props;
 
   const [state, setState] = useState("");
 
   const baseClasses = {
-    root: "transition duration-500 ease-in-out bg-white p-5 text-black border border-black",
-    hover: "hover:shadow-xs ",
+    root: "transition duration-200 ease-in-out bg-white p-3 text-black border border-gray-300 rounded",
+    hover: "hover:border-chambray-500 ",
     clicked: "",
-    disabled: ""
+    disabled: "",
+    error: ""
   }
 
   const handleHover = (event) => {
@@ -36,37 +39,69 @@ const TextField = (props) => {
   }
 
   return (
-    multiline ? (
-      <textarea 
-        rows={rows || 2}
-        cols={cols || 20}
-        autoComplete={autoComplete}
-        autoFocus={autoFocus}
-        className={manageComponentState(classes, baseClasses, state)}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
-        defaultValue={defaultValue}
-        value={value}
-        disabled={disabled}
-        onError={() => {}}
-        required={required}
-      />
-    ) : (
-      <input
-        type={type}
-        autoComplete={autoComplete}
-        autoFocus={autoFocus}
-        className={manageComponentState(classes, baseClasses, state)}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
-        defaultValue={defaultValue}
-        value={value}
-        disabled={disabled}
-        onError={() => {}}
-        required={required}
-      />
+    <>
+      <label htmlFor={`${label}-${name}`}> {label}</label>
+      {multiline ? (
+        <textarea 
+          rows={rows || 2}
+          cols={cols || 20}
+          autoComplete={autoComplete}
+          autoFocus={autoFocus}
+          className={`form-textarea ${manageComponentState(classes, baseClasses, state)}`}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHover}
+          defaultValue={defaultValue}
+          value={value}
+          onChange={onChange}
+          onError={() => {setState("error")}}
+          disabled={disabled}
+          onBlur={onBlur}
+          required={required}
+          name={name}
+        />
+      ) : (
+        <input
+          type={type}
+          autoComplete={autoComplete}
+          autoFocus={autoFocus}
+          className={`form-input ${manageComponentState(classes, baseClasses, state)}`}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHover}
+          defaultValue={defaultValue}
+          value={value}
+          onChange={onChange}
+          disabled={disabled}
+          onError={() => {}}
+          onBlur={onBlur}
+          required={required}
+          name={name}
+        />
+      )}
+      {formHelperText !== "" ? (
+          <p className=" text-caption font-bold">{formHelperText}</p>
+      ): null}
+    </>
+    
     ) 
-  )
+}
+
+TextField.propTypes = {
+  label: PropTypes.string,
+  multiline: PropTypes.bool,
+  rows: PropTypes.number,
+  cols: PropTypes.number,
+  autoComplete: PropTypes.bool,
+  autoFocus: PropTypes.bool,
+  classes: PropTypes.string,
+  defaultValue: PropTypes.string,
+  disabled: PropTypes.bool,
+  error: PropTypes.bool,
+  formHelperText: PropTypes.string,
+  required: PropTypes.bool,
+  type: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+  name: PropTypes.string
 }
 
 export default TextField

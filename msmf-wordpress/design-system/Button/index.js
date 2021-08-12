@@ -12,10 +12,10 @@ const Button = (props) => {
   const [state, setState] = useState('');
 
   const baseClasses = {
-    root: "transition duration-500 ease-in-out bg-black hover:bg-red-500 p-5 text-white",
-    hover: "hover:bg-red-500 ",
+    root: "transition duration-500 ease-in-out bg-chambray-500 rounded p-3 text-white font-bold",
+    hover: "hover:bg-prussian-blue-500 ",
     clicked: "",
-    disabled: ""
+    disabled: "disabled:bg-chambray-200 "
   }
 
   const handleHover = (event) => {
