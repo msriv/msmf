@@ -1,10 +1,14 @@
+import { useEffect, useState } from "react";
 import { PAGES } from "../../utils/sitemap";
 import PhilanthropyNavbar from './PhilanthropyNavbar'
 const Navbar = (props) => {
 
-  const {
-    page
-  } = props
+  const [page, setPage] = useState("")
+
+  useEffect(() => {
+    const route = window.location.pathname.split("/");
+    setPage(route[route.length - 1])
+  },[])
 
   return (
     <>
