@@ -2,9 +2,6 @@ import Head from 'next/head'
 import Container from '../components/container'
 import HeroPost from '../components/hero-post'
 import Layout from '../components/layout'
-import { useQuery } from "@apollo/client"
-import { ALL_POSTS } from "../lib/queries/blogs";
-
 // function AllPosts({preview}) {
 //   const { loading, error, data } = useQuery(ALL_POSTS);
 
