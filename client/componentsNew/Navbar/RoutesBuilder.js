@@ -1,0 +1,38 @@
+import { useState, useEffect } from "react"
+import PropTypes from "prop-types"
+import Link from "next/link"
+import Button from "../../design-system/Button"
+import { routes } from "../../utils/routes"
+
+const RoutesBuilder = (props) => {
+
+  const { pathname } = props
+
+  const [route, setRoute] = useState({})
+
+  useEffect(() => {
+    setRoute(routes.find(item => item.route.match(pathname)))
+  }, [])
+
+  return (
+      <div className="flex space-x-16 items-center">
+        {route["sub-routes"]?.map(item => (
+              item.cta ? (
+                <Button key={item.slug} type={"button"}>{item.page}</Button>
+              ) : (
+                <Link key={item.slug} href={item.route}>
+                  <span className="text-lg text-shark-500 font-inter-medium cursor-pointer">{item.page}</span>
+                </Link>
+              )
+              
+            )
+        )}
+      </div>
+  )
+}
+
+RoutesBuilder.propTypes = {
+  pathname: PropTypes.string.isRequired
+}
+
+export default RoutesBuilder
