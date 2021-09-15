@@ -6,11 +6,26 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    router.pathname.match("admin") ? (
+    <>
+    <div className="flex justify-evenly my-5">
+      <div>
+        <img
+          src="/MSMF_logo.png"
+          alt="MSMF Logo"
+          className=" w-4/12"
+        />
+      </div>
+      
+    </div>
+    <div className="bg-silver-100 shadow-md">
+      {router.pathname.match("admin") ? (
       <AdminNavbar />
     ) : (
       <SiteNavbar pathname={router.pathname} />
-    )
+    )}
+    </div>
+    </>
+    
   )
 }
 

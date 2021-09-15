@@ -9,19 +9,27 @@ const Button = (props) => {
     type,
     classes,
     onClick,
-    submitLoading
+    submitLoading,
+    variant
   } = props;
 
   const [state, setState] = useState('');
 
-  const baseClasses = {
-    root: "transition duration-500 ease-in-out bg-chambray-500 rounded px-5 py-2 text-white font-bold flex justify-center items-center",
+  const baseClasses = variant === "outlined" ? {
+    root: "transition duration-500 ease-in-out bg-transparent border border-black rounded px-5 py-2 text-black flex justify-center items-center",
+    hover: "hover:bg-shark-400 hover:border-0 hover:border-transparent hover:text-white",
+    clicked: "",
+    disabled: "disabled:bg-chambray-200 ",
+    success: "",
+    error: ""
+  } : {
+    root: "transition duration-500 ease-in-out bg-chambray-500 rounded px-5 py-2 text-white flex justify-center items-center",
     hover: "hover:bg-prussian-blue-500 ",
     clicked: "",
     disabled: "disabled:bg-chambray-200 ",
     success: "",
     error: ""
-  }
+  } 
 
   const handleHover = (event) => {
     event.preventDefault();
@@ -42,7 +50,7 @@ const Button = (props) => {
           height={25}
           width={25}/> 
       : null} 
-      <span>{children}</span>
+      <span className="font-inter-medium">{children}</span>
     </button>
   )
 }

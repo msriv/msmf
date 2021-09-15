@@ -98,6 +98,29 @@ export const SiteRoutes = [
       "access": "visitor; admin",
     }]
   },
+  {
+    "page": "Diagnostics",
+    "slug": "diagnostics",
+    "route": "/diagnostics",
+    "access": "visitor; admin",
+    "sub-routes": [{
+      "page": "About Us",
+      "slug": "about-us",
+      "route": "/diagnostics/about-us",
+      "access": "visitor; admin",
+    }, {
+      "page": "Our Tests",
+      "slug": "our-tests",
+      "route": "/diagnostics/our-tests",
+      "access": "visitor; admin",
+    }, {
+      "page": "Contact Us",
+      "slug": "contact-us",
+      "route": "/diagnostics/contact-us",
+      "cta": true,
+      "access": "visitor; admin",
+    }]
+  },
 ]
 
 export const AdminRoutes = [

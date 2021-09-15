@@ -1,7 +1,4 @@
-import Head from 'next/head'
-import Container from '../components/container'
-import HeroPost from '../components/hero-post'
-import Layout from '../components/layout'
+
 // function AllPosts({preview}) {
 //   const { loading, error, data } = useQuery(ALL_POSTS);
 
@@ -43,6 +40,7 @@ import Layout from '../components/layout'
 const Index = () => {
   return (
     <>
+    Main
     </>
   )
 }

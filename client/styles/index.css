@@ -28,6 +28,18 @@ html, body {
 .font-inter-medium {
   font-family: 'Inter-Medium', sans-serif;
 }
+.font-inter-bold {
+  font-family: 'Inter-Bold', sans-serif;
+}
+.font-rubik-medium {
+  font-family: 'Rubik-Medium', sans-serif;
+}
+.font-roboto-light {
+  font-family: 'Roboto-Light', sans-serif;
+}
+.font-avenir-heavy {
+  font-family: 'AvenirLTPro-Heavy', sans-serif;
+}
 
 .has-text-align-left {
   @apply text-left;
