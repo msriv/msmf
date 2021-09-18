@@ -14,7 +14,7 @@ const Index = () => {
       <div id="landing-carousel" className="w-11/12 mx-auto relative">
         <Carousel autoScroll imageList={imageList}/>
         <div className="absolute top-32 left-32">
-          <div className="space-y-4">
+          <div classNa1Y7CAOH5OkG8s6a_EujTMaZ7aUQh8XwS0me="space-y-4">
           <p className="text-5xl font-rubik-medium py-2 px-6 bg-guardsman-red w-max text-white"> Join the battle, </p>
           <p className="text-5xl font-rubik-medium py-2 px-6 bg-guardsman-red w-max text-white"> Because Cancer cannot be fought alone </p>
           </div>
@@ -47,9 +47,9 @@ const Index = () => {
         </SectionTitle>
         <SectionContent>
           <div className="flex flex-col items-center">
-            <div className="flex space-x-5 justify-center">
+            <div className="flex space-x-10 justify-center">
               <CampaignCard {...{
-                image: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+                image: "https://drive.google.com/uc?id=1Y7CAOH5OkG8s6a_EujTMaZ7aUQh8XwS0",
                 title: "Support Rohit Patil",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. ",
                 goal: 50000000, 
@@ -58,7 +58,7 @@ const Index = () => {
                 supporters: 10539
               }} />
               <CampaignCard {...{
-                image: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+                image: "https://drive.google.com/uc?id=1iQtUPVXsH_6RgxTaFQFSDRgaVWeDxo7h",
                 title: "Support Rajesh",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. ",
                 goal: 50000000, 
@@ -67,7 +67,7 @@ const Index = () => {
                 supporters: 10539
               }} />
               <CampaignCard {...{
-                image: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+                image: "https://drive.google.com/uc?id=16-nq4n1hgRZ3o32BCu8Ls-SoF5FBK6rN",
                 title: "Support Suraj Shetty",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. ",
                 goal: 50000000, 
