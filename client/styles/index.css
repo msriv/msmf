@@ -13,32 +13,36 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
-html, body {
-  font-family: 'Inter', sans-serif;
+html,
+body {
+  font-family: "Inter", sans-serif;
 }
 
 .font-avenir-book {
-  font-family: 'AvenirLTPro-Book', sans-serif;
+  font-family: "AvenirLTPro-Book", sans-serif;
 }
 
 .font-inter-regular {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .font-inter-medium {
-  font-family: 'Inter-Medium', sans-serif;
+  font-family: "Inter-Medium", sans-serif;
 }
 .font-inter-bold {
-  font-family: 'Inter-Bold', sans-serif;
+  font-family: "Inter-Bold", sans-serif;
 }
 .font-rubik-medium {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: "Rubik-Medium", sans-serif;
 }
 .font-roboto-light {
-  font-family: 'Roboto-Light', sans-serif;
+  font-family: "Roboto-Light", sans-serif;
+}
+.font-roboto-medium {
+  font-family: "Roboto-Medium", sans-serif;
 }
 .font-avenir-heavy {
-  font-family: 'AvenirLTPro-Heavy', sans-serif;
+  font-family: "AvenirLTPro-Heavy", sans-serif;
 }
 
 .has-text-align-left {

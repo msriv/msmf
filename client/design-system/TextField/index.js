@@ -21,7 +21,8 @@ const TextField = (props) => {
     onChange,
     onBlur,
     name,
-    pattern
+    pattern,
+    placeholder,
   } = props;
 
   const [state, setState] = useState("");
@@ -33,41 +34,52 @@ const TextField = (props) => {
     disabled: "",
     error: "",
     success: "",
-  }
+  };
 
   const handleHover = (event) => {
     event.preventDefault();
     setState(event.type === "mouseenter" ? "hover" : "");
-  }
+  };
 
   return (
     <>
       <label htmlFor={`${label}-${name}`}> {label}</label>
       {multiline ? (
-        <textarea 
+        <textarea
           rows={rows || 2}
           cols={cols || 20}
           autoComplete={autoComplete}
           autoFocus={autoFocus}
-          className={`form-textarea ${manageComponentState(classes, baseClasses, state)}`}
+          className={`form-textarea ${manageComponentState(
+            classes,
+            baseClasses,
+            state
+          )}`}
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
           defaultValue={defaultValue}
           value={value}
           onChange={onChange}
-          onError={() => {setState("error")}}
+          onError={() => {
+            setState("error");
+          }}
           disabled={disabled}
           onBlur={onBlur}
           required={required}
           name={name}
           pattern={pattern}
+          placeholder={placeholder}
         />
       ) : (
         <input
           type={type}
           autoComplete={autoComplete}
           autoFocus={autoFocus}
-          className={`form-input ${manageComponentState(classes, baseClasses, state)}`}
+          className={`form-input ${manageComponentState(
+            classes,
+            baseClasses,
+            state
+          )}`}
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
           defaultValue={defaultValue}
@@ -79,15 +91,15 @@ const TextField = (props) => {
           required={required}
           name={name}
           pattern={pattern}
+          placeholder={placeholder}
         />
       )}
       {formHelperText !== "" ? (
-          <p className=" text-caption font-bold">{formHelperText}</p>
-      ): null}
+        <p className=" text-caption font-bold">{formHelperText}</p>
+      ) : null}
     </>
-    
-    ) 
-}
+  );
+};
 
 TextField.propTypes = {
   label: PropTypes.string,
@@ -106,7 +118,8 @@ TextField.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
   name: PropTypes.string,
-  pattern: PropTypes.string
-}
+  pattern: PropTypes.string,
+  placeholder: PropTypes.string,
+};
 
-export default TextField
+export default TextField;

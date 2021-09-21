@@ -48,6 +48,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Roboto-Medium";
+  src: url("./Roboto/Roboto-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
   font-family: "Rubik-Medium";
   src: url("./Rubik/Rubik-Medium.ttf");
   font-style: normal;

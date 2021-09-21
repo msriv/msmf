@@ -15,17 +15,17 @@ export const SectionTitle = ({type, children}) => {
   )
 }
 
-export const SectionContent = ({children}) => {
+export const SectionContent = ({className, children}) => {
   return (
-    <div className=" py-10 w-10/12 mx-auto">
+    <div className={`${className && className} py-10 w-10/12 mx-auto`}>
       {children}
     </div>
   )
 }
 
-export const Section = ({children}) => {
+export const Section = ({className, children}) => {
   return (
-    <div className="mt-20">
+    <div className={`mt-20 ${className && className}`}>
       {children}
     </div>
   )
