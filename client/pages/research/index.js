@@ -8,6 +8,7 @@ import {
 } from "../../componentsNew/Section";
 import LandingCTA from "../../componentsNew/LandingCTA";
 import ResearchProgramCard from "../../componentsNew/Cards/ResearchProgramCard";
+import Layout from "../../componentsNew/Layout";
 
 const Index = () => {
   const imageList = [
@@ -16,7 +17,7 @@ const Index = () => {
   ];
 
   return (
-    <div>
+    <Layout>
       <div id="landing-carousel" className="w-11/12 mx-auto relative">
         <Carousel autoScroll imageList={imageList} />
         <div className="absolute top-32 left-32">
@@ -79,7 +80,7 @@ const Index = () => {
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
         }
       />
-    </div>
+    </Layout>
   );
 };
 

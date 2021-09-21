@@ -10,6 +10,7 @@ import PhilanthropyCard from "../../componentsNew/Cards/PhilanthropyCard";
 import CampaignCard from "../../componentsNew/Cards/CampaignCard";
 import ImpactCard from "../../componentsNew/Cards/ImpactCard";
 import LandingCTA from "../../componentsNew/LandingCTA";
+import Layout from "../../componentsNew/Layout";
 
 const Index = () => {
   const imageList = [
@@ -18,7 +19,7 @@ const Index = () => {
   ];
 
   return (
-    <div>
+    <Layout>
       <div id="landing-carousel" className="w-11/12 mx-auto relative">
         <Carousel autoScroll imageList={imageList} />
         <div className="absolute top-32 left-32">
@@ -163,7 +164,7 @@ const Index = () => {
           "Every person can contribute to a cause that they strongly believe in. We are committed to giving you the best experience possible and believe that our relationship is one of trust and mutual understanding."
         }
       />
-    </div>
+    </Layout>
   );
 };
 

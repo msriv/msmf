@@ -1,10 +1,10 @@
-
+import Layout from "../componentsNew/Layout";
 // function AllPosts({preview}) {
 //   const { loading, error, data } = useQuery(ALL_POSTS);
 
 //   if (loading) return <p>Loading...</p>;
 //   if (error) return <p>Error :(</p>;
-    
+
 //   return (
 //     <Layout preview={preview}>
 //            <Head>
@@ -21,7 +21,7 @@
 //                 slug={item.node.slug}
 //                 excerpt={item.node.excerpt}
 //               />)
-//             })} 
+//             })}
 //             {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
 //           </Container>
 //         </Layout>
@@ -38,11 +38,7 @@
 // }
 
 const Index = () => {
-  return (
-    <>
-    Main
-    </>
-  )
-}
+  return <Layout>Main</Layout>;
+};
 
 export default Index;

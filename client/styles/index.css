@@ -41,6 +41,9 @@ body {
 .font-roboto-medium {
   font-family: "Roboto-Medium", sans-serif;
 }
+.font-roboto-bold {
+  font-family: "Roboto-Bold", sans-serif;
+}
 .font-avenir-heavy {
   font-family: "AvenirLTPro-Heavy", sans-serif;
 }

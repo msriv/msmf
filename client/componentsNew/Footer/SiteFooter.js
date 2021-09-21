@@ -27,7 +27,9 @@ const SiteFooter = (props) => {
           ))}
         </div>
         <div>
-          <RoutesBuilder pathname={pathname} />
+          {!pathname.match("/404") ? (
+            <RoutesBuilder pathname={pathname} />
+          ) : null}
         </div>
         <div>
           <p className="font-roboto-medium uppercase text-white text-xl mb-3">
