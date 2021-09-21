@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   media: {
     height: "100%",
     width: "100%",
-    filter: "brightness(0.5)",
+    filter: "brightness(0.3)",
     position: "absolute",
     top: 0,
     left: 0,

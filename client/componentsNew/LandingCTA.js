@@ -8,7 +8,8 @@ const LandingCTA = (props) => {
       <div className="relative h-full">
         <div className=" absolute top-0 left-0 w-full h-full">
           <img
-            className="align-top object-cover w-full h-full filter brightness-50"
+            className="align-top object-cover w-full h-full"
+            style={{ filter: "brightness(0.3)" }}
             src={image}
             alt={heading}
           />

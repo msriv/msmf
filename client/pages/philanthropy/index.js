@@ -70,7 +70,7 @@ const Index = () => {
               />
             </div>
             <div className="mt-14">
-              <Button type="click">Learn More</Button>
+              <Button type="button">Learn More</Button>
             </div>
           </div>
         </SectionContent>
@@ -149,7 +149,7 @@ const Index = () => {
               />
             </div>
             <div className="mt-14">
-              <Button type="click">Support Us</Button>
+              <Button type="button">Support Us</Button>
             </div>
           </div>
         </SectionContent>
