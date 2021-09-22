@@ -10,7 +10,6 @@ const RoutesBuilder = (props) => {
   const [route, setRoute] = useState({});
 
   useEffect(() => {
-    console.log(pathname);
     setRoute(
       SiteRoutes.find((item) => {
         const parallel = pathname.split("/")[1];

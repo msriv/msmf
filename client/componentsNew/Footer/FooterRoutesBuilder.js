@@ -10,7 +10,12 @@ const RoutesBuilder = (props) => {
   const [route, setRoute] = useState({});
 
   useEffect(() => {
-    setRoute(SiteRoutes.find((item) => item.route.match(pathname)));
+    setRoute(
+      SiteRoutes.find((item) => {
+        const parallel = pathname.split("/")[1];
+        return item.route.match(parallel);
+      })
+    );
   }, [pathname]);
 
   return (

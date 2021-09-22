@@ -62,7 +62,7 @@ const SiteFooter = (props) => {
           </Link>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 flex space-x-36">
         <div>
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col">
@@ -80,7 +80,36 @@ const SiteFooter = (props) => {
             </div>
           </form>
         </div>
-        <div id="social-media"></div>
+        <div id="social-media" className="flex flex-col space-y-2">
+          <div>
+            <p className="text-white uppercase mb-2">
+              Follow us on our Social Media
+            </p>
+          </div>
+          <div className="flex space-x-6">
+            <a
+              href="https://www.linkedin.com/company/tbi-msmf/"
+              target="_blank"
+            >
+              <img src="/assets/social-media-icons/Vector.png" alt="linkedin" />
+            </a>
+            <a href="https://twitter.com/tbimsmf" target="_blank">
+              <img src="/assets/social-media-icons/Group.png" alt="twitter" />
+            </a>
+            <a href="https://www.facebook.com/tbimsmf" target="_blank">
+              <img
+                src="/assets/social-media-icons/akar-icons_facebook-fill.png"
+                alt="facebook"
+              />
+            </a>
+            <a href="https://www.instagram.com/tbimsmf/" target="_blank">
+              <img
+                src="/assets/social-media-icons/Group-217.png"
+                alt="instagram"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
