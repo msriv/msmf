@@ -33,12 +33,14 @@ const People = () => {
               </ColoredTabs>
               {Teams.map((team, id) => (
                 <TabPanel
+                  key={id}
                   value={value}
                   index={id}
                   className="p-10 flex flex-wrap justify-center"
                 >
-                  {team.members.map((person) => (
+                  {team.members.map((person, id) => (
                     <PersonCard
+                      key={id}
                       name={person.name}
                       position={person.position}
                       thumbnail={person.thumbnail}
