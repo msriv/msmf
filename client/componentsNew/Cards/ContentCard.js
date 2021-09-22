@@ -21,7 +21,7 @@ const ContentCard = ({ children }) => {
         setColor("border-mountain-meadow");
         break;
     }
-  }, [router.pathnam]);
+  }, [router.pathname]);
 
   return (
     <div className={`bg-white shadow-lg border-t-8 p-5 ${color}`}>

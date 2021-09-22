@@ -54,6 +54,14 @@ body {
   font-family: "AvenirLTPro-Heavy", sans-serif;
 }
 
+.MuiTab-root {
+  font-family: "Inter-SemiBold", sans-serif;
+}
+.MuiTab-wrapper {
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize !important;
+}
 .has-text-align-left {
   @apply text-left;
 }
