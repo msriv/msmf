@@ -3,7 +3,7 @@ import { Paper, Tab } from "@material-ui/core";
 import { a11yProps, ColoredTabs, TabPanel } from "../../../componentsNew/Tabs";
 import Layout from "../../../componentsNew/Layout";
 import { Section } from "../../../componentsNew/Section";
-import Teams from "./People";
+import { PhilanthropyTeams } from "../../../utils/People";
 import PersonCard from "../../../componentsNew/Cards/PersonCard";
 
 const People = () => {
@@ -27,11 +27,11 @@ const People = () => {
           <div className="w-10/12 mx-auto">
             <Paper elevation={2}>
               <ColoredTabs value={value} handleChange={handleChange}>
-                {Teams.map((team, id) => (
+                {PhilanthropyTeams.map((team, id) => (
                   <Tab key={id} label={team.teamName} {...a11yProps(id)} />
                 ))}
               </ColoredTabs>
-              {Teams.map((team, id) => (
+              {PhilanthropyTeams.map((team, id) => (
                 <TabPanel
                   key={id}
                   value={value}
