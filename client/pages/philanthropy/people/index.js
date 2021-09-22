@@ -3,7 +3,7 @@ import { Paper, Tab } from "@material-ui/core";
 import { a11yProps, ColoredTabs, TabPanel } from "../../../componentsNew/Tabs";
 import Layout from "../../../componentsNew/Layout";
 import { Section } from "../../../componentsNew/Section";
-import { Teams } from "./People";
+import Teams from "./People";
 import PersonCard from "../../../componentsNew/Cards/PersonCard";
 
 const People = () => {
