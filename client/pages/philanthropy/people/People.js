@@ -1,4 +1,4 @@
-export const Teams = [
+const Teams = [
   {
     teamName: "Board of Directors",
     members: [
@@ -128,3 +128,5 @@ export const Teams = [
     ],
   },
 ];
+
+export default Teams;
