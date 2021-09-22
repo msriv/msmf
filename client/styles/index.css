@@ -29,6 +29,9 @@ body {
 .font-inter-medium {
   font-family: "Inter-Medium", sans-serif;
 }
+.font-inter-semibold {
+  font-family: "Inter-SemiBold", sans-serif;
+}
 .font-inter-bold {
   font-family: "Inter-Bold", sans-serif;
 }

@@ -19,6 +19,8 @@ export const SectionContent = ({ className, children }) => {
 
 export const Section = ({ className, children }) => {
   return (
-    <div className={`mt-20 ${className ? className : ""}`}>{children}</div>
+    <section className={`mt-20 ${className ? className : ""}`}>
+      {children}
+    </section>
   );
 };

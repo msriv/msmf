@@ -22,14 +22,21 @@
 @font-face {
   font-family: "Inter-Medium";
   src: url("./Inter/Inter-Medium.ttf");
-  font-style: medium;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("./Inter/Inter-SemiBold.ttf");
+  font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter-Bold";
   src: url("./Inter/Inter-Bold.ttf");
-  font-style: medium;
+  font-style: normal;
   font-weight: 600;
   font-display: swap;
 }

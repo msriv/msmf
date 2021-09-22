@@ -19,7 +19,7 @@ const SiteFooter = (props) => {
             Explore MSMF
           </p>
           {SiteRoutes.map((route) => (
-            <Link href={`${route.route}`}>
+            <Link key={route.slug} href={`${route.route}`}>
               <p className="text-white text-lg no-underline cursor-pointer mb-1">
                 {route.page}
               </p>
