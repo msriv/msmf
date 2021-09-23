@@ -53,6 +53,9 @@ body {
 .font-avenir-heavy {
   font-family: "AvenirLTPro-Heavy", sans-serif;
 }
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .MuiTab-root {
   font-family: "Inter-SemiBold", sans-serif;

@@ -7,7 +7,13 @@ const Navbar = ({ pathname }) => {
     <>
       <div className="flex items-center justify-evenly my-5">
         <div>
-          <img src="/MSMF_logo.png" alt="MSMF Logo" className=" w-4/12" />
+          <Link href="/">
+            <img
+              src="/MSMF_logo.png"
+              alt="MSMF Logo"
+              className=" w-4/12 cursor-pointer"
+            />
+          </Link>
         </div>
         <Link href="/philanthropy">
           <button

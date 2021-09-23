@@ -45,6 +45,7 @@ const People = () => {
                       position={person.position}
                       thumbnail={person.thumbnail}
                       profile={person.profile}
+                      about={person.about}
                     />
                   ))}
                 </TabPanel>

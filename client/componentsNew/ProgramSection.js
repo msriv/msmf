@@ -7,6 +7,8 @@ const ProgramSection = ({
   description,
   images,
   callToAction,
+  callToActionComponent,
+  noCallToAction,
 }) => {
   return (
     <Section id="Nutritional Support">
@@ -18,12 +20,12 @@ const ProgramSection = ({
         <div className="w-10/12 mx-auto">
           <ContentCard>
             <div className="flex flex-col px-10 py-8 ">
-              <p className="text-base font-inter-bold text-silver-700 mb-3 uppercase">
-                {programType}
-              </p>
-              <p className="text-3xl font-inter-semibold  mb-4 uppercase">
-                {title}
-              </p>
+              {programType ? (
+                <p className="text-base font-inter-bold text-silver-700 mb-3 uppercase">
+                  {programType}
+                </p>
+              ) : null}
+              <p className="text-3xl font-inter-semibold  mb-4">{title}</p>
               <p className="text-shark-400 leading-relaxed mb-10">
                 {description}
               </p>
@@ -49,11 +51,17 @@ const ProgramSection = ({
                   ></div>
                 </div>
               )}
-              <div className="mt-16 self-center">
-                <Button type="button" onClick={callToAction}>
-                  Learn More
-                </Button>
-              </div>
+              {!noCallToAction ? (
+                callToActionComponent ? (
+                  callToActionComponent
+                ) : (
+                  <div className="mt-16 self-center">
+                    <Button type="button" onClick={callToAction}>
+                      Learn More
+                    </Button>
+                  </div>
+                )
+              ) : null}
             </div>
           </ContentCard>
         </div>
