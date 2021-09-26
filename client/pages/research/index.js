@@ -37,7 +37,7 @@ const Index = () => {
         </div>
       </div>
       <Section>
-        <SectionTitle type="subSection">
+        <SectionTitle type="section">
           Our <b>Research Programs</b>
         </SectionTitle>
         <SectionContent>

@@ -150,3 +150,50 @@ export const ResearchTeams = [
     ],
   },
 ];
+
+export const IncubationTeams = [
+  {
+    teamName: "Governing Council",
+    members: [
+      {
+        name: "Smitha P K",
+        thumbnail: null,
+        position: "Research Assistant",
+        profile: { linkedin: "https://linkedin.com" },
+      },
+    ],
+  },
+  {
+    teamName: "Investment Committee",
+    members: [
+      {
+        name: "Smitha P K",
+        thumbnail: null,
+        position: "Research Assistant",
+        profile: { linkedin: "https://linkedin.com" },
+      },
+    ],
+  },
+  {
+    teamName: "Scientific Committee",
+    members: [
+      {
+        name: "Smitha P K",
+        thumbnail: null,
+        position: "Research Assistant",
+        profile: { linkedin: "https://linkedin.com" },
+      },
+    ],
+  },
+  {
+    teamName: "Management Team",
+    members: [
+      {
+        name: "Smitha P K",
+        thumbnail: null,
+        position: "Research Assistant",
+        profile: { linkedin: "https://linkedin.com" },
+      },
+    ],
+  },
+];

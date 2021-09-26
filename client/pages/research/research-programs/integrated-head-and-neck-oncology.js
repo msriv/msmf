@@ -41,6 +41,7 @@ const IntegratedHeadAndNeckOncology = () => (
             national and international institutions that offer complementary
             expertise.`}
       noCallToAction
+      noImages
     />
     <Section>
       <SectionContent>

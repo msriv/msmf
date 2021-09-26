@@ -11,21 +11,21 @@ const IncubationPrograms = () => {
 MSMF-Narayana Health have been at the forefront in successful implementation of affordable healthcare in our country and this vision when expanded to technology development and translational research will enable greater value for improved healthcare outcomes. Development of Mazumdar Shaw Medical Foundation and Translational Institute has resulted in the TBI under the aegis of Department of Science & Technology in July 2015 within the campus and several companies incubated so far. The major advantage for these companies is that they have direct access to clinicians for interactions for real time productization of ideas with proper clinical evidence. Along with this, Narayana Health has set up a clinical research department which has gained all necessary national and international clearances to perform clinical trials (USFDA), which acts as a conduit between the incubator and the hospital infrastructure.
 
 This infrastructure has been set up with a vision to perform molecular research and enable high quality scientists to develop their ideas into value for clinical biomarkers. In order to do this, MSMF has several important facilities for molecular and translational research. The facilities include genomics, proteomics, cell biology, immunology, histopathology, transcriptomics, animal house, bioinformatics and biostatistics. The entrepreneurs who can get incubated will have access to world-class infrastructure along with clinical support and funds in developing validated technologies`}
-        callToAction={() => {}}
+        callToAction={"/incubation/programs/incite"}
       />
       <ProgramSection
         title={"CIP: CLINICAL IMMERSION PROGRAM"}
         description={`A Hot-Desking service to explore and introspect the healthcare ecosystem by interacting with our Doctors, Scientists, Researchers, Bio-Medical team, startups, manufacturers as well as regulatory advice.
 
 This unique ecosystem that is prevalent at the Mazumdar Shaw Medical Foundation can be the breeding ground for healthcare startup ideas. The CIP : Clinical Immersion Program is tailor made understanding the needs of early stage exploratory entrepreneurs, clinicians, researchers, technology enthusiasts who want to understand the healthcare ecosystem`}
-        callToAction={() => {}}
+        callToAction={"/incubation/programs/cip"}
       />
       <ProgramSection
         title={"HACK THE PAPER"}
         description={
           "A movement to change the conversation around science - scientific discoveries when made open source and easy to understand has led to remarkable moments in mankind’s history. Bill Clinton gave the green light to the U.S. military to stop intentionally scrambling satellite signals, thus paving the way for civilians to use GPS with the same accuracy as the military had long enjoyed. All of the consumer internement underway to make various elements of scientific research more open and collaborative in order to disrupt and impact mankind. May 7, witnessed history being penned as thirteen researchers from Mazumdar Shaw Medical Foundation chose to “Hack the Paper”."
         }
-        callToAction={() => {}}
+        callToAction={"/incubation/programs/hack-the-paper"}
       />
       <ProgramSection
         title={"BIONEST"}
@@ -63,7 +63,7 @@ This unique ecosystem that is prevalent at the Mazumdar Shaw Medical Foundation 
             will provide high quality and low-cost medical care.
           </span>
         }
-        callToAction={() => {}}
+        callToAction={"/incubation/programs/bionest"}
       />
     </Layout>
   );

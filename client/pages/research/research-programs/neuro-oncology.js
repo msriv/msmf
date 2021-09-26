@@ -14,6 +14,7 @@ const NeuroOncology = () => (
       description={`Gliomas, the most common form of brain tumors of the adult CNS, originate from neuroepithelial tissue and are classified morphologically as astrocytic, oligodendroglial, ependymal, and choroid plexus tumors. Glioblastoma multiforme (grade IV astrocytoma; GBM) is one of the most aggressive forms of brain tumors and a primary area of focus for the Neurooncology Group at MSCTR.
 Gliomas, originate from the neuro-epithelial tissue and are classified morphologically as astrocytic, oligodendroglial, ependymal and choroid plexus tumors. Glioblastoma multiforme (grade IV astrocytoma; GBM) is one of the most aggressive, invasive, and destructive malignancies and has attracted clinical attention globally. In addition to uncontrolled proliferation and diffuse tissue invasion, neuro-degeneration is another attribute and a hall mark of malignant gliomas, the mechanism of which is poorly understood. Thus, there may be several processes that may be common between gliomas and neuro-degenerative disorders.`}
       noCallToAction
+      noImages
     />
     <Section>
       <SectionContent>

@@ -42,7 +42,7 @@ const Diagnostics = () => {
         </div>
       </div>
       <Section>
-        <SectionTitle type="subSection">
+        <SectionTitle type="section">
           Our <b>Tests</b>
         </SectionTitle>
         <SectionContent>

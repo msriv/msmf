@@ -7,6 +7,8 @@ const ProgramSection = ({
   title,
   description,
   images,
+  noImages,
+  children,
   callToAction,
   callToActionComponent,
   noCallToAction,
@@ -37,28 +39,30 @@ const ProgramSection = ({
               <p className="text-shark-400 leading-relaxed mb-10">
                 {description}
               </p>
-              {images ? (
-                images.map((item, key) => (
-                  <div key={key}>
-                    <img src={item.src} alt={item.alt} />
+              {!noImages ? (
+                images ? (
+                  images.map((item, key) => (
+                    <div key={key}>
+                      <img src={item.src} alt={item.alt} />
+                    </div>
+                  ))
+                ) : (
+                  <div className="flex space-x-14 mx-auto my-10">
+                    <div
+                      style={{ width: 318, height: 310 }}
+                      className="bg-silver-400"
+                    ></div>
+                    <div
+                      style={{ width: 318, height: 310 }}
+                      className="bg-silver-400"
+                    ></div>
+                    <div
+                      style={{ width: 318, height: 310 }}
+                      className="bg-silver-400"
+                    ></div>
                   </div>
-                ))
-              ) : (
-                <div className="flex space-x-14 mx-auto my-10">
-                  <div
-                    style={{ width: 318, height: 310 }}
-                    className="bg-silver-400"
-                  ></div>
-                  <div
-                    style={{ width: 318, height: 310 }}
-                    className="bg-silver-400"
-                  ></div>
-                  <div
-                    style={{ width: 318, height: 310 }}
-                    className="bg-silver-400"
-                  ></div>
-                </div>
-              )}
+                )
+              ) : null}
               {!noCallToAction ? (
                 callToActionComponent ? (
                   callToActionComponent
@@ -70,6 +74,7 @@ const ProgramSection = ({
                   </div>
                 )
               ) : null}
+              {children}
             </div>
           </ContentCard>
         </div>

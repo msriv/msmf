@@ -14,7 +14,7 @@ const Index = () => {
     <Layout>
       <IncubationBanner />
       <Section>
-        <SectionTitle type="subSection">
+        <SectionTitle type="section">
           Our <b>Incubation Programs</b>
         </SectionTitle>
         <SectionContent>
@@ -74,7 +74,7 @@ const Index = () => {
         </SectionContent>
       </Section>
       <Section>
-        <SectionTitle type="subSection">
+        <SectionTitle type="section">
           Our <b>Portfolio Companies</b>
         </SectionTitle>
         <SectionContent>

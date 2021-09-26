@@ -27,7 +27,7 @@ const Index = () => (
       </SectionContent>
     </Section>
     <Section>
-      <SectionTitle type="subSection">
+      <SectionTitle type="section">
         Our <b>Mission</b>
       </SectionTitle>
       <SectionContent>
@@ -48,7 +48,7 @@ const Index = () => (
       </SectionContent>
     </Section>
     <Section>
-      <SectionTitle type="subSection">
+      <SectionTitle type="section">
         Our <b>Values</b>
       </SectionTitle>
       <SectionContent>

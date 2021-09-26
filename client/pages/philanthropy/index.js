@@ -39,7 +39,7 @@ const Index = () => {
         </div>
       </div>
       <Section>
-        <SectionTitle type="subSection">
+        <SectionTitle type="section">
           Our <b>Programs</b>
         </SectionTitle>
         <SectionContent>
@@ -77,7 +77,7 @@ const Index = () => {
         </SectionContent>
       </Section>
       <Section>
-        <SectionTitle type="subSection">
+        <SectionTitle type="section">
           Our <b>Latest Campaigns</b>
         </SectionTitle>
         <SectionContent>
@@ -127,7 +127,7 @@ const Index = () => {
         </SectionContent>
       </Section>
       <Section>
-        <SectionTitle type="subSection">
+        <SectionTitle type="section">
           Our <b>Impact Stories</b>
         </SectionTitle>
         <SectionContent className="shadow-lg">
