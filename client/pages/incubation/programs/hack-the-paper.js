@@ -16,7 +16,7 @@ const HackThePaper = () => (
     <Section>
       <SectionContent>
         <div>
-          <ul class="list-disc list-inside text-lg text-shark-400">
+          <ul className="list-disc list-inside text-lg text-shark-400">
             <li>
               Bonney Lee James : Importance of intra operative detection of
               lymph node metastasis in head and neck squamous cell carcinoma
