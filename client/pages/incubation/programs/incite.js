@@ -14,7 +14,7 @@ This infrastructure has been set up with a vision to perform molecular research 
       noCallToAction
       noImages
     />
-    <div className="flex mt-16 justify-center">
+    <div className="flex mt-20 justify-center">
       <Button type="button" onClick={() => {}}>
         Apply Now
       </Button>

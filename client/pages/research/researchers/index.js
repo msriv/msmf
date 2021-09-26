@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Paper, Tab } from "@material-ui/core";
 import { a11yProps, ColoredTabs, TabPanel } from "../../../componentsNew/Tabs";
 import Layout from "../../../componentsNew/Layout";
-import { Section } from "../../../componentsNew/Section";
+import { Section, SectionTitle } from "../../../componentsNew/Section";
 import { ResearchTeams } from "../../../utils/People";
 import PersonCard from "../../../componentsNew/Cards/PersonCard";
 import SwipeableViews from "react-swipeable-views";
@@ -21,49 +21,45 @@ const People = () => {
   return (
     <Layout>
       <Section>
-        <div className="relative mt-56">
-          <div
-            style={{ height: "38vh", zIndex: -1 }}
-            className="absolute w-full bg-silver-500 -top-40"
-          ></div>
-          <div className="absolute w-10/12 -top-28 left-20">
-            <p className="uppercase font-inter-semibold text-4xl">Our Team</p>
-          </div>
-          <div className="w-10/12 mx-auto">
-            <Paper elevation={2}>
-              <ColoredTabs value={value} handleChange={handleChange}>
-                {ResearchTeams.map((team, id) => (
-                  <Tab key={id} label={team.teamName} {...a11yProps(id)} />
-                ))}
-              </ColoredTabs>
-              <SwipeableViews
-                axis={"x"}
-                index={value}
-                onChangeIndex={handleChangeIndex}
-              >
-                {ResearchTeams.map((team, id) => (
-                  <TabPanel
-                    key={id}
-                    value={value}
-                    index={id}
-                    className="p-10 flex flex-wrap justify-center"
-                  >
-                    {team.members.map((person, id) => (
-                      <PersonCard
-                        key={id}
-                        name={person.name}
-                        position={person.position}
-                        thumbnail={person.thumbnail}
-                        profile={person.profile}
-                        about={person.about}
-                        email={person.email}
-                      />
-                    ))}
-                  </TabPanel>
-                ))}
-              </SwipeableViews>
-            </Paper>
-          </div>
+        <SectionTitle type="subsection">
+          <p>
+            Our <span className="font-inter-semibold">Team</span>
+          </p>
+        </SectionTitle>
+        <div className="w-10/12 mx-auto mt-10">
+          <Paper elevation={2}>
+            <ColoredTabs value={value} handleChange={handleChange}>
+              {ResearchTeams.map((team, id) => (
+                <Tab key={id} label={team.teamName} {...a11yProps(id)} />
+              ))}
+            </ColoredTabs>
+            <SwipeableViews
+              axis={"x"}
+              index={value}
+              onChangeIndex={handleChangeIndex}
+            >
+              {ResearchTeams.map((team, id) => (
+                <TabPanel
+                  key={id}
+                  value={value}
+                  index={id}
+                  className="p-10 flex flex-wrap justify-center"
+                >
+                  {team.members.map((person, id) => (
+                    <PersonCard
+                      key={id}
+                      name={person.name}
+                      position={person.position}
+                      thumbnail={person.thumbnail}
+                      profile={person.profile}
+                      about={person.about}
+                      email={person.email}
+                    />
+                  ))}
+                </TabPanel>
+              ))}
+            </SwipeableViews>
+          </Paper>
         </div>
       </Section>
     </Layout>
