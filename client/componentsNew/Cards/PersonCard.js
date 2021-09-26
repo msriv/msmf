@@ -1,12 +1,20 @@
 import { makeStyles } from "@material-ui/core/styles";
+import Image from "next/image";
 import {
   Card,
   CardActionArea,
   CardContent,
   CardMedia,
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  IconButton,
+  Grid,
 } from "@material-ui/core";
-import { motion } from "framer-motion";
+import { Close as CloseIcon } from "@material-ui/icons";
 import { useState } from "react";
+import LinkedInIcon from "../../assets/images/linkedin1.png";
+import GoogleScholarsIcon from "../../assets/images/google-scholar.png";
 
 const useStyles = makeStyles({
   root: {
@@ -21,208 +29,149 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "justify-between",
   },
+  closeButton: {
+    float: "right",
+  },
+  content: {
+    overflow: "hidden",
+  },
 });
 
-const card = {
-  open: {
-    width: 1050,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-  close: {
-    width: 321,
-    transition: {
-      type: "spring",
-      stiffness: 5,
-      restDelta: 2,
-      duration: 5,
-    },
-  },
-};
-const media = {
-  open: {
-    height: 300,
-    width: 300,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-  close: {
-    height: 327,
-    width: 321,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-};
-const aboutVariant = {
-  open: {
-    display: "block",
-    opacity: [0, 0.5, 1],
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-  close: {
-    display: "none",
-    opacity: 0,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-};
-const personInfoBlock = {
-  open: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    width: "400px",
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-  close: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "between",
-    width: 290,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-};
-const personInfo = {
-  open: {
-    width: "90%",
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-  close: {
-    width: "90%",
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-};
-const personProfile = {
-  open: {
-    width: "10%",
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-  close: {
-    width: "10%",
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  },
-};
-const actionArea = {
-  open: {
-    display: "flex",
-    justifyContent: "flex-start",
-    width: 1050,
-  },
-  close: { display: "block", width: 321 },
-};
-const PersonCard = ({ name, thumbnail, position, profile, about }) => {
+const PersonCard = ({ name, thumbnail, position, profile, about, email }) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
+  const handleActions = (e, href) => {
+    e.preventDefault();
+    window.open(href, "_blank").focus();
+    e.stopPropagation();
+  };
+
   return (
-    <Card
-      className={classes.root}
-      component={motion.div}
-      variants={card}
-      animate={open ? "open" : "closed"}
-    >
-      <CardActionArea
-        onClick={() => {
-          setOpen(!open);
-        }}
-        component={motion.div}
-        variants={actionArea}
-        animate={open ? "open" : "closed"}
-      >
-        {thumbnail !== null ? (
-          <CardMedia
-            className={classes.media}
-            image={thumbnail}
-            title={title}
-            component={motion.img}
-            variants={media}
-            animate={open ? "open" : "close"}
-          />
-        ) : (
-          <motion.div
-            className="bg-silver-500"
-            variants={media}
-            animate={open ? "open" : "close"}
-          ></motion.div>
-        )}
-        <CardContent>
-          <motion.div
-            variants={personInfoBlock}
-            animate={open ? "open" : "close"}
-          >
-            <motion.div
-              variants={personInfo}
-              animate={open ? "open" : "close"}
-              style={{ width: "90%" }}
-            >
-              <p className="font-inter-medium text-lg">{name}</p>
-              <p>{position}</p>
-            </motion.div>
-            <motion.div
-              variants={personProfile}
-              animate={open ? "open" : "close"}
-              style={{ width: "10%" }}
-            >
-              <a href={profile} target="_blank">
-                <img
-                  src="/assets/social-media-icons/linkedin1.png"
-                  alt={name}
-                />
-              </a>
-            </motion.div>
-          </motion.div>
-        </CardContent>
-      </CardActionArea>
-      {about ? (
-        <CardContent
-          component={motion.div}
-          variants={aboutVariant}
-          animate={open ? "open" : "close"}
+    <>
+      <Card className={classes.root}>
+        <CardActionArea
+          onClick={(e) => {
+            setOpen(true);
+          }}
         >
-          <div>{about}</div>
-        </CardContent>
-      ) : null}
-    </Card>
+          {thumbnail !== null ? (
+            <CardMedia
+              className={classes.media}
+              image={thumbnail}
+              title={title}
+            />
+          ) : (
+            <div
+              style={{ width: 321, height: 327 }}
+              className="bg-silver-500"
+            ></div>
+          )}
+          <CardContent>
+            <Grid spacing={0.5} container>
+              <Grid item xs={8}>
+                <p className="font-inter-medium text-lg">{name}</p>
+              </Grid>
+              <Grid item xs={4}>
+                <div className="flex space-x-4 justify-end">
+                  {Object.keys(profile).map((item, id) => {
+                    return (
+                      <a
+                        key={id}
+                        href={profile[item]}
+                        onClick={(e) => handleActions(e, profile[item])}
+                      >
+                        <Image
+                          src={
+                            item === "linkedin"
+                              ? LinkedInIcon
+                              : item === "scholar"
+                              ? GoogleScholarsIcon
+                              : null
+                          }
+                          alt={name}
+                          layout="fixed"
+                        />
+                      </a>
+                    );
+                  })}
+                </div>
+              </Grid>
+              <Grid item xs={12}>
+                <p>{position}</p>
+              </Grid>
+              {email ? (
+                <Grid item xs={12}>
+                  <p>{email}</p>
+                </Grid>
+              ) : null}
+            </Grid>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+      <Dialog open={open} maxWidth={"lg"} fullWidth>
+        <DialogTitle>
+          {`About ${name}`}
+          <IconButton
+            className={classes.closeButton}
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+        </DialogTitle>
+        <DialogContent className={classes.content}>
+          <Grid spacing={2} alignContent="center" alignItems="center" container>
+            <Grid xs={2} item></Grid>
+            <Grid xs={4} item>
+              <div
+                style={{ width: 321, height: 327 }}
+                className="bg-silver-500"
+              ></div>
+            </Grid>
+            <Grid xs={4} item>
+              <div className="flex flex-col">
+                <div className="w-11/12">
+                  <p className="font-inter-medium text-lg">{name}</p>
+                  <p>{position}</p>
+                  {email ? <p>{email}</p> : null}
+                </div>
+                <div className="w-1/12">
+                  {Object.keys(profile).map((item, id) => {
+                    return (
+                      <a
+                        key={id}
+                        href={profile[item]}
+                        onClick={(e) => handleActions(e, profile[item])}
+                      >
+                        <Image
+                          src={
+                            item === "linkedin"
+                              ? LinkedInIcon
+                              : item === "scholar"
+                              ? GoogleScholarsIcon
+                              : null
+                          }
+                          alt={name}
+                          layout="fixed"
+                        />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            </Grid>
+            <Grid xs={2} item></Grid>
+            <Grid xs={2} item></Grid>
+            <Grid xs={12} item>
+              {about}
+            </Grid>
+            <Grid xs={2} item></Grid>
+          </Grid>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 };
 

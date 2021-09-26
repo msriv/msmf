@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { Section } from "./Section";
 import ContentCard from "./Cards/ContentCard";
 import Button from "../design-system/Button";
@@ -10,6 +11,13 @@ const ProgramSection = ({
   callToActionComponent,
   noCallToAction,
 }) => {
+  const router = useRouter();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    router.push(callToAction);
+  };
+
   return (
     <Section id="Nutritional Support">
       <div className="relative mt-56">
@@ -56,7 +64,7 @@ const ProgramSection = ({
                   callToActionComponent
                 ) : (
                   <div className="mt-16 self-center">
-                    <Button type="button" onClick={callToAction}>
+                    <Button type="button" onClick={handleClick}>
                       Learn More
                     </Button>
                   </div>

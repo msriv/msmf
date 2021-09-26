@@ -11,7 +11,7 @@ export const SectionTitle = ({ type, children }) => {
 
 export const SectionContent = ({ className, children }) => {
   return (
-    <div className={`${className ? className : ""} py-10 w-10/12 mx-auto`}>
+    <div className={`${className ? className : ""} py-5 w-10/12 mx-auto`}>
       {children}
     </div>
   );

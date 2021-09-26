@@ -10,7 +10,7 @@ const ResearchPrograms = () => {
         description={
           "Over the last two decades there has been a paradigm shift in our perception of cancer therapy. As we know now, neoplasia do not consist only of transformed cells, but contain an abundant and heterogeneous non-transformed component like stromal, endothelial and immune cells. The host immune system can recognize and sometimes react against (pre-) malignant cells as they transform, proliferate and evolve. The knowledge laid the grounds of anticancer immunosurveillance leading to cancer immunotherapy. Recent intense wave of preclinical and clinical investigation culminated in approval of various immunotherapeutic interventions for use in humans. In 2013, the extraordinary clinical success of immunotherapy has won this new method of therapy the title of “Breakthrough of the Year”. Nonetheless, we have just begun to unravel the therapeutic possibilities offered by anticancer immunotherapy."
         }
-        callToAction={() => {}}
+        callToAction={"/research/research-programs/tumor-immunology"}
       />
       <ProgramSection
         programType={"RESEARCH PROGRAMS"}
@@ -44,14 +44,16 @@ const ResearchPrograms = () => {
             Mazumdar-Shaw Medical Center and has initiated collaborations with
             national and international institutions that offer complementary
             expertise.`}
-        callToAction={() => {}}
+        callToAction={
+          "/research/research-programs/integrated-head-and-neck-oncology"
+        }
       />
       <ProgramSection
         programType={"RESEARCH PROGRAMS"}
         title={"NEURO ONCOLOGY PROGRAM"}
         description={`Gliomas, the most common form of brain tumors of the adult CNS, originate from neuroepithelial tissue and are classified morphologically as astrocytic, oligodendroglial, ependymal, and choroid plexus tumors. Glioblastoma multiforme (grade IV astrocytoma; GBM) is one of the most aggressive forms of brain tumors and a primary area of focus for the Neurooncology Group at MSCTR.
 Gliomas, originate from the neuro-epithelial tissue and are classified morphologically as astrocytic, oligodendroglial, ependymal and choroid plexus tumors. Glioblastoma multiforme (grade IV astrocytoma; GBM) is one of the most aggressive, invasive, and destructive malignancies and has attracted clinical attention globally. In addition to uncontrolled proliferation and diffuse tissue invasion, neuro-degeneration is another attribute and a hall mark of malignant gliomas, the mechanism of which is poorly understood. Thus, there may be several processes that may be common between gliomas and neuro-degenerative disorders.`}
-        callToAction={() => {}}
+        callToAction={"/research/research-programs/neuro-oncology"}
       />
     </Layout>
   );

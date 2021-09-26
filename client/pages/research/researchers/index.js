@@ -3,7 +3,7 @@ import { Paper, Tab } from "@material-ui/core";
 import { a11yProps, ColoredTabs, TabPanel } from "../../../componentsNew/Tabs";
 import Layout from "../../../componentsNew/Layout";
 import { Section } from "../../../componentsNew/Section";
-import { PhilanthropyTeams } from "../../../utils/People";
+import { ResearchTeams } from "../../../utils/People";
 import PersonCard from "../../../componentsNew/Cards/PersonCard";
 import SwipeableViews from "react-swipeable-views";
 
@@ -32,7 +32,7 @@ const People = () => {
           <div className="w-10/12 mx-auto">
             <Paper elevation={2}>
               <ColoredTabs value={value} handleChange={handleChange}>
-                {PhilanthropyTeams.map((team, id) => (
+                {ResearchTeams.map((team, id) => (
                   <Tab key={id} label={team.teamName} {...a11yProps(id)} />
                 ))}
               </ColoredTabs>
@@ -41,7 +41,7 @@ const People = () => {
                 index={value}
                 onChangeIndex={handleChangeIndex}
               >
-                {PhilanthropyTeams.map((team, id) => (
+                {ResearchTeams.map((team, id) => (
                   <TabPanel
                     key={id}
                     value={value}
@@ -56,6 +56,7 @@ const People = () => {
                         thumbnail={person.thumbnail}
                         profile={person.profile}
                         about={person.about}
+                        email={person.email}
                       />
                     ))}
                   </TabPanel>
