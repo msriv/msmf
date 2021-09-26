@@ -68,7 +68,7 @@ const PersonCard = ({ name, thumbnail, position, profile, about, email }) => {
             ></div>
           )}
           <CardContent>
-            <Grid spacing={0.5} container>
+            <Grid spacing={0} container>
               <Grid item xs={8}>
                 <p className="font-inter-medium text-lg">{name}</p>
               </Grid>

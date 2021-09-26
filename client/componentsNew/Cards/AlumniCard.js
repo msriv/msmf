@@ -15,7 +15,7 @@ const AlumniCard = ({ name, thumbnail, position, profile, about, email }) => {
         </div>
       </Grid>
       <Grid item xs={10}>
-        <Grid container spacing={0.5}>
+        <Grid container spacing={0}>
           <Grid item xs={6}>
             <p className="font-inter-medium text-xl ">{name}</p>
           </Grid>
