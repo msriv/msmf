@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import Image from "next/image";
 import {
   Card,
@@ -10,8 +10,8 @@ import {
   DialogTitle,
   IconButton,
   Grid,
-} from "@material-ui/core";
-import { Close as CloseIcon } from "@material-ui/icons";
+} from "@mui/material";
+import { Close as CloseIcon } from "@mui/icons-material";
 import { useState } from "react";
 import LinkedInIcon from "../../assets/images/linkedin1.png";
 import GoogleScholarsIcon from "../../assets/images/google-scholar.png";

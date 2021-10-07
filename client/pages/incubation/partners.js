@@ -4,7 +4,7 @@ import {
   SectionContent,
   SectionTitle,
 } from "../../componentsNew/Section";
-import { API_URL } from "../../lib/constants";
+import { BASE_API_URL } from "../../lib/constants";
 import Image from "next/image";
 import Button from "../../design-system/Button";
 
@@ -27,7 +27,7 @@ const Partners = () => (
             <div className="flex flex-col space-y-10 items-center mt-10">
               <div>
                 <Image
-                  src={`${API_URL}/assets/incubation/Birac_logo-p27rfaqiz6hjbqiifb22r9n5mzhxb0m9bdbdv2rspq.png`}
+                  src={`${BASE_API_URL}/assets/incubation/Birac_logo-p27rfaqiz6hjbqiifb22r9n5mzhxb0m9bdbdv2rspq.png`}
                   alt="birac"
                   width={219}
                   height={157}
@@ -35,7 +35,7 @@ const Partners = () => (
               </div>
               <div>
                 <Image
-                  src={`${API_URL}/assets/incubation/dst-logo.jpg`}
+                  src={`${BASE_API_URL}/assets/incubation/dst-logo.jpg`}
                   alt="birac"
                   width={243}
                   height={179}
@@ -52,7 +52,7 @@ const Partners = () => (
             <div className="flex flex-col space-y-10 items-center mt-10">
               <div>
                 <Image
-                  src={`${API_URL}/assets/incubation/villgro_logo.png`}
+                  src={`${BASE_API_URL}/assets/incubation/villgro_logo.png`}
                   alt="birac"
                   width={219}
                   height={225}
@@ -60,7 +60,7 @@ const Partners = () => (
               </div>
               <div>
                 <Image
-                  src={`${API_URL}/assets/incubation/axilor-logo.png`}
+                  src={`${BASE_API_URL}/assets/incubation/axilor-logo.png`}
                   alt="birac"
                   width={272}
                   height={61}
@@ -68,7 +68,7 @@ const Partners = () => (
               </div>
               <div>
                 <Image
-                  src={`${API_URL}/assets/incubation/gainlogo.png`}
+                  src={`${BASE_API_URL}/assets/incubation/gainlogo.png`}
                   alt="birac"
                   width={218}
                   height={146}
@@ -85,7 +85,7 @@ const Partners = () => (
             <div className="flex flex-col space-y-10 items-center mt-10">
               <div>
                 <Image
-                  src={`${API_URL}/assets/incubation/jetro_logo-p27rf6z82xuyngmjyhh6xuszgg8zrvujmbem6f42to.gif`}
+                  src={`${BASE_API_URL}/assets/incubation/jetro_logo-p27rf6z82xuyngmjyhh6xuszgg8zrvujmbem6f42to.gif`}
                   alt="birac"
                   width={290}
                   height={46}
@@ -93,7 +93,7 @@ const Partners = () => (
               </div>
               <div>
                 <Image
-                  src={`${API_URL}/assets/incubation/uni-basel-logo-p27rf53iyyj1908nrtkixcgr6sstl2rsxdu7qcwuwe.png`}
+                  src={`${BASE_API_URL}/assets/incubation/uni-basel-logo-p27rf53iyyj1908nrtkixcgr6sstl2rsxdu7qcwuwe.png`}
                   alt="birac"
                   width={230}
                   height={75}

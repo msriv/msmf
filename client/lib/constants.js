@@ -1,1 +1,1 @@
-export const API_URL = "http://api.ms-mf.org";
+export const BASE_API_URL = process.env.NEXT_PUBLIC_BASE_API_URL;

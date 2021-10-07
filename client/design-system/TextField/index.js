@@ -14,6 +14,7 @@ const TextField = (props) => {
     defaultValue,
     disabled,
     error,
+    errorText,
     formHelperText,
     required,
     type,
@@ -97,6 +98,9 @@ const TextField = (props) => {
       {formHelperText !== "" ? (
         <p className=" text-caption font-bold">{formHelperText}</p>
       ) : null}
+      {error ? (
+        <p className=" text-caption text-red-500 font-bold">{errorText}</p>
+      ) : null}
     </>
   );
 };
@@ -112,13 +116,17 @@ TextField.propTypes = {
   defaultValue: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
+  errorText: PropTypes.string,
   formHelperText: PropTypes.string,
   required: PropTypes.bool,
   type: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
   name: PropTypes.string,
-  pattern: PropTypes.string,
+  pattern: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(RegExp),
+  ]),
   placeholder: PropTypes.string,
 };
 

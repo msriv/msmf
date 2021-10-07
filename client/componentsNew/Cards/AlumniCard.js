@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import Image from "next/image";
 import LinkedInIcon from "../../assets/images/linkedin1.png";
 import GoogleScholarsIcon from "../../assets/images/google-scholar.png";

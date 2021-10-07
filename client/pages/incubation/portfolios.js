@@ -4,7 +4,7 @@ import {
   SectionContent,
   SectionTitle,
 } from "../../componentsNew/Section";
-import { API_URL } from "../../lib/constants";
+import { BASE_API_URL } from "../../lib/constants";
 import Image from "next/image";
 import Button from "../../design-system/Button";
 

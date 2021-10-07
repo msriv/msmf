@@ -1,11 +1,11 @@
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@mui/styles";
 import {
   Card,
   CardContent,
   CardActions,
   CardMedia,
   LinearProgress,
-} from "@material-ui/core";
+} from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   root: {

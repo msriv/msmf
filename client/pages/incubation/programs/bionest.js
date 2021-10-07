@@ -6,9 +6,9 @@ import {
   SectionTitle,
 } from "../../../componentsNew/Section";
 import Button from "../../../design-system/Button";
-import { API_URL } from "../../../lib/constants";
+import { BASE_API_URL } from "../../../lib/constants";
 import Image from "next/image";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 
 const Bionest = () => (
   <Layout>
@@ -57,7 +57,7 @@ const Bionest = () => (
         <div className="flex justify-between mt-10">
           <div>
             <Image
-              src={`${API_URL}/assets/incubation/Birac_logo-p27rfaqiz6hjbqiifb22r9n5mzhxb0m9bdbdv2rspq.png`}
+              src={`${BASE_API_URL}/assets/incubation/Birac_logo-p27rfaqiz6hjbqiifb22r9n5mzhxb0m9bdbdv2rspq.png`}
               alt="birac"
               width={219}
               height={157}
@@ -65,7 +65,7 @@ const Bionest = () => (
           </div>
           <div>
             <Image
-              src={`${API_URL}/assets/incubation/villgro_logo.png`}
+              src={`${BASE_API_URL}/assets/incubation/villgro_logo.png`}
               alt="birac"
               width={219}
               height={225}
@@ -73,7 +73,7 @@ const Bionest = () => (
           </div>
           <div>
             <Image
-              src={`${API_URL}/assets/incubation/Narayana Health City Logo 1.png`}
+              src={`${BASE_API_URL}/assets/incubation/Narayana Health City Logo 1.png`}
               alt="birac"
               width={351}
               height={155}

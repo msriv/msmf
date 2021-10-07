@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Tabs } from "@material-ui/core";
+import { Tabs } from "@mui/material";
 
 export function TabPanel({ children, label, value, index, ...other }) {
   return (

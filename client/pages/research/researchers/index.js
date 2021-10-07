@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Paper, Tab } from "@material-ui/core";
+import { Paper, Tab } from "@mui/material";
 import { a11yProps, ColoredTabs, TabPanel } from "../../../componentsNew/Tabs";
 import Layout from "../../../componentsNew/Layout";
 import { Section, SectionTitle } from "../../../componentsNew/Section";
