@@ -23,3 +23,23 @@ export const useFacilities = (id = null) => {
     isValidating,
   };
 };
+
+export const useAssets = (id = null) => {
+  let route = "";
+
+  if (id === null) {
+    route = API_ROUTES.GET_ALL_ASSETS;
+  } else {
+    route = API_ROUTES.FACILITY + id;
+  }
+
+  const { data, error, mutate, isValidating } = useSWR(`${route}`, fetcher_get);
+
+  return {
+    assets: data,
+    isLoading: !error && !data,
+    isError: error,
+    mutate,
+    isValidating,
+  };
+};

@@ -4,6 +4,7 @@ import { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
 import { a11yProps, TabPanel } from "../../../componentsNew/Tabs";
 import ImageUploader from "./ImageUploader";
+import Manager from "./Manager";
 
 const useStyles = makeStyles({
   content: {
@@ -49,7 +50,7 @@ const AssetManager = () => {
               <ImageUploader />
             </TabPanel>
             <TabPanel value={value} index={1}>
-              Manage Assets
+              <Manager />
             </TabPanel>
           </SwipeableViews>
         </Grid>

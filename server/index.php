@@ -12,12 +12,13 @@ header("Access-Control-Allow-Headers: *");
 define ('SITE_ROOT', realpath(dirname(__FILE__)));
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('POST', '/facility', 'facility:create_facility');
-    $r->addRoute('GET', '/facilities', 'facility:get_all_facilities');
-    $r->addRoute('GET', '/facility/{id}', 'facility:get_facility');
-    $r->addRoute('POST', '/upload', 'assets:create_assets');
+    $r->addRoute('POST', '/v1/facility', 'facility:create_facility');
+    $r->addRoute('GET', '/v1/facilities', 'facility:get_all_facilities');
+    $r->addRoute('GET', '/v1/facility/{id}', 'facility:get_facility');
+    $r->addRoute('POST', '/v1/upload', 'assets:create_assets');
+    $r->addRoute('GET', '/v1/assets', 'assets:get_all_assets');
     // The /{title} suffix is optional
-    $r->addRoute('GET', '/articles/{id:\d+}[/{title}]', 'get_article_handler');
+    $r->addRoute('GET', '/v1/articles/{id:\d+}[/{title}]', 'get_article_handler');
 });
 
 // Fetch method and URI from somewhere

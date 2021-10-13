@@ -16,7 +16,11 @@ class AssetsManager {
         switch ($this->handler) {
             case 'create_assets':
             $response = $this->createAssets();
-        break;
+            break;
+
+            case 'get_all_assets':
+            $response = $this->getAllAssets();
+            break;
         }
         header($response['status_code_header']);
         if($response['body']) {
@@ -89,5 +93,25 @@ class AssetsManager {
             $response['body'] = json_encode(array('message' => 'Files Uploaded', 'warning' => 'Some files are already there.'));
             return $response;
         }
+    }
+
+    private function getAllAssets() {
+         $query = "
+            SELECT
+                uid, name, alt, width, height, uri, path, mime
+            FROM
+                assets;
+            ";
+
+        try {
+        $statement = $this->db->query($query);
+        $result = $statement->fetchAll(\PDO::FETCH_ASSOC);
+        } catch (\PDOException $e) {
+        exit($e->getMessage());
+        }
+
+        $response['status_code_header'] = 'HTTP/1.1 200 OK';
+        $response['body'] = json_encode($result);
+        return $response;
     }
 }    
