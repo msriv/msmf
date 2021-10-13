@@ -1,44 +1,51 @@
 <?php
+
 require "./start.php";
-use Src\Controllers\Facility;
+use Src\Controllers\Controller;
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
 header("Access-Control-Max-Age: 3600");
-header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+header("Access-Control-Allow-Headers: *");
 
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$uri = explode( '/', $uri );
 define ('SITE_ROOT', realpath(dirname(__FILE__)));
-echo(SITE_ROOT);
-// endpoints starting with `/post` or `/posts` for GET shows all posts
-// everything else results in a 404 Not Found
-if ($uri[1] !== 'facility') {
-  if($uri[1] !== 'facilities'){
-    header("HTTP/1.1 404 Not Found");
-    exit();
-  }
-}
 
-// endpoints starting with `/posts` for POST/PUT/DELETE results in a 404 Not Found
-if ($uri[1] == 'facilities' and isset($uri[2])) {
-    header("HTTP/1.1 404 Not Found");
-    exit();
-}
+$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
+    $r->addRoute('POST', '/facility', 'facility:create_facility');
+    $r->addRoute('GET', '/facilities', 'facility:get_all_facilities');
+    $r->addRoute('GET', '/facility/{id}', 'facility:get_facility');
+    $r->addRoute('POST', '/upload', 'assets:create_assets');
+    // The /{title} suffix is optional
+    $r->addRoute('GET', '/articles/{id:\d+}[/{title}]', 'get_article_handler');
+});
 
-if ($uri[1] == 'facility' and !isset($uri[2])) {
-  header("HTTP/1.1 404 Not Found");
-  exit();
-}
-// the post id is, of course, optional and must be a number
-$facilityId = null;
-if (isset($uri[2])) {
-    $facilityId = $uri[2];
-}
+// Fetch method and URI from somewhere
+$httpMethod = $_SERVER['REQUEST_METHOD'];
+$uri = $_SERVER['REQUEST_URI'];
 
-$requestMethod = $_SERVER["REQUEST_METHOD"];
+// Strip query string (?foo=bar) and decode URI
+if (false !== $pos = strpos($uri, '?')) {
+    $uri = substr($uri, 0, $pos);
+}
+$uri = rawurldecode($uri);
 
-// pass the request method and post ID to the Post and process the HTTP request:
-$controller = new Facility($dbConnection, $requestMethod, $facilityId);
-$controller->processRequest();
+$routeInfo = $dispatcher->dispatch($httpMethod, $uri);
+switch ($routeInfo[0]) {
+    case FastRoute\Dispatcher::NOT_FOUND:
+        // ... 404 Not Found
+        header("HTTP/1.1 404 Not Found");
+        break;
+    case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
+        $allowedMethods = $routeInfo[1];
+        // ... 405 Method Not Allowed
+        header("HTTP/1.1 405 Method Not Allowed");
+        break;
+    case FastRoute\Dispatcher::FOUND:
+        $handler = $routeInfo[1];
+        $vars = $routeInfo[2];
+        // ... call $handler with $vars
+        $controller = new Controller($dbConnection, $handler, $vars);
+        $controller->processRequest();
+        break;
+}
