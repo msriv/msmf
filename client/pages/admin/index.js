@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Dashboard from "./Dashboard.js";
-import DashboardIcon from "../../componentsNew/Icons/DashboardIcon.svg";
-import Cube from "../../componentsNew/Icons/Cube.svg";
-import ChevronRight from "../../componentsNew/Icons/ChevronRight.svg";
+import DashboardIcon from "../../components/Icons/DashboardIcon.svg";
+import Cube from "../../components/Icons/Cube.svg";
+import ChevronRight from "../../components/Icons/ChevronRight.svg";
 import Facilities from "./Facilities";
 import AssetManager from "./AssetManager";
-import ImageIcon from "../../componentsNew/Icons/Image.svg";
-import Layout from "../../componentsNew/Layout";
+import ImageIcon from "../../components/Icons/Image.svg";
+import Layout from "../../components/Layout";
 
 // Blogs
 // Members
@@ -15,7 +15,7 @@ import Layout from "../../componentsNew/Layout";
 // Contract Features
 
 const Admin = () => {
-  const [component, setComponent] = useState(<Dashboard />);
+  const [components, setComponent] = useState(<Dashboard />);
   const [open, setOpen] = useState(false);
 
   const handleMenu = () => {};
@@ -56,7 +56,7 @@ const Admin = () => {
             <span>Asset Manager</span>
           </div>
         </div>
-        <div className="w-10/12 m-4 p-4">{component}</div>
+        <div className="w-10/12 m-4 p-4">{components}</div>
       </div>
     </Layout>
   );

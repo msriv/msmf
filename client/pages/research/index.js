@@ -1,14 +1,14 @@
-import Carousel from "../../componentsNew/Carousel";
-import ButtonCTA from "../../componentsNew/ButtonCTA";
+import Carousel from "../../components/Carousel";
+import ButtonCTA from "../../components/ButtonCTA";
 import Button from "../../design-system/Button";
 import {
   Section,
   SectionTitle,
   SectionContent,
-} from "../../componentsNew/Section";
-import LandingCTA from "../../componentsNew/LandingCTA";
-import ResearchProgramCard from "../../componentsNew/Cards/ResearchProgramCard";
-import Layout from "../../componentsNew/Layout";
+} from "../../components/Section";
+import LandingCTA from "../../components/LandingCTA";
+import ResearchProgramCard from "../../components/Cards/ResearchProgramCard";
+import Layout from "../../components/Layout";
 
 const Index = () => {
   const imageList = [

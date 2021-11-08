@@ -1,10 +1,10 @@
-import AlumniCard from "../../../componentsNew/Cards/AlumniCard";
-import ContentCard from "../../../componentsNew/Cards/ContentCard";
-import PersonCard from "../../../componentsNew/Cards/PersonCard";
-import PublicationCard from "../../../componentsNew/Cards/PublicationCard";
-import Layout from "../../../componentsNew/Layout";
-import ProgramSection from "../../../componentsNew/ProgramSection";
-import { Section, SectionContent } from "../../../componentsNew/Section";
+import AlumniCard from "../../../components/Cards/AlumniCard";
+import ContentCard from "../../../components/Cards/ContentCard";
+import PersonCard from "../../../components/Cards/PersonCard";
+import PublicationCard from "../../../components/Cards/PublicationCard";
+import Layout from "../../../components/Layout";
+import ProgramSection from "../../../components/ProgramSection";
+import { Section, SectionContent } from "../../../components/Section";
 
 const NeuroOncology = () => (
   <Layout>

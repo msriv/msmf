@@ -1,16 +1,16 @@
-import Carousel from "../../componentsNew/Carousel";
-import ButtonCTA from "../../componentsNew/ButtonCTA";
+import Carousel from "../../components/Carousel";
+import ButtonCTA from "../../components/ButtonCTA";
 import Button from "../../design-system/Button";
 import {
   Section,
   SectionTitle,
   SectionContent,
-} from "../../componentsNew/Section";
-import PhilanthropyCard from "../../componentsNew/Cards/PhilanthropyCard";
-import CampaignCard from "../../componentsNew/Cards/CampaignCard";
-import ImpactCard from "../../componentsNew/Cards/ImpactCard";
-import LandingCTA from "../../componentsNew/LandingCTA";
-import Layout from "../../componentsNew/Layout";
+} from "../../components/Section";
+import PhilanthropyCard from "../../components/Cards/PhilanthropyCard";
+import CampaignCard from "../../components/Cards/CampaignCard";
+import ImpactCard from "../../components/Cards/ImpactCard";
+import LandingCTA from "../../components/LandingCTA";
+import Layout from "../../components/Layout";
 
 const Index = () => {
   const imageList = [

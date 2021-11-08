@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Paper, Tab } from "@mui/material";
-import { a11yProps, ColoredTabs, TabPanel } from "../../../componentsNew/Tabs";
-import Layout from "../../../componentsNew/Layout";
-import { Section, SectionTitle } from "../../../componentsNew/Section";
+import { a11yProps, ColoredTabs, TabPanel } from "../../../components/Tabs";
+import Layout from "../../../components/Layout";
+import { Section, SectionTitle } from "../../../components/Section";
 import { ResearchTeams } from "../../../utils/People";
-import PersonCard from "../../../componentsNew/Cards/PersonCard";
+import PersonCard from "../../../components/Cards/PersonCard";
 import SwipeableViews from "react-swipeable-views";
 
 const People = () => {

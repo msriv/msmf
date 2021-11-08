@@ -1,6 +1,6 @@
-import Layout from "../../../componentsNew/Layout";
-import ProgramSection from "../../../componentsNew/ProgramSection";
-import { Section, SectionContent } from "../../../componentsNew/Section";
+import Layout from "../../../components/Layout";
+import ProgramSection from "../../../components/ProgramSection";
+import { Section, SectionContent } from "../../../components/Section";
 import Button from "../../../design-system/Button";
 
 const HackThePaper = () => (

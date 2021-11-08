@@ -1,9 +1,9 @@
-import Layout from "../../componentsNew/Layout";
+import Layout from "../../components/Layout";
 import {
   Section,
   SectionContent,
   SectionTitle,
-} from "../../componentsNew/Section";
+} from "../../components/Section";
 import { BASE_API_URL } from "../../lib/constants";
 import Image from "next/image";
 import Button from "../../design-system/Button";

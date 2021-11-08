@@ -1,10 +1,10 @@
-import Layout from "../../componentsNew/Layout";
-import Quote from "../../componentsNew/Quote";
+import Layout from "../../components/Layout";
+import Quote from "../../components/Quote";
 import {
   Section,
   SectionContent,
   SectionTitle,
-} from "../../componentsNew/Section";
+} from "../../components/Section";
 
 const Index = () => (
   <Layout>

@@ -4,10 +4,10 @@ import {
   Section,
   SectionTitle,
   SectionContent,
-} from "../../componentsNew/Section";
-import Layout from "../../componentsNew/Layout";
-import IncubationBanner from "../../componentsNew/IncubationBanner";
-import LandingCTA from "../../componentsNew/LandingCTA";
+} from "../../components/Section";
+import Layout from "../../components/Layout";
+import IncubationBanner from "../../components/IncubationBanner";
+import LandingCTA from "../../components/LandingCTA";
 
 const Index = () => {
   return (

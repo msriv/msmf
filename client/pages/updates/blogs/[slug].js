@@ -83,11 +83,7 @@
 // }
 
 const Blog = () => {
-  return (
-    <>
-    Blog
-    </>
-  )
-}
+  return <>Blog</>;
+};
 
-export default Blog
+export default Blog;

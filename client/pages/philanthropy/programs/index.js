@@ -1,5 +1,5 @@
-import Layout from "../../../componentsNew/Layout";
-import ProgramSection from "../../../componentsNew/ProgramSection";
+import Layout from "../../../components/Layout";
+import ProgramSection from "../../../components/ProgramSection";
 import Button from "../../../design-system/Button";
 
 const PhilanthropyPrograms = () => {

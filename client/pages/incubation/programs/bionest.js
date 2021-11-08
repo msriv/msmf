@@ -1,10 +1,10 @@
-import Layout from "../../../componentsNew/Layout";
-import ProgramSection from "../../../componentsNew/ProgramSection";
+import Layout from "../../../components/Layout";
+import ProgramSection from "../../../components/ProgramSection";
 import {
   Section,
   SectionContent,
   SectionTitle,
-} from "../../../componentsNew/Section";
+} from "../../../components/Section";
 import Button from "../../../design-system/Button";
 import { BASE_API_URL } from "../../../lib/constants";
 import Image from "next/image";

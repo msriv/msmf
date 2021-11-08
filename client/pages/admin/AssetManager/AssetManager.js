@@ -2,7 +2,7 @@ import { Box, Grid, Paper, Tab, Tabs } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
-import { a11yProps, TabPanel } from "../../../componentsNew/Tabs";
+import { a11yProps, TabPanel } from "../../../components/Tabs";
 import ImageUploader from "./ImageUploader";
 import Manager from "./Manager";
 

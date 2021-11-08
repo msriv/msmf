@@ -9,6 +9,7 @@ import {
   rejectStyle,
   acceptStyle,
   thumb,
+  thumbRejected,
   thumbInner,
   thumbsContainer,
   img,
@@ -19,6 +20,7 @@ const MAX_FILE_SIZE = 160 * 1024;
 const ImageUploader = () => {
   function sizeValidator(file) {
     if (file.size > MAX_FILE_SIZE) {
+      console.log("File is too large");
       return {
         code: "fileSize",
         message: `File is too large`,
@@ -31,6 +33,7 @@ const ImageUploader = () => {
   const [uploading, setUploading] = useState(false);
   const {
     acceptedFiles,
+    fileRejections,
     getRootProps,
     getInputProps,
     isDragActive,
@@ -92,11 +95,6 @@ const ImageUploader = () => {
     setFiles([]);
   };
 
-  useEffect(() => {
-    () => {
-      revokePreviews();
-    };
-  }, []);
   return (
     <div className="container m-5">
       <div {...getRootProps({ style })}>

@@ -45,6 +45,18 @@ export const thumb = {
   boxSizing: "border-box",
 };
 
+export const thumbRejected = {
+  display: "inline-flex",
+  borderRadius: 2,
+  border: "1px solid red",
+  marginBottom: 8,
+  marginRight: 8,
+  width: 100,
+  height: 100,
+  padding: 4,
+  boxSizing: "border-box",
+};
+
 export const thumbInner = {
   display: "flex",
   minWidth: 0,

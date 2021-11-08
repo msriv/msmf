@@ -1,14 +1,14 @@
-import Carousel from "../../componentsNew/Carousel";
-import ButtonCTA from "../../componentsNew/ButtonCTA";
+import Carousel from "../../components/Carousel";
+import ButtonCTA from "../../components/ButtonCTA";
 import Button from "../../design-system/Button";
 import {
   Section,
   SectionTitle,
   SectionContent,
-} from "../../componentsNew/Section";
-import Layout from "../../componentsNew/Layout";
-import TestsCard from "../../componentsNew/Cards/TestsCard";
-import ContentCard from "../../componentsNew/Cards/ContentCard";
+} from "../../components/Section";
+import Layout from "../../components/Layout";
+import TestsCard from "../../components/Cards/TestsCard";
+import ContentCard from "../../components/Cards/ContentCard";
 
 const Diagnostics = () => {
   const imageList = [

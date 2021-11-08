@@ -1,10 +1,10 @@
-import AlumniCard from "../../../componentsNew/Cards/AlumniCard";
-import ContentCard from "../../../componentsNew/Cards/ContentCard";
-import PersonCard from "../../../componentsNew/Cards/PersonCard";
-import PublicationCard from "../../../componentsNew/Cards/PublicationCard";
-import Layout from "../../../componentsNew/Layout";
-import ProgramSection from "../../../componentsNew/ProgramSection";
-import { Section, SectionContent } from "../../../componentsNew/Section";
+import AlumniCard from "../../../components/Cards/AlumniCard";
+import ContentCard from "../../../components/Cards/ContentCard";
+import PersonCard from "../../../components/Cards/PersonCard";
+import PublicationCard from "../../../components/Cards/PublicationCard";
+import Layout from "../../../components/Layout";
+import ProgramSection from "../../../components/ProgramSection";
+import { Section, SectionContent } from "../../../components/Section";
 
 const TumorImmunology = () => (
   <Layout>
@@ -12,7 +12,7 @@ const TumorImmunology = () => (
       programType={"RESEARCH PROGRAMS"}
       title={"TUMOR IMMUNOLOGY"}
       description={
-        "Over the last two decades there has been a paradigm shift in our perception of cancer therapy. As we know now, neoplasia do not consist only of transformed cells, but contain an abundant and heterogeneous non-transformed component like stromal, endothelial and immune cells. The host immune system can recognize and sometimes react against (pre-) malignant cells as they transform, proliferate and evolve. The knowledge laid the grounds of anticancer immunosurveillance leading to cancer immunotherapy. Recent intense wave of preclinical and clinical investigation culminated in approval of various immunotherapeutic interventions for use in humans. In 2013, the extraordinary clinical success of immunotherapy has won this new method of therapy the title of “Breakthrough of the Year”. Nonetheless, we have just begun to unravel the therapeutic possibilities offered by anticancer immunotherapy."
+        "Over the last two decades there has been a paradigm shift in our perception of cancer therapy. As we know now, neoplasia do not consist only of transformed cells, but contain an abundant and heterogeneous non-transformed components like stromal, endothelial and immune cells. The host immune system can recognize and sometimes react against (pre-) malignant cells as they transform, proliferate and evolve. The knowledge laid the grounds of anticancer immunosurveillance leading to cancer immunotherapy. Recent intense wave of preclinical and clinical investigation culminated in approval of various immunotherapeutic interventions for use in humans. In 2013, the extraordinary clinical success of immunotherapy has won this new method of therapy the title of “Breakthrough of the Year”. Nonetheless, we have just begun to unravel the therapeutic possibilities offered by anticancer immunotherapy."
       }
       noCallToAction
       noImages

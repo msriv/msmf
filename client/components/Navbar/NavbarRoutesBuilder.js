@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
-import Button from "../../design-system/Button";
+import NavCTA from "./NavCTA";
 import { SiteRoutes } from "../../utils/routes";
 
 const RoutesBuilder = (props) => {
@@ -19,21 +19,21 @@ const RoutesBuilder = (props) => {
   }, [pathname]);
 
   return (
-    <div className="flex space-x-20 items-center">
+    <div className="flex space-x-28 items-center">
       {route &&
-        route["sub-routes"]?.map((item) =>
-          item.cta ? (
-            <Button key={item.slug} type={"button"}>
-              {item.page}
-            </Button>
+        route["sub-routes"]?.map((item) => {
+          let classList = "text-lg text-white font-inter-medium cursor-pointer";
+          if (pathname === item.route) {
+            classList += " active-nav";
+          }
+          return item.cta ? (
+            <NavCTA key={item.slug}>{item.page}</NavCTA>
           ) : (
             <Link key={item.slug} href={item.route}>
-              <span className="text-lg text-shark-500 font-inter-medium cursor-pointer">
-                {item.page}
-              </span>
+              <span className={classList}>{item.page}</span>
             </Link>
-          )
-        )}
+          );
+        })}
     </div>
   );
 };

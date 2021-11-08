@@ -83,15 +83,21 @@ export const SiteRoutes = [
         access: "visitor; admin",
       },
       {
-        page: "Portfolios",
-        slug: "portfolios",
-        route: "/incubation/portfolios",
-        access: "visitor; admin",
-      },
-      {
         page: "People",
         slug: "people",
         route: "/incubation/people",
+        access: "visitor; admin",
+      },
+      {
+        page: "Events",
+        slug: "events",
+        route: "/incubation/events",
+        access: "visitor; admin",
+      },
+      {
+        page: "Portfolios",
+        slug: "portfolios",
+        route: "/incubation/portfolios",
         access: "visitor; admin",
       },
       {
