@@ -12,13 +12,20 @@ header("Access-Control-Allow-Headers: *");
 define ('SITE_ROOT', realpath(dirname(__FILE__)));
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('POST', '/v1/facility', 'facility:create_facility');
-    $r->addRoute('GET', '/v1/facilities', 'facility:get_all_facilities');
-    $r->addRoute('GET', '/v1/facility/{id}', 'facility:get_facility');
-    $r->addRoute('POST', '/v1/upload', 'assets:create_assets');
-    $r->addRoute('GET', '/v1/assets', 'assets:get_all_assets');
-    // The /{title} suffix is optional
-    $r->addRoute('GET', '/v1/articles/{id:\d+}[/{title}]', 'get_article_handler');
+    // Auth endpoint 
+    $r->addRoute('GET', '/v1/auth/token', ['auth:generate_token', 'visitor:open']);
+
+    // Facilities Endpoints Suite
+    $r->addGroup("/v1/facilities", function (FastRoute\RouteCollector $rFacilities) {
+        $rFacilities->get("", ['facility:get_all_facilities', "visitor:protected"]);
+        $rFacilities->get("/{id}", ['facility:get_facility', "visitor:protected"]);
+        $rFacilities->post("", ['facility:create_facility', "visitor:protected"]);
+    });
+    // Asset Manager Suite
+    $r->addGroup("/v1/assets", function (FastRoute\RouteCollector $rAssets) {
+        $rAssets->get("", ["assets:get_all_assets", "admin:protected"]);
+        $rAssets->get("/upload", ["assets:create_assets", "admin:protected"]);
+    });
 });
 
 // Fetch method and URI from somewhere
@@ -43,10 +50,12 @@ switch ($routeInfo[0]) {
         header("HTTP/1.1 405 Method Not Allowed");
         break;
     case FastRoute\Dispatcher::FOUND:
-        $handler = $routeInfo[1];
-        $vars = $routeInfo[2];
+        $handler = $routeInfo[1][0];
+        $level_role = explode(":", $routeInfo[1][1]);
+        $role = $level_role[0];
+        $level = $level_role[1];
         // ... call $handler with $vars
-        $controller = new Controller($dbConnection, $handler, $vars);
+        $controller = new Controller($dbConnection, $handler, $level, $role);
         $controller->processRequest();
         break;
 }

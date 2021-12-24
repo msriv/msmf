@@ -1,7 +1,8 @@
 {
   "require": {
     "vlucas/phpdotenv": "^5.3",
-    "nikic/fast-route": "^1.3"
+    "nikic/fast-route": "^1.3",
+    "rbdwllr/reallysimplejwt": "^4.0"
   },
   "autoload": {
     "psr-4": {

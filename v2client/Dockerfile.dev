@@ -1,0 +1,11 @@
+FROM node:12.22.0-alpine
+
+ARG MSMF_CLIENT_ROOT=/msmf
+
+COPY . ${MSMF_CLIENT_ROOT}/v2client
+
+WORKDIR ${MSMF_CLIENT_ROOT}/v2client
+
+RUN yarn install
+
+VOLUME ${MSMF_CLIENT_ROOT}/v2client/node_modules

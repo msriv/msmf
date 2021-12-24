@@ -1,0 +1,24 @@
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Custom CSS */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom Tailwind Component Layer */
+@layer components {
+  .msmf__cta-btn {
+    @apply bg-[#0E4981] rounded px-5 py-2 text-white flex justify-center items-center; /* Root Style */
+    @apply hover:bg-[#0B2D4E]; /* OnHover Style */
+    @apply transition duration-500 ease-in-out /* Transitions */;
+  }
+}

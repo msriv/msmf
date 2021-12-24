@@ -1,0 +1,48 @@
+version: "3.1"
+
+services:
+  db:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.database
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ./server/database/mysqldata:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_HOST=db
+    links:
+      - db
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.server
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - ./server:/server
+    entrypoint: php -S 0.0.0.0:8000
+    links:
+      - db
+    environment:
+      - HOST=server
+  client:
+    build:
+      context: ./v2client
+      dockerfile: Dockerfile.dev
+    image: msmf/client
+    restart: always
+    volumes:
+      - ./v2client:/msmf/v2client
+    ports:
+      - 3000:3000
+    entrypoint: yarn dev
+    links:
+      - server
