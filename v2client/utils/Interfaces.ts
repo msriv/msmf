@@ -26,12 +26,20 @@ export interface IFacility {
 export interface IAPIResponse {
   status: number;
   ok: boolean;
-  message: string;
+  message: any;
 }
 
 export interface ISessionInfo {
-  role: Roles;
+  role: Roles | null;
+  token: string | null;
+  email: string | null;
+  identity: string | null;
+}
+
+export interface IToken {
   token: string;
-  email: string;
-  identity: string;
+}
+
+export interface IRequestBody {
+  [key: string]: string | number | IRequestBody;
 }

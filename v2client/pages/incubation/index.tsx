@@ -1,10 +1,11 @@
 import { SerializedError } from "@reduxjs/toolkit";
+import { NextPage } from "next";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../../redux/store";
 import { getFacility } from "../../redux/thunk/facility";
 
-const Incubation = (): JSX.Element => {
+const Incubation: NextPage = () => {
   const dispatch = useAppDispatch();
 
   const { facilities } = useSelector((store: RootState) => ({

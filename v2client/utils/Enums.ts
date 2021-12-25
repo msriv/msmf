@@ -17,3 +17,11 @@ export enum Roles {
   Editor = "Editor",
   Admin = "Admin",
 }
+
+export enum SessionStorageKeys {
+  UserToken = "user_token",
+}
+
+export enum LocalStorageKeys {
+  UserIdentifier = "user_identifier",
+}

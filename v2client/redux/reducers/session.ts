@@ -1,27 +1,50 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { IFacility } from "../../utils/Interfaces";
-import { getFacility } from "../thunk/facility";
+import { LocalStorageKeys, Roles, SessionStorageKeys } from "../../utils/Enums";
+import { ISessionInfo } from "../../utils/Interfaces";
+import { Storage } from "../../utils/Misc";
+import { getTokenAsVisitor, validateVisitorToken } from "../thunk/session";
 
-const initialState: {
-  facilities: IFacility[];
-} = {
-  facilities: [],
+const initialState: ISessionInfo = {
+  role: null,
+  token: null,
+  email: null,
+  identity: null,
 };
 
-const facilitiesSlice = createSlice({
-  name: "facilities",
+const sessionSlice = createSlice({
+  name: "session",
   initialState,
   reducers: {
-    setFacilities: (state, action) => {
-      return { ...state, facilities: action.payload };
+    setSessionInfo: (state, action) => {
+      return { ...state, ...action.payload };
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(getFacility.fulfilled, (state, action) => {
-      return { ...state, facilities: action.payload };
+    builder.addCase(getTokenAsVisitor.fulfilled, (state, action) => {
+      return {
+        ...state,
+        role: Roles.Visitor,
+        token: action.payload.token,
+        identity: Storage.getItem(LocalStorageKeys.UserIdentifier),
+      };
+    });
+    builder.addCase(validateVisitorToken.fulfilled, (state, action) => {
+      if (action.payload.ok) {
+        return {
+          ...state,
+          role: Roles.Visitor,
+          token: Storage.getItem(SessionStorageKeys.UserToken),
+          identity: Storage.getItem(LocalStorageKeys.UserIdentifier),
+        };
+      } else {
+        return {
+          ...state,
+          token: null,
+        };
+      }
     });
   },
 });
 
-export const { setFacilities } = facilitiesSlice.actions;
-export default facilitiesSlice.reducer;
+export const { setSessionInfo } = sessionSlice.actions;
+export default sessionSlice.reducer;
