@@ -19,10 +19,11 @@ class Controller {
   public function processRequest() {
     $controllerType = $this->handler[0];
     $controllerFunction = $this->handler[1];
-
+    $headers = apache_request_headers();
+    $token = explode(" ", $headers['Authorization'])[1];
     switch ($controllerType) {
         case "auth" : {
-          $authController = new Auth($this->db, $controllerFunction, $this->vars);
+          $authController = new Auth($_POST["user_id"], $controllerFunction, $token);
           $authController->processRequest();
         }
         case "facility" : {
