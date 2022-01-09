@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "AvenirLTPro-Book";
+  src: url("AvenirLTPro/AvenirLTProBook.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirLTPro-Heavy";
+  src: url("AvenirLTPro/AvenirLTProHeavy.otf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}

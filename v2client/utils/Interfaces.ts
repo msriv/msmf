@@ -43,3 +43,14 @@ export interface IToken {
 export interface IRequestBody {
   [key: string]: string | number | IRequestBody;
 }
+
+export interface IAsset {
+  uid: string;
+  name: string;
+  alt: string;
+  width: number;
+  height: number;
+  uri: string;
+  path: string;
+  mime: string;
+}

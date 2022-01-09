@@ -2,7 +2,7 @@ import { SerializedError } from "@reduxjs/toolkit";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { setSessionInfo } from "../../redux/reducers/session";
-import { initStore, RootState, useAppDispatch } from "../../redux/store";
+import { RootState, useAppDispatch } from "../../redux/store";
 import {
   getTokenAsVisitor,
   validateVisitorToken,
@@ -29,9 +29,8 @@ const AppSessionProvider = (props: AuthProviderProps) => {
         .unwrap()
         .then((originalPromiseResult: any) => {
           // handle result here
-          console.log("validating token");
-          if (originalPromiseResult.ok) {
-            setSessionInfo({ token: null });
+          if (!originalPromiseResult.ok) {
+            dispatch(setSessionInfo({ token: null }));
             Storage.removeItem(SessionStorageKeys.UserToken);
           }
         })
@@ -44,8 +43,6 @@ const AppSessionProvider = (props: AuthProviderProps) => {
         .unwrap()
         .then((originalPromiseResult: any) => {
           // handle result here
-          console.log("generated new token");
-          console.log(originalPromiseResult);
           Storage.putItem(
             SessionStorageKeys.UserToken,
             originalPromiseResult.token

@@ -2,3 +2,4 @@
 /database
 /vendor
 composer.lock
+.env

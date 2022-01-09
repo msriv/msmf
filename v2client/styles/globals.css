@@ -1,10 +1,8 @@
+@import "./fonts.css";
 /* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Google Font Imports */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 /* Custom CSS */
 html,
@@ -14,11 +12,44 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+@layer base {
+  .transition-500 {
+    @apply transition duration-500 ease-in-out;
+  }
+}
+
 /* Custom Tailwind Component Layer */
 @layer components {
   .msmf__cta-btn {
-    @apply bg-[#0E4981] rounded px-5 py-2 text-white flex justify-center items-center; /* Root Style */
-    @apply hover:bg-[#0B2D4E]; /* OnHover Style */
-    @apply transition duration-500 ease-in-out /* Transitions */;
+    @apply bg-msmf-base rounded px-8 py-2 text-white text-[23px] flex justify-center items-center; /* Root Style */
+    @apply hover:bg-msmf-dark; /* OnHover Style */
+    @apply transition-500 /* Transitions */;
+  }
+  .msmf__nav-bar {
+    @apply h-32 flex w-full justify-between items-center px-12;
+  }
+  .msmf__nav-list {
+    @apply space-x-24 text-lg;
+  }
+  .msmf__nav-top {
+    @apply absolute top-0 left-0 z-50;
+  }
+  .msmf__nav-item {
+    @apply text-white uppercase cursor-pointer py-2;
+    @apply hover:font-extrabold hover:border-b-2 hover:border-white;
+    @apply transition-500;
+  }
+  .msmf__nav-cta {
+    @apply text-white uppercase px-4 py-3 border rounded border-white;
+    @apply hover:bg-white hover:text-msmf-dark hover:ring-2 hover:ring-gray-900/5;
+    @apply transition-500;
+  }
+  .image-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 39, 80, 0.68) 0%,
+      rgba(0, 25, 51, 0.68) 100%
+    );
+    @apply absolute top-0 left-0 w-screen;
   }
 }

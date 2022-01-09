@@ -4,6 +4,7 @@ import { LocalStorageKeys, Roles, SessionStorageKeys } from "../utils/Enums";
 import { Storage } from "../utils/Misc";
 import facilityReducer from "./reducers/facility";
 import peopleReducer from "./reducers/people";
+import assetsReducer from "./reducers/assets";
 import sessionReducer, { setSessionInfo } from "./reducers/session";
 
 export const store = configureStore({
@@ -11,6 +12,7 @@ export const store = configureStore({
     peopleStore: peopleReducer,
     facilitiesStore: facilityReducer,
     sessionStore: sessionReducer,
+    assetsStore: assetsReducer,
   },
 });
 
@@ -20,13 +22,3 @@ export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
 export const useAppDispatch = () => useDispatch<AppDispatch>();
-
-export const initStore = () => {
-  store.dispatch(
-    setSessionInfo({
-      role: Roles.Visitor,
-      token: Storage.getItem(SessionStorageKeys.UserToken),
-      identity: Storage.getItem(LocalStorageKeys.UserIdentifier),
-    })
-  );
-};

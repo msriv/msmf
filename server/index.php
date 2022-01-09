@@ -28,7 +28,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     // Asset Manager Suite
     $r->addGroup("/v1/assets", function (FastRoute\RouteCollector $rAssets) {
         $rAssets->get("", ["assets:get_all_assets", "admin:protected"]);
-        $rAssets->get("/upload", ["assets:create_assets", "admin:protected"]);
+        $rAssets->post("/upload", ["assets:create_assets", "admin:protected"]);
     });
 });
 

@@ -1,7 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { _getHeaders } from "../../utils/API";
-import { RootState } from "../store";
 
 const getFacility = createAsyncThunk("facilities/getFacility", async (arg) => {
   try {
