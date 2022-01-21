@@ -1,13 +1,5 @@
 FROM php:7.4.27-fpm-alpine3.15
 
-ENV DB_HOST db
-ENV DB_PORT 3306
-ENV DB_DATABASE msmf_global_db
-ENV DB_USERNAME msmf_global_db_admin
-ENV DB_PASSWORD msmf_db_admin@2021
-ENV BASE_URI http://api.ms-mf.org
-
-
 WORKDIR /server
 
 COPY . .

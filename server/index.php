@@ -3,7 +3,7 @@
 require "./start.php";
 use Src\Controllers\Controller;
 error_reporting(0);
-$_POST = json_decode(file_get_contents('php://input' ),true);
+$_POST = json_decode(file_get_contents("php://input"), true);
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
@@ -58,6 +58,7 @@ switch ($routeInfo[0]) {
         $level_role = explode(":", $routeInfo[1][1]);
         $role = $level_role[0];
         $level = $level_role[1];
+        $vars = $routeInfo[2];
         $headers = apache_request_headers();
         // ... call $handler with $vars
         if ($level == "protected" && !isset($headers['Authorization'])) {
@@ -65,7 +66,7 @@ switch ($routeInfo[0]) {
             echo json_encode(array("status" => 401, "message" => "Unauthorized Request"));
             break;
         } else {
-            $controller = new Controller($dbConnection, $handler, $level, $role);
+            $controller = new Controller($dbConnection, $handler, $vars, $level, $role);
             $controller->processRequest();
             break;
         }

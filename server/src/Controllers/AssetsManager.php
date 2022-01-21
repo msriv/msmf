@@ -1,6 +1,8 @@
 <?php
 namespace Src\Controllers;
 
+use FileUpload;
+
 class AssetsManager {
   private $db;
   private $handler;
@@ -29,6 +31,39 @@ class AssetsManager {
     }
 
     private function createAssets() {
+        // $validator = new FileUpload\Validator\Simple('10M', ["image/png", "image/jpg"]);
+        // $pathresolver = new FileUpload\PathResolver\Simple("/assets");
+        // $filesystem = new FileUpload\FileSystem\Simple();
+        // var_dump($_POST, $_FILES["files"]);
+        // $fileupload = new FileUpload\FileUpload($_FILES['files'], $_SERVER);
+
+        // $fileupload->setPathResolver($pathresolver);
+        // $fileupload->setFileSystem($filesystem);
+        // $fileupload->addValidator($validator);
+
+        // list($files, $headers) = $fileupload->processAll();
+
+        // // Outputting it, for example like this
+        // foreach($headers as $header => $value) {
+        //     header($header . ': ' . $value);
+        // }
+
+        // echo json_encode(['files' => $files]);
+
+        // foreach($files as $file){
+        //     //Remeber to check if the upload was completed
+        //     if ($file->completed) {
+        //         echo $file->getRealPath();
+                
+        //         // Call any method on an SplFileInfo instance
+        //         var_dump($file->isFile());
+        //     }
+        // }
+
+        // $fileupload->addCallback('completed', function(FileUpload\File $file) {
+        //     var_dump($file);
+        // });
+
         $num_files = count($_FILES['files']['name']);
         $uploaded_files = 0;
         $target_dir = SITE_ROOT . "/assets/";
@@ -76,22 +111,8 @@ class AssetsManager {
                         exit($e->getMessage());
                     }
 
-                    
                 }
-            } else {
-                $response['status_code_header'] = 'HTTP/1.1 400 Bad Request';
-                $response['body'] = json_encode(array('message' => 'No Files Found'));
-                return $response;
             }
-        }
-        if($uploaded_files == $num_files) {
-            $response['status_code_header'] = 'HTTP/1.1 201 Uploaded';
-            $response['body'] = json_encode(array('message' => 'Files Uploaded'));
-            return $response;
-        }else {
-            $response['status_code_header'] = 'HTTP/1.1 201 Uploaded';
-            $response['body'] = json_encode(array('message' => 'Files Uploaded', 'warning' => 'Some files are already there.'));
-            return $response;
         }
     }
 

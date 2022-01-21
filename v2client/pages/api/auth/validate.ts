@@ -8,11 +8,13 @@ import {
   _getHeaders,
   _getHeadersServer,
 } from "../../../utils/API";
+import { cors } from "../../../utils/Middlewares";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Promise<IToken> | IAPIResponse>
 ) {
+  await cors(req, res);
   try {
     const response = await axios.get(
       createRoute(ServerRoutes.BASE_ROUTE, ServerRoutes.AuthRoutes.Validate),

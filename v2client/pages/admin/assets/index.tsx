@@ -5,13 +5,11 @@ import UploadAssetDialog from "../../../components/Admin/Assets/UploadAssetDialo
 const AssetManager = () => {
   return (
     <AdminLayout>
-      <>
-        <div className="flex justify-between">
-          <p className="font-avenir-book text-lg">Asset Manager</p>
-          <UploadAssetDialog />
-        </div>
-        <AssetsTable assets={[]} />
-      </>
+      <div className="flex justify-between">
+        <p className="font-avenir-book text-lg">Asset Manager</p>
+        <UploadAssetDialog />
+      </div>
+      <AssetsTable assets={[]} />
     </AdminLayout>
   );
 };

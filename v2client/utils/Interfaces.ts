@@ -1,4 +1,4 @@
-import { Roles } from "./Enums";
+import { BookingDuration, FacilityCategories, Roles } from "./Enums";
 
 export interface IPerson {
   name: string;
@@ -14,13 +14,13 @@ export interface ITeam {
 }
 
 export interface IFacility {
-  uid: string;
+  uid?: string;
   particulars: string;
-  category: string;
+  category: FacilityCategories;
   charges: string;
-  duration: string;
+  duration: BookingDuration;
   remarks: string;
-  image: string;
+  image?: string;
 }
 
 export interface IAPIResponse {
@@ -53,4 +53,11 @@ export interface IAsset {
   uri: string;
   path: string;
   mime: string;
+}
+
+export interface ITestimonial {
+  name: string;
+  company: string;
+  avatar: string;
+  testimonialContent: string;
 }

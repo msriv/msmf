@@ -2,7 +2,7 @@ import AdminNavbar from "./Navbar";
 import Sidebar from "./Sidebar";
 
 interface AdminLayoutProps {
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
 const AdminLayout = (props: AdminLayoutProps) => {

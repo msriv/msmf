@@ -20,6 +20,8 @@ services:
     links:
       - db
   server:
+    env_file:
+      - ./server/.env
     build:
       context: ./server
       dockerfile: Dockerfile.server

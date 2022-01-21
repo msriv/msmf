@@ -15,9 +15,9 @@ const fetchAssets = createAsyncThunk("assets/getAssets", async (arg) => {
 
 const createAssets = createAsyncThunk(
   "assets/createAssets",
-  async (arg: any) => {
+  async (formData: FormData) => {
     try {
-      const response = await axios.post("/api/assets/upload", arg, {
+      const response = await axios.post("/api/assets/upload", formData, {
         headers: _getHeaders(),
       });
       return response.data;
