@@ -45,14 +45,14 @@ export interface IRequestBody {
 }
 
 export interface IAsset {
-  uid: string;
-  name: string;
-  alt: string;
-  width: number;
-  height: number;
-  uri: string;
+  id: string;
+  fileName: string;
+  originalName: string;
+  mimeType: string;
   path: string;
-  mime: string;
+  uri: string;
+  createdAt: string;
+  updateAt: string;
 }
 
 export interface ITestimonial {

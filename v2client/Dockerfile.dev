@@ -8,6 +8,6 @@ WORKDIR ${MSMF_CLIENT_ROOT}/v2client
 
 RUN yarn install
 
-ENV SERVER "http://server:8000/v1"
+ENV SERVER "http://localhost:49200/v1"
 
 VOLUME ${MSMF_CLIENT_ROOT}/v2client/node_modules

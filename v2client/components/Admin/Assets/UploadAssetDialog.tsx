@@ -51,7 +51,7 @@ const UploadAssetDialog = () => {
   const uploadFiles = (e: any) => {
     e.preventDefault();
     let formData = new FormData();
-    acceptedFiles.forEach((file: File) => formData.append("files[]", file));
+    acceptedFiles.forEach((file: File) => formData.append("assets", file));
     dispatch(createAssets(formData))
       .unwrap()
       .then((originalPromiseResult: any) => {

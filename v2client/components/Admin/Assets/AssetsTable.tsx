@@ -5,13 +5,18 @@ interface AssetTableProps {
 }
 const AssetsTable = (props: AssetTableProps) => {
   const { assets } = props;
+
+  const copyToClipboard = async (uri: string) => {
+    await navigator.clipboard.writeText(uri);
+    alert("URI Copied");
+  };
+
   return assets && assets.length ? (
     <table className="table-auto">
       <thead>
         <tr>
           <th>Thumbnail</th>
           <th>Name</th>
-          <th>Dimensions</th>
           <th>Link</th>
         </tr>
       </thead>
@@ -19,12 +24,11 @@ const AssetsTable = (props: AssetTableProps) => {
         {assets.map((item, key) => (
           <tr>
             <td>
-              <img src={item.uri} className="w-4 h-4" alt={item.alt} />
+              <img src={item.uri} className="w-8 h-8" alt={item.originalName} />
             </td>
-            <td>{item.name}</td>
-            <td>{`${item.width} x ${item.height}`}</td>
+            <td>{item.fileName}</td>
             <td>
-              <button>
+              <button onClick={() => copyToClipboard(item.uri)}>
                 <span className="material-icons-round">link</span>
               </button>
             </td>

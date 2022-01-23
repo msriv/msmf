@@ -29,7 +29,11 @@ const assetsSlice = createSlice({
       return { ...state, isLoading: true };
     });
     builder.addCase(createAssets.fulfilled, (state, action) => {
-      return { ...state, isLoading: false, assets: action.payload };
+      return {
+        ...state,
+        isLoading: false,
+        assets: [...state.assets, ...action.payload],
+      };
     });
   },
 });

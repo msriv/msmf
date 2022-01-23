@@ -4,7 +4,7 @@ import { SessionStorageKeys } from "./Enums";
 import { Storage } from "./Misc";
 
 export namespace ServerRoutes {
-  export const BASE_ROUTE = process.env.SERVER || "http://localhost:8000/v1";
+  export const BASE_ROUTE = process.env.SERVER || "http://localhost:49200/v1";
   export enum AuthRoutes {
     GetToken = "/auth/token",
     Validate = "/auth/validate",
@@ -21,7 +21,7 @@ export namespace ServerRoutes {
   }
 }
 export namespace ClientRoutes {
-  export const BASE_ROUTE = process.env.SERVER || "http://localhost:8000/v1";
+  export const BASE_ROUTE = process.env.SERVER || "http://localhost:49200/v1";
   // export enum AssetRoutes {
   //   GetAsset = "/auth/token",
   //   Validate = "/auth/validate",
@@ -50,9 +50,9 @@ export const _getHeaders = () => {
 };
 
 export const _getHeadersServer = (req: NextApiRequest) => {
-  delete req.headers["content-type"];
   return {
     "Access-Control-Allow-Origin": "*",
     Authorization: req.headers.authorization!,
+    "Content-Type": req.headers["content-type"] || "application/json",
   };
 };
