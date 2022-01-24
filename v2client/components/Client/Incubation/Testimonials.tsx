@@ -21,7 +21,7 @@ const testimonialList: ITestimonial[] = [
     name: "Dr. Jyotirmayee Dash",
     company: "Teralumen",
     testimonialContent:
-      "We have developed our imaging device and are about to start with clinical validation. We are looking forward to working with MSMF for our trials in a clinical environment. We have already spoken to several doctors at MSMF regarding the potential of our device and the discussions have been very promising. We are confident that with the advice and guidance from MSMF, we will be able to achieve our targets very soon.",
+      "We have not developed our imaging device and are about to start with clinical validation. We are looking forward to working with MSMF for our trials in a clinical environment. We have already spoken to several doctors at MSMF regarding the potential of our device and the discussions have been very promising. We are confident that with the advice and guidance from MSMF, we will be able to achieve our targets very soon.",
     avatar: "/assets/images/Incubation/Ellipse 2.png",
   },
 ];
@@ -36,8 +36,8 @@ const Testimonials = () => {
           </span>
         }
       />
-      <div className="relative w-screen h-[612px]">
-        <div id="overlay" className="image-overlay flex flex-col h-[612px]">
+      <div className="relative w-screen h-[884px]">
+        <div id="overlay" className="image-overlay flex h-[884px] p-8">
           <TestimonialList list={testimonialList} />
         </div>
         <img

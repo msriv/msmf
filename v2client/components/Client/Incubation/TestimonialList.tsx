@@ -15,29 +15,61 @@ const TestimonialList = (props: TestimonialListProps) => {
   }, []);
 
   const moveForward = () => {
-    setListState((prevState) => [prevState[0] + 1, prevState[1] + 1]);
+    setListState((prevState) =>
+      prevState[1] < list.length - 1
+        ? [prevState[0] + 1, prevState[1] + 1]
+        : [list.length - 2, list.length - 1]
+    );
   };
 
   const moveBackward = () => {
-    setListState((prevState) => [prevState[0] - 1, prevState[1] - 1]);
+    setListState((prevState) =>
+      prevState[0] > 0 ? [prevState[0] - 1, prevState[1] - 1] : [0, 1]
+    );
   };
 
   return (
-    <div className="w-full flex items-center justify-between">
-      <div onClick={moveBackward}>Arrow Left</div>
+    <div className="w-full flex items-center justify-around">
+      <div
+        onClick={moveBackward}
+        className="flex items-center justify-center w-[68px] h-[68px] rounded-full border-2 border-white cursor-pointer"
+      >
+        <span className="material-icons-round text-6xl w-[68px] h-[68px] text-white leading-[1.1]">
+          chevron_left
+        </span>
+      </div>
       <div className="flex justify-around items-center">
         {list.map((TM: ITestimonial, key: number) =>
           listState.includes(key) ? (
             <div
               key={key}
-              className="w-5/12 p-4 bg-white border border-gray-300 ring-1 ring-gray-900/5 rounded "
+              className="relative w-5/12 p-10 bg-white rounded max-h-max z-10 tooltip-arrow h-[550px] mb-40"
             >
-              <span>{TM.testimonialContent}</span>
+              <div className="absolute w-10 h-10 bg-white top-[96%] left-[10%] rotate-45 transform skew-x-12 skew-y-12"></div>
+              <div className="flex items-center absolute top-[108%] left-[0%] space-x-4">
+                <img
+                  src={TM.avatar}
+                  alt="person"
+                  className=" w-40 h-40 rounded-full"
+                />
+                <div className="w-full">
+                  <p className="text-white text-3xl font-bold">{TM.name}</p>
+                  <p className="uppercase text-white text-3xl">{TM.company}</p>
+                </div>
+              </div>
+              <p className="text-xl">{TM.testimonialContent}</p>
             </div>
           ) : null
         )}
       </div>
-      <div onClick={moveForward}>Arrow Right</div>
+      <div
+        onClick={moveForward}
+        className="flex items-center justify-center w-[68px] h-[68px] rounded-full border-2 border-white cursor-pointer"
+      >
+        <i className="material-icons-round text-6xl text-white w-[68px] h-[68px] leading-[1.1]">
+          chevron_right
+        </i>
+      </div>
     </div>
   );
 };

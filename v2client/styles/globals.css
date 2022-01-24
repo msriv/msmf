@@ -28,6 +28,9 @@ body {
   .msmf__nav-bar {
     @apply h-32 flex w-full justify-between items-center px-12;
   }
+  .msmf__nav-bar-bg {
+    @apply bg-msmf-base;
+  }
   .msmf__nav-list {
     @apply space-x-24 text-lg;
   }
@@ -40,7 +43,7 @@ body {
     @apply transition-500;
   }
   .msmf__nav-cta {
-    @apply text-white uppercase px-4 py-3 border rounded border-white;
+    @apply text-white uppercase cursor-pointer px-4 py-3 border rounded border-white;
     @apply hover:bg-white hover:text-msmf-dark hover:ring-2 hover:ring-gray-900/5;
     @apply transition-500;
   }
@@ -52,4 +55,12 @@ body {
     );
     @apply absolute top-0 left-0 w-screen;
   }
+  .msmf__content-card {
+    @apply bg-white border-t-8 shadow-md rounded;
+    @apply my-8 px-16 pb-16 pt-10;
+  }
+  /* .tooltip-arrow::after {
+    content: "";
+    @apply absolute w-6 h-6 bg-white top-[95%] left-[10%] rotate-45 -z-[1];
+  } */
 }

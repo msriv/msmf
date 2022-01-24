@@ -14,50 +14,58 @@ const Incubatees = () => {
         <div className="flex flex-wrap justify-center items-center w-full mt-10">
           <div className="flex justify-center w-3/12 my-2">
             <img
-              src="/assets/images/Incubation/FSD logo 1.png"
+              src="/assets/images/Incubation/FSD logo.png"
               alt="FSD logo"
+              className="w-6/12"
             />
           </div>
           <div className="flex justify-center w-3/12 my-2">
             <img
-              src="/assets/images/Incubation/SIAMAF 1.png"
+              src="/assets/images/Incubation/SIAMAF.jpg"
               alt="SIAMAF logo"
+              className="w-10/12"
             />
           </div>
           <div className="flex justify-center w-3/12 my-2">
             <img
-              src="/assets/images/Incubation/Thermaissance Logo - 1.png"
+              src="/assets/images/Incubation/Thermaissance Logo -.png"
               alt="Thermaissance logo"
+              className="w-10/12"
             />
           </div>
           <div className="flex justify-center w-3/12 my-2">
             <img
-              src="/assets/images/Incubation/logo_farcast_horizontal_4C 1.png"
+              src="/assets/images/Incubation/logo_farcast_horizontal_4C.jpg"
               alt="Farcast logo"
+              className="w-10/12"
             />
           </div>
           <div className="flex justify-center w-3/12 my-2">
             <img
-              src="/assets/images/Incubation/tutle logo 1.png"
+              src="/assets/images/Incubation/tutle logo.jpg"
               alt="Tutle logo"
+              className="w-8/12"
             />
           </div>
           <div className="flex justify-center w-3/12 my-2">
             <img
-              src="/assets/images/Incubation/64 Codon - Grey (1) 1.png"
+              src="/assets/images/Incubation/64 Codon - Grey (1).png"
               alt="64 Codon logo"
+              className="w-10/12"
             />
           </div>
           <div className="flex justify-center w-3/12 my-2">
             <img
-              src="/assets/images/Incubation/TeraLumen Logo Final 1.png"
+              src="/assets/images/Incubation/TeraLumen Logo ARC.png"
               alt="TeraLumen logo"
+              className="w-10/12"
             />
           </div>
           <div className="flex justify-center w-3/12 my-2">
             <img
-              src="/assets/images/Incubation/Logo white owl(Oxyliv) 1.png"
+              src="/assets/images/Incubation/Logo white owl(Oxyliv).JPG"
               alt="Oxyliv logo"
+              className="w-10/12"
             />
           </div>
         </div>
