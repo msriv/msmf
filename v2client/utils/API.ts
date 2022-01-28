@@ -19,6 +19,10 @@ export namespace ServerRoutes {
     Assets = "/assets",
     Upload = "/assets/upload",
   }
+
+  export enum IncubationRoutes {
+    Incubatees = "/incubation/incubatees",
+  }
 }
 export namespace ClientRoutes {
   export const BASE_ROUTE = process.env.SERVER || "http://localhost:49200/v1";
@@ -34,6 +38,7 @@ export const createRoute = (
     | ServerRoutes.AuthRoutes
     | ServerRoutes.FacilitiesRoutes
     | ServerRoutes.AssetRoutes
+    | ServerRoutes.IncubationRoutes
 ) => {
   return baseRoute + endpoint;
 };
