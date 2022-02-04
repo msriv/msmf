@@ -9,6 +9,9 @@ interface LayoutProps {
 const Layout = (props: LayoutProps) => {
   const router = useRouter();
   const { children } = props;
+  if (document) {
+    import("tw-elements");
+  }
   return (
     <div>
       {router.pathname.split("/")[1] !== "admin" ? <Navbar /> : null}

@@ -1,7 +1,9 @@
+import React from "react";
+
 interface ImageListItemProps {
   dir?: "rtl" | "ltr";
   title: string;
-  content: string;
+  content: string | React.ReactNode;
   vector: { src: string; alt: string };
 }
 
@@ -26,7 +28,7 @@ const ImageListItem = (props: ImageListItemProps) => {
         </p>
       </div>
       <p
-        className={`prose prose-xl font-normal ${
+        className={`prose prose-xl max-w-full font-normal ${
           dir && dir === "rtl" ? "text-right" : "text-left"
         }`}
       >

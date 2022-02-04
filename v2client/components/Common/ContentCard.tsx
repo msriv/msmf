@@ -12,9 +12,26 @@ const ContentCard = (props: ContentCardProps) => {
   useEffect(() => {
     const vertical = router.pathname.split("/")[1];
     switch (vertical) {
-      case "incubation": {
-        setThemeColor("border-incubation");
-      }
+      case "incubation":
+        {
+          setThemeColor("border-incubation");
+        }
+        break;
+      case "adrc":
+        {
+          setThemeColor("border-adrc");
+        }
+        break;
+      case "philanthropy":
+        {
+          setThemeColor("border-philanthropy");
+        }
+        break;
+      case "research":
+        {
+          setThemeColor("border-research");
+        }
+        break;
       default: {
         setThemeColor("border-msmf-base");
       }

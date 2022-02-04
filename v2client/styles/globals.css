@@ -10,6 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
+  background-color: #fbfbfb;
 }
 
 @layer base {
@@ -22,7 +23,12 @@ body {
 @layer components {
   .msmf__cta-btn {
     @apply bg-msmf-base rounded px-8 py-2 text-white text-[23px] flex justify-center items-center; /* Root Style */
-    @apply hover:bg-msmf-dark; /* OnHover Style */
+    @apply hover:bg-msmf-dark hover:shadow-lg; /* OnHover Style */
+    @apply transition-500 /* Transitions */;
+  }
+  .msmf__secondary-btn {
+    @apply bg-transparent rounded px-8 py-2 text-[#171717] border border-[#171717] text-[23px] flex justify-center items-center; /* Root Style */
+    @apply hover:bg-[#171717] hover:text-white; /* OnHover Style */
     @apply transition-500 /* Transitions */;
   }
   .msmf__nav-bar {
@@ -32,7 +38,7 @@ body {
     @apply bg-msmf-base;
   }
   .msmf__nav-list {
-    @apply space-x-24 text-lg;
+    @apply space-x-24 text-lg flex items-center;
   }
   .msmf__nav-top {
     @apply absolute top-0 left-0 z-50;
@@ -57,7 +63,7 @@ body {
   }
   .msmf__content-card {
     @apply bg-white border-t-8 shadow-md rounded;
-    @apply my-8 px-16 pb-16 pt-10;
+    @apply my-8 px-16 pb-14 pt-10;
   }
 
   .timeline {
@@ -111,5 +117,21 @@ body {
     z-index: 1;
     left: 0%;
     background-color: black;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    @apply mx-3;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 9999px;
+    border: 1px solid white;
+    background: transparent;
+  }
+
+  .carousel-indicators .active {
+    background-color: #fff;
+  }
+  .accordion-button {
+    border: none;
   }
 }
