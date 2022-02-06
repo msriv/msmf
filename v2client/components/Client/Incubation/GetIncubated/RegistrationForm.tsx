@@ -41,8 +41,8 @@ const RegistrationForm = () => {
       email: Yup.string()
         .email("Should be an email")
         .required("Email ID Missing!"),
-      phoneNumber: Yup.number()
-        .max(10, "Add a valid mobile number")
+      phoneNumber: Yup.string()
+        .max(13, "Add a valid mobile number")
         .required("Phone Number Missing!"),
       linkedInProfile: Yup.string()
         .url("Must be a URL")
@@ -72,7 +72,7 @@ const RegistrationForm = () => {
       otherDetails: Yup.string(),
       pitchDeck: Yup.mixed().required("Pitch Deck Missing"),
       logo: Yup.mixed().required(),
-      gdpr: Yup.bool().required("GDPR missing"),
+      gdpr: Yup.bool().oneOf([true], "Must accept GDPR"),
     }),
     onSubmit: async (values: any, { resetForm }) => {
       const formData = new FormData();
@@ -89,8 +89,7 @@ const RegistrationForm = () => {
           ),
           formData
         );
-        console.log(response);
-        resetForm();
+        resetForm({ ...formik.initialValues });
       } catch (error) {
         console.error(error);
       }
@@ -108,7 +107,11 @@ const RegistrationForm = () => {
           id="orgName"
           placeholder="Enter Organisation Name..."
           value={formik.values.orgName}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.orgName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -122,7 +125,11 @@ const RegistrationForm = () => {
           id="applicantName"
           placeholder="Your name?"
           value={formik.values.applicantName}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.applicantName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -135,7 +142,11 @@ const RegistrationForm = () => {
             id="email"
             placeholder="Organisation Email Address..."
             value={formik.values.email}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.email &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -147,7 +158,11 @@ const RegistrationForm = () => {
             id="phoneNumber"
             placeholder="Mobile Number of Point of Contact"
             value={formik.values.phoneNumber}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors && formik.errors.phoneNumber
+                ? "border-red-500 border-2 ring-2 ring-red-200"
+                : ""
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -161,7 +176,11 @@ const RegistrationForm = () => {
             id="linkedInProfile"
             placeholder="Organisation LinkedIn Profile"
             value={formik.values.linkedInProfile}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.linkedInProfile &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -175,7 +194,11 @@ const RegistrationForm = () => {
             id="alternateContact"
             placeholder="Any other way to contact?"
             value={formik.values.alternateContact}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.alternateContact &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -188,7 +211,11 @@ const RegistrationForm = () => {
           id="stage"
           placeholder="Enter Startup Stage"
           value={formik.values.stage}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.stage &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -222,6 +249,9 @@ const RegistrationForm = () => {
             <span className="text-gray-700 text-xl ml-4">No</span>
           </label>
         </div>
+        {formik.errors && formik.errors.isNonProfit && (
+          <p className="text-red-500 text-base">{formik.errors.isNonProfit}</p>
+        )}
       </div>
       <div className="mt-6">
         <span className="text-gray-700 text-xl">
@@ -256,6 +286,11 @@ const RegistrationForm = () => {
             <span className="text-gray-700 text-xl ml-4">No</span>
           </label>
         </div>
+        {formik.errors && formik.errors.mcaRegistration && (
+          <p className="text-red-500 text-base">
+            {formik.errors.mcaRegistration}
+          </p>
+        )}
       </div>
       <div className="flex flex-grow-1 space-x-10 w-full">
         <label className="block mt-6 w-full" htmlFor="incorporationYear">
@@ -266,7 +301,11 @@ const RegistrationForm = () => {
             id="incorporationYear"
             placeholder="Enter year of incorporation"
             value={formik.values.incorporationYear}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.orgName &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -278,7 +317,11 @@ const RegistrationForm = () => {
             id="headquarters"
             placeholder="Your headquarter's based out of..."
             value={formik.values.headquarters}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.orgName &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -292,7 +335,11 @@ const RegistrationForm = () => {
             id="sector"
             placeholder="Enter sector..."
             value={formik.values.sector}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.orgName &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -304,7 +351,11 @@ const RegistrationForm = () => {
             id="subSector"
             placeholder="Enter sub-sector..."
             value={formik.values.subSector}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.orgName &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -318,7 +369,11 @@ const RegistrationForm = () => {
           id="customerProblem"
           rows={3}
           value={formik.values.customerProblem}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.orgName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -331,7 +386,11 @@ const RegistrationForm = () => {
           id="solution"
           rows={3}
           value={formik.values.solution}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.orgName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -344,7 +403,11 @@ const RegistrationForm = () => {
           id="solutionBetter"
           rows={3}
           value={formik.values.solutionBetter}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.orgName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -357,7 +420,11 @@ const RegistrationForm = () => {
           id="primaryBeneficiary"
           rows={3}
           value={formik.values.primaryBeneficiary}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.orgName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -370,7 +437,11 @@ const RegistrationForm = () => {
           id="milestone"
           rows={3}
           value={formik.values.milestone}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.orgName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -383,7 +454,11 @@ const RegistrationForm = () => {
           id="reasonToIncubate"
           rows={3}
           value={formik.values.reasonToIncubate}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.orgName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -417,6 +492,9 @@ const RegistrationForm = () => {
             <span className="text-gray-700 text-xl ml-4">No</span>
           </label>
         </div>
+        {formik.errors && formik.errors.earlierFunds && (
+          <p className="text-red-500 text-base">{formik.errors.earlierFunds}</p>
+        )}
       </div>
       {formik.values.earlierFunds ? (
         <label className="block mt-6" htmlFor="totalEarlierFunds">
@@ -426,7 +504,11 @@ const RegistrationForm = () => {
             name="totalEarlierFunds"
             id="totalEarlierFunds"
             value={formik.values.totalEarlierFunds}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.orgName &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -461,6 +543,9 @@ const RegistrationForm = () => {
             <span className="text-gray-700 text-xl ml-4">No</span>
           </label>
         </div>
+        {formik.errors && formik.errors.anyPatent && (
+          <p className="text-red-500 text-base">{formik.errors.anyPatent}</p>
+        )}
       </div>
       {formik.values.anyPatent ? (
         <label className="block mt-6" htmlFor="aboutPatent">
@@ -472,7 +557,11 @@ const RegistrationForm = () => {
             id="aboutPatent"
             rows={3}
             value={formik.values.aboutPatent}
-            className="mt-1 block w-full text-xl"
+            className={`mt-1 block w-full text-xl ${
+              formik.errors &&
+              formik.errors.orgName &&
+              "border-red-500 border-2 ring-2 ring-red-200"
+            }`}
             onChange={formik.handleChange}
           />
         </label>
@@ -484,7 +573,11 @@ const RegistrationForm = () => {
           id="otherDetails"
           rows={3}
           value={formik.values.otherDetails}
-          className="mt-1 block w-full text-xl"
+          className={`mt-1 block w-full text-xl ${
+            formik.errors &&
+            formik.errors.orgName &&
+            "border-red-500 border-2 ring-2 ring-red-200"
+          }`}
           onChange={formik.handleChange}
         />
       </label>
@@ -494,7 +587,11 @@ const RegistrationForm = () => {
           type={"file"}
           name="pitchDeck"
           id="pitchDeck"
-          className="mt-1 block w-full text-xl p-4 border border-[#6b7280] "
+          className={`mt-1 block w-full text-xl p-4 ${
+            formik.errors && formik.errors.pitchDeck
+              ? "border-red-500 border-2 ring-2 ring-red-200"
+              : "border border-[#6b7280]"
+          }`}
           value={formik.values.pitchDeck?.filename}
           onChange={(event: ChangeEvent<HTMLInputElement>) => {
             formik.setFieldValue(
@@ -510,7 +607,11 @@ const RegistrationForm = () => {
           type={"file"}
           name="logo"
           id="logo"
-          className="mt-1 block w-full text-xl p-4 border border-[#6b7280] "
+          className={`mt-1 block w-full text-xl p-4 ${
+            formik.errors && formik.errors.logo
+              ? "border-red-500 border-2 ring-2 ring-red-200"
+              : "border border-[#6b7280]"
+          }`}
           value={formik.values.logo?.filename}
           onChange={(event: ChangeEvent<HTMLInputElement>) => {
             formik.setFieldValue(
@@ -534,11 +635,11 @@ const RegistrationForm = () => {
             Yes, I agree with the privacy policy and terms and conditions.
           </span>
         </label>
+        {formik.errors && formik.errors.gdpr && (
+          <p className="text-red-500 text-base">{formik.errors.gdpr}</p>
+        )}
       </div>
       <div className="flex justify-center mt-12">
-        {formik.errors && (
-          <p className="text-center text-red-500">{formik.errors}</p>
-        )}
         <button type="submit" className="msmf__cta-btn">
           Register
         </button>
