@@ -1,19 +1,20 @@
+import { ReactNode } from "react";
+
 interface SectionProps {
-  children: React.ReactNode;
-  [key: string]: any;
+  children: ReactNode;
 }
 const Section = (props: SectionProps) => {
   const { children, ...rest } = props;
 
   return (
-    <div className="mt-32 w-full" {...rest}>
+    <section className="mt-32 w-full" {...rest}>
       {children}
-    </div>
+    </section>
   );
 };
 
 interface SectionTitleProps {
-  title: string | JSX.Element;
+  title: string | ReactNode;
 }
 
 const SectionTitle = (props: SectionTitleProps) => {
@@ -28,14 +29,14 @@ const SectionTitle = (props: SectionTitleProps) => {
 };
 
 interface SectionContentProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const SectionContent = (props: SectionContentProps) => {
   const { children } = props;
 
   return (
-    <div className="container mx-auto">
+    <div className="md:container mx-auto">
       <div className="prose prose-xl max-w-full">{children}</div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { Section, SectionContent, SectionTitle } from "../../Common/Section";
 import ImpactCard from "./ImpactCard";
 
@@ -37,14 +38,21 @@ const campaignList = [
   },
 ];
 
-const Campaigns = () => {
+interface CampaignsProp {
+  title?: ReactNode;
+}
+
+const Campaigns = (props: CampaignsProp) => {
+  const { title } = props;
   return (
     <Section>
       <SectionTitle
         title={
-          <span>
-            Our <b>Latest Campaigns</b>
-          </span>
+          title || (
+            <span>
+              Our <b>Latest Campaigns</b>
+            </span>
+          )
         }
       />
       <SectionContent>

@@ -16,7 +16,7 @@ const ImageListItem = (props: ImageListItemProps) => {
           dir && dir === "rtl" ? "flex-row-reverse" : "flex-row"
         }`}
       >
-        <div className="w-[87px] h-[87px] border rounded-full flex justify-center items-center border-[#535050]">
+        <div className="w-[87px] h-[87px] min-w-[87px] min-h-[87px] border rounded-full flex justify-center items-center border-[#535050]">
           <img {...vector} className="object-cover w-[45px] h-[45px]" />
         </div>
         <p
@@ -27,13 +27,13 @@ const ImageListItem = (props: ImageListItemProps) => {
           {title}
         </p>
       </div>
-      <p
+      <div
         className={`prose prose-xl max-w-full font-normal ${
           dir && dir === "rtl" ? "text-right" : "text-left"
         }`}
       >
         {content}
-      </p>
+      </div>
     </div>
   );
 };

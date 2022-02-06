@@ -5,11 +5,12 @@ import { ISitemap, Sitemap } from "../../../utils/Sitemap";
 
 interface DropDownProps {
   route: ISitemap;
+  subRoute?: string;
   dropMenu: Array<ISitemap>;
 }
 
 const DropDown = (props: DropDownProps) => {
-  const { route, dropMenu } = props;
+  const { route, subRoute, dropMenu } = props;
   const dropDownRef = useRef(null);
   const [showDropMenu, setShowDropMenu] = useState<boolean>(false);
 
@@ -28,19 +29,20 @@ const DropDown = (props: DropDownProps) => {
   };
 
   return (
-    <div key={route.slug} className="relative">
-      <p
-        onClick={handleToggleDropMenu}
-        className={`${
-          route.cta ? "msmf__nav-cta" : "msmf__nav-item"
-        } font-avenir-book flex items-center`}
-      >
+    <div
+      key={route.slug}
+      onClick={handleToggleDropMenu}
+      className={`relative ${
+        subRoute && subRoute === route.slug ? "nav-active" : ""
+      }`}
+    >
+      <div className={`msmf__nav-item font-avenir-book flex items-center`}>
         <span>{route.page}</span>
         <span className="material-icons-round">arrow_drop_down</span>
-      </p>
+      </div>
       {showDropMenu ? (
         <div
-          className="absolute top-10 left-0 flex flex-col divide-y-2 w-40 bg-white shadow rounded z-[9999]"
+          className="absolute top-10 left-0 flex flex-col divide-y-2 min-w-fit w-full bg-white shadow rounded z-[9999]"
           id="drop-menu"
           ref={dropDownRef}
         >
@@ -68,14 +70,20 @@ const Navbar = () => {
   const router = useRouter();
   const [currentPath, setCurrentPath] = useState<string>("");
   const [isSubRoute, setIsSubRoute] = useState<boolean>(false);
+  const [subRoute, setSubRoute] = useState("");
 
   useEffect(() => {
+    console.log(router.pathname);
     const pathname = router.pathname.split("/");
     const vertical = pathname[1];
-    const subRoute = pathname[2];
+    const currentSubRoute = pathname[2];
 
-    if (subRoute) {
+    if (currentSubRoute) {
       setIsSubRoute(true);
+      setSubRoute(currentSubRoute);
+    } else {
+      setIsSubRoute(false);
+      setSubRoute("");
     }
 
     setCurrentPath(vertical);
@@ -83,16 +91,29 @@ const Navbar = () => {
       setCurrentPath("");
     };
   }, [router.pathname]);
-
   return (
     <nav
       className={`${
         isSubRoute ? "msmf__nav-bar-bg" : "msmf__nav-top"
       } msmf__nav-bar`}
     >
-      <div id="msmf-branding">
-        <img src="/assets/msmf_logo1.jpg" alt="msmf-logo" className=" w-44" />
-      </div>
+      <Link href={`/${currentPath}`}>
+        <div id="msmf-branding" className="cursor-pointer">
+          {currentPath === "adrc" ? (
+            <img
+              src="/assets/adrc-logo.png"
+              alt="adrc-logo"
+              className=" w-32"
+            />
+          ) : (
+            <img
+              src="/assets/msmf_logo1.jpg"
+              alt="msmf-logo"
+              className=" w-44 min-w-[11rem]"
+            />
+          )}
+        </div>
+      </Link>
       <div className="msmf__nav-list">
         {Sitemap.find((path) => currentPath === path.slug)?.subroutes?.map(
           (route) => {
@@ -100,9 +121,15 @@ const Navbar = () => {
               return (
                 <Link key={route.slug} href={route.route}>
                   <p
-                    className={`${
-                      route.cta ? "msmf__nav-cta" : "msmf__nav-item"
-                    } font-avenir-book flex items-center`}
+                    className={`relative ${
+                      route.cta
+                        ? `msmf__nav-cta`
+                        : `msmf__nav-item ${
+                            subRoute && subRoute === route.slug
+                              ? "nav-active"
+                              : ""
+                          }`
+                    } font-avenir-book flex items-center `}
                   >
                     <span>{route.page}</span>
                   </p>
@@ -113,6 +140,7 @@ const Navbar = () => {
                 <DropDown
                   key={route.slug}
                   route={route}
+                  subRoute={subRoute}
                   dropMenu={route.dropmenu}
                 />
               );

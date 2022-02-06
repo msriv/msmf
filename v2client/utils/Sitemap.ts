@@ -9,6 +9,21 @@ export interface ISitemap {
 
 export const Sitemap: Array<ISitemap> = [
   {
+    page: "",
+    route: "/",
+    slug: "",
+    subroutes: [
+      {
+        page: "Incubation",
+        route: "/incubation",
+        slug: "incubation",
+      },
+      { page: "ADRC", route: "/adrc", slug: "adrc" },
+      { page: "Philanthropy", slug: "philanthropy", route: "/philanthopy" },
+      { page: "Research", slug: "research", route: "/research" },
+    ],
+  },
+  {
     page: "Incubation",
     route: "/incubation",
     slug: "incubation",
@@ -37,6 +52,11 @@ export const Sitemap: Array<ISitemap> = [
         page: "Partners",
         slug: "partners",
         route: "/incubation/partners",
+      },
+      {
+        page: "Mentors",
+        slug: "mentors",
+        route: "/incubation/mentors",
       },
       {
         page: "MSMF",

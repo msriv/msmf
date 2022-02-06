@@ -7,6 +7,7 @@
 /* Custom CSS */
 html,
 body {
+  @apply scroll-smooth;
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -38,7 +39,7 @@ body {
     @apply bg-msmf-base;
   }
   .msmf__nav-list {
-    @apply space-x-24 text-lg flex items-center;
+    @apply justify-between text-lg flex items-center w-10/12;
   }
   .msmf__nav-top {
     @apply absolute top-0 left-0 z-50;
@@ -52,6 +53,15 @@ body {
     @apply text-white uppercase cursor-pointer px-4 py-3 border rounded border-white;
     @apply hover:bg-white hover:text-msmf-dark hover:ring-2 hover:ring-gray-900/5;
     @apply transition-500;
+  }
+  .nav-active::before {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: white;
+    top: 0px;
+    @apply rounded;
   }
   .image-overlay {
     background: linear-gradient(
@@ -133,5 +143,10 @@ body {
   }
   .accordion-button {
     border: none;
+  }
+  .footer-bg {
+    background: url("/assets/images/Common/Footer.png");
+    background-repeat: repeat;
+    background-size: fill;
   }
 }

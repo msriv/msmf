@@ -3,8 +3,8 @@ import { Section, SectionContent } from "../../Common/Section";
 const PhilanthropyImpact = (): JSX.Element => {
   return (
     <Section>
-      <div className="relative w-screen h-[612px]">
-        <div id="overlay" className="image-overlay flex flex-col h-[612px]">
+      <div className={`relative w-screen h-[416px]`}>
+        <div id="overlay" className={`image-overlay flex flex-col h-[416px]`}>
           <div className="mt-16 w-full">
             <p className="text-[38px] font-light font-roboto text-white text-center">
               Our <b>Impact</b>

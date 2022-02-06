@@ -10,7 +10,13 @@ import {
 const SupportUs = () => {
   return (
     <div>
-      <Campaigns />
+      <Campaigns
+        title={
+          <span>
+            Our <b>Campaigns</b>
+          </span>
+        }
+      />
       <Section>
         <SectionTitle title={<b>Volunteer</b>} />
         <SectionContent>

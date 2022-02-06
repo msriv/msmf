@@ -9,61 +9,55 @@ import Carousel from "../../components/Common/Carousel";
 import React from "react";
 
 const carouselItems: Array<React.ReactNode> = [
-  <div className="carousel-item h-[542px] active relative float-left w-full">
-    <div className="flex w-full h-full">
-      <div className="relative w-6/12">
-        <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
-        <img
-          src="/assets/images/ADRC/image 1.png"
-          className="block w-full h-full"
-          alt="..."
-        />
-      </div>
-      <div className="carousel-caption bg-black text-white text-center w-6/12 flex flex-col justify-center items-center">
-        <div className="w-8/12">
-          <p className="prose text-4xl text-white font-bold font-avenir-heavy font-center">
-            A correct diagnosis is three-fourths of the remedy.
-          </p>
-          <p className="prose text-xl text-[#FBB604] italic font-bold font-avenir-heavy font-center mt-14">
-            Mahatma Gandhi
-          </p>
-          <button className="msmf__nav-cta font-avenir-book mt-6">
-            About Us
-          </button>
-        </div>
+  <div className="flex w-full h-full">
+    <div className="relative w-6/12">
+      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+      <img
+        src="/assets/images/ADRC/image 1.png"
+        className="block w-full h-full"
+        alt="..."
+      />
+    </div>
+    <div className="carousel-caption bg-black text-white text-center w-6/12 flex flex-col justify-center items-center">
+      <div className="w-8/12">
+        <p className="prose text-4xl text-white font-bold font-avenir-heavy font-center">
+          A correct diagnosis is three-fourths of the remedy.
+        </p>
+        <p className="prose text-xl text-[#FBB604] italic font-bold font-avenir-heavy font-center mt-14">
+          Mahatma Gandhi
+        </p>
+        <button className="msmf__nav-cta font-avenir-book mt-6">
+          About Us
+        </button>
       </div>
     </div>
   </div>,
-  <div className="carousel-item  h-[542px] relative float-left w-full">
-    <div className="flex w-full h-full">
-      <div className="relative w-6/12">
-        <div className="absolute top-0 left-0 w-full h-full bg-gray-700/50 z-10"></div>
-        <img
-          src="/assets/images/ADRC/image 3.png"
-          className="block w-full h-full"
-          alt="..."
-        />
-      </div>
-      <div className="carousel-caption bg-black text-white text-center w-6/12 flex flex-col justify-center items-center">
-        <h5 className="text-xl">Second slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+  <div className="flex w-full h-full">
+    <div className="relative w-6/12">
+      <div className="absolute top-0 left-0 w-full h-full bg-gray-700/50 z-10"></div>
+      <img
+        src="/assets/images/ADRC/image 3.png"
+        className="block w-full h-full"
+        alt="..."
+      />
+    </div>
+    <div className="carousel-caption bg-black text-white text-center w-6/12 flex flex-col justify-center items-center">
+      <h5 className="text-xl">Second slide label</h5>
+      <p>Some representative placeholder content for the first slide.</p>
     </div>
   </div>,
-  <div className="carousel-item  h-[542px] relative float-left w-full">
-    <div className="flex w-full h-full">
-      <div className="relative w-6/12">
-        <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
-        <img
-          src="/assets/images/ADRC/image 4.png"
-          className="block w-full h-full"
-          alt="..."
-        />
-      </div>
-      <div className="carousel-caption bg-black text-white text-center w-6/12 flex flex-col justify-center items-center">
-        <h5 className="text-xl">Third slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+  <div className="flex w-full h-full">
+    <div className="relative w-6/12">
+      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+      <img
+        src="/assets/images/ADRC/image 4.png"
+        className="block w-full h-full"
+        alt="..."
+      />
+    </div>
+    <div className="carousel-caption bg-black text-white text-center w-6/12 flex flex-col justify-center items-center">
+      <h5 className="text-xl">Third slide label</h5>
+      <p>Some representative placeholder content for the first slide.</p>
     </div>
   </div>,
 ];
@@ -75,6 +69,7 @@ const ADRC = () => {
         alignIndicator="right"
         carouselID="adrc-carousel"
         carouselItems={carouselItems}
+        classes="h-[542px]"
       />
       <Section>
         <SectionTitle

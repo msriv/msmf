@@ -59,3 +59,23 @@ export namespace Storage {
     }
   };
 }
+
+export const getThemeColor = (vertical: string) => {
+  switch (vertical) {
+    case "incubation": {
+      return "incubation";
+    }
+    case "adrc": {
+      return "adrc";
+    }
+    case "philanthropy": {
+      return "philanthropy";
+    }
+    case "research": {
+      return "research";
+    }
+    default: {
+      return "msmf-base";
+    }
+  }
+};

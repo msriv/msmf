@@ -4,10 +4,11 @@ interface CarouselProps {
   carouselID: string;
   alignIndicator: "left" | "center" | "right";
   carouselItems: Array<React.ReactNode>;
+  classes?: string;
 }
 
 const Carousel = (props: CarouselProps) => {
-  const { carouselID, alignIndicator, carouselItems } = props;
+  const { carouselID, alignIndicator, carouselItems, classes } = props;
 
   const indicatorAlignment = () => {
     switch (alignIndicator) {
@@ -42,7 +43,15 @@ const Carousel = (props: CarouselProps) => {
         ))}
       </div>
       <div className="carousel-inner relative w-full overflow-hidden">
-        {carouselItems}
+        {carouselItems.map((item, key) => (
+          <div
+            className={`carousel-item relative float-left w-full ${classes} ${
+              key === 0 && "active"
+            }`}
+          >
+            {item}
+          </div>
+        ))}
       </div>
       <button
         className="z-50 carousel-control-prev w-1/12 absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
