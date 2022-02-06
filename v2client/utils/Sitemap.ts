@@ -19,7 +19,7 @@ export const Sitemap: Array<ISitemap> = [
         slug: "incubation",
       },
       { page: "ADRC", route: "/adrc", slug: "adrc" },
-      { page: "Philanthropy", slug: "philanthropy", route: "/philanthopy" },
+      { page: "Philanthropy", slug: "philanthropy", route: "/philanthropy" },
       { page: "Research", slug: "research", route: "/research" },
     ],
   },
