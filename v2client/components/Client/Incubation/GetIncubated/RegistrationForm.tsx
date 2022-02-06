@@ -36,37 +36,43 @@ const RegistrationForm = () => {
       gdpr: false,
     },
     validationSchema: Yup.object().shape({
-      orgName: Yup.string().required("Required"),
-      applicantName: Yup.string().required("Required"),
-      email: Yup.string().email("Should be an email").required("Required"),
+      orgName: Yup.string().required("Organisation Name Missing!"),
+      applicantName: Yup.string().required("Applicant Name Missing!"),
+      email: Yup.string()
+        .email("Should be an email")
+        .required("Email ID Missing!"),
       phoneNumber: Yup.number()
         .max(10, "Add a valid mobile number")
-        .required("Required"),
-      linkedInProfile: Yup.string().url("Must be a URL").required("Required"),
+        .required("Phone Number Missing!"),
+      linkedInProfile: Yup.string()
+        .url("Must be a URL")
+        .required("LinkedIn Profile Missing!"),
       alternateContact: Yup.string(),
-      stage: Yup.string().required("Required"),
-      isNonProfit: Yup.bool().required("Required"),
-      mcaRegistration: Yup.bool().required("Required"),
+      stage: Yup.string().required("Start-up stage missing"),
+      isNonProfit: Yup.bool().required("Non Profit Declaration missing"),
+      mcaRegistration: Yup.bool().required(
+        "MCA Registration Declaration missing"
+      ),
       incorporationYear: Yup.string()
         .min(4, "Enter a valid year")
-        .required("Required"),
-      headquarters: Yup.string().required("Required"),
-      sector: Yup.string().required("Required"),
-      subSector: Yup.string().required("Required"),
-      customerProblem: Yup.string().required("Required"),
-      solution: Yup.string().required("Required"),
-      solutionBetter: Yup.string().required("Required"),
-      primaryBeneficiary: Yup.string().required("Required"),
-      milestone: Yup.string().required("Required"),
-      reasonToIncubate: Yup.string().required("Required"),
-      earlierFunds: Yup.bool().required("Required"),
+        .required("Incorporation Year Missing"),
+      headquarters: Yup.string().required("Headquarters missing"),
+      sector: Yup.string().required("Sector missing"),
+      subSector: Yup.string().required("Sub Sector missing"),
+      customerProblem: Yup.string().required("Problem missing"),
+      solution: Yup.string().required("Solution missing"),
+      solutionBetter: Yup.string().required("Why is it better? missing"),
+      primaryBeneficiary: Yup.string().required("Primary Beneficiary missing"),
+      milestone: Yup.string().required("Milestone missing"),
+      reasonToIncubate: Yup.string().required("Reason to Incubate missing"),
+      earlierFunds: Yup.bool().required("Earlier Fund Declaration missing"),
       totalEarlierFunds: Yup.string(),
-      anyPatent: Yup.bool().required("Required"),
+      anyPatent: Yup.bool().required("Patent Declaration missing"),
       aboutPatent: Yup.string(),
-      otherDetails: Yup.string().required("Required"),
-      pitchDeck: Yup.mixed().required(),
+      otherDetails: Yup.string(),
+      pitchDeck: Yup.mixed().required("Pitch Deck Missing"),
       logo: Yup.mixed().required(),
-      gdpr: Yup.bool().required("Required"),
+      gdpr: Yup.bool().required("GDPR missing"),
     }),
     onSubmit: async (values: any, { resetForm }) => {
       const formData = new FormData();
@@ -180,7 +186,7 @@ const RegistrationForm = () => {
           type="text"
           name="stage"
           id="stage"
-          placeholder="Your name?"
+          placeholder="Enter Startup Stage"
           value={formik.values.stage}
           className="mt-1 block w-full text-xl"
           onChange={formik.handleChange}
@@ -530,6 +536,9 @@ const RegistrationForm = () => {
         </label>
       </div>
       <div className="flex justify-center mt-12">
+        {formik.errors && (
+          <p className="text-center text-red-500">{formik.errors}</p>
+        )}
         <button type="submit" className="msmf__cta-btn">
           Register
         </button>
