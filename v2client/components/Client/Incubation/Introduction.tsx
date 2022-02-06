@@ -2,7 +2,7 @@ import { Section, SectionTitle, SectionContent } from "../../Common/Section";
 
 const IncubationIntroduction = (): JSX.Element => {
   return (
-    <Section id="about-msmf">
+    <Section>
       <SectionTitle
         title={
           <span>
