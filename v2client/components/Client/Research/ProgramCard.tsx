@@ -54,7 +54,7 @@ const ProgramCard = (props: ProgramCardProps) => {
             onClick={handleAccordionOpen}
           >
             <span
-              className={`transition duration-300 ease-in-out material-icons-round text-6xl ${
+              className={`transition duration-300 ease-in-out text-6xl material-icons-round ${
                 open && "rotate-180"
               }`}
             >

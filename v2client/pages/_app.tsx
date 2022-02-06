@@ -7,7 +7,7 @@ import { store } from "../redux/store";
 import AppSessionProvider from "../components/Session/AppSessionProvider";
 import Layout from "../components/Client/Layout";
 
-if (process.env.NEXT_PUBLIC_NODE_ENV !== "development") console.log = () => {};
+// if (process.env.NEXT_PUBLIC_NODE_ENV !== "development") console.log = () => {};
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
