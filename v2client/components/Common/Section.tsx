@@ -36,7 +36,7 @@ const SectionContent = (props: SectionContentProps) => {
   const { children } = props;
 
   return (
-    <div className="md:container mx-auto">
+    <div className="w-11/12 mx-auto">
       <div className="prose prose-xl max-w-full">{children}</div>
     </div>
   );
