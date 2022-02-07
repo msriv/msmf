@@ -55,7 +55,8 @@ const AppSessionProvider = (props: AuthProviderProps) => {
     }
   }, [token]);
 
-  return <>{token ? children : "Loading..."}</>;
+  // return <>{token ? children : "Loading..."}</>;
+  return <>{children}</>;
 };
 
 export default AppSessionProvider;
