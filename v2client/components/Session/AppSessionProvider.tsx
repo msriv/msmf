@@ -22,41 +22,40 @@ const AppSessionProvider = (props: AuthProviderProps) => {
     token: store.sessionStore.token,
   }));
 
-  // useEffect(() => {
-  //   const user_token = token || Storage.getItem(SessionStorageKeys.UserToken);
-  //   if (user_token) {
-  //     dispatch(validateVisitorToken())
-  //       .unwrap()
-  //       .then((originalPromiseResult: any) => {
-  //         // handle result here
-  //         if (!originalPromiseResult.ok) {
-  //           dispatch(setSessionInfo({ token: null }));
-  //           Storage.removeItem(SessionStorageKeys.UserToken);
-  //         }
-  //       })
-  //       .catch((rejectedValueOrSerializedError: SerializedError | any) => {
-  //         // handle error here
-  //         console.error(rejectedValueOrSerializedError);
-  //       });
-  //   } else {
-  //     dispatch(getTokenAsVisitor())
-  //       .unwrap()
-  //       .then((originalPromiseResult: any) => {
-  //         // handle result here
-  //         Storage.putItem(
-  //           SessionStorageKeys.UserToken,
-  //           originalPromiseResult.token
-  //         );
-  //       })
-  //       .catch((rejectedValueOrSerializedError: SerializedError | any) => {
-  //         // handle error here
-  //         console.error(rejectedValueOrSerializedError);
-  //       });
-  //   }
-  // }, [token]);
+  useEffect(() => {
+    const user_token = token || Storage.getItem(SessionStorageKeys.UserToken);
+    if (user_token) {
+      dispatch(validateVisitorToken())
+        .unwrap()
+        .then((originalPromiseResult: any) => {
+          // handle result here
+          if (!originalPromiseResult.ok) {
+            dispatch(setSessionInfo({ token: null }));
+            Storage.removeItem(SessionStorageKeys.UserToken);
+          }
+        })
+        .catch((rejectedValueOrSerializedError: SerializedError | any) => {
+          // handle error here
+          console.error(rejectedValueOrSerializedError);
+        });
+    } else {
+      dispatch(getTokenAsVisitor())
+        .unwrap()
+        .then((originalPromiseResult: any) => {
+          // handle result here
+          Storage.putItem(
+            SessionStorageKeys.UserToken,
+            originalPromiseResult.token
+          );
+        })
+        .catch((rejectedValueOrSerializedError: SerializedError | any) => {
+          // handle error here
+          console.error(rejectedValueOrSerializedError);
+        });
+    }
+  }, [token]);
 
-  // return <>{token ? children : "Loading..."}</>;
-  return <>{children}</>;
+  return <>{token ? children : "Loading..."}</>;
 };
 
 export default AppSessionProvider;

@@ -12,11 +12,11 @@ import Layout from "../components/Client/Layout";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <AppSessionProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </AppSessionProvider>
+      {/* <AppSessionProvider> */}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      {/* </AppSessionProvider> */}
     </Provider>
   );
 }

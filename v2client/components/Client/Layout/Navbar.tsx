@@ -28,6 +28,9 @@ const DropDown = (props: DropDownProps) => {
     setShowDropMenu((prevState) => !prevState);
   };
 
+  if (document) {
+    import("tw-elements");
+  }
   return (
     <div
       key={route.slug}
@@ -91,6 +94,7 @@ const Navbar = () => {
       setCurrentPath("");
     };
   }, [router.pathname]);
+
   return (
     <nav
       className={`${
