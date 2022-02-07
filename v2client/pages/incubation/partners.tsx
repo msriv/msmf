@@ -61,12 +61,12 @@ const Partners = () => {
               className="w-9/12"
             />
             <img
-              src="/assets/images/Incubation/mirainxt.png"
+              src="/assets/images/Incubation/MIRAINXT.png"
               alt="MIRAINXT"
               className="w-11/12"
             />
             <img
-              src="/assets/images/Incubation/manipal.png"
+              src="/assets/images/Incubation/Manipal.png"
               alt="Manipal"
               className="w-8/12"
             />
