@@ -24,7 +24,8 @@ const DropDown = (props: DropDownProps) => {
     document.addEventListener("mousedown", handleClickOutside);
   }, [dropDownRef]);
 
-  const handleToggleDropMenu = () => {
+  const handleToggleDropMenu = (event: any) => {
+    event.stopPropagation();
     setShowDropMenu((prevState) => !prevState);
   };
 
