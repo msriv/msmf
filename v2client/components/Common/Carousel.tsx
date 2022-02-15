@@ -1,4 +1,39 @@
-import React from "react";
+import * as React from "react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { wrap } from "popmotion";
+
+const variants = {
+  enter: (direction: number) => {
+    return {
+      x: direction > 0 ? 1000 : -1000,
+      opacity: 0,
+    };
+  },
+  center: {
+    zIndex: 1,
+    x: 0,
+    opacity: 1,
+  },
+  exit: (direction: number) => {
+    return {
+      zIndex: 0,
+      x: direction < 0 ? 1000 : -1000,
+      opacity: 0,
+    };
+  },
+};
+
+/**
+ * Experimenting with distilling swipe offset and velocity into a single variable, so the
+ * less distance a user has swiped, the more velocity they need to register as a swipe.
+ * Should accomodate longer swipes and short flicks without having binary checks on
+ * just distance thresholds and velocity > 0.
+ */
+const swipeConfidenceThreshold = 10000;
+const swipePower = (offset: number, velocity: number) => {
+  return Math.abs(offset) * velocity;
+};
 
 interface CarouselProps {
   carouselID: string;
@@ -9,74 +44,69 @@ interface CarouselProps {
 
 const Carousel = (props: CarouselProps) => {
   const { carouselID, alignIndicator, carouselItems, classes } = props;
+  const [[page, direction], setPage] = useState([0, 0]);
 
-  const indicatorAlignment = () => {
-    switch (alignIndicator) {
-      case "left":
-        return "justify-start";
-      case "center":
-        return "justify-center";
-      case "right":
-        return "justify-end";
-    }
+  // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
+  // then wrap that within 0-2 to find our image ID in the array below. By passing an
+  // absolute page index as the `motion` component's `key` prop, `AnimatePresence` will
+  // detect it as an entirely new image. So you can infinitely paginate as few as 1 images.
+  const carouselItemIndex = wrap(0, carouselItems.length, page);
+
+  const paginate = (newDirection: number) => {
+    setPage([page + newDirection, newDirection]);
   };
 
   return (
     <div
       id={carouselID}
-      className="carousel slide relative"
-      data-bs-ride="carousel"
+      className={`relative flex items-center justify-center w-screen ${classes}`}
     >
+      <AnimatePresence initial={false} custom={direction} exitBeforeEnter>
+        <motion.div
+          key={page}
+          custom={direction}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          className={`w-full ${classes}`}
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30 },
+            opacity: { duration: 0.1 },
+          }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={1}
+          onDragEnd={(e, { offset, velocity }) => {
+            const swipe = swipePower(offset.x, velocity.x);
+
+            if (swipe < -swipeConfidenceThreshold) {
+              paginate(1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              paginate(-1);
+            }
+          }}
+        >
+          {carouselItems[carouselItemIndex]}
+        </motion.div>
+      </AnimatePresence>
       <div
-        className={`carousel-indicators mx-80 absolute right-0 bottom-0 left-0 flex p-0 mb-8 ${indicatorAlignment()}`}
+        className="absolute top-1/2 right-3 bg-transparent w-10 h-10 flex justify-center items-center cursor-pointer z-10"
+        onClick={() => paginate(1)}
       >
-        {carouselItems.map((item, key) => (
-          <button
-            key={key}
-            type="button"
-            data-bs-target={"#" + carouselID}
-            data-bs-slide-to={`${key}`}
-            className={`${key === 0 ? "active" : ""} custom-indicators`}
-            aria-current={key === 0 ? "true" : undefined}
-            aria-label={`Slide ${key + 1}`}
-          ></button>
-        ))}
+        <span className="text-4xl text-white material-icons-outlined">
+          chevron_right
+        </span>
       </div>
-      <div className="carousel-inner relative w-full overflow-hidden">
-        {carouselItems.map((item, key) => (
-          <div
-            className={`carousel-item relative float-left w-full ${classes} ${
-              key === 0 && "active"
-            }`}
-          >
-            {item}
-          </div>
-        ))}
+      <div
+        className="absolute top-1/2 left-3 bg-transparent w-10 h-10 flex justify-center items-center cursor-pointer z-10"
+        onClick={() => paginate(-1)}
+      >
+        <span className="text-4xl text-white material-icons-outlined">
+          chevron_left
+        </span>
       </div>
-      <button
-        className="z-50 carousel-control-prev w-1/12 absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-        type="button"
-        data-bs-target={"#" + carouselID}
-        data-bs-slide="prev"
-      >
-        <span
-          className="carousel-control-prev-icon inline-block bg-no-repeat"
-          aria-hidden="true"
-        ></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="z-50 carousel-control-next w-1/12 absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-        type="button"
-        data-bs-target={"#" + carouselID}
-        data-bs-slide="next"
-      >
-        <span
-          className="carousel-control-next-icon inline-block bg-no-repeat"
-          aria-hidden="true"
-        ></span>
-        <span className="visually-hidden">Next</span>
-      </button>
+      <div className="absolute bottom-10 "></div>
     </div>
   );
 };

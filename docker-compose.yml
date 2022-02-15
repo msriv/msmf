@@ -3,13 +3,13 @@ version: "3.1"
 services:
   db:
     build:
-      context: ./v2server
+      context: ./server
       dockerfile: Dockerfile.database
     restart: always
     ports:
       - 3306:3306
     volumes:
-      - ./v2server/database/mysqldata:/var/lib/mysql
+      - ./server/database/mysqldata:/var/lib/mysql
   phpmyadmin:
     image: phpmyadmin
     restart: always
@@ -21,20 +21,18 @@ services:
       - db
   server:
     env_file:
-      - ./v2server/.env
+      - ./server/.env
     build:
-      context: ./v2server
+      context: ./server
       dockerfile: Dockerfile.server
     restart: always
     ports:
-      - 49200:49200
+      - 8000:8000
     volumes:
-      - ./v2server:/v2server
-    entrypoint: yarn dev
+      - ./server:/server
+    entrypoint: php -S 0.0.0.0:8000
     links:
       - db
-    environment:
-      - HOST=server
   client:
     build:
       context: ./v2client

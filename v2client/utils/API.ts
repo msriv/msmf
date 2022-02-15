@@ -5,7 +5,7 @@ import { Storage } from "./Misc";
 
 export namespace ServerRoutes {
   export const BASE_ROUTE =
-    process.env.NEXT_PUBLIC_SERVER || "http://localhost:49200/v1";
+    process.env.NEXT_PUBLIC_SERVER || "http://server:8000/v1";
   export enum AuthRoutes {
     GetToken = "/auth/token",
     Validate = "/auth/validate",
@@ -27,7 +27,7 @@ export namespace ServerRoutes {
 }
 export namespace ClientRoutes {
   export const BASE_ROUTE =
-    process.env.NEXT_PUBLIC_SERVER || "http://localhost:49200/v1";
+    process.env.NEXT_PUBLIC_SERVER || "http://server:8000/v1";
   // export enum AssetRoutes {
   //   GetAsset = "/auth/token",
   //   Validate = "/auth/validate",
