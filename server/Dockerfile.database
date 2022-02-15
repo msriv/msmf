@@ -1,7 +1,0 @@
-FROM mariadb:10.3
-
-ENV MYSQL_ROOT_PASSWORD root@123
-ENV MYSQL_ROOT_USER root
-ENV MYSQL_DATABASE msmf_global_db
-ENV MYSQL_USER msmf_global_db_admin
-ENV MYSQL_PASSWORD msmf_db_admin@2021
