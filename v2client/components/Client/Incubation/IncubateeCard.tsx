@@ -23,7 +23,7 @@ const IncubateeCard = (props: IncubateeCardProps) => {
             {companyLink}
           </a>
         )}
-        <p className="prose prose-xl">{about}</p>
+        <p className="prose text-justify">{about}</p>
       </div>
     </div>
   );

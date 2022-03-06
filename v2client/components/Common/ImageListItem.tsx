@@ -28,7 +28,7 @@ const ImageListItem = (props: ImageListItemProps) => {
         </p>
       </div>
       <div
-        className={`prose prose-xl max-w-full font-normal ${
+        className={`prose max-w-full font-normal text-justify ${
           dir && dir === "rtl" ? "text-right" : "text-left"
         }`}
       >

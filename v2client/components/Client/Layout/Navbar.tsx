@@ -29,9 +29,6 @@ const DropDown = (props: DropDownProps) => {
     setShowDropMenu((prevState) => !prevState);
   };
 
-  if (document) {
-    import("tw-elements");
-  }
   return (
     <div
       key={route.slug}
@@ -40,25 +37,22 @@ const DropDown = (props: DropDownProps) => {
         subRoute && subRoute === route.slug ? "nav-active" : ""
       }`}
     >
-      <div className={`msmf__nav-item font-avenir-book flex items-center`}>
+      <div className={`msmf__nav-item font-helvetica font-bold flex items-center`}>
         <span>{route.page}</span>
         <span className="material-icons-round">arrow_drop_down</span>
       </div>
       {showDropMenu ? (
         <div
-          className="absolute top-10 left-0 flex flex-col divide-y-2 min-w-fit w-full bg-white shadow rounded z-[9999]"
+          className="absolute top-16 left-0 flex flex-col min-w-fit w-full bg-white shadow rounded z-[9999] p-4"
           id="drop-menu"
           ref={dropDownRef}
         >
+          <div className="absolute -top-1 left-5 rotate-45 bg-white w-4 h-4 -z-10"></div>
           {dropMenu.map((subRoute: ISitemap, key: number) => (
             <Link key={subRoute.slug} href={subRoute.route!}>
               <p
                 onClick={handleToggleDropMenu}
-                className={`${key === 0 ? "rounded-tr rounded-tl" : ""} ${
-                  key === route.dropmenu!.length - 1
-                    ? "rounded-bl rounded-br"
-                    : ""
-                } font-avenir-book py-2 px-4 hover:bg-gray-100 cursor-pointer`}
+                className={`transition-500 rounded font-helvetica font-bold px-4 py-2 hover:bg-sky-500/20 cursor-pointer whitespace-nowrap`}
               >
                 {subRoute.page}
               </p>
@@ -134,7 +128,7 @@ const Navbar = () => {
                               ? "nav-active"
                               : ""
                           }`
-                    } font-avenir-book flex items-center `}
+                    } font-helvetica font-bold flex items-center `}
                   >
                     <span>{route.page}</span>
                   </p>

@@ -11,10 +11,10 @@ use Server\Src\Utils\Constants;
 
 class DatabaseService {
 
-    private string $database;
-    private string $user;
-    private string $password;
-    private string $host;
+    private $database;
+    private $user;
+    private $password;
+    private $host;
 
     public function __construct(string $host, string $database, string $user, string $password)
     {

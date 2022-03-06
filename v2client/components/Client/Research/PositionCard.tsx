@@ -28,7 +28,7 @@ const PositionCard = (props: PositionCardProps) => {
             {title}
           </p>
           <p
-            className={`prose prose-xl max-w-full font-normal m-0 ${
+            className={`prose max-w-full font-normal m-0 ${
               dir && dir === "rtl" ? "mr-10 text-right" : "ml-10 text-left"
             }`}
           >

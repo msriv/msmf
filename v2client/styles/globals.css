@@ -10,7 +10,7 @@ body {
   @apply scroll-smooth;
   padding: 0;
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Helvetica", sans-serif;
   background-color: #fbfbfb;
 }
 
@@ -23,14 +23,16 @@ body {
 /* Custom Tailwind Component Layer */
 @layer components {
   .msmf__cta-btn {
-    @apply bg-msmf-base rounded px-8 py-2 text-white text-[23px] flex justify-center items-center; /* Root Style */
+    @apply bg-msmf-base rounded px-8 py-2 text-white flex justify-center items-center; /* Root Style */
     @apply hover:bg-msmf-dark hover:shadow-lg; /* OnHover Style */
     @apply transition-500 /* Transitions */;
+    @apply sm:text-[19px] 2xl:text-[23px] /* Responsive */
   }
   .msmf__secondary-btn {
-    @apply bg-transparent rounded px-8 py-2 text-[#171717] border border-[#171717] text-[23px] flex justify-center items-center; /* Root Style */
+    @apply bg-transparent rounded px-8 py-2 text-[#171717] border border-[#171717] flex justify-center items-center; /* Root Style */
     @apply hover:bg-[#171717] hover:text-white; /* OnHover Style */
-    @apply transition-500 /* Transitions */;
+    @apply transition-500; /* Transitions */
+    @apply sm:text-[19px] 2xl:text-[23px]; /* Responsive */
   }
   .msmf__nav-bar {
     @apply h-32 flex w-full justify-between items-center px-12;

@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
-.font-avenir-book {
-  font-family: "AvenirLTPro-Book", sans-serif;
-}
-.font-avenir-heavy {
-  font-family: "AvenirLTPro-Heavy", sans-serif;
+.font-avenir {
+  font-family: "Avenir", sans-serif;
 }
 .font-roboto {
   font-family: "Roboto", sans-serif;
 }
+.font-helvetica {
+  font-family: "Helvetica", sans-serif;
+}
 .font-inter {
-  font-family: "";
+  font-family: "Inter", sans-serif;
 }

@@ -21,7 +21,7 @@ class StorageService {
     private $directory;
     private $allowedFileTypes;
     private $fileSizeAllowed;
-    private array $files;
+    private $files;
     private $server;
     private $serviceStatus;
 

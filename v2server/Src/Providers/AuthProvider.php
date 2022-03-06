@@ -1,33 +1,21 @@
 <?php
 
 namespace Server\Src\Providers;
-use ReallySimpleJWT\Token;
 
+use Server\Src\Services\AuthService;
+use Server\Src\Utils\Helpers;
 
 class AuthProvider extends Provider  {
-    public function __construct($db)
-    {
-        $this->db = $db;
+    private $authService;
+    public function __construct() {}
+    public function generateToken($userId) {
+        $this->authService = new AuthService();
+        return Helpers::createSuccessResponse(201, array("token" => $this->authService->generateToken($userId, null)));
     }
-        public function generate_token() {
-            $payload = [
-                'iat' => time(),
-                'uid' => $this->user_id,
-                'exp' => time() + 100 * 60 * 10,
-                'iss' => $_ENV["HOST"]
-            ];
-            $this->user_token = Token::customPayload($payload, $this->secret);
-            $result["token"] = $this->user_token;
-            $response['status_code_header'] = 'HTTP/1.1 200 OK';
-            $response['body'] = json_encode($result);
-            return $response;
-        }
 
         public function validate_token($token) {
-            $result["ok"] = false;
-            $response['status_code_header'] = 'HTTP/1.1 401 Unauthorized';
 
-            if (Token::validate($token, $this->secret) && Token::validateExpiration($token, $this->secret)) {
+            if ($this->authService->validateToken($token)) {
                 $result["ok"] = true;
                 $response['status_code_header'] = 'HTTP/1.1 200 OK';
             }

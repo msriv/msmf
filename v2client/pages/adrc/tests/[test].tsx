@@ -113,7 +113,7 @@ const Tests = () => {
                 <p className="font-semibold text-4xl mb-0">
                   {testItem.testName}
                 </p>
-                <p className="text-2xl text-[#6A6A6A] mt-2">{testItem.about}</p>
+                <p className="text-xl text-[#6A6A6A] mt-2">{testItem.about}</p>
                 <div className="w-full flex justify-between">
                   <p className="font-bold text-[#6A6A6A] mb-0">
                     <span className="uppercase">Technique: </span>

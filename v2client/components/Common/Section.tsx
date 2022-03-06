@@ -21,7 +21,7 @@ const SectionTitle = (props: SectionTitleProps) => {
   const { title } = props;
 
   return (
-    <div className="mb-16 text-[38px] font-roboto">
+    <div className="mb-16 text-[38px] font-helvetica">
       <div className=" ml-[90px] ">{title}</div>
       <hr className=" w-[223px] mt-[13px] border-black" />
     </div>
@@ -36,8 +36,8 @@ const SectionContent = (props: SectionContentProps) => {
   const { children } = props;
 
   return (
-    <div className="w-11/12 mx-auto">
-      <div className="prose prose-xl max-w-full">{children}</div>
+    <div className="w-10/12 mx-auto">
+      <div className="prose max-w-full text-justify">{children}</div>
     </div>
   );
 };
