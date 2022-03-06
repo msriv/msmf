@@ -18,9 +18,9 @@ const IncubationCarouselItems = [
         </button>
       </div>
       <img
-        src="http://api.ms-mf.org/assets/IncubationBanner.png"
-        alt="incubation-banner"
-        className="w-screen"
+        src="/assets/images/Rectangle 1508.png"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[809px]"
       />
     </div>
   </div>,

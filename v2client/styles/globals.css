@@ -26,7 +26,7 @@ body {
     @apply bg-msmf-base rounded px-8 py-2 text-white flex justify-center items-center; /* Root Style */
     @apply hover:bg-msmf-dark hover:shadow-lg; /* OnHover Style */
     @apply transition-500 /* Transitions */;
-    @apply sm:text-[19px] 2xl:text-[23px] /* Responsive */
+    @apply sm:text-[19px] 2xl:text-[23px] /* Responsive */;
   }
   .msmf__secondary-btn {
     @apply bg-transparent rounded px-8 py-2 text-[#171717] border border-[#171717] flex justify-center items-center; /* Root Style */
@@ -147,8 +147,8 @@ body {
     border: none;
   }
   .footer-bg {
-    background: url("/assets/images/Common/Footer.png");
-    background-repeat: repeat;
-    background-size: fill;
+    background: url("/assets/images/Common/Footer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

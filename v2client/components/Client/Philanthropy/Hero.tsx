@@ -9,18 +9,18 @@ const PhilanthropyCarouselItems = [
       >
         <div className="prose font-avenir-heavy text-[47px] text-center">
           <p className="text-white m-0 leading-tight">We are India’s first</p>{" "}
-          <p className="text-[#fbb602] italic -m-2">
+          <p className="text-[#fbb602] italic -m-2 font-bold">
             Corporate Hospital-based Start-up Incubator
           </p>
         </div>
-        <button className="msmf__nav-cta font-avenir-book mt-40">
+        <button className="msmf__nav-cta font-avenir mt-40">
           Get Incubated
         </button>
       </div>
       <img
-        src="http://api.ms-mf.org/assets/IncubationBanner.png"
+        src="/assets/images/Rectangle 1508.png"
         alt="philanthropy-banner"
-        className="w-screen"
+        className="w-screen object-fit h-[809px]"
       />
     </div>
   </div>,

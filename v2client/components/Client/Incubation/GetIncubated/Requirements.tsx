@@ -2,7 +2,7 @@ import ImageListItem from "../../../Common/ImageListItem";
 
 const Requirements = () => {
   return (
-    <div className="grid gap-8 grid-cols-2 w-9/12 mx-auto">
+    <div className="grid gap-8 grid-cols-2 w-11/12 mx-auto">
       <ImageListItem
         title="Innovation"
         dir="rtl"

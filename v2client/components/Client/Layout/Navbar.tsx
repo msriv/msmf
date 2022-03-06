@@ -7,10 +7,11 @@ interface DropDownProps {
   route: ISitemap;
   subRoute?: string;
   dropMenu: Array<ISitemap>;
+  align: "left" | "right";
 }
 
 const DropDown = (props: DropDownProps) => {
-  const { route, subRoute, dropMenu } = props;
+  const { route, subRoute, dropMenu, align } = props;
   const dropDownRef = useRef(null);
   const [showDropMenu, setShowDropMenu] = useState<boolean>(false);
 
@@ -37,18 +38,22 @@ const DropDown = (props: DropDownProps) => {
         subRoute && subRoute === route.slug ? "nav-active" : ""
       }`}
     >
-      <div className={`msmf__nav-item font-helvetica font-bold flex items-center`}>
+      <div
+        className={`msmf__nav-item font-helvetica font-bold flex items-center`}
+      >
         <span>{route.page}</span>
         <span className="material-icons-round">arrow_drop_down</span>
       </div>
       {showDropMenu ? (
         <div
-          className="absolute top-16 left-0 flex flex-col min-w-fit w-full bg-white shadow rounded z-[9999] p-4"
+          className={`absolute top-16 ${align}-0 flex flex-col min-w-fit w-full bg-white shadow rounded z-[9999] p-4`}
           id="drop-menu"
           ref={dropDownRef}
         >
-          <div className="absolute -top-1 left-5 rotate-45 bg-white w-4 h-4 -z-10"></div>
-          {dropMenu.map((subRoute: ISitemap, key: number) => (
+          <div
+            className={`absolute -top-1 ${align}-5 rotate-45 bg-white w-4 h-4 -z-10`}
+          ></div>
+          {dropMenu.map((subRoute: ISitemap) => (
             <Link key={subRoute.slug} href={subRoute.route!}>
               <p
                 onClick={handleToggleDropMenu}
@@ -71,7 +76,6 @@ const Navbar = () => {
   const [subRoute, setSubRoute] = useState("");
 
   useEffect(() => {
-    console.log(router.pathname);
     const pathname = router.pathname.split("/");
     const vertical = pathname[1];
     const currentSubRoute = pathname[2];
@@ -115,7 +119,7 @@ const Navbar = () => {
       </Link>
       <div className="msmf__nav-list">
         {Sitemap.find((path) => currentPath === path.slug)?.subroutes?.map(
-          (route) => {
+          (route, key, arr) => {
             if (route.route) {
               return (
                 <Link key={route.slug} href={route.route}>
@@ -141,6 +145,7 @@ const Navbar = () => {
                   route={route}
                   subRoute={subRoute}
                   dropMenu={route.dropmenu}
+                  align={key < arr.length - 1 ? "left" : "right"}
                 />
               );
             }

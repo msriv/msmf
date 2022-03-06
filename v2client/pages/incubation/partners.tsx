@@ -15,8 +15,8 @@ const Partners = () => {
         }
       />
       <SectionContent>
-        <div className="flex flex-wrap justify-center items-start w-full">
-          <div className="shadow-md rounded w-3/12 m-4 p-6 bg-white flex flex-col justify-center items-center">
+        <div className="relative flex flex-wrap justify-center w-full">
+          <div className=" shadow-md rounded m-4 w-3/12 p-6 bg-white flex flex-col items-center self-stretch">
             <p className="uppercase text-msmf-base font-bold text-xl text-center">
               Our Funding Partners
             </p>
@@ -36,7 +36,7 @@ const Partners = () => {
               className="w-8/12"
             />
           </div>
-          <div className="shadow-md rounded w-3/12  m-4 p-6 bg-white flex flex-col items-center">
+          <div className="shadow-md rounded m-4 w-3/12 p-6 bg-white flex flex-col items-center self-stretch">
             <p className="uppercase text-msmf-base font-bold text-xl text-center">
               Our International Partners
             </p>
@@ -51,7 +51,7 @@ const Partners = () => {
               className="w-7/12"
             />
           </div>
-          <div className="shadow-md rounded w-3/12  m-4 p-6 bg-white flex flex-col items-center">
+          <div className="shadow-md rounded m-4 w-3/12 p-6 bg-white flex flex-col items-center self-stretch">
             <p className="uppercase text-msmf-base font-bold text-xl text-center">
               Our National Collaborators
             </p>
@@ -71,7 +71,7 @@ const Partners = () => {
               className="w-8/12"
             />
           </div>
-          <div className="shadow-md rounded w-3/12  m-4 p-6 bg-white flex flex-col items-center">
+          <div className="shadow-md rounded w-3/12 m-4 p-6 bg-white flex flex-col items-center self-stretch">
             <p className="uppercase text-msmf-base font-bold text-xl text-center">
               Our Investment Partners
             </p>
@@ -101,7 +101,7 @@ const Partners = () => {
               className="w-8/12"
             />
           </div>
-          <div className="shadow-md rounded w-3/12  m-4 p-6 bg-white flex flex-col items-center">
+          <div className="shadow-md rounded w-3/12 m-4 p-6 bg-white flex flex-col items-center self-stretch">
             <p className="uppercase text-msmf-base font-bold text-xl text-center">
               Our Hospital Partners
             </p>

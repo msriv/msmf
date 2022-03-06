@@ -1,46 +1,83 @@
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { Sitemap } from "../../../utils/Sitemap";
 import Link from "next/link";
 
 const GetInTouchContent: {
   [vertical: string]: {
-    address?: string;
-    phoneNumbers?: Array<string>;
-    email?: string;
+    address?: ReactNode;
+    phoneNumbers?: ReactNode;
+    email?: ReactNode;
     location?: string;
   };
 } = {
   "": {
-    address: `A-Block, 8th Floor #258/A, NH Health City, Bangalore - 560 099`,
-    phoneNumbers: ["+91-807 122 2351", "+91-802 780 3456"],
-    email: "msmf@ms-mf.org",
+    address: (
+      <p>A-Block, 8th Floor #258/A, NH Health City, Bangalore - 560 099</p>
+    ),
+    phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
+    email: (
+      <a href="mailto:msmf@ms-mf.org" target={"_blank"}>
+        msmf@ms-mf.org
+      </a>
+    ),
     location:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.5627527677534!2d77.69266841508325!3d12.80686937193603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c33ea16001d%3A0x51693da9325cf807!2sMazumdar%20Shaw%20Medical%20Center!5e0!3m2!1sen!2sin!4v1644062770890!5m2!1sen!2sin",
   },
   philanthropy: {
-    address: `A-Block, 8th Floor #258/A, NH Health City, Bangalore - 560 099`,
-    phoneNumbers: ["+91-807 122 2351", "+91-802 780 3456"],
-    email: "msmf@ms-mf.org",
+    address: (
+      <p>A-Block, 8th Floor #258/A, NH Health City, Bangalore - 560 099</p>
+    ),
+    phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
+    email: (
+      <a href="mailto:msmf@ms-mf.org" target={"_blank"}>
+        msmf@ms-mf.org
+      </a>
+    ),
     location:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.5627527677534!2d77.69266841508325!3d12.80686937193603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c33ea16001d%3A0x51693da9325cf807!2sMazumdar%20Shaw%20Medical%20Center!5e0!3m2!1sen!2sin!4v1644062770890!5m2!1sen!2sin",
   },
   adrc: {
-    address:
-      "3rd block, International Wing, Narayana Health City, Bommasandra, Bangalore-12",
-    phoneNumbers: ["+91-807 122 2351", "+91-802 780 3456"],
+    address: (
+      <p>
+        3rd block, International Wing, Narayana Health City, Bommasandra,
+        Bangalore-12
+      </p>
+    ),
+    phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
+    email: (
+      <>
+        <p>
+          <b>Dr. Manjula Das</b> -{" "}
+          <a href="mailto:manjula.msmf@gmail.com" target={"_blank"}>
+            manjula.msmf@gmail.com
+          </a>
+        </p>
+        <p>
+          <b>Dr. Sujan Dhar</b> -{" "}
+          <a href="mailto:sujan.dhar@ms-mf.org" target={"_blank"}>
+            sujan.dhar@ms-mf.org
+          </a>
+        </p>
+      </>
+    ),
   },
   incubation: {
-    address:
-      "258/A, Hosur Road, Bommasandra Industrial Area, Bengaluru - 560099",
-    phoneNumbers: ["+91-807 122 2351", "+91-802 780 3456"],
-    email: "tbi@ms-mf.org",
+    address: (
+      <p>258/A, Hosur Road, Bommasandra Industrial Area, Bengaluru - 560099</p>
+    ),
+    phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
+    email: (
+      <a href="mailto:msmf@ms-mf.org" target={"_blank"}>
+        msmf@ms-mf.org
+      </a>
+    ),
     location:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.5627527677534!2d77.69266841508325!3d12.80686937193603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c33ea16001d%3A0x51693da9325cf807!2sMazumdar%20Shaw%20Medical%20Center!5e0!3m2!1sen!2sin!4v1644062770890!5m2!1sen!2sin",
   },
   research: {
-    address: "A-Block, 8th Floor #258/A, NH Health City",
-    phoneNumbers: ["+91-807 122 2351", "+91-802 780 3456"],
+    address: <p>A-Block, 8th Floor #258/A, NH Health City</p>,
+    phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
   },
 };
 
@@ -70,22 +107,22 @@ const Footer = () => {
           <p className="font-semibold text-white text-2xl">Get in touch</p>
           <hr className="border-msmf-dark my-4" />
           {GetInTouchContent[currentPath]?.address && (
-            <p className="text-white text-lg mt-6">
+            <div className="text-white text-lg mt-6">
               <span className="font-semibold italic">Meet us:</span>{" "}
               {GetInTouchContent[currentPath].address}
-            </p>
+            </div>
           )}
           {GetInTouchContent[currentPath]?.phoneNumbers && (
-            <p className="text-white text-lg mt-6">
+            <div className="text-white text-lg mt-6">
               <span className="font-semibold italic">Call us:</span>{" "}
-              {GetInTouchContent[currentPath]?.phoneNumbers?.join(", ")}
-            </p>
+              {GetInTouchContent[currentPath]?.phoneNumbers}
+            </div>
           )}
           {GetInTouchContent[currentPath]?.email && (
-            <p className="text-white text-lg mt-6">
+            <div className="text-white text-lg mt-6">
               <span className="font-semibold italic">Email us:</span>{" "}
               {GetInTouchContent[currentPath]?.email}
-            </p>
+            </div>
           )}
           {GetInTouchContent[currentPath]?.location && (
             <p className="text-white text-lg mt-6">
@@ -105,36 +142,47 @@ const Footer = () => {
           <p className="font-semibold text-white text-2xl">Get connected</p>
           <hr className="border-msmf-dark my-4" />
           <div className="flex items-center justify-between">
-            <img
-              src="/assets/images/Common/icons8-linkedin-192.png"
-              alt="linkedin"
-              className="w-10 h-10"
-            />
-            <img
-              src="/assets/images/Common/icons8-facebook-192.png"
-              alt="facebook"
-              className="w-10 h-10"
-            />
-            <img
-              src="/assets/images/Common/icons8-instagram-144.png"
-              alt="instagram"
-              className="w-10 h-10"
-            />
-            <img
-              src="/assets/images/Common/icons8-twitter-144.png"
-              alt="twitter"
-              className="w-10 h-10"
-            />
-            <img
-              src="/assets/images/Common/icons8-medium-256.png"
-              alt="medium"
-              className="w-10 h-10"
-            />
-            <img
-              src="/assets/images/Common/icons8-youtube-192.png"
-              alt="youtube"
-              className="w-10 h-10"
-            />
+            <a
+              href="https://www.linkedin.com/company/67262314/admin/"
+              target="_blank"
+            >
+              <img
+                src="/assets/images/Common/icons8-linkedin-192.png"
+                alt="linkedin"
+                className="w-10 h-10"
+              />
+            </a>
+            <a href="https://www.instagram.com/tbimsmf/" target="_blank">
+              <img
+                src="/assets/images/Common/icons8-instagram-144.png"
+                alt="instagram"
+                className="w-10 h-10"
+              />
+            </a>
+            <a href="https://twitter.com/tbimsmf" target="_blank">
+              <img
+                src="/assets/images/Common/icons8-twitter-144.png"
+                alt="twitter"
+                className="w-10 h-10"
+              />
+            </a>
+            <a href="https://medium.com/tbi-msmf" target="_blank">
+              <img
+                src="/assets/images/Common/icons8-medium-256.png"
+                alt="medium"
+                className="w-10 h-10"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCilEfZZn1MmhPsPxBA1xZSg"
+              target="_blank"
+            >
+              <img
+                src="/assets/images/Common/icons8-youtube-192.png"
+                alt="youtube"
+                className="transition-500 w-10 h-10"
+              />
+            </a>
           </div>
         </div>
         <div id="sitemap" className="w-full">

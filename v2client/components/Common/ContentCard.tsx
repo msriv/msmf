@@ -4,10 +4,11 @@ import { getThemeColor } from "../../utils/Misc";
 
 interface ContentCardProps {
   children: React.ReactNode;
+  [key: string]: any;
 }
 const ContentCard = (props: ContentCardProps) => {
   const router = useRouter();
-  const { children } = props;
+  const { children, ...others } = props;
   const [themeColor, setThemeColor] = useState<string>("border-msmf-base");
 
   useEffect(() => {
@@ -39,7 +40,11 @@ const ContentCard = (props: ContentCardProps) => {
     }
   }, [router.pathname]);
 
-  return <div className={`msmf__content-card ${themeColor}`}>{children}</div>;
+  return (
+    <div className={`msmf__content-card ${themeColor}`} {...others}>
+      {children}
+    </div>
+  );
 };
 
 export { ContentCard };

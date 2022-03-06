@@ -28,9 +28,9 @@ const ResearchCarouselItems = [
         </button>
       </div>
       <img
-        src="http://api.ms-mf.org/assets/IncubationBanner.png"
-        alt="incubation-banner"
-        className="w-screen"
+        src="/assets/images/Rectangle 1508.png"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[809px]"
       />
     </div>
   </div>,
@@ -56,7 +56,7 @@ const Research = () => {
         <SectionContent>
           <div className="flex justify-between w-full">
             <Link href={"/research/research-programs/molecular-immunology"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white pb-10 hover:shadow-xl">
+              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-research flex justify-center">
                   <img
                     src="assets/images/Research/cancer (2).png"
@@ -64,7 +64,9 @@ const Research = () => {
                     className="m-0"
                   />
                 </div>
-                <p className="font-bold text-center">Molecular Immunology</p>
+                <p className="font-bold text-center text-2xl">
+                  Molecular Immunology
+                </p>
               </div>
             </Link>
             <Link
@@ -72,7 +74,7 @@ const Research = () => {
                 "/research/research-programs/integrated-head-and-neck-oncology"
               }
             >
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white pb-10 hover:shadow-xl">
+              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-research flex justify-center">
                   <img
                     src="assets/images/Research/neck 1.png"
@@ -80,13 +82,13 @@ const Research = () => {
                     className="m-0"
                   />
                 </div>
-                <p className="font-bold text-center">
+                <p className="font-bold text-center text-2xl">
                   Integrated Head and Neck Oncology
                 </p>
               </div>
             </Link>
             <Link href={"/research/research-programs/neuro-oncology"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white pb-10 hover:shadow-xl">
+              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-research flex justify-center">
                   <img
                     src="assets/images/Research/oncology.png"
@@ -94,11 +96,11 @@ const Research = () => {
                     className="m-0"
                   />
                 </div>
-                <p className="font-bold text-center">Neuro Oncology</p>
+                <p className="font-bold text-center text-2xl">Neuro Oncology</p>
               </div>
             </Link>
             <Link href={"/research/research-programs/product-research"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white pb-10 hover:shadow-xl">
+              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-research flex justify-center">
                   <img
                     src="assets/images/Research/new-product 1.png"
@@ -106,7 +108,9 @@ const Research = () => {
                     className="m-0"
                   />
                 </div>
-                <p className="font-bold text-center">Product Research</p>
+                <p className="font-bold text-center text-2xl">
+                  Product Research
+                </p>
               </div>
             </Link>
           </div>

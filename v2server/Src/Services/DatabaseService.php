@@ -26,7 +26,7 @@ class DatabaseService {
 
     public function createConfig(bool $isDevMode, ?string $proxyDir, ?string $cache, bool $useSimpleAnnotationReader): Configuration 
     {
-        return Setup::createAnnotationMetadataConfiguration(array("/server/Src/Models"), $isDevMode, $proxyDir, $cache, $useSimpleAnnotationReader);
+        return Setup::createAnnotationMetadataConfiguration(array("../Models"), $isDevMode, $proxyDir, $cache, $useSimpleAnnotationReader);
     }
 
     public function createConnection(): DBALConnection

@@ -9,22 +9,22 @@ const PhilanthropyImpact = (): JSX.Element => {
             <p className="text-[38px] font-light font-roboto text-white text-center">
               Our <b>Impact</b>
             </p>
-            <div className="flex flex-wrap justify-center w-full mt-10">
+            <div className="flex flex-wrap justify-center w-full">
               <div className="text-white text-center  w-3/12 my-16">
                 <p className="text-[45px] m-0 font-bold ">25</p>
-                <p className="text-[13px] uppercase font-bold m-0">
+                <p className="text-[19px] uppercase font-bold m-0">
                   Startups Incubated
                 </p>
               </div>
               <div className="text-white text-center w-3/12 my-16">
                 <p className="text-[45px] m-0 font-bold ">25</p>
-                <p className="text-[13px] uppercase font-bold m-0">
+                <p className="text-[19px] uppercase font-bold m-0">
                   Startups Incubated
                 </p>
               </div>
               <div className="text-white text-center w-3/12 my-16">
                 <p className="text-[45px] m-0 font-bold ">25</p>
-                <p className="text-[13px] uppercase font-bold m-0">
+                <p className="text-[19px] uppercase font-bold m-0">
                   Startups Incubated
                 </p>
               </div>
@@ -32,9 +32,9 @@ const PhilanthropyImpact = (): JSX.Element => {
           </div>
         </div>
         <img
-          src="http://api.ms-mf.org/assets/IncubationBanner.png"
-          alt="incubation-banner"
-          className="w-screen h-full object-cover"
+          src="/assets/images/Rectangle 1550.png"
+          alt="philanthropy-banner"
+          className="w-screen object-cover h-[416px]"
         />
       </div>
     </Section>

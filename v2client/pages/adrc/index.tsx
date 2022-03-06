@@ -102,7 +102,7 @@ const ADRC = () => {
         <SectionContent>
           <div className="flex justify-between w-full">
             <Link href={"/adrc/tests/brain-tumor"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white pb-10 hover:shadow-xl">
+              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-adrc flex justify-center">
                   <img
                     src="assets/images/ADRC/brain 1.png"
@@ -110,13 +110,15 @@ const ADRC = () => {
                     className="m-0"
                   />
                 </div>
-                <p className="font-bold text-center">Brain Tumor Panel</p>
+                <p className="font-bold text-center text-xl">
+                  Brain Tumor Panel
+                </p>
                 <p className="m-0 text-center">IDH1 Mutation</p>
                 <p className="m-0 text-center">1p19q double deletion</p>
               </div>
             </Link>
             <Link href={"/adrc/tests/covid"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white pb-10 hover:shadow-xl">
+              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-adrc flex justify-center">
                   <img
                     src="assets/images/ADRC/virus (1) 1.png"
@@ -124,14 +126,14 @@ const ADRC = () => {
                     className="m-0"
                   />
                 </div>
-                <p className="font-bold text-center">Covid Panel</p>
+                <p className="font-bold text-center text-xl">Covid Panel</p>
                 <p className="m-0 text-center">Anti-N Antibody</p>
                 <p className="m-0 text-center">Anti-Spike Antibody</p>
                 <p className="m-0 text-center">T-Cell Activity</p>
               </div>
             </Link>
             <Link href={"/adrc/tests/transplant"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white pb-10 hover:shadow-xl">
+              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-adrc flex justify-center">
                   <img
                     src="assets/images/ADRC/kidney 1.png"
@@ -139,7 +141,9 @@ const ADRC = () => {
                     className="m-0"
                   />
                 </div>
-                <p className="font-bold text-center">Transplant Panel</p>
+                <p className="font-bold text-center text-xl">
+                  Transplant Panel
+                </p>
                 <p className="m-0 text-center">HLA Transplant</p>
               </div>
             </Link>
@@ -179,23 +183,22 @@ const ADRC = () => {
           <div className="flex justify-between w-full">
             <Link href={"/adrc/research"}>
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-2 hover:shadow-xl">
-                <p className="font-bold text-center">HNSCC</p>
+                <p className="font-bold text-center text-xl">HNSCC</p>
               </div>
             </Link>
             <Link href={"/adrc/research"}>
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-2 hover:shadow-xl">
-                <p className="font-bold text-center">COVID</p>
+                <p className="font-bold text-center text-xl">COVID</p>
               </div>
             </Link>
             <Link href={"/adrc/research"}>
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-2 hover:shadow-xl">
-                <p className="font-bold text-center">Brain Tumor</p>
+                <p className="font-bold text-center text-xl">Brain Tumor</p>
               </div>
             </Link>
           </div>
         </SectionContent>
       </Section>
-      <ContactUs />
     </div>
   );
 };

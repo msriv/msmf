@@ -154,12 +154,6 @@ export const Sitemap: Array<ISitemap> = [
           },
         ],
       },
-      {
-        page: "Contact Us",
-        slug: "contact-us",
-        route: "/adrc/contact-us",
-        cta: true,
-      },
     ],
   },
   {
