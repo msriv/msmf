@@ -8,7 +8,7 @@ import Link from "next/link";
 import ResearchImpact from "../../components/Client/Research/Impact";
 
 const ResearchCarouselItems = [
-  <div>
+  <div key={0}>
     <div className="relative w-screen h-[809px]">
       <div
         id="overlay"

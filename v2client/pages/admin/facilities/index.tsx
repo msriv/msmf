@@ -14,10 +14,6 @@ const Facilities = () => {
     facilities: store.facilitiesStore.facilities,
   }));
 
-  useEffect(() => {
-    fetchFacilties();
-  }, []);
-
   const fetchFacilties = () => {
     dispatch(getFacility())
       .unwrap()
@@ -30,6 +26,11 @@ const Facilities = () => {
         console.error(rejectedValueOrSerializedError);
       });
   };
+
+  useEffect(() => {
+    fetchFacilties();
+  }, [fetchFacilties]);
+
 
   return (
     <AdminLayout>

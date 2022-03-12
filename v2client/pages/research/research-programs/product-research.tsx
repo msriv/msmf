@@ -78,9 +78,9 @@ const ProductResearch = () => {
             required to ascertain the 3S: stability, sustainability and
             scalability of the product before it can be taken to the
             users/patients through industry and/or approving agencies. In this
-            newly formed group we concentrate on 'productizing' a concept which
+            newly formed group we concentrate on &lsquo;productizing&rsquo; a concept which
             has already been proven of its application in any of the core
-            research groups at MSMF. 'Productizing' chiefly involves validation
+            research groups at MSMF. &lsquo;Productizing&rsquo; chiefly involves validation
             in patient samples and checking the 3S of the products.{" "}
           </p>
         </ContentCard>

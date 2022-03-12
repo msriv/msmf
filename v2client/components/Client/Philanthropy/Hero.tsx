@@ -1,7 +1,7 @@
 import Carousel from "../../Common/Carousel";
 
 const PhilanthropyCarouselItems = [
-  <div>
+  <div key={0}>
     <div className="relative w-screen h-[809px]">
       <div
         id="overlay"

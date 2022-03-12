@@ -97,7 +97,7 @@ const UploadAssetDialog = () => {
               })}
             >
               <input {...getInputProps()} />
-              <p>Drag 'n' drop some files here, or click to select files</p>
+              <p>Drag &lsquo;n&rsquo; drop some files here, or click to select files</p>
             </div>
             <aside className="flex flex-wrap mt-[16px]">{thumbs}</aside>
           </section>

@@ -35,7 +35,7 @@ const IncubationPrograms: NextPage = () => {
                   clinicians, researchers and mentors from diverse domains along
                   with Industrial, Venture Capital and other funding partners.
                   In addition to multiple strategic partnerships, the
-                  accelerator's core strengths is its unique hospital based
+                  accelerator&apos;s core strengths is its unique hospital based
                   research ecosystem, focused on clinical validation and
                   fast-tracking the path to commercialisation in an impactful
                   manner.
@@ -126,9 +126,9 @@ const IncubationPrograms: NextPage = () => {
               <div className="ml-16">
                 <p className=" text-4xl font-semibold">PhD Programs</p>
                 <p>
-                  <b>It's never too late to learn.</b> At MSMF we believe our
+                  <b>It&apos;s never too late to learn.</b> At MSMF we believe our
                   core expertise and value chain can be harnessed to help
-                  entrepreneurs and clinicians realise their life’s ambition of
+                  entrepreneurs and clinicians realise their life&apos;s ambition of
                   completing a Phd program. Often at a very early stage of our
                   lives we are forced to take certain career paths which over
                   time can distance us from our true ambitions and desires. This

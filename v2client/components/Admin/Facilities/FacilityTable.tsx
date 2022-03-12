@@ -19,7 +19,7 @@ const FacilitiesTable = (props: FaciltiesTableProps) => {
       </thead>
       <tbody>
         {facilities.map((item, key) => (
-          <tr>
+          <tr key={key}>
             <td>
               <img
                 src={item.image}

@@ -130,13 +130,13 @@ const IntegratedHeadAndNeckOncology = () => {
             group is hence to understand oral carcinogenesis and develop
             affordable strategies for early detection and introduce detours in
             the carcinogenic process.About 50% of all head and neck cancers
-            recur after ‘curative intent treatment’. As in majority of solid
+            recur after &lsquo;curative intent treatment&rsquo;. As in majority of solid
             tumours, once the disease recurs or develops distant metastasis,
             there are no curative treatment options. The second focus of our
             research group is to understand mechanisms of treatment resistance
             and to develop effective methods for detecting disease relapse and
             to treat the recurrent and metastatic disease with the ultimate goal
-            of ‘molecular pathway’ based adaptive personalized therapy for
+            of &lsquo;molecular pathway&rsquo; based adaptive personalized therapy for
             patients with head and neck cancer. In an effort to establish an
             efficient research program and to enable effective translation of
             the scientific discoveries for clinical benefit, the research
@@ -155,7 +155,7 @@ const IntegratedHeadAndNeckOncology = () => {
                 blood
               </li>
               <li>
-                A 'cancer stem cell' perspective: exploring the role of CSCs in
+                A &lsquo;cancer stem cell&rsquo; perspective: exploring the role of CSCs in
                 the process of tumorigenesis, field cancerization, drug
                 resistance and metastasis
               </li>
@@ -307,7 +307,7 @@ const IntegratedHeadAndNeckOncology = () => {
               </p>
               <p className="mt-0">
                 Sunny S, Baby A, James BL, Balaji D, N V A, Rana MH, Gurpur P,
-                Skandarajah A, D'Ambrosio M, Ramanjinappa RD, Mohan SP, Raghavan
+                Skandarajah A, D&apos;Ambrosio M, Ramanjinappa RD, Mohan SP, Raghavan
                 N, Kandasarma U, N S, Raghavan S, Hedne N, Koch F, Fletcher DA,
                 Selvam S, Kollegal M, N PB, Ladic L, Suresh A, Pandya HJ,
                 Kuriakose MA. PLoS One. 2019;14(11):e0224885. doi:

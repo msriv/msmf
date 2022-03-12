@@ -22,7 +22,7 @@ const AssetsTable = (props: AssetTableProps) => {
       </thead>
       <tbody>
         {assets.map((item, key) => (
-          <tr>
+          <tr key={key}>
             <td>
               <img src={item.uri} className="w-8 h-8" alt={item.originalName} />
             </td>

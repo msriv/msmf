@@ -3,13 +3,12 @@ import {
   SectionContent,
   SectionTitle,
 } from "../../components/Common/Section";
-import ContactUs from "./contact-us";
 import Link from "next/link";
 import Carousel from "../../components/Common/Carousel";
 import React from "react";
 
 const carouselItems: Array<React.ReactNode> = [
-  <div className="flex w-full h-full">
+  <div key={0} className="flex w-full h-full">
     <div className="relative w-6/12">
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
       <img
@@ -32,7 +31,7 @@ const carouselItems: Array<React.ReactNode> = [
       </div>
     </div>
   </div>,
-  <div className="flex w-full h-full">
+  <div key={1} className="flex w-full h-full">
     <div className="relative w-6/12">
       <div className="absolute top-0 left-0 w-full h-full bg-gray-700/50 z-10"></div>
       <img
@@ -46,7 +45,7 @@ const carouselItems: Array<React.ReactNode> = [
       <p>Some representative placeholder content for the first slide.</p>
     </div>
   </div>,
-  <div className="flex w-full h-full">
+  <div key={2} className="flex w-full h-full">
     <div className="relative w-6/12">
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
       <img

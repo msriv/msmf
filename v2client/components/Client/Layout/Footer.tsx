@@ -17,7 +17,7 @@ const GetInTouchContent: {
     ),
     phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
     email: (
-      <a href="mailto:msmf@ms-mf.org" target={"_blank"}>
+      <a href="mailto:msmf@ms-mf.org" target="_blank" rel="noreferrer">
         msmf@ms-mf.org
       </a>
     ),
@@ -30,7 +30,7 @@ const GetInTouchContent: {
     ),
     phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
     email: (
-      <a href="mailto:msmf@ms-mf.org" target={"_blank"}>
+      <a href="mailto:msmf@ms-mf.org" target="_blank" rel="noreferrer">
         msmf@ms-mf.org
       </a>
     ),
@@ -49,13 +49,13 @@ const GetInTouchContent: {
       <>
         <p>
           <b>Dr. Manjula Das</b> -{" "}
-          <a href="mailto:manjula.msmf@gmail.com" target={"_blank"}>
+          <a href="mailto:manjula.msmf@gmail.com" target="_blank" rel="noreferrer">
             manjula.msmf@gmail.com
           </a>
         </p>
         <p>
           <b>Dr. Sujan Dhar</b> -{" "}
-          <a href="mailto:sujan.dhar@ms-mf.org" target={"_blank"}>
+          <a href="mailto:sujan.dhar@ms-mf.org" target="_blank" rel="noreferrer">
             sujan.dhar@ms-mf.org
           </a>
         </p>
@@ -68,7 +68,7 @@ const GetInTouchContent: {
     ),
     phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
     email: (
-      <a href="mailto:msmf@ms-mf.org" target={"_blank"}>
+      <a href="mailto:msmf@ms-mf.org" target="_blank" rel="noreferrer">
         msmf@ms-mf.org
       </a>
     ),
@@ -144,7 +144,7 @@ const Footer = () => {
           <div className="flex items-center justify-between">
             <a
               href="https://www.linkedin.com/company/67262314/admin/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img
                 src="/assets/images/Common/icons8-linkedin-192.png"
@@ -152,21 +152,21 @@ const Footer = () => {
                 className="w-10 h-10"
               />
             </a>
-            <a href="https://www.instagram.com/tbimsmf/" target="_blank">
+            <a href="https://www.instagram.com/tbimsmf/" target="_blank" rel="noreferrer">
               <img
                 src="/assets/images/Common/icons8-instagram-144.png"
                 alt="instagram"
                 className="w-10 h-10"
               />
             </a>
-            <a href="https://twitter.com/tbimsmf" target="_blank">
+            <a href="https://twitter.com/tbimsmf" target="_blank" rel="noreferrer">
               <img
                 src="/assets/images/Common/icons8-twitter-144.png"
                 alt="twitter"
                 className="w-10 h-10"
               />
             </a>
-            <a href="https://medium.com/tbi-msmf" target="_blank">
+            <a href="https://medium.com/tbi-msmf" target="_blank" rel="noreferrer">
               <img
                 src="/assets/images/Common/icons8-medium-256.png"
                 alt="medium"
@@ -175,7 +175,7 @@ const Footer = () => {
             </a>
             <a
               href="https://www.youtube.com/channel/UCilEfZZn1MmhPsPxBA1xZSg"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img
                 src="/assets/images/Common/icons8-youtube-192.png"

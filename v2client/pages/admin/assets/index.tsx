@@ -27,7 +27,7 @@ const AssetManager = () => {
           console.error(rejectedValueOrSerializedError);
         });
     }
-  }, []);
+  }, [assets.length, dispatch]);
 
   return (
     <AdminLayout>
