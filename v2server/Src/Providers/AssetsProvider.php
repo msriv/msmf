@@ -48,7 +48,6 @@ class AssetsProvider extends Provider {
                         return Helpers::createFailureResponse(500, array('message' => "Upload Failed"));
                     }
                     case StorageService::UPLOAD_SUCCESS: {
-                        
                         $assets = array();
                         foreach($files as $file) {
                             $asset = new AssetModel($file);

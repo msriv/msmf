@@ -11,21 +11,21 @@ const PhilanthropyImpact = (): JSX.Element => {
             </p>
             <div className="flex flex-wrap justify-center w-full">
               <div className="text-white text-center  w-3/12 my-16">
-                <p className="text-[45px] m-0 font-bold ">25</p>
+                <p className="text-[45px] m-0 font-bold ">37</p>
                 <p className="text-[19px] uppercase font-bold m-0">
-                  Startups Incubated
+                  Patients under care
                 </p>
               </div>
               <div className="text-white text-center w-3/12 my-16">
-                <p className="text-[45px] m-0 font-bold ">25</p>
+                <p className="text-[45px] m-0 font-bold ">38</p>
                 <p className="text-[19px] uppercase font-bold m-0">
-                  Startups Incubated
+                  Patients completed treatment 20-21
                 </p>
               </div>
               <div className="text-white text-center w-3/12 my-16">
-                <p className="text-[45px] m-0 font-bold ">25</p>
+                <p className="text-[45px] m-0 font-bold ">600</p>
                 <p className="text-[19px] uppercase font-bold m-0">
-                  Startups Incubated
+                  Patients receiving nutritional support per month
                 </p>
               </div>
             </div>

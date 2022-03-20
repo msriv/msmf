@@ -1,13 +1,12 @@
+import { ReactNode } from "react";
 import { BookingDuration, FacilityCategories, Roles } from "./Enums";
 
 export interface IPerson {
   name: string;
-  thumbnail: string;
-  position: string;
-  profile: string;
-  about: string;
+  image?: string;
+  position?: string;
+  linkedInProfile?: string;
 }
-
 export interface ITeam {
   teamName: string;
   members: IPerson[];
@@ -60,4 +59,11 @@ export interface ITestimonial {
   company: string;
   avatar: string;
   testimonialContent: string;
+}
+
+export interface IPortfolios {
+  logo: string;
+  incubateeName: string;
+  companyLink?: string;
+  about?: string | ReactNode;
 }

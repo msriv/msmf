@@ -1,5 +1,5 @@
 import { NextApiRequest } from "next";
-import { store } from "../redux/store";
+import { store } from "../store/store";
 import { SessionStorageKeys } from "./Enums";
 import { Storage } from "./Misc";
 

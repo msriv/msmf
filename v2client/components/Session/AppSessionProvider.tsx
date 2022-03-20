@@ -1,12 +1,12 @@
 import { SerializedError } from "@reduxjs/toolkit";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { setSessionInfo } from "../../redux/reducers/session";
-import { RootState, useAppDispatch } from "../../redux/store";
+import { setSessionInfo } from "../../store/reducers/session";
+import { RootState, useAppDispatch } from "../../store/store";
 import {
   getTokenAsVisitor,
   validateVisitorToken,
-} from "../../redux/thunk/session";
+} from "../../store/thunk/session";
 import { SessionStorageKeys } from "../../utils/Enums";
 import { Storage } from "../../utils/Misc";
 

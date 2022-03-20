@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Dialog from "../../Common/Dialog";
 import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../../../redux/store";
-import { createAssets } from "../../../redux/thunk/assets";
+import { RootState, useAppDispatch } from "../../../store/store";
+import { createAssets } from "../../../store/thunk/assets";
 import { SerializedError } from "@reduxjs/toolkit";
 import { IFacility } from "../../../utils/Interfaces";
 import { BookingDuration, FacilityCategories } from "../../../utils/Enums";
-import { createFacility } from "../../../redux/thunk/facility";
+import { createFacility } from "../../../store/thunk/facility";
 
 const AddFacilityDialog = () => {
   const dispatch = useAppDispatch();

@@ -8,9 +8,9 @@ const PhilanthropyCarouselItems = [
         className="image-overlay flex flex-col items-center justify-center h-[809px]"
       >
         <div className="prose font-avenir-heavy text-[47px] text-center">
-          <p className="text-white m-0 leading-tight">We are India’s first</p>{" "}
+          <p className="text-white m-0 leading-tight">Join the battle...</p>{" "}
           <p className="text-[#fbb602] italic -m-2 font-bold">
-            Corporate Hospital-based Start-up Incubator
+            Because they can't fight cancer alone
           </p>
         </div>
         <button className="msmf__nav-cta font-avenir mt-40">
@@ -18,12 +18,35 @@ const PhilanthropyCarouselItems = [
         </button>
       </div>
       <img
-        src="/assets/images/Rectangle 1508.png"
+        src="/assets/images/Philanthropy/1_Home Page Banner_MSCOP play area 2.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />
     </div>
   </div>,
+  <div key={0}>
+    <div className="relative w-screen h-[809px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[809px]"
+      >
+        {/* <div className="prose font-avenir-heavy text-[47px] text-center">
+          <p className="text-white m-0 leading-tight">Join the battle...</p>{" "}
+          <p className="text-[#fbb602] italic -m-2 font-bold">
+            Because they can't fight cancer alone
+          </p>
+        </div>
+        <button className="msmf__nav-cta font-avenir mt-40">
+          Get Incubated
+        </button> */}
+      </div>
+      <img
+        src="/assets/images/Philanthropy/6_Banner 2_MSCOP patient meeting 2.jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[809px]"
+      />
+    </div>
+  </div>
 ];
 
 const PhilanthropyHero = (): JSX.Element => {
@@ -32,7 +55,7 @@ const PhilanthropyHero = (): JSX.Element => {
       alignIndicator="center"
       carouselID="philanthropy-carousel"
       carouselItems={PhilanthropyCarouselItems}
-      classes="h-[809px]"
+      classes="h-[809px] bg-msmf-dark/90"
     />
   );
 };

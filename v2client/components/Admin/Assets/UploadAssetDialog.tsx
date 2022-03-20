@@ -2,8 +2,8 @@ import { useState } from "react";
 import Dialog from "../../Common/Dialog";
 import { useDropzone } from "react-dropzone";
 import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../../../redux/store";
-import { createAssets } from "../../../redux/thunk/assets";
+import { RootState, useAppDispatch } from "../../../store/store";
+import { createAssets } from "../../../store/thunk/assets";
 import { SerializedError } from "@reduxjs/toolkit";
 
 const UploadAssetDialog = () => {

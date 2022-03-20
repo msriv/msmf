@@ -1,11 +1,6 @@
-export interface PeopleCardProps {
-  name: string;
-  image?: string;
-  linkedInProfile?: string;
-  position?: string;
-}
+import { IPerson } from "../../utils/Interfaces";
 
-const PeopleCard = (props: PeopleCardProps) => {
+const PeopleCard = (props: IPerson) => {
   const { name, image, linkedInProfile, position } = props;
 
   return (

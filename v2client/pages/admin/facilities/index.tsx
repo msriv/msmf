@@ -4,8 +4,8 @@ import { useSelector } from "react-redux";
 import AdminLayout from "../../../components/Admin/AdminLayout";
 import AddFacilityDialog from "../../../components/Admin/Facilities/AddFacilitiyDialog";
 import FacilitiesTable from "../../../components/Admin/Facilities/FacilityTable";
-import { RootState, useAppDispatch } from "../../../redux/store";
-import { getFacility } from "../../../redux/thunk/facility";
+import { RootState, useAppDispatch } from "../../../store/store";
+import { getFacility } from "../../../store/thunk/facility";
 
 const Facilities = () => {
   const dispatch = useAppDispatch();

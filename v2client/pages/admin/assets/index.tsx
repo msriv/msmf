@@ -4,8 +4,8 @@ import { useSelector } from "react-redux";
 import AdminLayout from "../../../components/Admin/AdminLayout";
 import AssetsTable from "../../../components/Admin/Assets/AssetsTable";
 import UploadAssetDialog from "../../../components/Admin/Assets/UploadAssetDialog";
-import { RootState, useAppDispatch } from "../../../redux/store";
-import { fetchAssets } from "../../../redux/thunk/assets";
+import { RootState, useAppDispatch } from "../../../store/store";
+import { fetchAssets } from "../../../store/thunk/assets";
 
 const AssetManager = () => {
   const dispatch = useAppDispatch();
