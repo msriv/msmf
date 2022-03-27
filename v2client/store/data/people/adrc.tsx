@@ -6,119 +6,114 @@ const ADRCPeople: {
     [subTeam: string]: Array<IPerson> | undefined;
   };
 } = {
+  Management: {
+    people: [
+      {
+        name: "Dr. Paul Salins",
+        image: "https://cdn.ms-mf.org/images/People/dr paul photo 3.jpg",
+        position: "Managing Director",
+      },
+      {
+        name: "Dr. Sharat Damodar",
+        image: "https://cdn.ms-mf.org/images/People/Dr. Sharat Damodar.jpg",
+        position: "Clinical Director",
+      },
+      {
+        name: "Dr. Murali Mohan B V",
+        image:
+          "https://cdn.ms-mf.org/images/People/Dr.Murali Mohan B V_0_1.jpg",
+        position: "Consultant, Pulmono",
+      },
+    ],
+  },
   Advisors: {
     people: [
       {
-        name: "Dr. Kiran Mazumdar Shaw",
-        image: "/assets/images/People/Dr. KMS.jpeg",
-        position:
-          "Chairman & Managing Director Of Biocon Limited, Chairperson - MSMF",
+        name: "Dr. Rekha P R",
+        image: "https://cdn.ms-mf.org/images/People/Dr.Rekha P R.jpg",
+        position: "Lab Director, NH",
       },
       {
-        name: "Dr. Devi Prasad Shetty",
-        image: "/assets/images/People/Dr. Devi Shetty.jpeg",
-        position: "Chairman - Narayana Health",
+        name: "Dr. Amritha Suresh",
+        image: "https://cdn.ms-mf.org/images/People/Amitha-Suresh-1.jpg",
+        position: "Operational Head, MSMF",
       },
       {
-        name: "Dr. Paul C Salins",
-        image: "/assets/images/People/dr paul photo 3.jpg",
-        position:
-          "Managing Director-MSMF, Medical Director-Mazumdar Shaw Medical Center, Sr Vice President-Narayana Hrudayalaya, Chairman-MSMF TBI",
+        name: "Dr. Samarth Shetty",
+        image: "https://cdn.ms-mf.org/images/People/Dr Samarth Shetty.JPG",
+        position: "Consultant, NH",
+      },
+      {
+        name: "Dr. Komal Prasad",
+        image: "https://cdn.ms-mf.org/images/People/Dr. Komal Prasad.JPG",
+        position: "Consultant, NH",
       },
     ],
   },
   Directors: {
     people: [
       {
-        name: "Dr. Paul C Salins",
-        image: "/assets/images/People/dr paul photo 3.jpg",
-        position:
-          "Managing Director-MSMF, Medical Director-Mazumdar Shaw Medical Center, Sr Vice President-Narayana Hrudayalaya, Chairman-MSMF TBI",
+        name: "Dr. Manjula Das",
+        image: "https://cdn.ms-mf.org/images/People/Dr.Manjula-Das.jpg",
+        position: "Lab Director and Quality Manager",
       },
       {
-        name: "Murali Krishnan",
-        position: "President, Finance – Biocon",
-        image: "/assets/images/People/MurliKrishnan_KMT.jpg",
+        name: "Dr. Sujan K Dhar",
+        position: "Business Liaison",
+        image: "https://cdn.ms-mf.org/images/People/Sujan K Dhar.jpg",
       },
       {
-        name: "Paul Basil",
-        position: "Co-Founder & Partner - Menterra",
-        image: "/assets/images/People/Paul Basil.jpg",
-      },
-      {
-        name: "Naganand Doraswamy",
-        position: "Managing Director - Ideaspring Capital",
-        image: "/assets/images/People/Naganand Doraswamy.jpg",
-      },
-      {
-        name: "Prashant Chopra",
-        position: "Advisor - UCSF Innovation Ventures",
-        image: "/assets/images/People/Prashant Chopra.jpg",
+        name: "Dr. Smitha P K",
+        position: "Technical Director",
+        image: "https://cdn.ms-mf.org/images/People/Smitha PK.jpg",
       },
     ],
   },
   Pathologists: {
     people: [
       {
-        name: "Dr. Paul C Salins",
-        image: "/assets/images/People/dr paul photo 3.jpg",
-        position:
-          "Managing Director-MSMF, Medical Director-Mazumdar Shaw Medical Center, Sr Vice President-Narayana Hrudayalaya, Chairman-MSMF TBI",
-      },
-      {
-        name: "Dr. B.V. Murali Mohan",
-        image: "/assets/images/People/Dr.Murali Mohan B V_0_1.jpg",
-      },
-      {
-        name: "Dr. Pradeep Narayan",
-        image: "/assets/images/People/Dr. Pradeep Narayan_Kolkata_.jpg",
-      },
-      {
-        name: "Dr. Amritha Suresh",
-        image: "/assets/images/People/Dr Amitha Suresh Ph.D- PI-5.JPG",
-      },
-      {
-        name: "Dr. Manjula Das",
-        image: "/assets/images/People/Manjula Das Ph.D-PI-1.JPG",
+        name: "Dr. Pradeep",
+        image:
+          "https://cdn.ms-mf.org/images/People/Dr. Pradeep Narayan_Kolkata_.jpg",
+        position: "Pathologist",
       },
     ],
   },
   Scientists: {
     people: [
       {
-        name: "Dr. Paul C Salins",
-        image: "/assets/images/People/dr paul photo 3.jpg",
-        position:
-          "Managing Director-MSMF, Medical Director-Mazumdar Shaw Medical Center, Sr Vice President-Narayana Hrudayalaya, Chairman-MSMF TBI",
+        name: "Mr. Manjunath",
+        position: "Scientist",
       },
       {
-        name: "Dr. Amritha Suresh",
-        image: "/assets/images/People/Dr Amitha Suresh Ph.D- PI-5.JPG",
+        name: "Ms Gouri",
+        image: "https://cdn.ms-mf.org/images/People/Gouri-233x300.jpg",
+        position: "Scientist",
       },
       {
-        name: "Dr. Samarth Shetty",
-        image: "/assets/images/People/Dr Samarth Shetty.JPG",
-        position: "Bionest In-Charge",
+        name: "Mr. Kunal Basu",
+        position: "Scientist",
       },
       {
-        name: "Dr. Sherin James",
-        image: "/assets/images/People/DR SHERIN JAMES.jpg",
-        position: "Senior Program Manager",
-      },
-      {
-        name: "Salai Jeyaseelan",
-        position: "Chief Engineer",
-      },
-      {
-        name: "Preethu B U",
+        name: "Ms. Kiruthiga",
+        image: "https://cdn.ms-mf.org/images/People/DR SHERIN JAMES.jpg",
+        position: "Scientist",
       },
     ],
   },
   Administration: {
-    people: [],
-  },
-  "Business Collaborators": {
-    people: [],
+    people: [
+      {
+        name: "Ms. Archana Ann",
+        image: "https://cdn.ms-mf.org/images/People/archana ann j.jpeg",
+        position: "Lab Manager",
+      },
+      {
+        name: "Ms. Preethu",
+        image: "https://cdn.ms-mf.org/images/People/Preethu B U - Admin.JPG",
+        position: "Finance Head",
+      },
+    ],
   },
 };
 

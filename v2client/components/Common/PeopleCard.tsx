@@ -13,13 +13,15 @@ const PeopleCard = (props: IPerson) => {
         />
         <div className="w-[321px] flex justify-between items-center mt-2">
           <p className="m-0 font-semibold leading-tight">{name}</p>
-          <a href={linkedInProfile || "#"}>
-            <img
-              src="/assets/images/Common/icons8-linkedin-192-black.png"
-              alt="linkedin"
-              className="w-6 h-6 m-0"
-            />{" "}
-          </a>
+          {linkedInProfile && (
+            <a href={linkedInProfile || "#"} target="_blank">
+              <img
+                src="/assets/images/Common/icons8-linkedin-192-black.png"
+                alt="linkedin"
+                className="w-6 h-6 m-0"
+              />{" "}
+            </a>
+          )}
         </div>
         <p className="m-0 mt-2 leading-tight text-[#333333] text-lg">
           {position}

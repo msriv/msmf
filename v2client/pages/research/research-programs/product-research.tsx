@@ -115,7 +115,7 @@ const ProductResearch = () => {
           </div>
           <div id="image" className="w-5/12 px-4 flex justify-center">
             <img
-              src="https://cdn.ms-mf.org/images/Research/Rectangle 1470-3.png"
+              src="https://cdn.ms-mf.org/images/People/Smitha PK.jpg"
               alt="Smitha P K"
             />
           </div>
