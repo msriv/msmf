@@ -14,17 +14,17 @@ const SupportStories = () => {
       <SectionContent>
         <div className="flex justify-between w-full">
           <StoryCard
-            thumbnail="/assets/images/Philanthropy/Rectangle 101.png"
+            thumbnail="https://cdn.ms-mf.org/images/Philanthropy/Rectangle 101.png"
             title="Lorem Ipsum is simply dummy"
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
           />
           <StoryCard
-            thumbnail="/assets/images/Philanthropy/Rectangle 101.png"
+            thumbnail="https://cdn.ms-mf.org/images/Philanthropy/Rectangle 101.png"
             title="Lorem Ipsum is simply dummy"
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
           />
           <StoryCard
-            thumbnail="/assets/images/Philanthropy/Rectangle 101.png"
+            thumbnail="https://cdn.ms-mf.org/images/Philanthropy/Rectangle 101.png"
             title="Lorem Ipsum is simply dummy"
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
           />

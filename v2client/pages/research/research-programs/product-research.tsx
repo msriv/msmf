@@ -78,10 +78,11 @@ const ProductResearch = () => {
             required to ascertain the 3S: stability, sustainability and
             scalability of the product before it can be taken to the
             users/patients through industry and/or approving agencies. In this
-            newly formed group we concentrate on &lsquo;productizing&rsquo; a concept which
-            has already been proven of its application in any of the core
-            research groups at MSMF. &lsquo;Productizing&rsquo; chiefly involves validation
-            in patient samples and checking the 3S of the products.{" "}
+            newly formed group we concentrate on &lsquo;productizing&rsquo; a
+            concept which has already been proven of its application in any of
+            the core research groups at MSMF. &lsquo;Productizing&rsquo; chiefly
+            involves validation in patient samples and checking the 3S of the
+            products.{" "}
           </p>
         </ContentCard>
         <div className=" bg-msmf-dark flex items-center justify-between px-4 w-full">
@@ -114,7 +115,7 @@ const ProductResearch = () => {
           </div>
           <div id="image" className="w-5/12 px-4 flex justify-center">
             <img
-              src="/assets/images/Research/Rectangle 1470-3.png"
+              src="https://cdn.ms-mf.org/images/Research/Rectangle 1470-3.png"
               alt="Smitha P K"
             />
           </div>

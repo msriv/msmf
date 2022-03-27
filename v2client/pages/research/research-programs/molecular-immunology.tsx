@@ -219,7 +219,7 @@ const MolecularImmunology = () => {
             className="w-5/12 px-4 flex justify-center flex-col items-center"
           >
             <img
-              src="/assets/images/Research/Rectangle 1470.png"
+              src="https://cdn.ms-mf.org/images/Research/Rectangle 1470.png"
               alt="Manjula Das"
             />
             <p className="m-0 text-white text-xl">manjula.das@ms-mf.org</p>

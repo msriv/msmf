@@ -34,7 +34,7 @@ const AboutUs = () => {
               </div>
               <div className="w-6/12 px-4">
                 <img
-                  src="/assets/images/ADRC/about-us-banner.jpeg"
+                  src="https://cdn.ms-mf.org/images/ADRC/about-us-banner.jpeg"
                   alt="About Us"
                   className="rounded"
                 />

@@ -4,7 +4,7 @@ import ImpactCard from "./ImpactCard";
 
 const campaignList = [
   {
-    thumbnail: "/assets/images/Philanthropy/Rectangle 100.png",
+    thumbnail: "https://cdn.ms-mf.org/images/Philanthropy/Rectangle 100.png",
     title: "Support Rohit Patil",
     about:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. ",
@@ -15,7 +15,7 @@ const campaignList = [
     supporterCount: 10539,
   },
   {
-    thumbnail: "/assets/images/Philanthropy/Rectangle 100.png",
+    thumbnail: "https://cdn.ms-mf.org/images/Philanthropy/Rectangle 100.png",
     title: "Support Rohit Patil",
     about:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. ",
@@ -26,7 +26,7 @@ const campaignList = [
     supporterCount: 10539,
   },
   {
-    thumbnail: "/assets/images/Philanthropy/Rectangle 100.png",
+    thumbnail: "https://cdn.ms-mf.org/images/Philanthropy/Rectangle 100.png",
     title: "Support Rohit Patil",
     about:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. ",

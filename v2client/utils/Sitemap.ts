@@ -54,9 +54,9 @@ export const Sitemap: Array<ISitemap> = [
         route: "/incubation/partners",
       },
       {
-        page: "Mentors",
-        slug: "mentors",
-        route: "/incubation/mentors",
+        page: "Facilities",
+        slug: "facilities",
+        route: "/incubation/facilities",
       },
       {
         page: "MSMF",

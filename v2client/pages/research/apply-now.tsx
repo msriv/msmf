@@ -15,7 +15,7 @@ const ApplyNow = () => {
               title="Program Manager"
               content={<a href="#">Apply Now</a>}
               vector={{
-                src: "/assets/images/Research/badge 4.png",
+                src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
                 alt: "position",
               }}
             />
@@ -23,7 +23,7 @@ const ApplyNow = () => {
               title="Project Manager"
               content={<a href="#">Apply Now</a>}
               vector={{
-                src: "/assets/images/Research/badge 4.png",
+                src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
                 alt: "position",
               }}
             />
@@ -38,7 +38,7 @@ const ApplyNow = () => {
               title="Research Scientist"
               content={<a href="#">Apply Now</a>}
               vector={{
-                src: "/assets/images/Research/badge 4.png",
+                src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
                 alt: "position",
               }}
             />
@@ -46,7 +46,7 @@ const ApplyNow = () => {
               title="Research Assistant"
               content={<a href="#">Apply Now</a>}
               vector={{
-                src: "/assets/images/Research/badge 4.png",
+                src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
                 alt: "position",
               }}
             />
@@ -82,7 +82,7 @@ const ApplyNow = () => {
               </span>
             }
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />
@@ -131,7 +131,7 @@ const ApplyNow = () => {
               </>
             }
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />
@@ -164,7 +164,7 @@ const ApplyNow = () => {
               </>
             }
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />
@@ -198,7 +198,7 @@ const ApplyNow = () => {
               </>
             }
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />
@@ -206,7 +206,7 @@ const ApplyNow = () => {
             title="Research Associate"
             content={"Molecular biology and cell culture expertise"}
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />
@@ -214,7 +214,7 @@ const ApplyNow = () => {
             title="SRF"
             content={"Bioinformatics/Machine learning/Image Analysis"}
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />
@@ -222,7 +222,7 @@ const ApplyNow = () => {
             title="SRF"
             content={"Molecular biology, miRNA"}
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />
@@ -230,7 +230,7 @@ const ApplyNow = () => {
             title="PhD Student"
             content={"with NET qualification or ICMR fellowship"}
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />
@@ -238,7 +238,7 @@ const ApplyNow = () => {
             title="Student Internship"
             content={"six months bioinformatics project"}
             vector={{
-              src: "/assets/images/Research/badge 4.png",
+              src: "https://cdn.ms-mf.org/images/Research/badge 4.png",
               alt: "position",
             }}
           />

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PeopleCard from "../../components/Common/PeopleCard";
 import {
   Section,
@@ -5,9 +6,23 @@ import {
   SectionTitle,
 } from "../../components/Common/Section";
 import { Tab, TabPanel } from "../../components/Common/TabPanel";
-import { IncubationPeople } from "../../store/data/people/incubation";
+import {
+  IncubationMentors,
+  IncubationPeople,
+} from "../../store/data/people/incubation";
 
 const People = () => {
+  const [selectedTeam, setSelectedTeam] = useState(IncubationPeople);
+
+  const handleTeamSelected = (event: any) => {
+    const { value } = event.target;
+    if (value === "People") {
+      setSelectedTeam(IncubationPeople);
+    } else {
+      setSelectedTeam(IncubationMentors);
+    }
+  };
+
   return (
     <Section>
       <SectionTitle
@@ -18,13 +33,19 @@ const People = () => {
         }
       />
       <SectionContent>
+        <label className="flex flex-1 items-center mb-4">
+          <select className=" w-full mt-1" onChange={handleTeamSelected}>
+            <option value="People">People</option>
+            <option value="Mentors">Mentors</option>
+          </select>
+        </label>
         <TabPanel>
-          {Object.keys(IncubationPeople).map((team, key) => (
+          {Object.keys(selectedTeam).map((team, key) => (
             <Tab key={key} title={team}>
-              {Object.keys(IncubationPeople[team]).map((subTeam, key) =>
+              {Object.keys(selectedTeam[team]).map((subTeam, key) =>
                 subTeam === "people" ? (
                   <div className="w-full flex flex-wrap ">
-                    {IncubationPeople[team][subTeam].map((person, key) => (
+                    {selectedTeam[team][subTeam].map((person, key) => (
                       <PeopleCard key={key} {...person} />
                     ))}
                   </div>
@@ -32,7 +53,7 @@ const People = () => {
                   <div className="mt-6">
                     <SectionTitle title={<b>{subTeam}</b>} />
                     <div className="w-full flex flex-wrap ">
-                      {IncubationPeople[team][subTeam]?.map((person, key) => (
+                      {selectedTeam[team][subTeam]?.map((person, key) => (
                         <PeopleCard key={key} {...person} />
                       ))}
                     </div>

@@ -17,9 +17,7 @@ class RootController {
        $this->database = $database;
        $this->controller = $controller;
        $this->handler = $handler;
-       $this->args = $args
-       ;
-       $this->bjb = "njnkjn";
+       $this->args = $args;
     }
 
     public function processRequest() {

@@ -21,17 +21,17 @@ const Partners = () => {
               Our Funding Partners
             </p>
             <img
-              src="/assets/images/Incubation/Bionest_logo.jpg"
+              src="https://cdn.ms-mf.org/images/Incubation/Bionest_logo.jpg"
               alt="Bionest"
               className="w-6/12"
             />
             <img
-              src="/assets/images/Incubation/DST logo.png"
+              src="https://cdn.ms-mf.org/images/Incubation/DST logo.png"
               alt="DST"
               className="w-7/12"
             />
             <img
-              src="/assets/images/Incubation/icmr_logo_new.png"
+              src="https://cdn.ms-mf.org/images/Incubation/icmr_logo_new.png"
               alt="ICMR"
               className="w-8/12"
             />
@@ -41,12 +41,12 @@ const Partners = () => {
               Our International Partners
             </p>
             <img
-              src="/assets/images/Incubation/jetro.png"
+              src="https://cdn.ms-mf.org/images/Incubation/jetro.png"
               alt="Jetro"
               className="w-6/12"
             />
             <img
-              src="/assets/images/Incubation/basel.png"
+              src="https://cdn.ms-mf.org/images/Incubation/basel.png"
               alt="Basel"
               className="w-7/12"
             />
@@ -56,17 +56,17 @@ const Partners = () => {
               Our National Collaborators
             </p>
             <img
-              src="/assets/images/Incubation/BBC logo.png"
+              src="https://cdn.ms-mf.org/images/Incubation/BBC logo.png"
               alt="BBC"
               className="w-9/12"
             />
             <img
-              src="/assets/images/Incubation/MIRAINXT.png"
+              src="https://cdn.ms-mf.org/images/Incubation/MIRAINXT.png"
               alt="MIRAINXT"
               className="w-11/12"
             />
             <img
-              src="/assets/images/Incubation/Manipal.png"
+              src="https://cdn.ms-mf.org/images/Incubation/Manipal.png"
               alt="Manipal"
               className="w-8/12"
             />
@@ -76,27 +76,27 @@ const Partners = () => {
               Our Investment Partners
             </p>
             <img
-              src="/assets/images/Incubation/Axillor logo.png"
+              src="https://cdn.ms-mf.org/images/Incubation/Axillor logo.png"
               alt="Axillor"
               className="w-9/12"
             />
             <img
-              src="/assets/images/Incubation/villgro.png"
+              src="https://cdn.ms-mf.org/images/Incubation/villgro.png"
               alt="Villgro"
               className="w-11/12"
             />
             <img
-              src="/assets/images/Incubation/GE logo.png"
+              src="https://cdn.ms-mf.org/images/Incubation/GE logo.png"
               alt="GE logo"
               className="w-8/12"
             />
             <img
-              src="/assets/images/Incubation/The-GAIN-revised.png"
+              src="https://cdn.ms-mf.org/images/Incubation/The-GAIN-revised.png"
               alt="GAIN"
               className="w-8/12"
             />
             <img
-              src="/assets/images/Incubation/Arthayan.png"
+              src="https://cdn.ms-mf.org/images/Incubation/Arthayan.png"
               alt="Arthayan"
               className="w-8/12"
             />
@@ -106,27 +106,27 @@ const Partners = () => {
               Our Hospital Partners
             </p>
             <img
-              src="/assets/images/Incubation/NITTE-LOGO.jpg"
+              src="https://cdn.ms-mf.org/images/Incubation/NITTE-LOGO.jpg"
               alt="NITTE"
               className="w-7/12"
             />
             <img
-              src="/assets/images/Incubation/adichunchanagiri university.png"
+              src="https://cdn.ms-mf.org/images/Incubation/adichunchanagiri university.png"
               alt="adichunchanagiri university"
               className="w-8/12"
             />
             <img
-              src="/assets/images/Incubation/SAVEETA DENTAL.jpg"
+              src="https://cdn.ms-mf.org/images/Incubation/SAVEETA DENTAL.jpg"
               alt="SAVEETA DENTAL"
               className="w-6/12"
             />
             <img
-              src="/assets/images/Incubation/SCUDDER MEMOTIAL HOSPITAL.jpg"
+              src="https://cdn.ms-mf.org/images/Incubation/SCUDDER MEMOTIAL HOSPITAL.jpg"
               alt="SCUDDER MEMOTIAL HOSPITAL"
               className="w-6/12"
             />
             <img
-              src="/assets/images/Incubation/Shivakrupa hospital.png"
+              src="https://cdn.ms-mf.org/images/Incubation/Shivakrupa hospital.png"
               alt="Shivakrupa hospital"
               className="w-10/12"
             />

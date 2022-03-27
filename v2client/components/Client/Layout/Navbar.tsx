@@ -12,6 +12,7 @@ interface DropDownProps {
 
 const DropDown = (props: DropDownProps) => {
   const { route, subRoute, dropMenu, align } = props;
+  console.log(align);
   const dropDownRef = useRef(null);
   const [showDropMenu, setShowDropMenu] = useState<boolean>(false);
 
@@ -53,16 +54,18 @@ const DropDown = (props: DropDownProps) => {
           <div
             className={`absolute -top-1 ${align}-5 rotate-45 bg-white w-4 h-4 -z-10`}
           ></div>
-          {dropMenu.map((subRoute: ISitemap) => (
-            <Link key={subRoute.slug} href={subRoute.route!}>
-              <p
-                onClick={handleToggleDropMenu}
-                className={`transition-500 rounded font-helvetica font-bold px-4 py-2 hover:bg-sky-500/20 cursor-pointer whitespace-nowrap`}
-              >
-                {subRoute.page}
-              </p>
-            </Link>
-          ))}
+          {dropMenu
+            .sort((a, b) => (a.page < b.page ? -1 : a.page > b.page ? 1 : 0))
+            .map((subRoute: ISitemap) => (
+              <Link key={subRoute.slug} href={subRoute.route!}>
+                <p
+                  onClick={handleToggleDropMenu}
+                  className={`transition-500 rounded font-helvetica font-bold px-4 py-2 hover:bg-sky-500/20 cursor-pointer whitespace-nowrap`}
+                >
+                  {subRoute.page}
+                </p>
+              </Link>
+            ))}
         </div>
       ) : null}
     </div>

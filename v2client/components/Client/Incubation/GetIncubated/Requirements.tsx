@@ -8,7 +8,7 @@ const Requirements = () => {
         dir="rtl"
         content="Inovation in creating sustainable solutions in the Healthcare domain."
         vector={{
-          src: "/assets/images/Incubation/innovation 1.png",
+          src: "https://cdn.ms-mf.org/images/Incubation/innovation 1.png",
           alt: "Innovation",
         }}
       />
@@ -16,7 +16,7 @@ const Requirements = () => {
         title="Affordable"
         content="Affordable solutions for marginal communities in India leading to a social impact."
         vector={{
-          src: "/assets/images/Incubation/money-bag 1.png",
+          src: "https://cdn.ms-mf.org/images/Incubation/money-bag 1.png",
           alt: "Affordable",
         }}
       />
@@ -25,7 +25,7 @@ const Requirements = () => {
         dir="rtl"
         content="Sustainable for-profit start-ups which have a viable business model in the long run"
         vector={{
-          src: "/assets/images/Incubation/sustainability 1.png",
+          src: "https://cdn.ms-mf.org/images/Incubation/sustainability 1.png",
           alt: "Sustainable",
         }}
       />
@@ -33,7 +33,7 @@ const Requirements = () => {
         title="Scale"
         content="Enterprises which can scale their solutions across geographies thus multiplying the impact."
         vector={{
-          src: "/assets/images/Incubation/growth-graph 1.png",
+          src: "https://cdn.ms-mf.org/images/Incubation/growth-graph 1.png",
           alt: "Scale",
         }}
       />

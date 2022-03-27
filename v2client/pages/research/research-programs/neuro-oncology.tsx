@@ -115,15 +115,16 @@ const ProductResearch = () => {
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
               distribution of letters, as opposed to using &lsquo;Content here,
-              content here&rsquo;, making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for &lsquo;lorem ipsum&rsquo; will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose (injected humour and the like) There are many variations
-              of passages of Lorem Ipsum available, but the majority have
-              suffered alteration in some form, by injected humour, or
-              randomised words which don&apos;t look even slightly believable.
+              content here&rsquo;, making it look like readable English. Many
+              desktop publishing packages and web page editors now use Lorem
+              Ipsum as their default model text, and a search for &lsquo;lorem
+              ipsum&rsquo; will uncover many web sites still in their infancy.
+              Various versions have evolved over the years, sometimes by
+              accident, sometimes on purpose (injected humour and the like)
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don&apos;t look even
+              slightly believable.
             </p>
           </div>
           <div
@@ -131,7 +132,7 @@ const ProductResearch = () => {
             className="w-5/12 px-4 flex justify-center flex-col items-center"
           >
             <img
-              src="/assets/images/Research/Rectangle 1470-2.png"
+              src="https://cdn.ms-mf.org/images/Research/Rectangle 1470-2.png"
               alt="Smitha P K"
             />
             <p className="m-0 text-white text-xl">ravisirdeshmukh@gmail.com</p>

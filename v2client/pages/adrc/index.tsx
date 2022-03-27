@@ -12,7 +12,7 @@ const carouselItems: Array<React.ReactNode> = [
     <div className="relative w-6/12">
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
       <img
-        src="/assets/images/ADRC/image 1.png"
+        src="https://cdn.ms-mf.org/images/ADRC/image 1.png"
         className="block w-full h-full"
         alt="..."
       />
@@ -35,7 +35,7 @@ const carouselItems: Array<React.ReactNode> = [
     <div className="relative w-6/12">
       <div className="absolute top-0 left-0 w-full h-full bg-gray-700/50 z-10"></div>
       <img
-        src="/assets/images/ADRC/image 3.png"
+        src="https://cdn.ms-mf.org/images/ADRC/image 3.png"
         className="block w-full h-full"
         alt="..."
       />
@@ -49,7 +49,7 @@ const carouselItems: Array<React.ReactNode> = [
     <div className="relative w-6/12">
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
       <img
-        src="/assets/images/ADRC/image 4.png"
+        src="https://cdn.ms-mf.org/images/ADRC/image 4.png"
         className="block w-full h-full"
         alt="..."
       />
@@ -82,7 +82,7 @@ const ADRC = () => {
           <div className="relative w-6/12">
             <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
             <img
-              src="/assets/images/ADRC/image 3.png"
+              src="https://cdn.ms-mf.org/images/ADRC/image 3.png"
               className="block w-full h-full"
               alt="..."
             />
@@ -144,55 +144,6 @@ const ADRC = () => {
                   Transplant Panel
                 </p>
                 <p className="m-0 text-center">HLA Transplant</p>
-              </div>
-            </Link>
-          </div>
-        </SectionContent>
-      </Section>
-      <Section>
-        <SectionTitle
-          title={
-            <span>
-              Our <b>Diagnostics</b>
-            </span>
-          }
-        />
-        <div className="flex w-full mb-10">
-          <div className="relative w-4/12">
-            <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
-            <img
-              src="/assets/images/ADRC/image 4.png"
-              className="block w-full h-full"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-caption bg-black text-white text-center w-8/12 flex flex-col justify-center items-center">
-            <div className="w-8/12">
-              <p className="prose text-4xl text-white font-bold font-avenir-heavy font-center">
-                Research is formalized curiosity. It is poking and prying with a
-                purpose.
-              </p>
-              <p className="prose text-xl text-[#FBB604] italic font-bold font-avenir-heavy font-center mt-14">
-                Zora Neale Hurston
-              </p>
-            </div>
-          </div>
-        </div>
-        <SectionContent>
-          <div className="flex justify-between w-full">
-            <Link href={"/adrc/research"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-2 hover:shadow-xl">
-                <p className="font-bold text-center text-xl">HNSCC</p>
-              </div>
-            </Link>
-            <Link href={"/adrc/research"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-2 hover:shadow-xl">
-                <p className="font-bold text-center text-xl">COVID</p>
-              </div>
-            </Link>
-            <Link href={"/adrc/research"}>
-              <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-2 hover:shadow-xl">
-                <p className="font-bold text-center text-xl">Brain Tumor</p>
               </div>
             </Link>
           </div>

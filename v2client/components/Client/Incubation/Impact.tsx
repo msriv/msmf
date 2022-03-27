@@ -44,7 +44,7 @@ const Impact = (): JSX.Element => {
           </div>
         </div>
         <img
-          src="/assets/images/Rectangle 1550.png"
+          src="https://cdn.ms-mf.org/images/Rectangle 1550.png"
           alt="philanthropy-banner"
           className="w-screen object-cover h-[612px]"
         />

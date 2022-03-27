@@ -18,7 +18,7 @@ const PhilanthropyCarouselItems = [
         </button>
       </div>
       <img
-        src="/assets/images/Philanthropy/1_Home Page Banner_MSCOP play area 2.jpg"
+        src="https://cdn.ms-mf.org/images/Philanthropy/1_Home Page Banner_MSCOP play area 2.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />
@@ -41,12 +41,12 @@ const PhilanthropyCarouselItems = [
         </button> */}
       </div>
       <img
-        src="/assets/images/Philanthropy/6_Banner 2_MSCOP patient meeting 2.jpg"
+        src="https://cdn.ms-mf.org/images/Philanthropy/6_Banner 2_MSCOP patient meeting 2.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />
     </div>
-  </div>
+  </div>,
 ];
 
 const PhilanthropyHero = (): JSX.Element => {

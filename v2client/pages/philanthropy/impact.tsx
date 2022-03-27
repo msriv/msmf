@@ -52,11 +52,11 @@ const Impact = () => {
               </div>
               <div className="w-5/12 px-6 flex flex-col items-center">
                 <img
-                  src="/assets/images/Philanthropy/Rectangle 1498.png"
+                  src="https://cdn.ms-mf.org/images/Philanthropy/Rectangle 1498.png"
                   alt=""
                 />
                 <img
-                  src="/assets/images/Philanthropy/Rectangle 1499.png"
+                  src="https://cdn.ms-mf.org/images/Philanthropy/Rectangle 1499.png"
                   alt=""
                 />
               </div>
@@ -93,11 +93,11 @@ const Impact = () => {
               </div>
               <div className="w-5/12 px-6 flex flex-col items-center">
                 <img
-                  src="/assets/images/Philanthropy/Rectangle 1500.png"
+                  src="https://cdn.ms-mf.org/images/Philanthropy/Rectangle 1500.png"
                   alt=""
                 />
                 <img
-                  src="/assets/images/Philanthropy/Rectangle 1501.png"
+                  src="https://cdn.ms-mf.org/images/Philanthropy/Rectangle 1501.png"
                   alt=""
                 />
               </div>

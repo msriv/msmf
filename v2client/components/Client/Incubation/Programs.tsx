@@ -94,7 +94,7 @@ const Programs = () => {
                 className="w-[240px] h-[240px] border rounded border-[#0E4981] hover:shadow-md hover:border-2 active:shadow-2xl transition duration-500 ease-in-out flex justify-center items-center"
               >
                 <img
-                  src="/assets/images/Incubation/Bionest_logo.jpg"
+                  src="https://cdn.ms-mf.org/images/Incubation/Bionest_logo.jpg"
                   alt="Bionest logo"
                   className="w-[200px] mx-auto"
                 />
@@ -104,7 +104,7 @@ const Programs = () => {
                 className="w-[240px] h-[240px] border rounded border-[#0E4981] hover:shadow-md hover:border-2 active:shadow-2xl transition duration-500 ease-in-out flex justify-center items-center"
               >
                 <img
-                  src="/assets/images/Incubation/Incite Logo printo.jpg"
+                  src="https://cdn.ms-mf.org/images/Incubation/Incite Logo printo.jpg"
                   alt="Incite Logo"
                   className="w-[200px]  mx-auto"
                 />
@@ -114,7 +114,7 @@ const Programs = () => {
                 className="w-[240px] h-[240px] border rounded border-[#0E4981] hover:shadow-md hover:border-2 active:shadow-2xl transition duration-500 ease-in-out flex justify-center items-center"
               >
                 <img
-                  src="/assets/images/Incubation/CIP Logo.png"
+                  src="https://cdn.ms-mf.org/images/Incubation/CIP Logo.png"
                   alt="CIP Logo"
                   className="w-[200px]  mx-auto"
                 />
@@ -124,7 +124,7 @@ const Programs = () => {
                 className="w-[240px] h-[240px] border rounded border-[#0E4981] hover:shadow-md hover:border-2 active:shadow-2xl transition duration-500 ease-in-out flex justify-center items-center"
               >
                 <img
-                  src="/assets/images/Incubation/MSMF_PhD_logopng.png"
+                  src="https://cdn.ms-mf.org/images/Incubation/MSMF_PhD_logopng.png"
                   alt="MSMF PhD program Logo"
                   className="w-[200px] mx-auto"
                 />

@@ -21,7 +21,7 @@ const IncubationPrograms: NextPage = () => {
           <ContentCard id={"BioNEST"}>
             <div className="flex items-start justify-between">
               <img
-                src="/assets/images/Incubation/Bionest_logo.jpg"
+                src="https://cdn.ms-mf.org/images/Incubation/Bionest_logo.jpg"
                 alt="BioNEST"
                 className="w-[200px]"
               />
@@ -58,7 +58,7 @@ const IncubationPrograms: NextPage = () => {
           <ContentCard id={"InCITE"}>
             <div className="flex items-start justify-between">
               <img
-                src="/assets/images/Incubation/Incite Logo printo.jpg"
+                src="https://cdn.ms-mf.org/images/Incubation/Incite Logo printo.jpg"
                 alt="InCITE"
                 className="w-[200px]"
               />
@@ -84,7 +84,7 @@ const IncubationPrograms: NextPage = () => {
           <ContentCard id={"CIP"}>
             <div className="flex items-start justify-between">
               <img
-                src="/assets/images/Incubation/CIP Logo.png"
+                src="https://cdn.ms-mf.org/images/Incubation/CIP Logo.png"
                 alt="CIP"
                 className="w-[200px]"
               />
@@ -119,25 +119,25 @@ const IncubationPrograms: NextPage = () => {
           <ContentCard id={"PhD"}>
             <div className="flex items-start justify-between">
               <img
-                src="/assets/images/Incubation/MSMF_PhD_logopng.png"
+                src="https://cdn.ms-mf.org/images/Incubation/MSMF_PhD_logopng.png"
                 alt="PhD"
                 className="w-[200px]"
               />
               <div className="ml-16">
                 <p className=" text-4xl font-semibold">PhD Programs</p>
                 <p>
-                  <b>It&apos;s never too late to learn.</b> At MSMF we believe our
-                  core expertise and value chain can be harnessed to help
-                  entrepreneurs and clinicians realise their life&apos;s ambition of
-                  completing a Phd program. Often at a very early stage of our
-                  lives we are forced to take certain career paths which over
-                  time can distance us from our true ambitions and desires. This
-                  is not just limited to entrepreneurs or clinicians but across
-                  all professions. We offer Phd programs currently in
-                  association with The Rajiv Gandhi University of Health
-                  Sciences, Bangalore and Manipal University, Manipal to help
-                  professionals pursue a Phd with assistance and support from
-                  MSMF.
+                  <b>It&apos;s never too late to learn.</b> At MSMF we believe
+                  our core expertise and value chain can be harnessed to help
+                  entrepreneurs and clinicians realise their life&apos;s
+                  ambition of completing a Phd program. Often at a very early
+                  stage of our lives we are forced to take certain career paths
+                  which over time can distance us from our true ambitions and
+                  desires. This is not just limited to entrepreneurs or
+                  clinicians but across all professions. We offer Phd programs
+                  currently in association with The Rajiv Gandhi University of
+                  Health Sciences, Bangalore and Manipal University, Manipal to
+                  help professionals pursue a Phd with assistance and support
+                  from MSMF.
                 </p>
               </div>
             </div>

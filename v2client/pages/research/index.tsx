@@ -28,7 +28,7 @@ const ResearchCarouselItems = [
         </button>
       </div>
       <img
-        src="/assets/images/Rectangle 1508.png"
+        src="https://cdn.ms-mf.org/images/Rectangle 1508.png"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />

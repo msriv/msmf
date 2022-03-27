@@ -130,20 +130,20 @@ const IntegratedHeadAndNeckOncology = () => {
             group is hence to understand oral carcinogenesis and develop
             affordable strategies for early detection and introduce detours in
             the carcinogenic process.About 50% of all head and neck cancers
-            recur after &lsquo;curative intent treatment&rsquo;. As in majority of solid
-            tumours, once the disease recurs or develops distant metastasis,
-            there are no curative treatment options. The second focus of our
-            research group is to understand mechanisms of treatment resistance
-            and to develop effective methods for detecting disease relapse and
-            to treat the recurrent and metastatic disease with the ultimate goal
-            of &lsquo;molecular pathway&rsquo; based adaptive personalized therapy for
-            patients with head and neck cancer. In an effort to establish an
-            efficient research program and to enable effective translation of
-            the scientific discoveries for clinical benefit, the research
-            program is integrated with the Department of Head and Neck Surgery,
-            Mazumdar-Shaw Medical Center and has initiated collaborations with
-            national and international institutions that offer complementary
-            expertise. <br />
+            recur after &lsquo;curative intent treatment&rsquo;. As in majority
+            of solid tumours, once the disease recurs or develops distant
+            metastasis, there are no curative treatment options. The second
+            focus of our research group is to understand mechanisms of treatment
+            resistance and to develop effective methods for detecting disease
+            relapse and to treat the recurrent and metastatic disease with the
+            ultimate goal of &lsquo;molecular pathway&rsquo; based adaptive
+            personalized therapy for patients with head and neck cancer. In an
+            effort to establish an efficient research program and to enable
+            effective translation of the scientific discoveries for clinical
+            benefit, the research program is integrated with the Department of
+            Head and Neck Surgery, Mazumdar-Shaw Medical Center and has
+            initiated collaborations with national and international
+            institutions that offer complementary expertise. <br />
             <br />
             The program adopts two major approaches to address the clinical
             challenges{" "}
@@ -155,9 +155,9 @@ const IntegratedHeadAndNeckOncology = () => {
                 blood
               </li>
               <li>
-                A &lsquo;cancer stem cell&rsquo; perspective: exploring the role of CSCs in
-                the process of tumorigenesis, field cancerization, drug
-                resistance and metastasis
+                A &lsquo;cancer stem cell&rsquo; perspective: exploring the role
+                of CSCs in the process of tumorigenesis, field cancerization,
+                drug resistance and metastasis
               </li>
             </ol>
             The major ongoing research programs of the group are:{" "}
@@ -221,7 +221,7 @@ const IntegratedHeadAndNeckOncology = () => {
             className="w-5/12 px-4 flex justify-center flex-col items-center"
           >
             <img
-              src="/assets/images/Research/Rectangle 1470.png"
+              src="https://cdn.ms-mf.org/images/Research/Rectangle 1470.png"
               alt="Manjula Das"
             />
             <p className="m-0 text-white text-xl">manjula.das@ms-mf.org</p>
@@ -307,10 +307,10 @@ const IntegratedHeadAndNeckOncology = () => {
               </p>
               <p className="mt-0">
                 Sunny S, Baby A, James BL, Balaji D, N V A, Rana MH, Gurpur P,
-                Skandarajah A, D&apos;Ambrosio M, Ramanjinappa RD, Mohan SP, Raghavan
-                N, Kandasarma U, N S, Raghavan S, Hedne N, Koch F, Fletcher DA,
-                Selvam S, Kollegal M, N PB, Ladic L, Suresh A, Pandya HJ,
-                Kuriakose MA. PLoS One. 2019;14(11):e0224885. doi:
+                Skandarajah A, D&apos;Ambrosio M, Ramanjinappa RD, Mohan SP,
+                Raghavan N, Kandasarma U, N S, Raghavan S, Hedne N, Koch F,
+                Fletcher DA, Selvam S, Kollegal M, N PB, Ladic L, Suresh A,
+                Pandya HJ, Kuriakose MA. PLoS One. 2019;14(11):e0224885. doi:
                 10.1371/journal.pone.0224885. eCollection 2019. PubMed PMID:
                 31730638; PubMed Central PMCID: PMC6857853.
               </p>

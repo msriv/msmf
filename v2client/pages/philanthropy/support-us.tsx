@@ -51,7 +51,7 @@ const SupportUs = () => {
               </>
             }
             vector={{
-              src: "/assets/images/Philanthropy/volunteering 1.png",
+              src: "https://cdn.ms-mf.org/images/Philanthropy/volunteering 1.png",
               alt: "Volunteer",
             }}
           />
@@ -59,7 +59,7 @@ const SupportUs = () => {
             title="Volunteer in our office"
             content="Support us by helping out with admin, donating your specialist skill or many things in between – we have the volunteer role that’s right for you."
             vector={{
-              src: "/assets/images/Philanthropy/volunteering (1) 1.png",
+              src: "https://cdn.ms-mf.org/images/Philanthropy/volunteering (1) 1.png",
               alt: "Volunteer",
             }}
           />
@@ -67,7 +67,7 @@ const SupportUs = () => {
             title="Volunteer at an event"
             content="From cheering people on at a race to helping promote an event, find out about volunteer opportunities near you."
             vector={{
-              src: "/assets/images/Philanthropy/volunteering (2) 1.png",
+              src: "https://cdn.ms-mf.org/images/Philanthropy/volunteering (2) 1.png",
               alt: "Volunteer",
             }}
           />
@@ -75,7 +75,7 @@ const SupportUs = () => {
             title="Internship"
             content="Find out how you can apply for our award-winning internship programme and start building your experience."
             vector={{
-              src: "/assets/images/Philanthropy/working 1.png",
+              src: "https://cdn.ms-mf.org/images/Philanthropy/working 1.png",
               alt: "Volunteer",
             }}
           />
@@ -83,7 +83,7 @@ const SupportUs = () => {
             title="Fundraising"
             content="Volunteer to help raise life-saving funds for the people around us to beat cancer sooner. Let them not fight alone."
             vector={{
-              src: "/assets/images/Philanthropy/fundraiser (1) 1.png",
+              src: "https://cdn.ms-mf.org/images/Philanthropy/fundraiser (1) 1.png",
               alt: "Volunteer",
             }}
           />
