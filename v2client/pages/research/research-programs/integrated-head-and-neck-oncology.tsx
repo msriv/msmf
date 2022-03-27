@@ -221,8 +221,8 @@ const IntegratedHeadAndNeckOncology = () => {
             className="w-5/12 px-4 flex justify-center flex-col items-center"
           >
             <img
-              src="https://cdn.ms-mf.org/images/Research/Rectangle 1470.png"
-              alt="Manjula Das"
+              src="https://cdn.ms-mf.org/images/People/Amitha-Suresh-1.jpg"
+              alt="Dr. Amritha Suresh"
             />
             <p className="m-0 text-white text-xl">manjula.das@ms-mf.org</p>
           </div>
