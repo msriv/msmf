@@ -228,22 +228,127 @@ export const Sitemap: Array<ISitemap> = [
             page: "Molecular Immunology",
             slug: "molecular-immunology",
             route: "/research/research-programs/molecular-immunology",
+            dropmenu: [
+              {
+                page: "Principal Investigator",
+                slug: "molecular-immunology-prinicipal-investigator",
+                route:
+                  "/research/research-programs/molecular-immunology#prinicipal-investigator",
+              },
+              {
+                page: "Projects",
+                slug: "molecular-immunology-projects",
+                route:
+                  "/research/research-programs/molecular-immunology#projects",
+              },
+              {
+                page: "Funds",
+                slug: "molecular-immunology-funds",
+                route: "/research/research-programs/molecular-immunology#funds",
+              },
+              {
+                page: "Patents",
+                slug: "molecular-immunology-patents",
+                route:
+                  "/research/research-programs/molecular-immunology#patents",
+              },
+            ],
           },
           {
             page: "Integrated Head and Neck Oncology",
             slug: "integrated-head-and-neck-oncology",
             route:
               "/research/research-programs/integrated-head-and-neck-oncology",
+            dropmenu: [
+              {
+                page: "Principal Investigator",
+                slug: "integrated-head-and-neck-oncology-prinicipal-investigator",
+                route:
+                  "/research/research-programs/integrated-head-and-neck-oncology#prinicipal-investigator",
+              },
+              {
+                page: "Adjunct Research Scientists",
+                slug: "integrated-head-and-neck-oncology-adjunct-research-scientists",
+                route:
+                  "/research/research-programs/integrated-head-and-neck-oncology#adjunct-research-scientists",
+              },
+              {
+                page: "Projects",
+                slug: "integrated-head-and-neck-oncology-projects",
+                route:
+                  "/research/research-programs/integrated-head-and-neck-oncology#projects",
+              },
+              {
+                page: "Funds",
+                slug: "integrated-head-and-neck-oncology-funds",
+                route:
+                  "/research/research-programs/integrated-head-and-neck-oncology#funds",
+              },
+              {
+                page: "Patents",
+                slug: "integrated-head-and-neck-oncology-patents",
+                route:
+                  "/research/research-programs/integrated-head-and-neck-oncology#patents",
+              },
+              {
+                page: "Publications",
+                slug: "integrated-head-and-neck-oncology-publications",
+                route:
+                  "/research/research-programs/integrated-head-and-neck-oncology#publications",
+              },
+            ],
           },
           {
             page: "Neuro Oncology",
             slug: "neuro-oncology",
             route: "/research/research-programs/neuro-oncology",
+            dropmenu: [
+              {
+                page: "Principal Investigator",
+                slug: "neuro-oncology-prinicipal-investigator",
+                route:
+                  "/research/research-programs/neuro-oncology#prinicipal-investigator",
+              },
+              {
+                page: "Translations",
+                slug: "neuro-oncology-translations",
+                route:
+                  "/research/research-programs/neuro-oncology#translations",
+              },
+              {
+                page: "Projects",
+                slug: "neuro-oncology-projects",
+                route: "/research/research-programs/neuro-oncology#projects",
+              },
+            ],
           },
           {
             page: "Product Research",
             slug: "product-research",
             route: "/research/research-programs/product-research",
+            dropmenu: [
+              {
+                page: "Principal Investigator",
+                slug: "product-research-prinicipal-investigator",
+                route:
+                  "/research/research-programs/product-research#prinicipal-investigator",
+              },
+              {
+                page: "Projects",
+                slug: "product-research-projects",
+                route: "/research/research-programs/product-research#projects",
+              },
+              {
+                page: "Funds",
+                slug: "product-research-funds",
+                route: "/research/research-programs/product-research#funds",
+              },
+              {
+                page: "Patents",
+                slug: "product-research-patents",
+                route: "/research/research-programs/product-research#patents",
+              },
+            ],
           },
         ],
       },

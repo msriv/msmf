@@ -47,14 +47,22 @@ const TestimonialList = (props: TestimonialListProps) => {
             >
               <div className="absolute w-10 h-10 bg-white top-[96%] left-[10%] rotate-45 transform skew-x-12 skew-y-12"></div>
               <div className="flex items-center absolute top-[108%] left-[0%] space-x-4">
-                <img
-                  src={TM.avatar}
-                  alt="person"
-                  className=" w-40 h-40 rounded-full"
-                />
+                {TM.avatar && (
+                  <img
+                    src={TM.avatar}
+                    alt="person"
+                    className=" w-40 h-40 rounded-full"
+                  />
+                )}
                 <div className="w-full">
-                  <p className="text-white text-3xl font-bold">{TM.name}</p>
-                  <p className="uppercase text-white text-3xl">{TM.company}</p>
+                  {TM.name && (
+                    <p className="text-white text-3xl font-bold">{TM.name}</p>
+                  )}
+                  {TM.company && (
+                    <p className="uppercase text-white text-3xl">
+                      {TM.company}
+                    </p>
+                  )}
                 </div>
               </div>
               <p className="text-xl">{TM.testimonialContent}</p>

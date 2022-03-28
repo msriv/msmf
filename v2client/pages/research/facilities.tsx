@@ -109,11 +109,13 @@ const Facilities = () => {
             )}
             <p className="font-bold text-4xl my-2">{item.facilityName}</p>
             <p className="text-xl">{item.aboutFacility}</p>
-            <img
-              src={item.thumbnail}
-              alt={item.facilityName}
-              className="w-9/12 mx-auto"
-            />
+            {item.thumbnail && (
+              <img
+                src={item.thumbnail}
+                alt={item.facilityName}
+                className="w-9/12 mx-auto"
+              />
+            )}
           </ContentCard>
         ))}
       </SectionContent>

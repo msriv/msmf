@@ -7,12 +7,14 @@ interface DropDownProps {
   route: ISitemap;
   subRoute?: string;
   dropMenu: Array<ISitemap>;
-  align: "left" | "right";
+  align?: "left" | "right";
+  position?: "top" | "bottom" | "left" | "right";
+  type: "nested-dropdown" | "normal";
 }
 
 const DropDown = (props: DropDownProps) => {
-  const { route, subRoute, dropMenu, align } = props;
-  console.log(align);
+  const { route, subRoute, dropMenu, align, position, type } = props;
+
   const dropDownRef = useRef(null);
   const [showDropMenu, setShowDropMenu] = useState<boolean>(false);
 
@@ -40,32 +42,51 @@ const DropDown = (props: DropDownProps) => {
       }`}
     >
       <div
-        className={`msmf__nav-item font-helvetica font-bold flex items-center`}
+        className={`font-helvetica font-bold flex items-center ${
+          type === "nested-dropdown"
+            ? "transition-500 rounded font-helvetica font-bold px-4 py-2 hover:bg-sky-500/20 cursor-pointer whitespace-nowrap text-black flex justify-between"
+            : "msmf__nav-item"
+        }`}
       >
         <span>{route.page}</span>
         <span className="material-icons-round">arrow_drop_down</span>
       </div>
       {showDropMenu ? (
         <div
-          className={`absolute top-16 ${align}-0 flex flex-col min-w-fit w-full bg-white shadow rounded z-[9999] p-4`}
+          className={`absolute ${
+            type === "normal" ? `top-16 ${align}-0` : "top-0 left-[110%]"
+          } flex flex-col min-w-fit w-full bg-white shadow-md rounded z-[9999] p-4`}
           id="drop-menu"
           ref={dropDownRef}
         >
           <div
-            className={`absolute -top-1 ${align}-5 rotate-45 bg-white w-4 h-4 -z-10`}
+            className={`absolute ${
+              type === "normal" ? `-top-1 ${align}-5` : "top-3 -left-2"
+            } rotate-45 bg-white w-4 h-4 -z-10`}
           ></div>
           {dropMenu
             .sort((a, b) => (a.page < b.page ? -1 : a.page > b.page ? 1 : 0))
-            .map((subRoute: ISitemap) => (
-              <Link key={subRoute.slug} href={subRoute.route!}>
-                <p
-                  onClick={handleToggleDropMenu}
-                  className={`transition-500 rounded font-helvetica font-bold px-4 py-2 hover:bg-sky-500/20 cursor-pointer whitespace-nowrap`}
-                >
-                  {subRoute.page}
-                </p>
-              </Link>
-            ))}
+            .map((SR: ISitemap) =>
+              SR.dropmenu ? (
+                <DropDown
+                  key={SR.slug}
+                  route={SR}
+                  subRoute={subRoute}
+                  dropMenu={SR.dropmenu}
+                  position={"right"}
+                  type={"nested-dropdown"}
+                />
+              ) : (
+                <Link key={SR.slug} href={SR.route!}>
+                  <p
+                    onClick={handleToggleDropMenu}
+                    className={`transition-500 rounded font-helvetica font-bold px-4 py-2 hover:bg-sky-500/20 cursor-pointer whitespace-nowrap`}
+                  >
+                    {SR.page}
+                  </p>
+                </Link>
+              )
+            )}
         </div>
       ) : null}
     </div>
@@ -149,6 +170,7 @@ const Navbar = () => {
                   subRoute={subRoute}
                   dropMenu={route.dropmenu}
                   align={key < arr.length - 1 ? "left" : "right"}
+                  type={"normal"}
                 />
               );
             }
