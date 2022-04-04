@@ -10,7 +10,7 @@ const PhilanthropyCarouselItems = [
         <div className="prose font-avenir-heavy text-[47px] text-center">
           <p className="text-white m-0 leading-tight">Join the battle...</p>{" "}
           <p className="text-[#fbb602] italic -m-2 font-bold">
-            Because they can't fight cancer alone
+            Because they can&apos;t fight cancer alone
           </p>
         </div>
         <button className="msmf__nav-cta font-avenir mt-40">

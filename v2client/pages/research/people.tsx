@@ -24,7 +24,7 @@ const People = () => {
               {Object.keys(ResearchPeople[team]).map((subTeam, key) =>
                 subTeam === "people" ? (
                   <div className="w-full flex flex-wrap ">
-                    {ResearchPeople[team][subTeam].map((person, key) => (
+                    {ResearchPeople[team][subTeam]?.map((person, key) => (
                       <PeopleCard key={key} {...person} />
                     ))}
                   </div>

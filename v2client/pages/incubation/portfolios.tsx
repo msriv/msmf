@@ -6,6 +6,7 @@ import {
   SectionTitle,
 } from "../../components/Common/Section";
 import IncubateesTestimonials from "../../components/Client/Incubation/Testimonials";
+import { PortfoliosData } from "../../store/data/portfolios";
 
 const Portfolios: NextPage = () => {
   return (
@@ -19,7 +20,16 @@ const Portfolios: NextPage = () => {
           }
         />
         <SectionContent>
-          <IncubateeCard
+          {PortfoliosData.map((portfolio, key) => (
+            <IncubateeCard
+              key={key}
+              logo={portfolio.logo}
+              incubateeName={portfolio.incubateeName}
+              companyLink={portfolio.companyLink}
+              about={portfolio.about}
+            />
+          ))}
+          {/* <IncubateeCard
             logo="https://cdn.ms-mf.org/images/Incubation/SIAMAF.jpg"
             incubateeName="SIAMAF"
             companyLink="https://siamaf.com/"
@@ -164,7 +174,7 @@ const Portfolios: NextPage = () => {
                 stakeholders managing the trials.
               </p>
             }
-          />
+          /> */}
         </SectionContent>
       </Section>
       <IncubateesTestimonials />

@@ -1,8 +1,8 @@
 import { IPortfolios } from "../../utils/Interfaces";
 
-const Portfolios: Array<IPortfolios> = [
+const PortfoliosData: Array<IPortfolios> = [
   {
-    logo: "/assets/images/Incubation/SIAMAF.jpg",
+    logo: "https://cdn.ms-mf.org/images/Incubation/SIAMAF.jpg",
     incubateeName: "SIAMAF",
     companyLink: "https://siamaf.com/",
     about: (
@@ -19,7 +19,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/Thermaissance Logo -.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/Thermaissance Logo -.png",
     incubateeName: "Thermaissance",
     companyLink: "https://www.thermaissance.com/",
     about: (
@@ -35,7 +35,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/tutle logo.jpg",
+    logo: "https://cdn.ms-mf.org/images/Incubation/tutle logo.jpg",
     incubateeName: "TUTLE",
     companyLink: "www.tutletest.com",
     about: (
@@ -50,7 +50,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/64 Codon - Grey (1).png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/64 Codon - Grey (1).png",
     incubateeName: "64 CODON",
     companyLink: "http://64codon.com/",
     about: (
@@ -62,7 +62,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/FSD logo.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/FSD logo.png",
     incubateeName: "Fastsense diagnostics",
     companyLink: "www.fastsensediagnostics.com",
     about: (
@@ -75,7 +75,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/TeraLumen Logo ARC.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/TeraLumen Logo ARC.png",
     incubateeName: "TERALUMEN",
     companyLink: "https://www.teralumensolutions.com/",
     about: (
@@ -88,7 +88,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/Logo white owl(Oxyliv).JPG",
+    logo: "https://cdn.ms-mf.org/images/Incubation/Logo white owl(Oxyliv).JPG",
     incubateeName: "Oxyliv",
     about: (
       <p>
@@ -103,7 +103,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/logo_farcast_horizontal_4C.jpg",
+    logo: "https://cdn.ms-mf.org/images/Incubation/logo_farcast_horizontal_4C.jpg",
     incubateeName: "FARCAST Biosciences",
     companyLink: "https://www.farcastbio.com/",
     about: (
@@ -115,7 +115,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/ominar logo.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/ominar logo.png",
     incubateeName: "Ominar",
     companyLink: "https://ominarinnovations.com/",
     about: (
@@ -129,7 +129,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/ikanekt_logo_1.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/ikanekt_logo_1.png",
     incubateeName: "iKanekt",
     about: (
       <p>
@@ -143,7 +143,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/Ikure logo.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/Ikure logo.png",
     incubateeName: "iKure",
     companyLink: "https://www.ikuretechsoft.com/",
     about: (
@@ -158,7 +158,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/sparclife logo.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/sparclife logo.png",
     incubateeName: "Sparclife",
     companyLink: "https://www.sparclife.co/",
     about: (
@@ -170,7 +170,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/sunfox.jpg",
+    logo: "https://cdn.ms-mf.org/images/Incubation/sunfox.jpg",
     incubateeName: "SUNFOX",
     companyLink: "https://www.sunfox.in/",
     about: (
@@ -183,7 +183,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/scanbo.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/scanbo.png",
     incubateeName: "SCANBO",
     companyLink: "https://www.scanbo.com/",
     about: (
@@ -197,7 +197,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/Thermaissance Logo -.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/Thermaissance Logo -.png",
     incubateeName: "VISBIO",
     about: (
       <p>
@@ -209,7 +209,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/Thermaissance Logo -.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/Thermaissance Logo -.png",
     incubateeName: "ANATOMECH",
     companyLink: "https://www.anatomech.co/",
     about: (
@@ -221,7 +221,7 @@ const Portfolios: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "/assets/images/Incubation/Thermaissance Logo -.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/Thermaissance Logo -.png",
     incubateeName: "Ashva WearTech",
     companyLink: "https://www.ashvaweartech.com/",
     about: (
@@ -234,4 +234,4 @@ const Portfolios: Array<IPortfolios> = [
   },
 ];
 
-export { Portfolios };
+export { PortfoliosData };

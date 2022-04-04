@@ -138,9 +138,106 @@ const ProductResearch = () => {
             <p className="m-0 text-white text-xl">ravisirdeshmukh@gmail.com</p>
           </div>
         </div>
+        <div>
+          <img
+            src="https://cdn.ms-mf.org/images/Research/4_Program_Neuro group photo.jpg"
+            alt="neuro-oncology-team"
+          />
+          <button className="msmf__secondary-btn">Our Team</button>
+        </div>
+        <hr />
         {NeuroOncologyProjects.map((project, key) => (
           <ProgramCard key={key} {...project} />
         ))}
+        <ContentCard>
+          <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
+            Translations
+          </p>
+          <div className="flex flex-wrap w-full justify-around mt-4">
+            <div className="transition-500 w-5/12 border border-neutral-500/20 rounded hover:shadow p-3 m-3">
+              <div className="flex items-center ">
+                <p className="text-base font-semibold m-0">
+                  Recursive Consensus Clustering
+                </p>
+                <a
+                  href="https://github.com/MSCTR/RecursiveConsensusClustering"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <img
+                    src="/assets/social-media-icons/icons8-github-120.svg"
+                    className="w-6 h-6 m-0 ml-3 "
+                  />
+                </a>
+                <a
+                  href="https://www.msctr.org/2019/05/30/recursive-consensus-clustering/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <img
+                    src="/assets/social-media-icons/link.svg"
+                    className="w-6 h-6 m-0 ml-3 "
+                  />
+                </a>
+              </div>
+              <p className="m-0 mt-2 text-sm font-medium text-neutral-500/70">
+                Software - Free for academic use
+              </p>
+            </div>
+            <div className="transition-500 w-5/12 border border-neutral-500/20 rounded hover:shadow p-3 m-3">
+              <div className="flex items-center ">
+                <p className="text-base font-semibold m-0">DeNoPro</p>
+                <a
+                  href="https://github.com/MSCTR/Denovo-Proteogenomics-Pipeline"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <img
+                    src="/assets/social-media-icons/icons8-github-120.svg"
+                    className="w-6 h-6 m-0 ml-2 "
+                  />
+                </a>
+              </div>
+              <p className="m-0 mt-2 text-sm font-medium text-neutral-500/70">
+                Software - Free
+              </p>
+            </div>
+            <div className="transition-500 w-5/12 border border-neutral-500/20 rounded hover:shadow p-3 m-3">
+              <div className="flex items-center ">
+                <p className="text-base font-semibold m-0">
+                  Glioma Infiltrating Immune cell Flow Cytometry
+                </p>
+                <a
+                  href="https://www.msctr.org/2021/06/03/flow-cytometry-data/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <img
+                    src="/assets/social-media-icons/link.svg"
+                    className="w-6 h-6 m-0 ml-3 "
+                  />
+                </a>
+              </div>
+              <p className="m-0 mt-2 text-sm font-medium text-neutral-500/70">
+                Dataset - Free
+              </p>
+            </div>
+            <div className="transition-500 w-5/12 border border-neutral-500/20 rounded hover:shadow p-3 m-3">
+              <div className="flex items-center ">
+                <p className="text-base font-semibold m-0">3Dgelma</p>
+                <a href="https://github.com/MSCTR/3Dgelma" target={"_blank"} rel="noreferrer">
+                  <img
+                    src="/assets/social-media-icons/icons8-github-120.svg"
+                    className="w-6 h-6 m-0 ml-2 "
+                  />
+                </a>
+              </div>
+              <p className="m-0 mt-2 text-sm font-medium text-neutral-500/70">
+                Dataset - Free
+              </p>
+            </div>
+          </div>
+        </ContentCard>
       </SectionContent>
     </Section>
   );

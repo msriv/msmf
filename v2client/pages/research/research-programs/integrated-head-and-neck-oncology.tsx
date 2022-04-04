@@ -199,10 +199,10 @@ const IntegratedHeadAndNeckOncology = () => {
             <p className="uppercase font-bold text-research">
               Principal Investigator
             </p>
-            <p className="text-white font-semibold text-4xl">
+            <p className="text-white font-semibold text-3xl">
               Amritha Suresh, Principal Investigator, PhD (Molecular Biology)
             </p>
-            <p className="text-2xl text-white">
+            <p className="text-xl text-white">
               Dr. Amritha Suresh is a Principal Scientist of the Integrated Head
               and Neck Oncology Program, at Mazumdar Shaw Center for
               Translational Research (MSCTR), Narayana Health, Bangalore. She is
@@ -224,12 +224,121 @@ const IntegratedHeadAndNeckOncology = () => {
               src="https://cdn.ms-mf.org/images/People/Amitha-Suresh-1.jpg"
               alt="Dr. Amritha Suresh"
             />
-            <p className="m-0 text-white text-xl">manjula.das@ms-mf.org</p>
+            <p className="m-0 text-white text-xl">amritha.suresh@msmf.org</p>
           </div>
         </div>
+        <div>
+          <img src="https://cdn.ms-mf.org/images/Research/3_Program_Head _ Neck group photo.jpg" alt="Head-And-Neck-Program-Team" />
+          <button className="msmf__secondary-btn" >Our Team</button>
+        </div>
+        <hr />
+        <ContentCard>
+          <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
+            Adjunct Research Scientists
+          </p>
+          <p className=" font-semibold text-2xl">
+            1. Moni A Kuriakose, MD, FRCS
+          </p>
+          <p className="text-xl ">
+            Dr. Kuriakose is Consultant, Head and Neck Oncology Program, Mazumdar Shaw Cancer Center, Narayana Health, Bangalore and Adjunct Faculty at MSMF. He is currently, Medical Director, Karkinos Health, Kerala Chapter. He is also a professor and the director of head and neck oncology translational research program, Roswell Park Cancer Institute, Buffalo. Previously, he has served as Director, Head and Neck Oncology Translational Research program, New York School of Medicine.
+          </p>
+          <p className=" font-semibold text-2xl">
+            2. Praveen Birur
+          </p>
+          <p className="text-xl ">
+            Dr Birur is the Professor and Head of the Department in Oral Medicine and Radiology, K.L.E Society’s Institute of Dental Sciences, Bangalore. He is also a senior consultant in Biocon Foundation for oral cancer screening in rural India and presently leads oral cancer programs with the help of health workers in rural India.
+          </p>
+        </ContentCard>
         {IntegratedHeadAndNeckOncologyProjects.map((project, key) => (
           <ProgramCard key={key} {...project} />
         ))}
+        <ContentCard>
+          <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
+            Funds
+          </p>
+          <table className="table-fixed">
+            <thead>
+              <tr className="w-full">
+                <th className="w-6/12">Title of Fund</th>
+                <th className="w-3/12 text-center">Granting Agency</th>
+                <th className="w-3/12 text-center">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Development of Comprehensive Pre-Cancer Genome/Transcriptome Atlas (CPCGA) of oral cavity</td>
+                <td className="text-center">ICMR</td>
+                <td className="text-center">3 years</td>
+              </tr>
+              <tr>
+                <td>Biomarkers for Nodal Metastasis in head and neck cancer</td>
+                <td className="text-center">DHR</td>
+                <td className="text-center">3 years</td>
+              </tr>
+              <tr>
+                <td>Low cost oral mobile cancer screening for low resource setting (In collaboration with NH)</td>
+                <td className="text-center">NIH</td>
+                <td className="text-center">5 years</td>
+              </tr>
+              <tr>
+                <td>Curcumin and Metformin for prevention second primary tumors of aero-digestive tract in patients with history of head and neck squamous cell carcinoma (In collaboration with NH)</td>
+                <td className="text-center">NCG</td>
+                <td className="text-center">5 years</td>
+              </tr>
+              <tr>
+                <td>PARPCytometry-A quantitative and affordable diagnostic system for head and neck cancer diagnostics</td>
+                <td className="text-center">GCE-BIRAC</td>
+                <td className="text-center">3 years</td>
+              </tr>
+              <tr>
+                <td>Lectin cytometry- a smart and economical diagnostic tool for Thyroid cancer  (IN collaboration with NH)</td>
+                <td className="text-center">ESI</td>
+                <td className="text-center">2 years</td>
+              </tr>
+            </tbody>
+          </table>
+        </ContentCard>
+        <ContentCard>
+          <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
+            Patents
+          </p>
+          <table className="table-fixed">
+            <thead>
+              <tr className="w-full">
+                <th className="w-6/12">Patent Title</th>
+                <th className="w-3/12 text-center">File Number</th>
+                <th className="w-3/12 text-center">Filed Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CURCUMIN AND METFORMIN IN PREVENTION OF HEAD AND NECK CANCER</td>
+                <td className="text-center">201641025447</td>
+                <td className="text-center">26TH JULY 2016</td>
+              </tr>
+              <tr>
+                <td>SALIVARY PROTEIN BIOMARKERS FOR THE DIAGNOSIS AND PROGNOSIS OF HEAD AND NECK CANCERS [INDIAN, PCT FILED; USPTO in Process]</td>
+                <td className="text-center">201741007724</td>
+                <td className="text-center">5TH MARCH 2017</td>
+              </tr>
+              <tr>
+                <td>ANTI-CXCR4 INHIBITOR IN REVERSING RESISTANCE TO CHEMOPREVENTION AND CHEMOTHERAPY</td>
+                <td className="text-center">201741017203</td>
+                <td className="text-center">16TH MAY 2017</td>
+              </tr>
+              <tr>
+                <td>IN-VITRO CELL LINE MODEL FOR ORAL CARCINOMA</td>
+                <td className="text-center">201741020077</td>
+                <td className="text-center">8TH JUNE 2017</td>
+              </tr>
+              <tr>
+                <td>MOLECULAR MARKER BASED ORAL CYTOLOGY FOR DETECTION OF POTENTIALLY MALIGNANT AND MALIGNANT ORAL LESIONS</td>
+                <td className="text-center">201841034544</td>
+                <td className="text-center">13TH SEPTEMBER 2018</td>
+              </tr>
+            </tbody>
+          </table>
+        </ContentCard>
         <ContentCard>
           <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
             Publications

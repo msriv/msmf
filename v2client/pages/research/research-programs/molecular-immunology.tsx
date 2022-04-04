@@ -194,10 +194,10 @@ const MolecularImmunology = () => {
             <p className="uppercase font-bold text-research">
               Principal Investigator
             </p>
-            <p className="text-white font-semibold text-4xl">
+            <p className="text-white font-semibold text-3xl">
               Manjula Das, PhD
             </p>
-            <p className="text-2xl text-white">
+            <p className="text-xl text-white">
               PhD from Indian Institute of Science with training from McGill
               University – Canada, CNRS, at Rennes, France and MIT-USA during
               post doctoral studies Manjula has spent long years in the
@@ -225,9 +225,89 @@ const MolecularImmunology = () => {
             <p className="m-0 text-white text-xl">manjula.das@ms-mf.org</p>
           </div>
         </div>
+        <div>
+          <img src="https://cdn.ms-mf.org/images/Research/2_Program_molecular Immunology group photo.jpg" alt="molecular-immunology-team" />
+          <button className="msmf__secondary-btn" >Our Team</button>
+        </div>
+        <hr />
         {MolecularImmunologyProjects.map((project, key) => (
           <ProgramCard key={key} {...project} />
         ))}
+        <ContentCard>
+          <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
+            Funds
+          </p>
+          <table className="table-fixed">
+            <thead>
+              <tr className="w-full">
+                <th className="w-6/12">Title of Fund</th>
+                <th className="w-3/12 text-center">Granting Agency</th>
+                <th className="w-3/12 text-center">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Exploring Novel BCL2-specific Inhibitors against Leukemia and Lymphoma</td>
+                <td className="text-center">DBT</td>
+                <td className="text-center">April 2018 to March 2021</td>
+              </tr>
+              <tr>
+                <td>Biodesign Bioengineering Initiative Phase II (Towards Deciphering the Interaction between Diabetes and Cancer)</td>
+                <td className="text-center">DBT</td>
+                <td className="text-center">April 2018 to March 2021</td>
+              </tr>
+              <tr>
+                <td>Development Of A Microfluidics Based Point-Of-Care Device For Intra-Operative Detection Of Metastatic Lymph Nodes In Oral Cancer</td>
+                <td className="text-center">DST</td>
+                <td className="text-center">August 2019 to July 2022</td>
+              </tr>
+              <tr>
+                <td>Validation of a RT-PCR kit for the detection of Coronavirus in saliva samples</td>
+                <td className="text-center">NeoDx</td>
+                <td className="text-center">November 2020 to January 2021</td>
+              </tr>
+              <tr>
+                <td>SolAce: Novel Therapeutics against Coronavirus infection</td>
+                <td className="text-center">BIRAC</td>
+                <td className="text-center">October 2020 to May 2021</td>
+              </tr>
+              <tr>
+                <td>Deciphering the tumor immune heterogeneity of Head and Neck Squamous Cell Carcinoma (HNSCC) in Indian patient population:  A pilot Study</td>
+                <td className="text-center">BMS</td>
+                <td className="text-center">August 2016 to July 2018</td>
+              </tr>
+            </tbody>
+          </table>
+        </ContentCard>
+        <ContentCard>
+          <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
+            Patents
+          </p>
+          <table className="table-fixed">
+            <thead>
+              <tr className="w-full">
+                <th className="w-6/12">Patent Title</th>
+                <th className="w-2/12 text-center">Innovators</th>
+                <th className="w-2/12 text-center">File Number</th>
+                <th className="w-2/12 text-center">Filed Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Compositions and methods for treating coronavirus infection with different level of disease severity <br/><em>[Manjula Das]</em></td>
+                <td className="text-center">MSMF</td>
+                <td className="text-center">202041036866</td>
+                <td className="text-center">27TH AUGUST 2020</td>
+              </tr>
+              <tr>
+                <td>Antibodies against Lipocalin-2 and uses thereof <br/><em>[Sorab N. Dalal, Manjula Das, Sujan K Dhar, Smitha P K, Nazia Chaudhary, Nehanjali Dwivedi, Sanjay Gupta, Sanket Shah, Bhagya Shree. Rahul Thorat and Nileema Khapare]</em></td>
+                <td className="text-center">MSMF, ACTREC, BA (Assigned to MSMF)</td>
+                <td className="text-center">202021000274</td>
+                <td className="text-center">3RD JANUARY 2020</td>
+              </tr>
+            </tbody>
+          </table>
+        </ContentCard>
       </SectionContent>
     </Section>
   );

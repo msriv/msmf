@@ -90,8 +90,8 @@ const ProductResearch = () => {
             <p className="uppercase font-bold text-research">
               Principal Investigator
             </p>
-            <p className="text-white font-semibold text-4xl">Smitha P K, PhD</p>
-            <p className="text-2xl text-white">
+            <p className="text-white font-semibold text-3xl">Smitha P K, PhD</p>
+            <p className="text-xl text-white">
               Dr. Smitha PK has been involved in translational research,
               developing various molecular diagnostic and immune theragnostic
               products for past 15 years. She has been trained extensively in
@@ -113,13 +113,25 @@ const ProductResearch = () => {
               research!
             </p>
           </div>
-          <div id="image" className="w-5/12 px-4 flex justify-center">
+          <div
+            id="image"
+            className="w-5/12 px-4 flex justify-center flex-col items-center"
+          >
             <img
               src="https://cdn.ms-mf.org/images/People/Smitha PK.jpg"
               alt="Smitha P K"
             />
+            <p className="m-0 text-white text-xl">smitha.pk@ms-mf.org</p>
           </div>
         </div>
+        <div>
+          <img
+            src="https://cdn.ms-mf.org/images/Research/5_Program_product research.jpg"
+            alt="product-research-team"
+          />
+          <button className="msmf__secondary-btn">Our Team</button>
+        </div>
+        <hr />
         {ProductResearchProjects.map((project, key) => (
           <ProgramCard key={key} {...project} />
         ))}

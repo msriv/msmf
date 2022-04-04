@@ -14,7 +14,7 @@ const PeopleCard = (props: IPerson) => {
         <div className="w-[321px] flex justify-between items-center mt-2">
           <p className="m-0 font-semibold leading-tight">{name}</p>
           {linkedInProfile && (
-            <a href={linkedInProfile || "#"} target="_blank">
+            <a href={linkedInProfile || "#"} target="_blank" rel="noreferrer">
               <img
                 src="/assets/images/Common/icons8-linkedin-192-black.png"
                 alt="linkedin"
