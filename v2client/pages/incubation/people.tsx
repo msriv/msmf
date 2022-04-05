@@ -12,10 +12,12 @@ import {
 } from "../../store/data/people/incubation";
 
 const People = () => {
+  const [teamName, setTeamName] = useState("People");
   const [selectedTeam, setSelectedTeam] = useState(IncubationPeople);
 
   const handleTeamSelected = (event: any) => {
     const { value } = event.target;
+    setTeamName(value);
     if (value === "People") {
       setSelectedTeam(IncubationPeople);
     } else {
@@ -39,12 +41,12 @@ const People = () => {
             <option value="Mentors">Mentors</option>
           </select>
         </label>
-        <TabPanel>
+        <TabPanel id={teamName}>
           {Object.keys(selectedTeam).map((team, key) => (
             <Tab key={key} title={team}>
               {Object.keys(selectedTeam[team]).map((subTeam, key) =>
                 subTeam === "people" ? (
-                  <div className="w-full flex flex-wrap ">
+                  <div key={key} className="w-full flex flex-wrap ">
                     {selectedTeam[team][subTeam].map((person, key) => (
                       <PeopleCard key={key} {...person} />
                     ))}

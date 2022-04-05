@@ -62,7 +62,7 @@ export interface ITestimonial {
 }
 
 export interface IPortfolios {
-  logo: string;
+  logo?: string;
   incubateeName: string;
   companyLink?: string;
   about?: string | ReactNode;

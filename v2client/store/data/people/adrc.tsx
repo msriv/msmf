@@ -48,6 +48,11 @@ const ADRCPeople: {
         image: "https://cdn.ms-mf.org/images/People/Dr. Komal Prasad.JPG",
         position: "Consultant, NH",
       },
+      {
+        name: "Dr. Rammohan Bhat",
+        image:
+          "https://cdn.ms-mf.org/images/People/Dr.Ram Mohan Sripad Bhat.jpg",
+      },
     ],
   },
   Directors: {
@@ -62,11 +67,6 @@ const ADRCPeople: {
         position: "Business Liaison",
         image: "https://cdn.ms-mf.org/images/People/Sujan K Dhar.jpg",
       },
-      {
-        name: "Dr. Smitha P K",
-        position: "Technical Director",
-        image: "https://cdn.ms-mf.org/images/People/Smitha PK.jpg",
-      },
     ],
   },
   Pathologists: {
@@ -77,27 +77,37 @@ const ADRCPeople: {
           "https://cdn.ms-mf.org/images/People/Dr. Pradeep Narayan_Kolkata_.jpg",
         position: "Pathologist",
       },
+      {
+        name: "Dr. Akhila",
+        position: "Pathologist",
+      },
     ],
   },
   Scientists: {
     people: [
       {
-        name: "Mr. Manjunath",
+        name: "Manjunath",
         position: "Scientist",
       },
       {
-        name: "Ms Gouri",
-        image: "https://cdn.ms-mf.org/images/People/Gouri-233x300.jpg",
+        name: "Shashi",
+        position: "Intern",
+      },
+      {
+        name: "Aishwarya",
         position: "Scientist",
       },
       {
-        name: "Mr. Kunal Basu",
+        name: "Kunal Basu",
         position: "Scientist",
       },
       {
-        name: "Ms. Kiruthiga",
-        image: "https://cdn.ms-mf.org/images/People/DR SHERIN JAMES.jpg",
+        name: "Kiruthiga",
         position: "Scientist",
+      },
+      {
+        name: "Shakshi",
+        position: "Quality In Charge",
       },
     ],
   },
@@ -112,6 +122,22 @@ const ADRCPeople: {
         name: "Ms. Preethu",
         image: "https://cdn.ms-mf.org/images/People/Preethu B U - Admin.JPG",
         position: "Finance Head",
+      },
+    ],
+  },
+  "Service Partners": {
+    people: [
+      {
+        name: "NH",
+        position: "Service Partner",
+      },
+      {
+        name: "MSCH",
+        position: "Service Partner",
+      },
+      {
+        name: "PCMH",
+        position: "Service Partner",
       },
     ],
   },

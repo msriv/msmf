@@ -54,14 +54,14 @@ const DropDown = (props: DropDownProps) => {
       {showDropMenu ? (
         <div
           className={`absolute ${
-            type === "normal" ? `top-16 ${align}-0` : "top-0 left-[110%]"
+            type === "normal" ? `top-16 ${align === "left" ? "left-0" : "right-0"}` : "top-0 left-[110%]"
           } flex flex-col min-w-fit w-full bg-white shadow-md rounded z-[9999] p-4`}
           id="drop-menu"
           ref={dropDownRef}
         >
           <div
             className={`absolute ${
-              type === "normal" ? `-top-1 ${align}-5` : "top-3 -left-2"
+              type === "normal" ? `-top-1 ${align === "left" ? "left-5" : "right-5"}` : "top-3 -left-2"
             } rotate-45 bg-white w-4 h-4 -z-10`}
           ></div>
           {dropMenu

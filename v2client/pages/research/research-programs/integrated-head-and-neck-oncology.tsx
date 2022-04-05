@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import ProgramCard, {
   ProgramCardProps,
 } from "../../../components/Client/Research/ProgramCard";
@@ -98,6 +99,10 @@ const IntegratedHeadAndNeckOncologyProjects: Array<ProgramCardProps> = [
 ];
 
 const IntegratedHeadAndNeckOncology = () => {
+  const router = useRouter();
+  const openTeam = () => {
+    router.push("/research/people#integrated-head-and-neck-oncology");
+  };
   return (
     <Section>
       <SectionContent>
@@ -228,8 +233,13 @@ const IntegratedHeadAndNeckOncology = () => {
           </div>
         </div>
         <div>
-          <img src="https://cdn.ms-mf.org/images/Research/3_Program_Head _ Neck group photo.jpg" alt="Head-And-Neck-Program-Team" />
-          <button className="msmf__secondary-btn" >Our Team</button>
+          <img
+            src="https://cdn.ms-mf.org/images/Research/3_Program_Head _ Neck group photo.jpg"
+            alt="Head-And-Neck-Program-Team"
+          />
+          <button onClick={openTeam} className="msmf__secondary-btn">
+            Our Team
+          </button>
         </div>
         <hr />
         <ContentCard>
@@ -240,13 +250,23 @@ const IntegratedHeadAndNeckOncology = () => {
             1. Moni A Kuriakose, MD, FRCS
           </p>
           <p className="text-xl ">
-            Dr. Kuriakose is Consultant, Head and Neck Oncology Program, Mazumdar Shaw Cancer Center, Narayana Health, Bangalore and Adjunct Faculty at MSMF. He is currently, Medical Director, Karkinos Health, Kerala Chapter. He is also a professor and the director of head and neck oncology translational research program, Roswell Park Cancer Institute, Buffalo. Previously, he has served as Director, Head and Neck Oncology Translational Research program, New York School of Medicine.
+            Dr. Kuriakose is Consultant, Head and Neck Oncology Program,
+            Mazumdar Shaw Cancer Center, Narayana Health, Bangalore and Adjunct
+            Faculty at MSMF. He is currently, Medical Director, Karkinos Health,
+            Kerala Chapter. He is also a professor and the director of head and
+            neck oncology translational research program, Roswell Park Cancer
+            Institute, Buffalo. Previously, he has served as Director, Head and
+            Neck Oncology Translational Research program, New York School of
+            Medicine.
           </p>
-          <p className=" font-semibold text-2xl">
-            2. Praveen Birur
-          </p>
+          <p className=" font-semibold text-2xl">2. Praveen Birur</p>
           <p className="text-xl ">
-            Dr Birur is the Professor and Head of the Department in Oral Medicine and Radiology, K.L.E Society’s Institute of Dental Sciences, Bangalore. He is also a senior consultant in Biocon Foundation for oral cancer screening in rural India and presently leads oral cancer programs with the help of health workers in rural India.
+            Dr Birur is the Professor and Head of the Department in Oral
+            Medicine and Radiology, K.L.E Society’s Institute of Dental
+            Sciences, Bangalore. He is also a senior consultant in Biocon
+            Foundation for oral cancer screening in rural India and presently
+            leads oral cancer programs with the help of health workers in rural
+            India.
           </p>
         </ContentCard>
         {IntegratedHeadAndNeckOncologyProjects.map((project, key) => (
@@ -266,7 +286,10 @@ const IntegratedHeadAndNeckOncology = () => {
             </thead>
             <tbody>
               <tr>
-                <td>Development of Comprehensive Pre-Cancer Genome/Transcriptome Atlas (CPCGA) of oral cavity</td>
+                <td>
+                  Development of Comprehensive Pre-Cancer Genome/Transcriptome
+                  Atlas (CPCGA) of oral cavity
+                </td>
                 <td className="text-center">ICMR</td>
                 <td className="text-center">3 years</td>
               </tr>
@@ -276,22 +299,35 @@ const IntegratedHeadAndNeckOncology = () => {
                 <td className="text-center">3 years</td>
               </tr>
               <tr>
-                <td>Low cost oral mobile cancer screening for low resource setting (In collaboration with NH)</td>
+                <td>
+                  Low cost oral mobile cancer screening for low resource setting
+                  (In collaboration with NH)
+                </td>
                 <td className="text-center">NIH</td>
                 <td className="text-center">5 years</td>
               </tr>
               <tr>
-                <td>Curcumin and Metformin for prevention second primary tumors of aero-digestive tract in patients with history of head and neck squamous cell carcinoma (In collaboration with NH)</td>
+                <td>
+                  Curcumin and Metformin for prevention second primary tumors of
+                  aero-digestive tract in patients with history of head and neck
+                  squamous cell carcinoma (In collaboration with NH)
+                </td>
                 <td className="text-center">NCG</td>
                 <td className="text-center">5 years</td>
               </tr>
               <tr>
-                <td>PARPCytometry-A quantitative and affordable diagnostic system for head and neck cancer diagnostics</td>
+                <td>
+                  PARPCytometry-A quantitative and affordable diagnostic system
+                  for head and neck cancer diagnostics
+                </td>
                 <td className="text-center">GCE-BIRAC</td>
                 <td className="text-center">3 years</td>
               </tr>
               <tr>
-                <td>Lectin cytometry- a smart and economical diagnostic tool for Thyroid cancer  (IN collaboration with NH)</td>
+                <td>
+                  Lectin cytometry- a smart and economical diagnostic tool for
+                  Thyroid cancer (IN collaboration with NH)
+                </td>
                 <td className="text-center">ESI</td>
                 <td className="text-center">2 years</td>
               </tr>
@@ -312,17 +348,25 @@ const IntegratedHeadAndNeckOncology = () => {
             </thead>
             <tbody>
               <tr>
-                <td>CURCUMIN AND METFORMIN IN PREVENTION OF HEAD AND NECK CANCER</td>
+                <td>
+                  CURCUMIN AND METFORMIN IN PREVENTION OF HEAD AND NECK CANCER
+                </td>
                 <td className="text-center">201641025447</td>
                 <td className="text-center">26TH JULY 2016</td>
               </tr>
               <tr>
-                <td>SALIVARY PROTEIN BIOMARKERS FOR THE DIAGNOSIS AND PROGNOSIS OF HEAD AND NECK CANCERS [INDIAN, PCT FILED; USPTO in Process]</td>
+                <td>
+                  SALIVARY PROTEIN BIOMARKERS FOR THE DIAGNOSIS AND PROGNOSIS OF
+                  HEAD AND NECK CANCERS [INDIAN, PCT FILED; USPTO in Process]
+                </td>
                 <td className="text-center">201741007724</td>
                 <td className="text-center">5TH MARCH 2017</td>
               </tr>
               <tr>
-                <td>ANTI-CXCR4 INHIBITOR IN REVERSING RESISTANCE TO CHEMOPREVENTION AND CHEMOTHERAPY</td>
+                <td>
+                  ANTI-CXCR4 INHIBITOR IN REVERSING RESISTANCE TO
+                  CHEMOPREVENTION AND CHEMOTHERAPY
+                </td>
                 <td className="text-center">201741017203</td>
                 <td className="text-center">16TH MAY 2017</td>
               </tr>
@@ -332,7 +376,10 @@ const IntegratedHeadAndNeckOncology = () => {
                 <td className="text-center">8TH JUNE 2017</td>
               </tr>
               <tr>
-                <td>MOLECULAR MARKER BASED ORAL CYTOLOGY FOR DETECTION OF POTENTIALLY MALIGNANT AND MALIGNANT ORAL LESIONS</td>
+                <td>
+                  MOLECULAR MARKER BASED ORAL CYTOLOGY FOR DETECTION OF
+                  POTENTIALLY MALIGNANT AND MALIGNANT ORAL LESIONS
+                </td>
                 <td className="text-center">201841034544</td>
                 <td className="text-center">13TH SEPTEMBER 2018</td>
               </tr>

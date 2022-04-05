@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import ProgramCard, {
   ProgramCardProps,
 } from "../../../components/Client/Research/ProgramCard";
@@ -49,6 +50,10 @@ const NeuroOncologyProjects: Array<ProgramCardProps> = [
 ];
 
 const ProductResearch = () => {
+  const router = useRouter();
+  const openTeam = () => {
+    router.push("/research/people#neuro-oncology");
+  };
   return (
     <Section>
       <SectionContent>
@@ -107,24 +112,47 @@ const ProductResearch = () => {
             <p className="uppercase font-bold text-research">
               Principal Investigator
             </p>
-            <p className="text-white font-semibold text-4xl">
+            <p className="text-white font-semibold text-3xl">
               Dr Ravi Sirdeshmukh
             </p>
-            <p className="text-2xl text-white">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using &lsquo;Content here,
-              content here&rsquo;, making it look like readable English. Many
-              desktop publishing packages and web page editors now use Lorem
-              Ipsum as their default model text, and a search for &lsquo;lorem
-              ipsum&rsquo; will uncover many web sites still in their infancy.
-              Various versions have evolved over the years, sometimes by
-              accident, sometimes on purpose (injected humour and the like)
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don&apos;t look even
-              slightly believable.
+            <p className="text-xl text-white">
+              Dr. Ravi Sirdeshmukh did his Ph.D. in Biochemistry from the Center
+              for Cellular and Molecular Biology (CCMB), Hyderabad – a premier
+              national laboratory. He also worked as a post-doctoral visiting
+              associate at the Washington University Medical School, St Louis,
+              MO, and a visiting Scientist at the National Institute of Health,
+              USA. He worked at the CCMB for more than 2 decades, was holding
+              the position of Director-Grade Scientist and heading the
+              Proteomics Lab before joining the Institute of Bioinformatics as
+              Distinguished Scientist. He now holds a joint appointment as
+              Principal Advisor, Neuro-oncology Research at MSCTR. His research
+              interests span in the areas of protein and nucleic acid
+              biochemistry and his earlier work included RNA processing, mRNA
+              stability, structure-function relationship of ‘ribonucleases’ and
+              their regulation. More recently his interests have been in the
+              areas of Proteomics of gliomas – a major class of brain tumors and
+              Head & Neck cancers. At the CCMB, he had been the nodal scientist
+              in CSIR network programs in Proteomics and also served as the
+              Consortium Manager in CSIR Proteomics Network for International
+              Collaborations. He is also associated with some of the
+              International research initiatives in Proteomics such as Membrane
+              Proteomics Initiative of AOHUPO and the ongoing Chromosome Centric
+              Human Proteome Project initiated by HUPO. He is an expert reviewer
+              for International Proteomics journals, a member of the Editorial
+              Board of the International Journal of Proteomics and
+              Bioinformatics. Ravi Sirdeshmukh serves on the research advisory
+              panels of several Institutes and Centers in India and that of US
+              Pharmacopeia for protein therapeutics. He is an elected member of
+              the council of Human Proteome Organization (HUPO) and Asian
+              Oceanian HUPO. He is the founder President of the Proteomics
+              Society, India which is strongly dedicated to Proteomics Education
+              and has played an important role in educational activities in
+              proteomics in India through a large number of invited lectures,
+              organization of training workshops, International Proteomics
+              Conferences and Discussions. He has trained and mentored a number
+              of young associates, Ph.D. students and post-doctoral fellows. At
+              MSCTR, he is spearheading translational research programs in brain
+              tumors.
             </p>
           </div>
           <div
@@ -143,7 +171,9 @@ const ProductResearch = () => {
             src="https://cdn.ms-mf.org/images/Research/4_Program_Neuro group photo.jpg"
             alt="neuro-oncology-team"
           />
-          <button className="msmf__secondary-btn">Our Team</button>
+          <button onClick={openTeam} className="msmf__secondary-btn">
+            Our Team
+          </button>
         </div>
         <hr />
         {NeuroOncologyProjects.map((project, key) => (
@@ -225,7 +255,11 @@ const ProductResearch = () => {
             <div className="transition-500 w-5/12 border border-neutral-500/20 rounded hover:shadow p-3 m-3">
               <div className="flex items-center ">
                 <p className="text-base font-semibold m-0">3Dgelma</p>
-                <a href="https://github.com/MSCTR/3Dgelma" target={"_blank"} rel="noreferrer">
+                <a
+                  href="https://github.com/MSCTR/3Dgelma"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <img
                     src="/assets/social-media-icons/icons8-github-120.svg"
                     className="w-6 h-6 m-0 ml-2 "

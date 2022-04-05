@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import ProgramCard, {
   ProgramCardProps,
 } from "../../../components/Client/Research/ProgramCard";
@@ -169,6 +170,10 @@ const MolecularImmunologyProjects: Array<ProgramCardProps> = [
 ];
 
 const MolecularImmunology = () => {
+  const router = useRouter();
+  const openTeam = () => {
+    router.push("/research/people#molecular-immunology");
+  };
   return (
     <Section>
       <SectionContent>
@@ -226,8 +231,13 @@ const MolecularImmunology = () => {
           </div>
         </div>
         <div>
-          <img src="https://cdn.ms-mf.org/images/Research/2_Program_molecular Immunology group photo.jpg" alt="molecular-immunology-team" />
-          <button className="msmf__secondary-btn" >Our Team</button>
+          <img
+            src="https://cdn.ms-mf.org/images/Research/2_Program_molecular Immunology group photo.jpg"
+            alt="molecular-immunology-team"
+          />
+          <button onClick={openTeam} className="msmf__secondary-btn">
+            Our Team
+          </button>
         </div>
         <hr />
         {MolecularImmunologyProjects.map((project, key) => (
@@ -247,32 +257,51 @@ const MolecularImmunology = () => {
             </thead>
             <tbody>
               <tr>
-                <td>Exploring Novel BCL2-specific Inhibitors against Leukemia and Lymphoma</td>
+                <td>
+                  Exploring Novel BCL2-specific Inhibitors against Leukemia and
+                  Lymphoma
+                </td>
                 <td className="text-center">DBT</td>
                 <td className="text-center">April 2018 to March 2021</td>
               </tr>
               <tr>
-                <td>Biodesign Bioengineering Initiative Phase II (Towards Deciphering the Interaction between Diabetes and Cancer)</td>
+                <td>
+                  Biodesign Bioengineering Initiative Phase II (Towards
+                  Deciphering the Interaction between Diabetes and Cancer)
+                </td>
                 <td className="text-center">DBT</td>
                 <td className="text-center">April 2018 to March 2021</td>
               </tr>
               <tr>
-                <td>Development Of A Microfluidics Based Point-Of-Care Device For Intra-Operative Detection Of Metastatic Lymph Nodes In Oral Cancer</td>
+                <td>
+                  Development Of A Microfluidics Based Point-Of-Care Device For
+                  Intra-Operative Detection Of Metastatic Lymph Nodes In Oral
+                  Cancer
+                </td>
                 <td className="text-center">DST</td>
                 <td className="text-center">August 2019 to July 2022</td>
               </tr>
               <tr>
-                <td>Validation of a RT-PCR kit for the detection of Coronavirus in saliva samples</td>
+                <td>
+                  Validation of a RT-PCR kit for the detection of Coronavirus in
+                  saliva samples
+                </td>
                 <td className="text-center">NeoDx</td>
                 <td className="text-center">November 2020 to January 2021</td>
               </tr>
               <tr>
-                <td>SolAce: Novel Therapeutics against Coronavirus infection</td>
+                <td>
+                  SolAce: Novel Therapeutics against Coronavirus infection
+                </td>
                 <td className="text-center">BIRAC</td>
                 <td className="text-center">October 2020 to May 2021</td>
               </tr>
               <tr>
-                <td>Deciphering the tumor immune heterogeneity of Head and Neck Squamous Cell Carcinoma (HNSCC) in Indian patient population:  A pilot Study</td>
+                <td>
+                  Deciphering the tumor immune heterogeneity of Head and Neck
+                  Squamous Cell Carcinoma (HNSCC) in Indian patient population:
+                  A pilot Study
+                </td>
                 <td className="text-center">BMS</td>
                 <td className="text-center">August 2016 to July 2018</td>
               </tr>
@@ -294,14 +323,27 @@ const MolecularImmunology = () => {
             </thead>
             <tbody>
               <tr>
-                <td>Compositions and methods for treating coronavirus infection with different level of disease severity <br/><em>[Manjula Das]</em></td>
+                <td>
+                  Compositions and methods for treating coronavirus infection
+                  with different level of disease severity <br />
+                  <em>[Manjula Das]</em>
+                </td>
                 <td className="text-center">MSMF</td>
                 <td className="text-center">202041036866</td>
                 <td className="text-center">27TH AUGUST 2020</td>
               </tr>
               <tr>
-                <td>Antibodies against Lipocalin-2 and uses thereof <br/><em>[Sorab N. Dalal, Manjula Das, Sujan K Dhar, Smitha P K, Nazia Chaudhary, Nehanjali Dwivedi, Sanjay Gupta, Sanket Shah, Bhagya Shree. Rahul Thorat and Nileema Khapare]</em></td>
-                <td className="text-center">MSMF, ACTREC, BA (Assigned to MSMF)</td>
+                <td>
+                  Antibodies against Lipocalin-2 and uses thereof <br />
+                  <em>
+                    [Sorab N. Dalal, Manjula Das, Sujan K Dhar, Smitha P K,
+                    Nazia Chaudhary, Nehanjali Dwivedi, Sanjay Gupta, Sanket
+                    Shah, Bhagya Shree. Rahul Thorat and Nileema Khapare]
+                  </em>
+                </td>
+                <td className="text-center">
+                  MSMF, ACTREC, BA (Assigned to MSMF)
+                </td>
                 <td className="text-center">202021000274</td>
                 <td className="text-center">3RD JANUARY 2020</td>
               </tr>

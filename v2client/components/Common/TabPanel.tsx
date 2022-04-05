@@ -16,14 +16,16 @@ export const Tab = (props: TabProps) => {
 
 interface TabPanelProps {
   cols?: number;
+  id: string;
   children: ReactNode;
 }
 
 export const TabPanel = (props: TabPanelProps) => {
   const router = useRouter();
-  const { cols, children } = props;
+  const { cols, id, children } = props;
   const [currentTab, setCurrentTab] = useState(0);
   const [themeColor, setThemeColor] = useState<string>("border-msmf-base");
+  const [currentID, setCurrentID] = useState(id);
 
   useEffect(() => {
     const vertical = router.pathname.split("/")[1];
@@ -52,14 +54,18 @@ export const TabPanel = (props: TabPanelProps) => {
         setThemeColor("text-msmf-base border-msmf-base");
       }
     }
-  }, [router.pathname]);
+    if (currentID !== id) {
+      setCurrentID(id);
+      setCurrentTab(0);
+    }
+  }, [router.pathname, id]);
 
   const handleChangeTab = (tabNumber: number) => {
     setCurrentTab(tabNumber);
   };
 
   return (
-    <div className="w-full bg-white shadow-md rounded">
+    <div id={currentID} className="w-full bg-white shadow-md rounded">
       <div
         id="tab-list"
         className="flex items-center justify-start flex-wrap w-full "

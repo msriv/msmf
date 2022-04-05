@@ -12,12 +12,12 @@ const Testimonials = () => {
           </span>
         }
       />
-      <div className="relative w-screen h-[884px]">
-        <div id="overlay" className="image-overlay flex h-[884px] p-8">
+      <div className="relative w-screen h-[680px]">
+        <div id="overlay" className="image-overlay flex h-[680px] p-8">
           <TestimonialList list={TestimonialsData} />
         </div>
         <img
-          src="http://api.ms-mf.orghttps://cdn.ms-mf.org/IncubationBanner.png"
+          src="https://cdn.ms-mf.org/images/Rectangle 1550.png"
           alt="incubation-banner"
           className="w-screen h-full object-cover"
         />

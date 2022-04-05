@@ -18,7 +18,7 @@ const People = () => {
         }
       />
       <SectionContent>
-        <TabPanel>
+        <TabPanel id={"ResearchPeople"}>
           {Object.keys(ResearchPeople).map((team, key) => (
             <Tab key={key} title={team}>
               {Object.keys(ResearchPeople[team]).map((subTeam, key) =>
@@ -29,7 +29,10 @@ const People = () => {
                     ))}
                   </div>
                 ) : subTeam && subTeam !== "people" ? (
-                  <div className="mt-6">
+                  <div
+                    id={subTeam.toLowerCase().split(" ").join("-")}
+                    className="mt-6"
+                  >
                     <SectionTitle title={<b>{subTeam}</b>} />
                     <div className="w-full flex flex-wrap ">
                       {ResearchPeople[team][subTeam]?.map((person, key) => (

@@ -11,21 +11,27 @@ const ResearchImpact = (): JSX.Element => {
             </p>
             <div className="flex flex-wrap justify-center w-full">
               <div className="text-white text-center  w-3/12 my-16">
-                <p className="text-[45px] m-0 font-bold ">25</p>
+                <p className="text-[45px] m-0 font-bold ">70</p>
                 <p className="text-[19px] uppercase font-bold m-0">
-                  Startups Incubated
+                  Publications
                 </p>
               </div>
               <div className="text-white text-center w-3/12 my-16">
-                <p className="text-[45px] m-0 font-bold ">25</p>
+                <p className="text-[45px] m-0 font-bold ">10</p>
                 <p className="text-[19px] uppercase font-bold m-0">
-                  Startups Incubated
+                  Patents (Filed)
                 </p>
               </div>
               <div className="text-white text-center w-3/12 my-16">
-                <p className="text-[45px] m-0 font-bold ">25</p>
+                <p className="text-[45px] m-0 font-bold ">2</p>
                 <p className="text-[19px] uppercase font-bold m-0">
-                  Startups Incubated
+                  Patents (Granted)
+                </p>
+              </div>
+              <div className="text-white text-center w-3/12 my-16">
+                <p className="text-[45px] m-0 font-bold ">20</p>
+                <p className="text-[19px] uppercase font-bold m-0">
+                  Grants
                 </p>
               </div>
             </div>

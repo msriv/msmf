@@ -21,7 +21,13 @@ const researchProjects = [
   {
     diseaseArea: "Brain Tumor",
     projectTitle: "Multiplexed detection of IDH mutations",
-    members: ["Kiruthiga", "Gouri"],
+    members: ["Kiruthiga", "Aishwarya"],
+    publication: "NA",
+  },
+  {
+    diseaseArea: "Brain Tumor",
+    projectTitle: "Blood based markers for Gliomas",
+    members: ["Kiruthiga"],
     publication: "NA",
   },
 ];

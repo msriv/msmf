@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import ProgramCard, {
   ProgramCardProps,
 } from "../../../components/Client/Research/ProgramCard";
@@ -61,6 +62,10 @@ const ProductResearchProjects: Array<ProgramCardProps> = [
 ];
 
 const ProductResearch = () => {
+  const router = useRouter();
+  const openTeam = () => {
+    router.push("/research/people#product-research");
+  };
   return (
     <Section>
       <SectionContent>
@@ -129,7 +134,9 @@ const ProductResearch = () => {
             src="https://cdn.ms-mf.org/images/Research/5_Program_product research.jpg"
             alt="product-research-team"
           />
-          <button className="msmf__secondary-btn">Our Team</button>
+          <button onClick={openTeam} className="msmf__secondary-btn">
+            Our Team
+          </button>
         </div>
         <hr />
         {ProductResearchProjects.map((project, key) => (

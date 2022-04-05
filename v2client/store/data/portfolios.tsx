@@ -197,7 +197,6 @@ const PortfoliosData: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "https://cdn.ms-mf.org/images/Incubation/Thermaissance Logo -.png",
     incubateeName: "VISBIO",
     about: (
       <p>
@@ -209,7 +208,7 @@ const PortfoliosData: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "https://cdn.ms-mf.org/images/Incubation/Thermaissance Logo -.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/anatomech.png",
     incubateeName: "ANATOMECH",
     companyLink: "https://www.anatomech.co/",
     about: (
@@ -221,7 +220,7 @@ const PortfoliosData: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "https://cdn.ms-mf.org/images/Incubation/Thermaissance Logo -.png",
+    logo: "https://cdn.ms-mf.org/images/Incubation/Ashva logo.jpg",
     incubateeName: "Ashva WearTech",
     companyLink: "https://www.ashvaweartech.com/",
     about: (

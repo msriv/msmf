@@ -230,30 +230,24 @@ const ResearchPeople: {
       },
       {
         name: "Dr. Sharat Damodar",
-        image: "https://cdn.ms-mf.org/images/People/Dr._Sharat_Damodar_0_0.jpg",
       },
       {
         name: "Dr. Rammohan Bhat",
-        image:
-          "https://cdn.ms-mf.org/images/People/Dr.Ram Mohan Sripad Bhat.jpg",
       },
       {
         name: "Dr. Shashi Gujar",
       },
       {
         name: "Dr. Sujan Dhar",
-        image: "https://cdn.ms-mf.org/images/People/Sujan K Dhar.jpg",
       },
     ],
     "Integrated Head and Neck Oncology": [
       {
         name: "Dr. Vijay Pillai",
-        image: "https://cdn.ms-mf.org/images/People/Dr. Vijay Pillai.jpg",
         position: "Consultant, Head, Department of Head and Neck Surgery, NH",
       },
       {
         name: "Dr. Vivek Shetty",
-        image: "https://cdn.ms-mf.org/images/People/DR VIVEK SHETTY.jpg",
         position: "Senior Consultant, Department of Head and Neck Surgery, NH",
       },
       {
@@ -262,12 +256,10 @@ const ResearchPeople: {
       },
       {
         name: "Dr. Subramanian Kannan",
-        image: "https://cdn.ms-mf.org/images/People/Dr. Subramanian Kannan.jpg",
         position: "Consultant , Head, Department of Endocrinology, NH",
       },
       {
         name: "Dr. Rekha R",
-        image: "https://cdn.ms-mf.org/images/People/Dr.Rekha P R.jpg",
         position: "Head, Department of Pathology, NH",
       },
       {
@@ -354,7 +346,6 @@ const ResearchPeople: {
       },
       {
         name: "Dr. Komal Prasad",
-        image: "https://cdn.ms-mf.org/images/People/DR KOMAL PARASAD.jpg",
         position:
           "Consultant, Neuro Oncology, NH, Narayana Health City, Bommasandra, Bangalore-100",
       },
@@ -370,7 +361,6 @@ const ResearchPeople: {
       {
         name: "Divya CA",
         position: "SRF",
-        image: "https://cdn.ms-mf.org/images/People/divya-300x200.jpg",
       },
       {
         name: "Vishnupriyan",
@@ -378,23 +368,19 @@ const ResearchPeople: {
       },
       {
         name: "Christopher Bathula",
-        image: "https://cdn.ms-mf.org/images/People/christopher-234x300.jpg",
         position: "JRF",
       },
       {
         name: "Sreejeta Mandel",
-        image: "https://cdn.ms-mf.org/images/People/Sreejeta-300x200.jpg",
         position: "JRF",
       },
       {
         name: "Sowmya",
         position: "JRF",
-        image: "https://cdn.ms-mf.org/images/People/Sowmya C.jpg",
       },
       {
         name: "Smitha P K",
         position: "SRF",
-        image: "https://cdn.ms-mf.org/images/People/Smitha PK.jpg",
       },
       {
         name: "Neha Damodar",
@@ -402,7 +388,6 @@ const ResearchPeople: {
       },
       {
         name: "Lubna Syeda",
-        image: "https://cdn.ms-mf.org/images/People/Lubna.jpg",
       },
       {
         name: "Kartik Sachdeva",
@@ -418,12 +403,10 @@ const ResearchPeople: {
       },
       {
         name: "Dr. Priya S",
-        image: "https://cdn.ms-mf.org/images/People/Priya Sivadas -5.JPG",
         linkedInProfile: "https://www.linkedin.com/in/priya-sivadas-5884473b",
       },
       {
         name: "Dr. Simple Mohanta",
-        image: "https://cdn.ms-mf.org/images/People/simple.jpg",
         linkedInProfile: "https://www.linkedin.com/in/simple-mohanta-450aa0167",
       },
       {
@@ -440,14 +423,12 @@ const ResearchPeople: {
       },
       {
         name: "Mr. Sudheendra H V",
-        image: "https://cdn.ms-mf.org/images/People/HV-Sudheendra.jpg",
         position:
           "Senior Associate Scientist, Syngene International Limited, Bangalore, India",
         linkedInProfile: "https://www.linkedin.com/in/hvsudheendra",
       },
       {
         name: "Mr. Ravindra D R",
-        image: "https://cdn.ms-mf.org/images/People/Ravindra DR -5.JPG",
         position: "Lab Assistant, Biocon Research Limited, Bangalore, India",
         linkedInProfile: "https://www.linkedin.com/in/ravindra-dr-56599765",
       },
@@ -469,7 +450,6 @@ const ResearchPeople: {
       },
       {
         name: "Dr. Harshavardhan N R",
-        image: "https://cdn.ms-mf.org/images/People/Ravindra DR -5.JPG",
         position:
           "Senior Scientist, NeoDx Biotech Labs Private Limited, Bangalore, India",
         linkedInProfile:
@@ -509,7 +489,86 @@ const ResearchPeople: {
         name: "Dr. Aditi Hariharan",
         linkedInProfile:
           "https://www.linkedin.com/in/aditi-hariharan-587a581b0",
-        image: "https://cdn.ms-mf.org/images/People/Aditi Hariharan.JPG",
+      },
+    ],
+    "Neuro Oncology": [
+      {
+        name: "Hari P.S.",
+        position: "Senior Research Fellow",
+        linkedInProfile: "https://www.linkedin.com/in/haripazhayath",
+      },
+      {
+        name: "Yogesh Pasupathy",
+        position: "Project Assistant",
+        linkedInProfile: "www.linkedin.com/in/yogeshpasupathy",
+      },
+      {
+        name: "Anurag C N",
+        position: "Project Assistant",
+        linkedInProfile: "https://www.linkedin.com/in/anurag-c-n-a46663203/",
+      },
+      {
+        name: "Chaitanya Kotyada",
+        position: "Senior Research Fellow",
+      },
+      {
+        name: "Dr. Lavanya Balakrishnan",
+        position: "Post Doctoral Fellow",
+      },
+      {
+        name: "Dr. Shivkumar B.M",
+        position: "Research Scientist",
+        linkedInProfile: "https://www.linkedin.com/in/shivakumar-bm-63385",
+      },
+      {
+        name: "Manasa Ogeti",
+        position: "Junior Research Fellow",
+        linkedInProfile: "https://www.linkedin.com/in/manasa-ogeti-0649a842/",
+      },
+      {
+        name: "Chaitra B Ramesh",
+        position: "Project Assistant",
+      },
+      {
+        name: "Azin Zabihi",
+        position: "Junior Research Fellow",
+        linkedInProfile: "https://www.linkedin.com/in/azinz/",
+      },
+      {
+        name: "Dr. Arivusudar Everad John",
+        position: "Research Scientist",
+        linkedInProfile:
+          "https://www.linkedin.com/in/arivusudar-everad-john-a3336619/",
+      },
+      {
+        name: "Raksha Ganesh",
+        position: "Senior Research Fellow",
+        linkedInProfile: "https://www.linkedin.com/in/raksha-ganesh-27643415",
+      },
+      {
+        name: "Pranali Sonpatki",
+        position: "Senior Research Fellow",
+        linkedInProfile: "www.linkedin.com/in/pranali-s-5a201793",
+      },
+      {
+        name: "Divya Naik",
+        position: "Senior Research Fellow",
+        linkedInProfile: "www.linkedin.com/in/divya-naik-22a40a125",
+      },
+      {
+        name: "Darshat Shah",
+        position: "Senior Research Fellow",
+        linkedInProfile: "https://www.linkedin.com/in/darshat-shah-5b19311/",
+      },
+      {
+        name: "Rathijit Mallick",
+        position: "Senior Research Fellow",
+        linkedInProfile:
+          "https://www.linkedin.com/in/rathijit-mallick-3ab1011a0",
+      },
+      {
+        name: "Dr Nameeta Shah",
+        position: "Senior Research Fellow",
       },
     ],
   },

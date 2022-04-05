@@ -77,10 +77,24 @@ const TestData: TestsProps = {
     testPanel: [
       {
         testName: "HLA Typing",
-        about: `Due for an organ transplant? Know your match with the donor to decrease chances of organ rejection`,
+        about: `Human Leukocyte Antigens (HLA) is Group of genes coding for a set of host surface molecules that bind to peptide fragments derived from any foreign antigens and display them on host immune cell surface for recognition by other immune-fighters called T cells.  A next generation sequencing based test  helps find the best match for donor selection in allogenic organ and tissue transplant  so that HLA antigens of the donor is not identified as invaders by the recipient, critically affecting the outcome of transplantation.`,
         technique: "NGS",
         TAT: "5 days",
-        contact: ["Dr. Ram Mohan Bhat", "Dr. Julius Punnen"],
+        contact: ["Dr. Ram Mohan Bhat"],
+      },
+      {
+        testName: "Donor Specific Antibody (DSA)",
+        about: `Anti-HLA donor-specific antibodies (DSA) are a proven risk factor for the development of humoral rejection and transplant loss. Monitoring the presence of DSA in the organ recipient serum with the determination of their characteristics may improve the stratification of the risk of immunological loss of the allograft.DSA monitoring allows for early intervention such as biopsy or modification of immunosuppressive therapy at an early stage of rejection.`,
+        technique: "Luminex",
+        TAT: "",
+        contact: ["Dr. Julius Punnen"],
+      },
+      {
+        testName: "Luminex Single Antigen (LSA)",
+        about: `Defining the clinical relevance of Donor Specific HLA antibodies (DSA) detection by Luminex Single Antigen (LSA) flow beads assay is critical in monitoring posttransplant outcome`,
+        technique: "Luminex",
+        TAT: "",
+        contact: [],
       },
     ],
   },
@@ -125,7 +139,10 @@ const Tests = () => {
                   </p>
                 </div>
                 <p className="mt-2 mb-4 font-bold text-[#6A6A6A] uppercase">
-                  Contact: {testItem.contact}
+                  Contact:{" "}
+                  {typeof testItem.contact === "string"
+                    ? testItem.contact
+                    : testItem.contact.join(", ")}
                 </p>
               </div>
             ))}

@@ -6,11 +6,13 @@ const PeopleCard = (props: IPerson) => {
   return (
     <div className="w-4/12 flex justify-center p-4">
       <div className="w-[321px] flex flex-col ">
-        <img
-          src={image || "https://fakeimg.pl/321x327"}
-          alt={name}
-          className="w-[321px] h-[327px] m-0 object-cover"
-        />
+        {image && (
+          <img
+            src={image}
+            alt={name}
+            className="w-[321px] h-[327px] m-0 object-cover"
+          />
+        )}
         <div className="w-[321px] flex justify-between items-center mt-2">
           <p className="m-0 font-semibold leading-tight">{name}</p>
           {linkedInProfile && (

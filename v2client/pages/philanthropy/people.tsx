@@ -18,7 +18,7 @@ const People = () => {
         }
       />
       <SectionContent>
-        <TabPanel>
+        <TabPanel id={"PhilanthropyPeople"}>
           {Object.keys(PhilanthropyPeople).map((team, key) => (
             <Tab key={key} title={team}>
               <div className="w-full flex flex-wrap ">

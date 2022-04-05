@@ -43,12 +43,17 @@ const Partners = () => {
             <img
               src="https://cdn.ms-mf.org/images/Incubation/jetro.png"
               alt="Jetro"
-              className="w-6/12"
+              className="w-8/12"
             />
             <img
               src="https://cdn.ms-mf.org/images/Incubation/basel.png"
               alt="Basel"
               className="w-7/12"
+            />
+            <img
+              src="https://cdn.ms-mf.org/images/Incubation/TBDC.png"
+              alt="TBDC"
+              className="w-11/12"
             />
           </div>
           <div className="shadow-md rounded m-4 w-3/12 p-6 bg-white flex flex-col items-center self-stretch">
@@ -68,6 +73,11 @@ const Partners = () => {
             <img
               src="https://cdn.ms-mf.org/images/Incubation/Manipal.png"
               alt="Manipal"
+              className="w-8/12"
+            />
+            <img
+              src="https://cdn.ms-mf.org/images/Incubation/Kauvery_Hospital_logo.png"
+              alt="Kauvery Hospital"
               className="w-8/12"
             />
           </div>

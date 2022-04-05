@@ -230,6 +230,11 @@ export const Sitemap: Array<ISitemap> = [
             route: "/research/research-programs/molecular-immunology",
             dropmenu: [
               {
+                page: "About",
+                slug: "molecular-immunology",
+                route: "/research/research-programs/molecular-immunology",
+              },
+              {
                 page: "Principal Investigator",
                 slug: "molecular-immunology-prinicipal-investigator",
                 route:
@@ -260,6 +265,12 @@ export const Sitemap: Array<ISitemap> = [
             route:
               "/research/research-programs/integrated-head-and-neck-oncology",
             dropmenu: [
+              {
+                page: "About",
+                slug: "integrated-head-and-neck-oncology",
+                route:
+                  "/research/research-programs/integrated-head-and-neck-oncology",
+              },
               {
                 page: "Principal Investigator",
                 slug: "integrated-head-and-neck-oncology-prinicipal-investigator",
@@ -304,6 +315,11 @@ export const Sitemap: Array<ISitemap> = [
             route: "/research/research-programs/neuro-oncology",
             dropmenu: [
               {
+                page: "About",
+                slug: "neuro-oncology",
+                route: "/research/research-programs/neuro-oncology",
+              },
+              {
                 page: "Principal Investigator",
                 slug: "neuro-oncology-prinicipal-investigator",
                 route:
@@ -327,6 +343,11 @@ export const Sitemap: Array<ISitemap> = [
             slug: "product-research",
             route: "/research/research-programs/product-research",
             dropmenu: [
+              {
+                page: "About",
+                slug: "product-research",
+                route: "/research/research-programs/product-research",
+              },
               {
                 page: "Principal Investigator",
                 slug: "product-research-prinicipal-investigator",
