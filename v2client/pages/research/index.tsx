@@ -28,7 +28,7 @@ const ResearchCarouselItems = [
         </button>
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Rectangle 1508.png"
+        src="https://cdn.ms-mf.org/images/Research/1_HomePage Banner_MSMF 8th floor.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />
@@ -59,7 +59,7 @@ const Research = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-research flex justify-center">
                   <img
-                    src="assets/images/Research/cancer (2).png"
+                    src="https://cdn.ms-mf.org/images/Research/cancer (2).png"
                     alt="cancer"
                     className="m-0"
                   />
@@ -77,7 +77,7 @@ const Research = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-research flex justify-center">
                   <img
-                    src="assets/images/Research/neck 1.png"
+                    src="https://cdn.ms-mf.org/images/Research/neck 1.png"
                     alt="oncology"
                     className="m-0"
                   />
@@ -91,7 +91,7 @@ const Research = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-research flex justify-center">
                   <img
-                    src="assets/images/Research/oncology.png"
+                    src="https://cdn.ms-mf.org/images/Research/oncology.png"
                     alt="oncology"
                     className="m-0"
                   />
@@ -103,7 +103,7 @@ const Research = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-md rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-research flex justify-center">
                   <img
-                    src="assets/images/Research/new-product 1.png"
+                    src="https://cdn.ms-mf.org/images/Research/new-product 1.png"
                     alt="product"
                     className="m-0"
                   />

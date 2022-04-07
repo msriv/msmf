@@ -114,7 +114,7 @@ const Programs = () => {
                 className="w-[240px] h-[240px] border rounded border-[#0E4981] hover:shadow-md hover:border-2 active:shadow-2xl transition duration-500 ease-in-out flex justify-center items-center"
               >
                 <img
-                  src="https://cdn.ms-mf.org/images/Incubation/CIP Logo.png"
+                  src="https://cdn.ms-mf.org/images/Incubation/CIP Logo.PNG"
                   alt="CIP Logo"
                   className="w-[200px]  mx-auto"
                 />

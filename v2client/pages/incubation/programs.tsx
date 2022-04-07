@@ -84,7 +84,7 @@ const IncubationPrograms: NextPage = () => {
           <ContentCard id={"CIP"}>
             <div className="flex items-start justify-between">
               <img
-                src="https://cdn.ms-mf.org/images/Incubation/CIP Logo.png"
+                src="https://cdn.ms-mf.org/images/Incubation/CIP Logo.PNG"
                 alt="CIP"
                 className="w-[200px]"
               />

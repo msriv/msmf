@@ -104,7 +104,7 @@ const ADRC = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-adrc flex justify-center">
                   <img
-                    src="assets/images/ADRC/brain 1.png"
+                    src="https://cdn.ms-mf.org/images/ADRC/brain 1.png"
                     alt="brain-tumor"
                     className="m-0"
                   />
@@ -120,7 +120,7 @@ const ADRC = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-adrc flex justify-center">
                   <img
-                    src="assets/images/ADRC/virus (1) 1.png"
+                    src="https://cdn.ms-mf.org/images/ADRC/virus (1) 1.png"
                     alt="covid"
                     className="m-0"
                   />
@@ -135,7 +135,7 @@ const ADRC = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-adrc flex justify-center">
                   <img
-                    src="assets/images/ADRC/kidney 1.png"
+                    src="https://cdn.ms-mf.org/images/ADRC/kidney 1.png"
                     alt="transplant"
                     className="m-0"
                   />
