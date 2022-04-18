@@ -14,13 +14,81 @@ export const Sitemap: Array<ISitemap> = [
     slug: "",
     subroutes: [
       {
-        page: "Incubation",
-        route: "/incubation",
-        slug: "incubation",
+        page: "About Us",
+        slug: "about-us",
+        dropmenu: [
+          {
+            page: "Our Mission and Vision",
+            route: "/about-us/our-mission-and-vision",
+            slug: "our-mission-and-vision",
+          },
+          {
+            page: "People",
+            route: "/about-us/people",
+            slug: "people",
+          },
+          {
+            page: "Message from Managing Director",
+            route: "/about-us/message-from-md",
+            slug: "message-from-md",
+          },
+        ],
       },
-      { page: "ADRC", route: "/adrc", slug: "adrc" },
-      { page: "Philanthropy", slug: "philanthropy", route: "/philanthropy" },
-      { page: "Research", slug: "research", route: "/research" },
+      {
+        page: "Updates",
+        slug: "updates",
+        dropmenu: [
+          {
+            page: "Blogs",
+            route: "/updates/blogs",
+            slug: "blogs",
+          },
+          {
+            page: "Social Media",
+            route: "/updates/social-media",
+            slug: "social-media",
+          },
+          {
+            page: "Events",
+            route: "/updates/events",
+            slug: "events",
+          },
+        ],
+      },
+      { page: "Facilities", route: "/facilities", slug: "facilities" },
+      { page: "Careers", slug: "careers", route: "/careers" },
+      {
+        page: "Wings",
+        slug: "wings",
+        dropmenu: [
+          {
+            page: "Philanthropy",
+            slug: "philanthropy",
+            route: "/philanthropy",
+          },
+          {
+            page: "Incubation",
+            slug: "incubation",
+            route: "/incubation",
+          },
+          {
+            page: "Research",
+            slug: "research",
+            route: "/research",
+          },
+          {
+            page: "ADRC",
+            slug: "adrc",
+            route: "/adrc",
+          },
+        ],
+      },
+      {
+        page: "Contact Us",
+        slug: "contact-us",
+        route: "/contact-us",
+        cta: true,
+      },
     ],
   },
   {

@@ -77,6 +77,10 @@ body {
     @apply bg-white border-t-8 shadow-md rounded;
     @apply my-8 px-16 pb-14 pt-10;
   }
+  .msmf__content-card-no-border {
+    @apply bg-white shadow-md rounded;
+    @apply my-8 px-16 pb-14 pt-10;
+  }
 
   .timeline {
     position: relative;
