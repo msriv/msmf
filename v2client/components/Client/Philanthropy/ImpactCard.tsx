@@ -26,7 +26,7 @@ const ImpactCard = (props: ImpactCardProps) => {
       <img src={thumbnail} alt={title} className="m-0 w-full" />
       <p className="font-bold text-xl">{title}</p>
       <p className="text-[#535050] text-xl">{about}</p>
-      <p className="text-[#535050]">
+      {/* <p className="text-[#535050]">
         <span id="amountRaised" className="font-bold text-xl">
           {amountRaised}
         </span>{" "}
@@ -34,21 +34,21 @@ const ImpactCard = (props: ImpactCardProps) => {
         <span className="font-bold text-xl" id="totalAmount">
           {totalAmount}
         </span>
-      </p>
-      <div className="w-full bg-gray-200 h-2 rounded">
+      </p> */}
+      {/* <div className="w-full bg-gray-200 h-2 rounded">
         <div
           className="bg-msmf-base h-2 rounded"
           style={{ width: "45%" }}
         ></div>
-      </div>
-      <div className="flex justify-between">
+      </div> */}
+      {/* <div className="flex justify-between">
         <p>
           <span className="font-semibold">{25}</span> Days Left
         </p>
         <p>
           <span className="font-semibold">{supporterCount}</span> Supporters
         </p>
-      </div>
+      </div> */}
       <div className="flex justify-between">
         <button className="msmf__secondary-btn">Share</button>
         <button className="msmf__cta-btn">Support Us</button>

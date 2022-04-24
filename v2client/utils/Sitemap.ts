@@ -19,12 +19,12 @@ export const Sitemap: Array<ISitemap> = [
         dropmenu: [
           {
             page: "Our Mission and Vision",
-            route: "/about-us/our-mission-and-vision",
+            route: "/about-us#our-mission-and-vision",
             slug: "our-mission-and-vision",
           },
           {
             page: "People",
-            route: "/about-us/people",
+            route: "/about-us#people",
             slug: "people",
           },
           {
@@ -250,8 +250,8 @@ export const Sitemap: Array<ISitemap> = [
         route: "/philanthropy/support-us",
       },
       {
-        page: "MSMF",
-        slug: "msmf",
+        page: "Wings",
+        slug: "wings",
         dropmenu: [
           {
             page: "Philanthropy",

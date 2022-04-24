@@ -23,7 +23,7 @@ const Programs = () => {
           </p>
           <img
             className="w-9/12 mx-auto"
-            src="https://cdn.ms-mf.org/images/Philanthropy/5_Programs Activities for child_MSCOP play area 4.jpg"
+            src="https://cdn.ms-mf.org/images/Philanthropy/5_Programs_Activities_for_child_MSCOP_play_area_4.jpg"
             alt="Activities for Children in the Pediatric Oncology Wing"
           />
           <p className="text-[#535050] text-xl">

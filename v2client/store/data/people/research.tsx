@@ -122,6 +122,7 @@ const ResearchPeople: {
         name: "Ms. Uma M",
         position: "Lab Technician",
         linkedInProfile: "https://www.linkedin.com/in/uma-a-0a2836163",
+        image: "https://cdn.ms-mf.org/images/People/Uma Mohanavel.png",
       },
       {
         name: "Mr. Srinivas",

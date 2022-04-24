@@ -16,11 +16,11 @@ const TestimonialsData: ITestimonial[] = [
     avatar: "https://cdn.ms-mf.org/images/People/RAHUL PATHRI DOCTURNAL.jpeg",
   },
   {
-    name: "",
+    name: "Vinayak",
     company: "Yostra",
     testimonialContent:
       "MSMF has helped us to conduct clinical validation of KADAM and pilot the deployment of NEURO TOUCH at Narayana Hrudayalaya. Neurotouch (Point of  Care screening device for Peripheral Neuropathy) has been purchased by the Department of Endocrinology and now billing code has been created for providing the testing service to the OPD patients of the Department of Endocrinology and the Department of Vascular Surgery. They have also connected us with industry collaborators.",
-    avatar: "",
+    avatar: "https://cdn.ms-mf.org/images/People/Vinayak Nandalike.png",
   },
   {
     name: "Dr. Jyotirmayee Dash",
@@ -31,11 +31,11 @@ const TestimonialsData: ITestimonial[] = [
       "https://cdn.ms-mf.org/images/People/Dr. Jyotirmayee Dash TERALUMEN.jpg",
   },
   {
-    name: "",
+    name: "Srirang",
     company: "Ikanekt",
     testimonialContent:
       "We are extremely happy and consider this juncture as our best achieved first milestone to be associated with Mazumdar Shaw Medical Foundation.",
-    avatar: "",
+    avatar: "https://cdn.ms-mf.org/images/People/ikanekt srirang.jpg",
   },
   {
     name: "Subhasis Sarangi",

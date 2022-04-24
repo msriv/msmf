@@ -28,7 +28,7 @@ const GetInTouchContent: {
     address: (
       <p>A-Block, 8th Floor #258/A, NH Health City, Bangalore - 560 099</p>
     ),
-    phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
+    phoneNumbers: <p>+91-807 122 2351</p>,
     email: (
       <a href="mailto:msmf@ms-mf.org" target="_blank" rel="noreferrer">
         msmf@ms-mf.org
@@ -96,8 +96,15 @@ const Footer = () => {
 
   useEffect(() => {
     const pathname = router.pathname.split("/");
-    const vertical = pathname[1];
-    const subRoute = pathname[2];
+    let vertical = pathname[1];
+    let subRoute = pathname[2];
+
+    if (
+      !["incubation", "research", "adrc", "philanthropy"].includes(vertical)
+    ) {
+      subRoute = vertical;
+      vertical = "";
+    }
     if (subRoute) {
       setIsSubRoute(true);
     }

@@ -15,6 +15,8 @@ const PhilanthropyPeople: {
     {
       name: "Blessy Rosewin",
       position: "Executive, Philanthropy",
+      image:
+        "https://cdn.ms-mf.org/images/People/Blessy - Executive Philanthropist.jpg",
     },
     {
       name: "Archana Ann J",

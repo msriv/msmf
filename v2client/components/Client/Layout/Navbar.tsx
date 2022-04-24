@@ -101,8 +101,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const pathname = router.pathname.split("/");
-    const vertical = pathname[1];
-    const currentSubRoute = pathname[2];
+    let vertical = pathname[1];
+    let currentSubRoute = pathname[2];
+    
+    if (!['incubation', 'research', 'adrc', 'philanthropy'].includes(vertical)) {
+      currentSubRoute = vertical;
+      vertical = "";
+    }    
 
     if (currentSubRoute) {
       setIsSubRoute(true);
