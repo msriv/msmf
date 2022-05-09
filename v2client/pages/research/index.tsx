@@ -6,6 +6,7 @@ import {
 } from "../../components/Common/Section";
 import Link from "next/link";
 import ResearchImpact from "../../components/Client/Research/Impact";
+import { ContentCardNoBorder } from "../../components/Common/ContentCardNoBorder";
 
 const ResearchCarouselItems = [
   <div key={0}>
@@ -36,6 +37,8 @@ const ResearchCarouselItems = [
   </div>,
 ];
 
+
+
 const Research = () => {
   return (
     <div>
@@ -45,6 +48,39 @@ const Research = () => {
         carouselItems={ResearchCarouselItems}
         classes={`h-[820px]`}
       />
+            <Section>
+        <SectionTitle
+          title={
+            <p>
+              <b>About Us</b>
+            </p>
+          }
+        />
+        <SectionContent>
+          <div id="our-mission-and-vision">
+            <div id="our-mission">
+              <ContentCardNoBorder>
+                <div className="w-full flex space-x-10">
+                  <p className="w-6/12">
+                  Facilitate research that will contribute to early detection, diagnosis and treatment of various human diseases, which is translational in nature and be derived from knowledge gained through cellular, molecular, biochemical and genetic approaches.
+                  </p>
+                  <img src="" alt="About Us Photo" className="w-5/12" />
+                </div>
+              </ContentCardNoBorder>
+            </div>
+            <div id="our-vision">
+              <ContentCardNoBorder>
+                <div className="w-full flex space-x-10">
+                  <img src="" alt="Vision Photo" className="w-5/12" />
+                  <p className="w-6/12">
+                  Translation of Biomedical Research, encouraging novel methods of technology deployment, with focus on healthcare challenges specific to South Asia, India in the fields of Oncology, Infectious diseases, Stem cell-based applications in Neurosciences, Gerontology and Regenerative medicine
+                 </p>
+                </div>
+              </ContentCardNoBorder>
+            </div>
+          </div>
+        </SectionContent>
+      </Section>
       <Section>
         <SectionTitle
           title={

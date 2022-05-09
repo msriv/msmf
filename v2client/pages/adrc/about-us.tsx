@@ -26,6 +26,10 @@ const AboutUs = () => {
                   of the treating physicians, the pathologists and the
                   scientists.{" "}
                 </p>
+                <p className="font-semibold text-4xl">Our Mission</p>
+                <p className="">
+                The Advanced Diagnostic Research Center (ADRC) strives to provide the best possible diagnostic solutions to patients with the assumption that a good diagnosis is itself half treatment. The extensive data generated is utilized in extensive multidisciplinary clinical research to bring out the synergy among physicians, pathologists and scientists with an intent to offer solutions to the challenges of today with a readiness to meet the struggles of tomorrow with a bright and unique blend of suitable treatment. {" "}
+                </p>
                 <p className="font-semibold text-4xl">Certifications</p>
                 <ul>
                   <li>DSIR</li>

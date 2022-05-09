@@ -54,7 +54,15 @@ const PeopleCard = (props: IPerson) => {
         </DialogTitle>
         <DialogContent >
           <div className="w-full flex justify-between">
-            <div className="w-4/12">{image}</div>
+            <div className="w-4/12">
+            {image && (
+          <img
+            src={image}
+            alt={name}
+            className="w-[321px] h-[327px] m-0 object-cover"
+          />
+        )}
+            </div>
             <div className="w-8/12">
               <p>{about}</p>
             </div>

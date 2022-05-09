@@ -1,7 +1,7 @@
 import { Section, SectionContent } from "../../Common/Section";
 
 const Impact = (): JSX.Element => {
-  return (
+  return (<>
     <Section>
       <div className="relative w-screen h-[612px]">
         <div id="overlay" className="image-overlay flex flex-col h-[612px]">
@@ -49,8 +49,28 @@ const Impact = (): JSX.Element => {
           className="w-screen object-cover h-[612px]"
         />
       </div>
+
     </Section>
+    <Section>
+    <SectionContent>
+        <p>
+        Our innovation center is a unique, and creative ecosystem to inspire researchers, and engineers, to generate and lead to business applications. It is a vibrant platform for interaction and transformation at its grassroots levels.
+        </p>
+        <p>
+        We are combining corporate and general hospital cultures, health care challenges with state-of-the-art technology, and opportunities for business. 
+
+        </p>
+        <div className="flex justify-center mt-12">
+          <button className="msmf__cta-btn">Apply Now</button>
+        </div>
+      </SectionContent>
+    </Section>
+</>
   );
 };
 
 export default Impact;
+
+
+//•	Our innovation center is a unique, and creative ecosystem to inspire researchers, and engineers, to generate and lead to business applications. It is a vibrant platform for interaction and transformation at its grassroots levels. 
+//•	We are combining corporate and general hospital cultures, health care challenges with state-of-the-art technology, and opportunities for business. 

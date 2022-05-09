@@ -6,6 +6,8 @@ import {
   SectionTitle,
 } from "../../components/Common/Section";
 
+// Vision and Mission Updated
+
 const AboutUs = () => {
   return (
     <>
@@ -23,14 +25,9 @@ const AboutUs = () => {
               <ContentCardNoBorder>
                 <div className="w-full flex space-x-10">
                   <p className="w-6/12">
-                    To facilitate research that will contribute to early
-                    detection and treatment of various human diseases in a
-                    translational manner that is derived from knowledge gained
-                    through cellular, molecular, biochemical and genetic
-                    approaches. To reach out to people in an exclusive manner
-                    thereby enabling healthier and happier lives all around.
-                    This is facilitated using a two prong approach, both
-                    treatment and financial support to the sick and needy.
+                  •	To Facilitate research that transcends inter-disciplinary boundaries towards addressing challenges in treatment of various human diseases in a translational manner.
+                  •	Reach out to people in an exclusive manner thereby enabling healthier and happier lives all around. This is facilitated using a two prong approach, both treatment and financial support to the sick and needy.
+
                   </p>
                   <img src="" alt="About Us Photo" className="w-5/12" />
                 </div>
@@ -41,10 +38,7 @@ const AboutUs = () => {
                 <div className="w-full flex space-x-10">
                   <img src="" alt="Vision Photo" className="w-5/12" />
                   <p className="w-6/12">
-                    Our vision is to develop a robust ecosystem where we are ready to anticipate the
-demands of today and answer tomorrow&#39;s challenges in the medical spectrum with a
-unique blend of a new paradigm shift in the way diagnostic solutions are offered in close
-collaboration among researchers, pathologists, scientists, physicians and patients.
+                  •	Our vision is to develop a robust ecosystem where we are ready to anticipate the demands of today and answer tomorrow's challenges in the medical spectrum with a unique blend of a new paradigm shift in the way diagnostic solutions are offered in close collaboration among researchers, pathologists, scientists, physicians and patients.
                   </p>
                 </div>
               </ContentCardNoBorder>

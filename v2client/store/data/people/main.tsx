@@ -9,6 +9,7 @@ const MainTeam: {
   "Board of Directors": {
     people: [
       {
+        image: "https://cdn.ms-mf.org/images/People/Dr. KMS.jpeg",
         name: "Kiran Mazumdar Shaw",
         position: "Chairperson Mazumdar-Shaw Medical Foundation",
         about: `Ms. Kiran Mazumdar-Shaw is an Indian entrepreneur. She is the Chairman & Managing Director of Biocon Limited, a biotechnology company based in Bangalore, India and the current Chairperson of IIM-Bangalore. A successful technocrat of global standing, Ms. Shaw heads India’s leading Biotechnology enterprise, Biocon. She is highly respected in the corporate world and has been named among TIME magazine’s 100 most influential people in the world. Recently, Economic Times placed her at India Inc’s Top 10 most powerful women CEOs for the year 2012. Her pioneering efforts in biotechnology have drawn global recognition both for Indian Industry and Biocon. The U.S. based Chemical Heritage Foundation has conferred Ms. Shaw with the 2014 Othmer Gold Medal for her multifaceted contributions to chemical and scientific heritage.
@@ -31,11 +32,14 @@ She is also the Honorary Consul of Ireland in Bangalore.
 She is married to John Shaw, a Scotsman and Indophile, who headed a leading textiles MNC, Madura Coats from 1991-1998 as Chairman and Managing Director. John Shaw is currently the Vice-Chairman of Biocon Limited.`,
       },
       {
+        image: "https://cdn.ms-mf.org/images/People/Mr.John Shaw.jpg",
         name: "Mr. John Shaw",
         position: "Vice Chairman Biocon Limited",
         about: `Mr. Shaw is the Vice Chairman of Biocon Limited and has been with Biocon since 1999. John plays an important role in the Corporate Governance of the company. He also plays a key role in the financial and strategic development of the group. John is a member of the Biocon board and is a part of the company’s key management team. Mr. Shaw has worked for over 30 years with Coats Viyella PLC. He has served in financial and general management positions in Latin America, Africa, and Europe. He was the Chairman of Madura Coats Ltd. from 1991-98. He has completed his M.A. (Hons) in History and Political Economy, at Glasgow University in 1970. John is an avid art lover and in his spare time enjoys Golf, Football, Rugby and Cricket.`,
       },
       {
+        
+        image: "https://cdn.ms-mf.org/images/People/Dr. Devi Shetty.jpeg",
         name: "Dr. Devi Prasad Shetty",
         position: "Chairman and Founder Narayana Health",
         about: `Dr. Devi Prasad Shetty is an Indian philanthropist and a cardiac surgeon. He has leveraged economies of scale to provide affordable healthcare. He was awarded the Padma Bhushan, the third highest civilian award in India for his contribution to the field of affordable healthcare.
@@ -49,6 +53,7 @@ His company has built a low-cost, 150 bed hospital at Mysore, on land provided b
 His hospitals have reduced costs by taking advantage of the economies of scale. This allows them to complete heart surgeries for a tenth of the cost in the United States. The Wall Street Journal has given him the title of Henry Ford of Heart Surgery.`,
       },
       {
+        image: "https://cdn.ms-mf.org/images/People/Mr. Kunal Kashyap.jpg",
         name: "Mr. Kunal Kashyap",
         position:
           "Managing Director and Chairman Allegro Capital Advisors Pvt. Ltd.",
@@ -57,6 +62,7 @@ His hospitals have reduced costs by taking advantage of the economies of scale. 
 Mr. Kashyap serves as a Non-Executive Director of Unifi Capital Pvt. Ltd. (Formerly, Unifi Wealth Management Ltd). Mr. Kashyap has been an Independent Non-Executive Director of Glaxo Smithkline Consumer Healthcare Ltd. since March 28, 2001. He served as a Director of MetLife (IND) and Scandent Solutions Corporation Ltd. He served as an Independent Director of Xchanging Solutions Limited (Formerly, Cambridge Solutions, Ltd) from May 23, 2005 to February 29, 2012. He served as an Independent Director of Dil Ltd., from January 30, 2002 to March 3, 2009. Mr. Kashyap is a Chartered Accountant by profession.`,
       },
       {
+        image: "https://cdn.ms-mf.org/images/People/dr paul photo 3.jpg",
         name: "Dr. Paul C. Salins",
         position:
           "Managing Director / Vice President Narayana Hrudayalaya and Mazumdar Shaw Cancer Hospital",
@@ -73,6 +79,7 @@ Dr. Salins studied art history at Cambridge University, has a significant intere
   "Executive Management": {
     people: [
       {
+        image: "https://cdn.ms-mf.org/images/People/Amitha-Suresh-1.jpg",
         name: "Dr. Amritha Suresh",
         position: "Head of Operations",
         about: `Dr. Amritha Suresh is a Principal Scientist of the Integrated Head
@@ -88,6 +95,7 @@ Dr. Salins studied art history at Cambridge University, has a significant intere
               tissue repository at the center.`,
       },
       {
+        image: "https://cdn.ms-mf.org/images/People/dr paul photo 3.jpg",
         name: "Dr. Paul C. Salins",
         position:
           "Managing Director / Vice President Narayana Hrudayalaya and Mazumdar Shaw Cancer Hospital",
@@ -104,22 +112,28 @@ Dr. Salins studied art history at Cambridge University, has a significant intere
   "Administration": {
     people: [
       {
+        image: "https://cdn.ms-mf.org/images/People/archana ann j.jpeg",
         name: "Archana Ann J",
         position: "Manager, MSCOP: Lab Administrator -MSCTR"
       },
       {
+        image: "https://cdn.ms-mf.org/images/People/preethu bu.jpg",
         name: "Preethu B U",
         position: "Manager Finanace, MSMF"
       },
       {
+        
+        image: "https://cdn.ms-mf.org/images/People/Blessy - Executive Philanthropist.jpg",
         name: "Blessy Rosewin",
         position: "Executive – philanthropy, MSCOP"
       },
       {
+        image: "https://cdn.ms-mf.org/images/People/Raghavendra - Executive IT.jpg",
         name: "Raghavendra Rao G",
         position: "Executive – IT"
       },
       {
+        image: "https://cdn.ms-mf.org/images/People/abhilash j.jpg",
         name: "Abhilash J",
         position: "Executive – Facility Maintenance"
       }
