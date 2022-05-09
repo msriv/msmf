@@ -439,6 +439,33 @@ export const Sitemap: Array<ISitemap> = [
               },
             ],
           },
+          {
+            page: "Computational Biology",
+            slug: "computational-biology",
+            route: "/research/research-programs/computational-biology",
+            dropmenu: [
+              {
+                page: "About",
+                slug: "computational-biology",
+                route: "/research/research-programs/computational-biology"
+              },
+              {
+                page: "Projects",
+                slug: "computational-biology",
+                route: "/research/research-programs/computational-biology#projects"
+              },
+              {
+                page: "Funds",
+                slug: "computational-biology",
+                route: "/research/research-programs/computational-biology#funds"
+              },
+              {
+                page: "Patents",
+                slug: "computational-biology",
+                route: "/research/research-programs/computational-biology#patents"
+              }
+            ]
+          }
         ],
       },
       {

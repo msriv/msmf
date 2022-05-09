@@ -1,12 +1,14 @@
+import { ReactNode } from "react";
+
 interface ImpactCardProps {
   thumbnail: string;
   title: string;
-  about: string;
-  amountRaised: number;
-  totalAmount: number;
-  startDate: Date;
-  endDate: Date;
-  supporterCount: number;
+  about: string | ReactNode;
+  amountRaised?: number;
+  totalAmount?: number;
+  startDate?: Date;
+  endDate?: Date;
+  supporterCount?: number;
 }
 
 const ImpactCard = (props: ImpactCardProps) => {
@@ -23,7 +25,7 @@ const ImpactCard = (props: ImpactCardProps) => {
 
   return (
     <div className="m-4 px-4 pb-4 bg-white shadow rounded w-4/12">
-      <img src={thumbnail} alt={title} className="m-0 w-full" />
+      <img src={thumbnail} alt={title} className="m-0 w-full h-48 object-contain" />
       <p className="font-bold text-xl">{title}</p>
       <p className="text-[#535050] text-xl">{about}</p>
       {/* <p className="text-[#535050]">

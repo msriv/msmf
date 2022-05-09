@@ -1,10 +1,28 @@
+import { useEffect, useState } from "react";
 import { IPerson } from "../../utils/Interfaces";
+import { Section, SectionContent } from "./Section";
+// import { Dialog, DialogTitle, DialogActions, DialogContent, IconButton } from "@mui/material";
+import { Dialog, DialogTitle, DialogActions, DialogContent, IconButton } from "@mui/material";
+import { Close as CloseIcon } from "@mui/icons-material";
 
 const PeopleCard = (props: IPerson) => {
-  const { name, image, linkedInProfile, position } = props;
+  const { name, image, linkedInProfile, position, about } = props;
+
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => { 
+    setOpen(true); 
+  }
+  const handleClose = () => { 
+    setOpen(false);
+  }
+
+  useEffect(() => {
+    console.log(open)
+  }, [open])
 
   return (
-    <div className="w-4/12 flex justify-center p-4">
+    <div className="w-4/12 flex justify-center p-4" onClick={about ? () => { setOpen(true) } : () => {}} >
       <div className="w-[321px] flex flex-col ">
         {image && (
           <img
@@ -29,6 +47,20 @@ const PeopleCard = (props: IPerson) => {
           {position}
         </p>
       </div>
+      <Dialog open={open} maxWidth={"lg"} fullWidth onClose={() => setOpen(false)}>
+        <DialogTitle>
+          <span className="font-inter-bold text-3xl">{name}</span>
+            <CloseIcon onClick={() => setOpen(false)}/>
+        </DialogTitle>
+        <DialogContent >
+          <div className="w-full flex justify-between">
+            <div className="w-4/12">{image}</div>
+            <div className="w-8/12">
+              <p>{about}</p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

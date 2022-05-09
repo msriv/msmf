@@ -27,14 +27,14 @@ const setDialogWidth = (width?: string) => {
 const Dialog = (props: DialogProps) => {
   const { children, open, width } = props;
   return open ? (
-    <div className="absolute top-0 left-0 w-screen h-screen">
+    <div className="fixed top-0 left-0 w-screen h-screen">
       <div
         id="backdrop"
-        className="absolute top-0 left-0 bg-neutral-800/30 w-full h-full z-0"
+        className="fixed top-0 left-0 bg-neutral-800/30 w-full h-full z-0"
       ></div>
       <div
         id="dialog"
-        className="absolute w-full h-full flex justify-center items-center z-50 "
+        className="fixed w-full h-[500px] overflow-scroll flex justify-center items-center z-50 "
       >
         <div className={`bg-white p-6 rounded ${setDialogWidth(width)}`}>
           {children}

@@ -1,18 +1,15 @@
-import { ReactNode } from "react";
-
 const ImpactStories: Array<{
   name: string;
-  about: string | ReactNode;
+  about: string;
   images?: Array<string>;
 }> = [
   {
     name: "Pratheeksha VP",
     about: (
-      <p>
-        “When I see a white piece of paper, I feel I’ve got to draw. And
-        drawing, for me, is the beginning of everything” - Ellsworth Kelly{" "}
-        <br />
-        <br /> ‘I love to draw’ says Pratheeksha; a 12-year-old girl who always
+        `When I see a white piece of paper, I feel I’ve got to draw. And
+        drawing, for me, is the beginning of everything” - Ellsworth Kelly.
+
+        ‘I love to draw’ says Pratheeksha - a 12-year-old girl who always
         loves to read books and draw. She tells us that it keeps her happy and
         engaged in spite of her ongoing treatment and a long recovery period
         ahead of her. Pratheeksha is diagnosed with left distal femur
@@ -30,8 +27,7 @@ const ImpactStories: Array<{
         regular follow-up with the last few chemotherapies. We can’t wait to get
         home and live our lives again. MSMF support was a timely help which
         saved my daughter’s life and I’ll forever be grateful and thankful for
-        their help”.
-      </p>
+        their help”.`
     ),
     images: [
       "https://cdn.ms-mf.org/images/Philanthropy/Rectangle 1498.png",
@@ -40,8 +36,7 @@ const ImpactStories: Array<{
   },
   {
     name: "Vinol John Saldanha",
-    about: (
-      <p>
+    about: (`
         “My son was first diagnosed with Pre B Cell ALL in 2019. We were all sad
         to hear his condition. We spent a lot of money and got him treated. He
         was recovering well, when we came for a follow up and found that he got
@@ -61,7 +56,7 @@ const ImpactStories: Array<{
         sponsored partially for his BMT and Chemo port removal, medicines and
         tests. Vinol is an only child and his father is a driver by profession
         and mother is a housewife.
-      </p>
+     `
     ),
     images: [
       "https://cdn.ms-mf.org/images/Philanthropy/Rectangle 1500.png",
@@ -71,7 +66,7 @@ const ImpactStories: Array<{
   {
     name: "Dhanush",
     about: (
-      <p>
+      `
         When we first met he was playing with a ball unaware of his condition
         and all the treatments he has to undergo. A lively child who loves to
         dance and run around the block was diagnosed with &#39;Acute
@@ -92,17 +87,17 @@ const ImpactStories: Array<{
         to raise Rs.12 lakhs which is required to complete the treatment and
         give Dhanush the life that he deserves.   We request your support in our
         campaign ‘Help for Danush’ and make a difference in his life.
-      </p>
+      `
     ),
     images: [
       "https://cdn.ms-mf.org/images/Philanthropy/IMG_20220307_161825.jpg",
-      "https://cdn.ms-mf.org/images/Philanthropy/IMG_20220307_161818.jpg.jpg",
+      "https://cdn.ms-mf.org/images/Philanthropy/IMG_20220307_161818.jpg",
     ],
   },
   {
     name: "Iniya Sri",
     about: (
-      <p>
+      `
         My name is Manimegalai and I’m 24years old. I’m married and have two
         children; my daughter&#39;s name is Iniya Sri who is 3 years old and my
         son’s name is Kavinth and he is 2 years old. My husband Kumar is a Lab
@@ -127,17 +122,18 @@ const ImpactStories: Array<{
         discount. “MSMF was a God sent angel to me at the right time to help my
         daughter’s treatment and I’ll forever be grateful and thankful for the
         help”.
-      </p>
+      `
     ),
     images: [
-      "https://cdn.ms-mf.org/images/Philanthropy/IMG_20220307_161825.jpg",
-      "https://cdn.ms-mf.org/images/Philanthropy/IMG_20220307_161818.jpg.jpg",
+      "https://cdn.ms-mf.org/images/Philanthropy/Iniya Sri - 1.jpg",
+      "https://cdn.ms-mf.org/images/Philanthropy/Iniya Sri - 2.jpg",
+      "https://cdn.ms-mf.org/images/Philanthropy/Iniya Sri - 3.jpg",
     ],
   },
   {
     name: "Preetam",
     about: (
-      <p>
+      `
         Preetam is an energetic 9 year old boy who is diagnosed with T Cell
         Acute Lymphoblastic Leukemia. He was first diagnosed in December 2020.
         Doctors had advised for Chemotherapy and supportive care. MSMF has been
@@ -147,11 +143,11 @@ const ImpactStories: Array<{
         in a stone quarry as a daily wage laborer earning a sum of Rs.200/- per
         day and his mother is a housewife. Preetam loves to play outdoor with
         his friends. His favorite pass time is to play cricket.
-      </p>
+      `
     ),
     images: [
-      "https://cdn.ms-mf.org/images/Philanthropy/IMG_20220307_161825.jpg",
-      "https://cdn.ms-mf.org/images/Philanthropy/IMG_20220307_161818.jpg.jpg",
+      "https://cdn.ms-mf.org/images/Philanthropy/Preetam - 1.jpg",
+      "https://cdn.ms-mf.org/images/Philanthropy/Preetam - 2.jpg",
     ],
   },
 ];

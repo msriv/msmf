@@ -10,8 +10,7 @@ const IntegratedHeadAndNeckOncologyProjects: Array<ProgramCardProps> = [
     projectName:
       "Development of Comprehensive Pre-Cancer Genome/Transcriptome Atlas (CPCGA) of oral cavity",
     aboutProject:
-      "Inregrated molecular Atlas for OPMD, Markers for malignant transformation, targets for chemoprevention.",
-    fundProvider: "MSMF",
+      "Early detection and appropriate management of pre-cancer lesions of the oral cavity is mandatory for down staging oral cancer and for improving survival. However, lack of accurate point-of care diagnostic standards has been accentuated by the lack of understanding of the genomic/transcriptomic landscape that govern the oral carcinogenic process. Current proposal is a significant attempt towards molecular characterization of premalignant and early-stage lesions through integrated exome/RNA sequencing to investigate potential markers of cause and effect. This study would be novel due to the inclusion of patients encompassing the Southern and North Eastern regions of the country in an effort to generate Comprehensive Pre-Cancer Genome Atlas (CPCGA) of oral cavity and thereby generating a catalogue of candidate biomarkers that can specify dysplasia and malignant transformation.",
     members: ["Vaishnav Vasudevan", "Uma Mohan"],
     collaborators: [
       "Department of Head and Neck Oncology, NH",
@@ -21,35 +20,40 @@ const IntegratedHeadAndNeckOncologyProjects: Array<ProgramCardProps> = [
   },
   {
     projectName: "Biomarkers for Nodal Metastasis in head and neck cancer",
-    aboutProject: "Biomarkers for nodal metastasis detection",
-    fundProvider: "DHR",
-    members: ["Sumsum Sunny", "Pramila M", "Sai Lakshmi"],
+    aboutProject: "Nodal metastasis is one of the most significant prognostic factors in oral squamous cell carcinoma; the survival rates reduce to 26-38% in patients with nodal metastasis as compared to 80% in early-stage patients. The prediction of nodal metastasis is hence extremely significant in appropriate treatment management of the patients. Additionally, about 30-40% patients with clinically negative nodes are reported to have occult metastasis. Currently available imaging techniques fail to detect the presence of nodal metastasis or predict the potential to develop the same accurately. Hence, identification and validation of molecular predictors, which correlate with nodal metastasis, is essential to enable accurate prognosis at an early stage.  The proposal aims at identifying markers for detection of nodal metastasis. Biomarker identification will be carried out by proteomic profiling of primary tumours and matching lymph nodes to identify novel markers. Subsequent validation of the markers is proposed in patient-derived cell line models and in vivo models. ",
+    members: ["Bonney L James", "Madhu"],
     collaborators: [
-      "Department of Head and Neck Oncology, NH",
-      "University of Arizona",
-      "KLE institute of Dental Sciences",
+      "Department of Head and Neck Oncology, NH", "Department of Pathology,  NH", "Institute of Bioinformatics"
     ],
   },
   {
     projectName:
-      "Curcumin and Metformin for prevention second primary tumors of aero-digestive tract in patients with history of head and neck squamous cell carcinoma ",
-    aboutProject: "Drug combination for SPT prevention",
-    fundProvider: "NCG (Collaboration with NH)",
+      "Low cost oral mobile cancer screening for low resource setting (In collaboration with NH)",
+    aboutProject: "Globally India accounts highest number of Oral Cancer cases with 23% of all cancer-related deaths in the Indian subcontinent. Disease burden is despite the existence of feasible and cost-effective primary and secondary prevention methods and hence Oral Cancer control program is one of the main national research priorities. We will develop a low-cost, portable, easy to use mobile system for oral cancer screening in low resource settings. The device consists of an intra-oral imaging probe that will be snapped onto the smart phone to form an imaging system when the healthcare worker uses. The aim of this research is to empower the health care workers in rural India to identify oral & pharyngeal lesions with a mobile phone. The device acts as “Point of Care” diagnosis for early detection of Oral Cancer and approach creates an opportunity to connect specialists to rural population, facilitates timely referrals and follow up. ",
+
     members: ["Sumsum Sunny", "Pramila M", "Sai Lakshmi"],
+    collaborators: ["Department of Head and Neck oncology, NH", "University of Arizona",  "KLE institute of Dental Sciences"],
+  },
+  {
+    projectName:
+      "Curcumin and Metformin for prevention second primary tumors of aero-digestive tract in patients with history of head and neck squamous cell carcinoma ",
+    aboutProject: "Implementation of multidisciplinary treatment has improved the loco-regional control rate of patients with head and neck squamous cell carcinoma (HNSCC). However, this has not been reflected in the improvement of overall survival rate of these patients. Development of second primary tumor (SPT) after successful control of the index head and neck cancer is one of the principal reasons for the low survival rate. The second primary tumors can arise anywhere in the aero-digestive tract. SPTs have been reported to occur at a rate of 3 to 4% per year in patients who were previously treated for early stages of cancer . This project will attempt to address this critical issue through a combination of two chemopreventive drugs-Curcumin and Metformin, in patients who completed treatment for head and neck squamous cell carcinoma.  The successful control of the incidence of SPT in HNSCC patients will be a step towards improving their overall survival. These agents are inexpensive and have a long track record of clinical use with excellent safety profile. The secondary objectives further attempt to evaluate the effect of this combination on recurrence rates, regression of oral premalignant lesions and biological basis of this intervention. Therefore, if found beneficial, these agents could also be used as chemoprevention for oral pre-malignant lesions in a high-risk population. ",
+
+    members: ["Sruthi  Nambiar", "Aswini TM"],
     collaborators: ["HNCOG, 10 centres across India"],
   },
   {
     projectName:
       "PARPCytometry-A quantitative and affordable diagnostic system for head and neck cancer diagnostics",
-    aboutProject: "Molecular cytology based early detection assay",
-    fundProvider: "BIRAC",
+    aboutProject: "India exhibits one of the lowest oral cancer five-year survival rates of 30-39%, attributed to the fact that oral cancer is often diagnosed and treated in its advanced stages, despite easy accessibility of the oral cavity. Therefore, a quick, non-invasive and effective method is needed in the field. Based on previous research and literature exploration, we plan to use optical molecular imaging of fluorescent-tagged molecular markers to target biomarkers specific to carcinogenesis. PARP1 overexpression is believed to be due to the increased DNA damage occurring in genetically unstable cancer cells, rather than the activation of specific oncogenic pathways. Furthermore, the density of nuclei is typically higher in malignant tumors than in most normal tissues. The PARPi-FL in vivo imaging signal therefore reflects both the higher expression levels of PARP1 per nucleus as well as the higher nuclear density in malignant tumors. Thus, PARPi-FL could be a potential marker for oral cancer screening.  Malignant transformation is known to be associated with changes in cell surface carbohydrate expression due to aberrant glycosylation. Lectins are known for their carbohydrate binding specificities; initial studies have shown that lectins bind to abnormal glycosyl residues (sialic acid) and can distinguish cancers of the breast, cervix and Barrett’s esophagus. Previous studies have demonstrated that a fluorophore conjugated lectin can distinguish between pathologically normal and diseased tissue ex vivo and in vivo.  Studies have identified lectins with differential binding in oral epithelial dysplasia/neoplasia; Wheat germ agglutinin (WGA), Jack fruit lectin (JFL) [9], Peanut agglutinin PNA), Galectin-1, Ulexeuropaeus agglutinin I (UEA-I), and Concanavalin A (Con A) , being some of them. Our studies in oral cancer have indicated SNA1 as a significant marker in distinguishing high-risk oral potentially malignant lesions from low-risk lesions. This study proposes to evaluate the two markers, Parpi-FL and SNA1 in flow cytometer-based distinction of high-risk lesions in an effort to develop a Point-of-care assay system.",
+
     members: ["Sumsum Sunny", "Aditi Hariharan"],
-    collaborators: ["CCRC", "Kochi", "MSKCC NYU"],
+    collaborators: ["CCRC, Kochi", "MSKCC NYU"],
   },
   {
     projectName: "Cancer Stem cells in  chemoprevention",
-    aboutProject: "Novel markers for progression and chemoprevention",
-    fundProvider: "SERB",
+    aboutProject: "Early detection and chemoprevention are the primary approaches that can enable improving the treatment outcome and survival rates in oral cancer. This necessitates accurate detection of susceptible lesions for appropriate treatment management and efficient chemoprevention strategies. The concept of a two-step process of cancer development in the oral mucosa, i.e., through the initial development of precursor lesions such as leukoplakia and erythroplakia, is well-established . The stepwise histological progression that lead to the development of these lesions has been documented to a certain extent, nevertheless, multiple challenges are still associated with the detection of lesions susceptible to malignant progression. Identification of specific biomarkers that correlate with progression may be relevant in this regard. In addition, chemoprevention is challenging due to the issues of resistance to the drugs administered and a relapse into progression once the drug is removed . This might be due to the presence of resistant cells that escape the effects of the drug and thereby lead to a relapse. Exploring the CSCs with attributes of tumorigenesis and drug resistance, and their niche which contribute towards maintenance of these properties may prove beneficial in this regard. ",
+
     members: ["Gangotri Siddappa"],
     collaborators: [
       "KLE Institute of Dental Sciences",
@@ -57,10 +61,18 @@ const IntegratedHeadAndNeckOncologyProjects: Array<ProgramCardProps> = [
     ],
   },
   {
+    projectName: "Cancer Stem cells in reversal of resistance to chemotherapy",
+    aboutProject: " Cancer stem cells (CSCs), with enhanced tumorigenicity and intrinsic resistance to drugs, are implicated in carcinogenesis and treatment failure in many cancers [1,2]. The inherent or acquired chemotherapy resistance and tumor relapse observed in patients is attributed primarily to the drug resistant property of the CSCs present in these tumors [3-5]. Current chemotherapeutic regimen that target the actively dividing cells, although produce immediate response, have not been successful in arresting the rates of treatment failure/relapse in most solid tumors, including head and neck squamous cell carcinomas (HNSCC) [6]. Strategies that can potentially target CSCs, along with actively dividing cells, may lower disease relapse. The objective of this study was to delineate CSCs in acquired drug resistance using HNSCC-specific drug resistant cell line models and to explore possible anti-CSC approache",
+
+    members: ["Safeena Kulsum"],
+    collaborators: [
+      "Department of Head and Neck Oncology, NH"
+    ],
+  },
+  {
     projectName:
       "Molecular prognosticators and novel targets in chemo-resistant Head and Neck Cancer",
-    aboutProject: "Novel markers for outcome prediction",
-    fundProvider: "ICMR",
+    aboutProject: "Approaches that can enable customized disease management according to the molecular profile of the tumours, referred to as ‘Personalized therapeutics’ is the need of the hour. One of the major challenges in head and neck squamous cell carcinoma (HNSCC) is to address the issue of drug resistance and associated morbidity in the patients. Chemotherapy in HNSCC patients is currently administered on a `one-treatment-fits-all’ basis. Pathway based treatment, agnostic to tumor type, has recently been under investigation in other tumor types and is a step towards developing `personalized therapy’. Studies using this approach i.e. adapting treatment to specific gene mutations in tumors, have recently been shown to improve response in non-small cell lung cancer. Despite improved understanding of tumour biology and availability of increasing number of targeted bio-modulators in HNSCC, there has been no major attempt to direct therapy based on individual tumour biologic profile. This proposal attempts to develop a gene signature panel towards resistance/response in head and neck cancer. It also will help to identify newer pathways involved in patients who have a favorable molecular status thereby enabling re-purposing drugs currently used for other cancers.",
     members: ["Ram Bhupal Reddy"],
     collaborators: [
       "Department of Head and Neck Oncology, NH",
@@ -71,29 +83,12 @@ const IntegratedHeadAndNeckOncologyProjects: Array<ProgramCardProps> = [
   {
     projectName:
       "Lectin cytometry- a smart and economical diagnostic tool for Thyroid cancer.",
-    aboutProject: "Molecular cytology as adjunct for FNAC",
-    fundProvider: "ESI",
+    aboutProject: "Thyroid malignancies constitute one of the most common endocrine cancers worldwide with papillary and follicular cancers accounting for more than 90%.  The age-adjusted incidence rate in India shows an increasing trend from 6.9 to 13.3/100,000 population during the last decade and overall incidence increased in US by 3%  with incidence rates in other countries  (Italy: 13.5, Austria: 12.4, Lithuania: 15.5). The increasing burden of the disease is thus evident from the trends across the world and is likely related to increased detection of thyroid nodules by multiple imaging modalities. The standard of care detection assay for thyroid nodules is Ultrasound guided Fine Needle Aspiration Cytology (USG-FNAC) with the Bethesda reporting system. The accuracy is high in Categories II (classified as benign) and V/VI (malignant). However, categories III/IV are termed indeterminate and may need to undergo diagnostic hemi-thyroidectomies to obtain a definite histological diagnosis.  The primary challenge is that the indeterminate category of nodules comprise 30-45% of nodules those who undergo US-FNAC testing. Diagnostic thyroid surgery in these indeterminate nodules carries the risk of significant complications including vocal cord palsy and hypocalcaemia affecting the patient’s quality of life. Diagnostic hemi-thyroidectomies are an over-treatment for benign nodules and under-treatment for malignant nodules needing revision second surgery and putting the patient at a higher risk of complications. Currently available molecular marker testing used in the west are not widely available/used in India. Given these limitations in thyroid nodule assessment, an adjunct that can improve the efficacy of FNAC-based diagnosis is the need of the hour. This study aims to address this clinical need. The project hence proposes to leverage the aberrant glycosylation profile in thyroid malignancies along with the established mutational profile and this dual modality-FNAC based diagnostic assay to address the challenge of inefficient/incomplete diagnosis of thyroid nodules.",
     members: ["Sumsum Sunny", "Uma Mohan", "Sowyma C Nandu"],
     collaborators: [
       "Department of Head and Neck Oncology, NH",
       "Department of Endocrinology, NH",
       "Department of Pathology, NH",
-    ],
-  },
-  {
-    projectName: "Development of 3D model for prediction of treatment outcome",
-    aboutProject: "3D model fot drug testing/treatment outcome prediction",
-    fundProvider: "MSMF",
-    members: ["Pavan"],
-    collaborators: ["Department of Head and Neck Oncology, NH"],
-  },
-  {
-    projectName: "Development of salivary biomarker based PoC assay",
-    aboutProject: "PoC assay for screening/detection",
-    fundProvider: "MSMF",
-    collaborators: [
-      "Department of Head and Neck Oncology, NH",
-      "Product Research Program, MSMF",
     ],
   },
 ];

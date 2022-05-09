@@ -65,7 +65,6 @@ const DropDown = (props: DropDownProps) => {
             } rotate-45 bg-white w-4 h-4 -z-10`}
           ></div>
           {dropMenu
-            .sort((a, b) => (a.page < b.page ? -1 : a.page > b.page ? 1 : 0))
             .map((SR: ISitemap) =>
               SR.dropmenu ? (
                 <DropDown

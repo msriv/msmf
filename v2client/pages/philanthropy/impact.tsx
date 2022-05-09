@@ -23,15 +23,15 @@ const Impact = () => {
             <ContentCard key={key}>
               <div className="w-full px-6">
                 <p className="font-semibold text-4xl">{story.name}</p>
-                {story.about}
+                <p>{story.about}</p>
               </div>
-              <div className="w-10/12 px-6 flex justify-between">
+              <div className="w-full px-6 flex justify-center space-x-28">
                 {story.images?.map((img, key) => (
                   <img
                     key={key}
                     src={img}
                     alt=""
-                    className="w-80 h-96 object-contain"
+                    className="w-5/12 h-96 object-contain"
                   />
                 ))}
               </div>

@@ -1,3 +1,4 @@
+import People from "../../components/Client/Home/People";
 import { ContentCardNoBorder } from "../../components/Common/ContentCardNoBorder";
 import {
   Section,
@@ -40,9 +41,10 @@ const AboutUs = () => {
                 <div className="w-full flex space-x-10">
                   <img src="" alt="Vision Photo" className="w-5/12" />
                   <p className="w-6/12">
-                    To be a center of excellence for translation of biomedical
-                    research. To be a world class organisation with a kind heart
-                    to treat and strengthen the sick.
+                    Our vision is to develop a robust ecosystem where we are ready to anticipate the
+demands of today and answer tomorrow&#39;s challenges in the medical spectrum with a
+unique blend of a new paradigm shift in the way diagnostic solutions are offered in close
+collaboration among researchers, pathologists, scientists, physicians and patients.
                   </p>
                 </div>
               </ContentCardNoBorder>
@@ -50,18 +52,7 @@ const AboutUs = () => {
           </div>
         </SectionContent>
       </Section>
-      <Section>
-        <SectionTitle
-          title={
-            <p>
-              <b>Our Team</b>
-            </p>
-          }
-        />
-        <SectionContent>
-          <div id="people"></div>
-        </SectionContent>
-      </Section>
+          <People />
     </>
   );
 };

@@ -114,7 +114,7 @@ const MolecularImmunologyProjects: Array<ProgramCardProps> = [
           </li>
           <li>
             <p className="font-bold mb-0">
-              21. Case Report of a Rare Incidence of IgH Amplification in
+              Case Report of a Rare Incidence of IgH Amplification in
               Multiple Myeloma Patient Leading to Acute Kidney Injury
             </p>
             <p className="mt-0">
@@ -133,39 +133,39 @@ const MolecularImmunologyProjects: Array<ProgramCardProps> = [
     projectName: "Fighting COVID",
     aboutProject:
       "While understanding the spread and molecular nature of the disease, the lab is developing a therapeutic molecule to fight the severity of infection. The team wants to delineate in immunocompromised individuals the immune response to vaccination.",
-    fundProvider: "Glue Grant",
+    fundProvider: "BIRAC",
     publications: (
       <>
         <ol>
           <li>
             <p className="font-bold mb-0">
-              Relative quantification of BCL2 mRNA for Diagnostic Usage Needs
-              Stable Uncontrolled Genes as Reference
+              Music in the time of COVID
             </p>
             <p className="mt-0">
-              Nehanjali Dwivedi, Sreejeta Mondal, P K Smitha, Sowmya T, Kartik
-              Sachdeva, Christopher Bathula, Vishnupriyan K, Nataraj K S, Sharat
-              Damodar, Sujan K Dhar , Manjula Das. PLos One
-              https://doi.org/10.1371/journal.pone.0236338 August 12, 2020,
-              15(8): e0236338 (IF. 2.74)
+              Sujan K Dhar and Manjula Das (2020): Biomedical Journal of Scientific and Technical Research: DOI: 10.26717/BJSTR.2020.31.005067 (IF. 0.548)
             </p>
           </li>
           <li>
             <p className="font-bold mb-0">
-              21. Case Report of a Rare Incidence of IgH Amplification in
-              Multiple Myeloma Patient Leading to Acute Kidney Injury
+              IL-6 and IL-10 as predictors of disease severity in COVID 19 patients: Results from Meta-analysis and Regression
             </p>
             <p className="mt-0">
-              Sowmya Thanikachalam, Vijay Kumar Srinivasalua, K. S. Nataraj,
-              Sharat Damodar, Manjula Das, (2021) Kargar 14:274–278
-              (DOI:10.1159/000510046) (IF. 1.08)
+              Sujan K Dhar, Vishnupriyan K, Sharat Damodar, Shashi Gujar and Manjula Das (2021) Heliyon  [Internet]. 2021 Jan 29 [cited 2021 Feb 2];e06155 (IF. 1.650)
+            </p>
+          </li>
+          <li>
+            <p className="font-bold mb-0">
+               Inflammation and hypercoagulopathy are predominant risk factors of severity in COVID-19 patients with Diabetes Mellitus: Summary of a Meta-analysis
+            </p>
+            <p className="mt-0">
+              Sujan K Dhar, Kartik Sachdeva and Manjula Das (2021) Diabetes & Metabolic Syndrome: Clinical Research & Reviews:  15:639-642 (IF. 1.940) https://doi.org/10.1016/j.dsx.2021.02.021
             </p>
           </li>
         </ol>
       </>
     ),
     members: ["Smitha P K", "Pushkarni", "Neha", "Kunal Biswas"],
-    collaborators: ["Dr R K Prasad", "Dr. Rammohan Bhatt", "Dr. Shashi Gujar"],
+    collaborators: ["Dr Varsha Sridhar", "Dr R K Prasad", "Dr. Rammohan Bhatt", "Dr. Shashi Gujar"],
   },
 ];
 

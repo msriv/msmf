@@ -44,7 +44,7 @@ const ProgramCard = (props: ProgramCardProps) => {
             <p className="m-0 mt-4 text-xl font-bold text-[#6A6A6A] uppercase">
               Research Project
             </p>
-            <p className="m-0 mt-2 mb-4 text-4xl font-semibold ">
+            <p className="m-0 mt-2 mb-4 text-3xl font-semibold ">
               {projectName}
             </p>
           </div>

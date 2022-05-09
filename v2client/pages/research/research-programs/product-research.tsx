@@ -8,25 +8,24 @@ import { Section, SectionContent } from "../../../components/Common/Section";
 const ProductResearchProjects: Array<ProgramCardProps> = [
   {
     projectName: "2SolaCept: Anti-Covid19 Cept protein",
-    fundProvider: "Birac",
+    fundProvider: "BIRAC",
     sourceProgram: "MI",
-    industryPartner: "In Progress",
+    industryPartner: "In Process",
     members: ["Kunal Biswas", "Pushkarni Suresh"],
   },
   {
     projectName: "Anti-LCN2 Mab in Colorectal Cancer",
-    fundProvider: "Birac",
     sourceProgram: "MI",
-    industryPartner: "In Progress",
+    industryPartner: "In Process",
     members: ["Kunal Biswas"],
     collaborators: ["Dr Sorab Dalal"],
   },
   {
     projectName:
       "Dual modality Imaging device for surveillance and detection of oral cancer ",
-    fundProvider: "Birac",
+    fundProvider: "NIH",
     sourceProgram: "Integrated Head and Neck Oncology",
-    industryPartner: "In Progress",
+    industryPartner: "In Process",
     members: ["Sumsum Sunny", "Pramila M", "Sai Lakshmi"],
     collaborators: [
       "NH",
@@ -39,13 +38,12 @@ const ProductResearchProjects: Array<ProgramCardProps> = [
       "AI-integrated affordable molecular cytology platform for oral cancer ",
     fundProvider: "DBT Wellcome Trust",
     sourceProgram: "Integrated Head and Neck Oncology",
-    industryPartner: "In Progress",
+    industryPartner: "In Process",
     members: ["Sumsum Sunny", "Pavithra"],
     collaborators: ["NH", "IISc", "KLE Institute of Dental Sciences"],
   },
   {
     projectName: "Detection of IDH1 mutation by ddPCR",
-    fundProvider: "DBT Wellcome Trust",
     sourceProgram: "Neuro Oncology",
     industryPartner: "Neo-Dx",
     members: ["Dr. Sujan Dhar", "Gouri", "Kiruthiga"],
@@ -53,7 +51,6 @@ const ProductResearchProjects: Array<ProgramCardProps> = [
   },
   {
     projectName: "Detection of double deletion of 1p19q by FISH",
-    fundProvider: "DBT Wellcome Trust",
     sourceProgram: "Neuro Oncology",
     industryPartner: "None",
     members: ["Dr. Sujan Dhar", "Gouri", "Kiruthiga"],
@@ -90,7 +87,10 @@ const ProductResearch = () => {
             products.{" "}
           </p>
         </ContentCard>
-        <div className=" bg-msmf-dark flex items-center justify-between px-4 w-full">
+        <div
+          id="principal-investigator"
+          className=" bg-msmf-dark flex items-center justify-between px-4 w-full"
+        >
           <div id="content" className="w-7/12 px-8 py-8">
             <p className="uppercase font-bold text-research">
               Principal Investigator
@@ -139,9 +139,118 @@ const ProductResearch = () => {
           </button>
         </div>
         <hr />
-        {ProductResearchProjects.map((project, key) => (
-          <ProgramCard key={key} {...project} />
-        ))}
+        <div id="projects">
+          {ProductResearchProjects.map((project, key) => (
+            <ProgramCard key={key} {...project} />
+          ))}
+        </div>
+        <ContentCard id="funds">
+          <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
+            Funds
+          </p>
+          <table className="table-fixed">
+            <thead>
+              <tr className="w-full">
+                <th className="w-6/12">Title of Fund</th>
+                <th className="w-3/12 text-center">Granting Agency</th>
+                <th className="w-3/12 text-center">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Exploring Novel BCL2-specific Inhibitors against Leukemia and
+                  Lymphoma
+                </td>
+                <td className="text-center">DBT</td>
+                <td className="text-center">April 2018 to March 2021</td>
+              </tr>
+              <tr>
+                <td>
+                  Biodesign Bioengineering Initiative Phase II (Towards
+                  Deciphering the Interaction between Diabetes and Cancer)
+                </td>
+                <td className="text-center">DBT</td>
+                <td className="text-center">April 2018 to March 2021</td>
+              </tr>
+              <tr>
+                <td>
+                  Development Of A Microfluidics Based Point-Of-Care Device For
+                  Intra-Operative Detection Of Metastatic Lymph Nodes In Oral
+                  Cancer
+                </td>
+                <td className="text-center">DST</td>
+                <td className="text-center">August 2019 to July 2022</td>
+              </tr>
+              <tr>
+                <td>
+                  Validation of a RT-PCR kit for the detection of Coronavirus in
+                  saliva samples
+                </td>
+                <td className="text-center">NeoDx</td>
+                <td className="text-center">November 2020 to January 2021</td>
+              </tr>
+              <tr>
+                <td>
+                  SolAce: Novel Therapeutics against Coronavirus infection
+                </td>
+                <td className="text-center">BIRAC</td>
+                <td className="text-center">October 2020 to May 2021</td>
+              </tr>
+              <tr>
+                <td>
+                  Deciphering the tumor immune heterogeneity of Head and Neck
+                  Squamous Cell Carcinoma (HNSCC) in Indian patient population:
+                  A pilot Study
+                </td>
+                <td className="text-center">BMS</td>
+                <td className="text-center">August 2016 to July 2018</td>
+              </tr>
+            </tbody>
+          </table>
+        </ContentCard>
+        <ContentCard id="patents">
+          <p className="text-2xl font-bold text-[#6A6A6A] m-0 uppercase">
+            Patents
+          </p>
+          <table className="table-fixed">
+            <thead>
+              <tr className="w-full">
+                <th className="w-6/12">Patent Title</th>
+                <th className="w-2/12 text-center">Innovators</th>
+                <th className="w-2/12 text-center">File Number</th>
+                <th className="w-2/12 text-center">Filed Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Compositions and methods for treating coronavirus infection
+                  with different level of disease severity <br />
+                  <em>[Manjula Das]</em>
+                </td>
+                <td className="text-center">MSMF</td>
+                <td className="text-center">202041036866</td>
+                <td className="text-center">27TH AUGUST 2020</td>
+              </tr>
+              <tr>
+                <td>
+                  Antibodies against Lipocalin-2 and uses thereof <br />
+                  <em>
+                    [Sorab N. Dalal, Manjula Das, Sujan K Dhar, Smitha P K,
+                    Nazia Chaudhary, Nehanjali Dwivedi, Sanjay Gupta, Sanket
+                    Shah, Bhagya Shree. Rahul Thorat and Nileema Khapare]
+                  </em>
+                </td>
+                <td className="text-center">
+                  MSMF, ACTREC, BA (Assigned to MSMF)
+                </td>
+                <td className="text-center">202021000274</td>
+                <td className="text-center">3RD JANUARY 2020</td>
+              </tr>
+            </tbody>
+          </table>
+        </ContentCard>
       </SectionContent>
     </Section>
   );

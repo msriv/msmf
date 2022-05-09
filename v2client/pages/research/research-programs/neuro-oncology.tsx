@@ -49,7 +49,7 @@ const NeuroOncologyProjects: Array<ProgramCardProps> = [
   },
 ];
 
-const ProductResearch = () => {
+const NeuroOncology = () => {
   const router = useRouter();
   const openTeam = () => {
     router.push("/research/people#neuro-oncology");
@@ -277,4 +277,4 @@ const ProductResearch = () => {
   );
 };
 
-export default ProductResearch;
+export default NeuroOncology;

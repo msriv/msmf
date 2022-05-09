@@ -6,6 +6,7 @@ export interface IPerson {
   image?: string;
   position?: string;
   linkedInProfile?: string;
+  about?: string; 
 }
 export interface ITeam {
   teamName: string;

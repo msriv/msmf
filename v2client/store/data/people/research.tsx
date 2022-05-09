@@ -356,6 +356,12 @@ const ResearchPeople: {
           "Consultant, Pathology, NH, Narayana Health City, Bommasandra, Bangalore-99",
       },
     ],
+    "Computational Biology": [
+      {
+        name: "Dr Akhila L ",
+        position: "Dept of Histopathology, NH"
+      }
+    ]
   },
   Alumni: {
     "Molecular Immunology": [
