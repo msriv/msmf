@@ -55,20 +55,13 @@ const ADRCPeople: {
       },
     ],
   },
-  Directors: {
-    people: [
-      {
-        name: "Dr. Manjula Das",
-        image: "https://cdn.ms-mf.org/images/People/Dr.Manjula-Das.jpg",
-        position: "Lab Director and Quality Manager",
-      },
-      {
-        name: "Dr. Sujan K Dhar",
-        position: "Business Liaison",
-        image: "https://cdn.ms-mf.org/images/People/Sujan K Dhar.jpg",
-      },
-    ],
-  },
+  // Directors have been removed and added to other sections
+  // Directors: {
+  //   people: [
+
+
+  //   ],
+  // },
   Pathologists: {
     people: [
       {
@@ -109,6 +102,10 @@ const ADRCPeople: {
         name: "Shakshi",
         position: "Quality In Charge",
       },
+      {
+        name: "Dr. Sujan K Dhar",
+        position: "Business Liaison",
+      },
     ],
   },
   Administration: {
@@ -122,6 +119,11 @@ const ADRCPeople: {
         name: "Ms. Preethu",
         image: "https://cdn.ms-mf.org/images/People/Preethu B U - Admin.JPG",
         position: "Finance Head",
+      },
+      {
+        name: "Dr. Manjula Das",
+        image: "https://cdn.ms-mf.org/images/People/Dr.Manjula-Das.jpg",
+        position: "Lab Director and Quality Manager",
       },
     ],
   },

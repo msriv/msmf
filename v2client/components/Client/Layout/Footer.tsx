@@ -47,7 +47,10 @@ const GetInTouchContent: {
     phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
     email: (
       <>
-        <p>
+      <p>
+      adrc@ms-mf.org
+      </p>
+        {/* <p>
           <b>Dr. Manjula Das</b> -{" "}
           <a
             href="mailto:manjula.msmf@gmail.com"
@@ -66,7 +69,7 @@ const GetInTouchContent: {
           >
             sujan.dhar@ms-mf.org
           </a>
-        </p>
+        </p> */}
       </>
     ),
   },

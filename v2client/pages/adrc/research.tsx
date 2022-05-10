@@ -33,12 +33,38 @@ const researchProjects = [
 ];
 
 const Research = () => {
-  return (
+  return (<>
+  <Section>
+          <SectionContent>
+            <ContentCard>
+              <div className="w-full flex justify-between">
+                <div className="w-12/12 px-4">
+                  
+                 
+                  <p className="font-semibold text-4xl">Research</p>
+                  <p className="">
+                  Diagnostic Research is an integral component of development 
+                  of new tests. Research team at ADRC works in tandem with the
+                  clinicians to identify unmet diagnostic needs and translate 
+                  them to diagnostic tests of the present and future, through 
+                  collaborative research in molecular biology, cell biology 
+                  and data analytics. Major driver of the research is to 
+                  establish tests that are reliable to clinicians and affordable 
+                  to patients. Most of the tests offered by ADRC have been 
+                  developed in-house and were adopted to clinic after extensive 
+                  validation.
+                  {" "}
+                  </p>
+                </div>
+              </div>
+            </ContentCard>
+          </SectionContent>
+        </Section>
     <Section>
       <SectionTitle
         title={
           <span>
-            Our <b>Research</b>
+            Diagnostics <b>Research</b>
           </span>
         }
       />
@@ -65,6 +91,9 @@ const Research = () => {
         ))}
       </SectionContent>
     </Section>
+    
+          
+        </>
   );
 };
 export default Research;
