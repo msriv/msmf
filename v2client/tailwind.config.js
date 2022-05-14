@@ -18,14 +18,12 @@ module.exports = {
       colors: {
         msmf: { base: "#0E4981", dark: "#0B2D4E" },
         incubation: "#0E4981",
+        "incubation-alt": "#3EBA33",
         adrc: "#1CA56B",
         philanthropy: "#B60016",
         research: "#E06810",
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms")
-  ],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
