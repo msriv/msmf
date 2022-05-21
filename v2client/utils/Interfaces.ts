@@ -7,6 +7,7 @@ export interface IPerson {
   position?: string;
   linkedInProfile?: string;
   about?: string; 
+  address?:string;
 }
 export interface ITeam {
   teamName: string;
@@ -67,4 +68,17 @@ export interface IPortfolios {
   incubateeName: string;
   companyLink?: string;
   about?: string | ReactNode;
+}
+
+export interface INews {
+  title: string;
+  image?: string;
+  about?: string; 
+}
+
+export interface IEvents {
+  name: string;
+  position: string;
+  date?: string;
+  topic?: string;
 }

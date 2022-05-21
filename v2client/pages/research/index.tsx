@@ -7,6 +7,7 @@ import {
 import Link from "next/link";
 import ResearchImpact from "../../components/Client/Research/Impact";
 import { ContentCardNoBorder } from "../../components/Common/ContentCardNoBorder";
+import NewsSection from "../../components/Client/Research/news";
 
 const ResearchCarouselItems = [
   <div key={0}>
@@ -153,6 +154,7 @@ const Research = () => {
         </SectionContent>
       </Section>
       <ResearchImpact />
+      <NewsSection/>
     </div>
   );
 };
