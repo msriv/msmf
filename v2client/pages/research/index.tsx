@@ -82,7 +82,7 @@ const Research = () => {
           </div>
         </SectionContent>
       </Section>
-      <Section>
+      <Section id={"research-programs"}>
         <SectionTitle
           title={
             <span>

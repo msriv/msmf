@@ -9,7 +9,7 @@ import {
 } from "../components/Common/Section";
 import { ContentCard } from "../components/Common/ContentCard";
 import Updates from "../components/Client/Research/latestUpdates";
-import Image from 'next/image'
+import Image from "next/image";
 
 const MainCarouselItems = [
   <div key={0}>
@@ -20,7 +20,7 @@ const MainCarouselItems = [
       >
         <div className="font-avenir-book text-center w-full">
           <p className="text-white text-xl">
-            Mazumdar Shaw Centre for Translational Research (MSCTR)
+            Mazumdar Shaw Medical Foundation (MSMF)
           </p>
           <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
             “We aim to be a Center of Excellence for Translation of Biomedical
@@ -32,17 +32,17 @@ const MainCarouselItems = [
         <button
           className="msmf__nav-cta font-avenir-book mt-20"
           onClick={() => {
-            window.open("", "_blank");
+            window.open("/research#research-programs", "");
           }}
         >
           Learn More
         </button>
       </div>
-      <img
+      {/* <img
         src="https://cdn.ms-mf.org/images/Research/1_HomePage Banner_MSMF 8th floor.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[693px]"
-      />
+      /> */}
     </div>
   </div>,
 ];
@@ -56,17 +56,76 @@ const LeadershipCarouselItems = [
             Dr. Devi Shetty
           </p>
           <p className="text-black text-2xl font-semibold font-helvetica my-2">
-            Chairman, Narayana Health
+            Chairman & Founder Narayana Health
           </p>
           <p className="text-black text-xl font-helvetica my-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply
-            dummy text of the printing and typesetting industry.
+            Dr. Devi Prasad Shetty is an Indian philanthropist and a cardiac
+            surgeon. He has leveraged economies of scale to provide affordable
+            healthcare. He was awarded the Padma Bhushan, the third highest
+            civilian award in India for his contribution to the field of
+            affordable healthcare.
           </p>
         </div>
         <div id="image" className="w-8/12 h-[420px] rounded-[12px] pb-10">
           <img
             src={"https://cdn.ms-mf.org/images/People/Dr. Devi Shetty.jpeg"}
+            alt="Research"
+            className="w-full h-[420px] object-cover rounded-[24px]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div key={1}>
+    <div className="relative w-screen h-[560px] ">
+      <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] ">
+        <div id="content" className="bg-white w-5/12 p-10 pt-10">
+          <p className="text-black text-3xl font-semibold font-helvetica my-2">
+            Mr. John Shaw
+          </p>
+          <p className="text-black text-2xl font-semibold font-helvetica my-2">
+            Vice Chairman Biocon Limited
+          </p>
+          <p className="text-black text-xl font-helvetica my-2">
+            Mr. Shaw is the Vice Chairman of Biocon Limited and has been with
+            Biocon since 1999. John plays an important role in the Corporate
+            Governance of the company. He also plays a key role in the financial
+            and strategic development of the group. John is a member of the
+            Biocon board and is a part of the company’s key management team.
+          </p>
+        </div>
+        <div id="image" className="w-8/12 h-[420px] rounded-[12px] pb-10">
+          <img
+            src={"https://cdn.ms-mf.org/images/People/Mr.John Shaw.jpg"}
+            alt="Research"
+            className="w-full h-[420px] object-cover rounded-[24px]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div key={2}>
+    <div className="relative w-screen h-[560px] ">
+      <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] ">
+        <div id="content" className="bg-white w-5/12 p-10 pt-10">
+          <p className="text-black text-3xl font-semibold font-helvetica my-2">
+            Dr. Paul C. Salins
+          </p>
+          <p className="text-black text-2xl font-semibold font-helvetica my-2">
+            MD / VP - Narayana Hrudayalaya and Mazumdar Shaw Cancer Hospital
+          </p>
+          <p className="text-black text-xl font-helvetica my-2">
+            Dr. Paul C. Salins is the Managing Director and Vice-President of
+            the Mazumdar Shaw Cancer Center and Narayana Hrudayalaya
+            Multispecialty Hospital. At 1,400 beds, this is one of the biggest
+            cancer center projects in the world. He is an internationally
+            acclaimed authority in the specialty of Cranio-Maxillofacial Surgery
+            having trained and worked across the globe.
+          </p>
+        </div>
+        <div id="image" className="w-8/12 h-[420px] rounded-[12px] pb-10">
+          <img
+            src={"https://cdn.ms-mf.org/images/People/dr paul photo 3.jpg"}
             alt="Research"
             className="w-full h-[420px] object-cover rounded-[24px]"
           />
@@ -196,78 +255,46 @@ const Home: NextPage = () => {
               <div className="text-[38px] text-white font-helvetica text-center py-4">
                 Our <b>Impact</b>
               </div>
-              <div className="w-full flex flex-wrap">
+              <div className="text-[24px] text-white font-helvetica text-center py-4">
+                Multi-disciplinary Ecosystem for transformation of Healthcare at
+                grass-root level
+              </div>
+              <div className="w-full flex flex-wrap justify-self-center">
                 <div className="w-6/12">
-                  <ImpactCard
-                    title={"Publication"}
-                    number={70}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
-                  <ImpactCard
-                    title={"Patents (Granted)"}
-                    number={2}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
-                  <ImpactCard
-                    title={"Incubatees"}
-                    number={26}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
-                  <ImpactCard
-                    title={"Patients Under Support"}
-                    number={675}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
-                  <ImpactCard
-                    title={"Diagnostic Tests"}
-                    number={28}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
+                  <ImpactCard title={"Publication"} number={70} />
+                  <ImpactCard title={"Patents (Granted)"} number={2} />
+                  <ImpactCard title={"Incubatees"} number={26} />
+                  <ImpactCard title={"Patients Under Support"} number={675} />
+                  <ImpactCard title={"Diagnostic Tests"} number={28} />
                 </div>
                 <div className="w-6/12">
-                  <ImpactCard
-                    title={"Patents (Filed)"}
-                    number={10}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
-                  <ImpactCard
-                    title={"Grants"}
-                    number={25}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
-                  <ImpactCard
-                    title={"Mentors"}
-                    number={55}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
-                  <ImpactCard
-                    title={"Collaboration"}
-                    number={20}
-                    about={"Lorem Ipsum is simply dummy text of the printing. "}
-                  />
+                  <ImpactCard title={"Patents (Filed)"} number={10} />
+                  <ImpactCard title={"Grants"} number={25} />
+                  <ImpactCard title={"Mentors"} number={55} />
+                  <ImpactCard title={"Collaboration"} number={20} />
                 </div>
               </div>
             </SectionContent>
           </div>
         </Section>
-        
+
         <div className="bg-white">
           <Section>
-          <SectionContent>
-            <div className="text-[38px] font-helvetica text-center py-4">
-              Our <b>Leadership</b>
-            </div>
-            <div className="bg-[#F9F9F9] flex justify-center px-6 py-2">
-              {/* <div className="image-overlay flex flex-col items-center justify-center"> */}
-              <Carousel
-                carouselID="researchCarousel"
-                alignIndicator="center"
-                carouselItems={LeadershipCarouselItems}
-                classes={`h-[540px]`}
-              />
-            </div>
-          </SectionContent>
-        </Section>
+            <SectionContent>
+              <div className="text-[38px] font-helvetica text-center py-4">
+                Our <b>Leadership</b>
+              </div>
+              <div className="bg-[#F9F9F9] flex justify-center px-6 py-2">
+                {/* <div className="image-overlay flex flex-col items-center justify-center"> */}
+                <Carousel
+                  carouselID="researchCarousel"
+                  alignIndicator="center"
+                  carouselItems={LeadershipCarouselItems}
+                  classes={`h-[540px]`}
+                />
+              </div>
+            </SectionContent>
+          </Section>
         </div>
       </div>
 

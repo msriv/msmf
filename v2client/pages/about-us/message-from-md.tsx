@@ -17,65 +17,85 @@ const MessageFromMD = () => {
       />
       <SectionContent>
         <ContentCardNoBorder>
-          <div className="flex w-full">
-            <div className="w-full">
-              “The landscape of healthcare is constantly changing, we are moving
-              towards a better understanding of the molecular cause of disease,
-              genetic basis for susceptibility with the advancement in
-              technology. But, we are constantly challenged by the
-              micro-organism, highly diverse pathology that are environmentally
-              induced and our acts to pollute the nature. There should be a
-              compelling need to dissociate healthcare from affluence to ensure
-              that the fruits of progress in medicine benefits all who needs it.
-              The foundation for medical progress should adhere to compassion
-              and research motivated by sensitivity to human suffering.
-              Therefore, the medical profession of the future cannot remain as a
-              mere specialty but should learn and work with every branch of
-              science. The effective physician of the future will also have to
-              be a scientist, an engineer and a socio economist. The conviction
-              behind the Mazumdar Shaw Medical Foundation is the belief that
-              only a will, highly motivated by compassion can direct science
-              towards intelligent innovations that convert today’s expensive
-              medical discoveries into affordable solutions. To make this
-              possible, a strategy was developed to seamlessly incorporate a
-              high-tech hospital with translational research facilities, medical
-              outreach & compassionate care programs and technology development
-              capabilities, into a highly interactive ecosystem. The idea is to
-              create a new hospital culture where every health-worker has ready
-              access to resources for guided innovation at multiple levels. The
-              Mazumdar Shaw Medical Center (MSMC), a unit of Narayana Health,
-              with the Mazumdar Shaw Center for Translational Research (MSCTR)
-              and Mazumdar Shaw- Technology Business Incubator (TBI) are the
-              current pillars of the Mazumdar Shaw Medical Foundation.
-              Additional, Advanced Diagnostics Research (ADRC) has been added as
-              a new initiative to guide bedside applications and provide niche
-              diagnostic solutions to the patients. What makes the practice of
-              Medicine so exciting, is not just the scholarship, knowledge or
-              skill, but the great mystery that is the human body. A doctor
-              quickly learns that man is much more than the sum of parts taught
-              in anatomy, or the processes unraveled in physiology but something
-              much more, with hidden dimensions for which science has no
-              vocabulary. Even when our medicine succeeds, the credit entirely
-              must go to our body’s ability to withstand chemical the insult to
-              its homeostasis from the use of drugs having less than specific
-              action and its miraculous ability to heal despite violent
-              disruption of its structural cohesion during surgery. There is
-              also our environment which is changing much faster than our bodies
-              can evolve and the stress of increasing expectation at every level
-              of human performance in compelling unrealistic transformation of
-              the way we live and function. For this reason, the Mazumdar Shaw
-              Medical Foundation also has a focus on integrative medicine, as
-              well as art and culture. Albert Einstein said “After a certain
-              high level of technical skill is achieved, science and art tends
-              to coalesce in aesthetics, plasticity, and form. The greatest
-              scientists are artists as well.” The Mazumdar Shaw Medical
-              Foundation is a platform seamlessly connecting and energizing
-              multiple stake holders in healthcare towards achieving the
-              specific goal of accessible excellence in healthcare. It is my
-              view that we are establishing one of the most exciting enterprises
-              for creating the future of global healthcare that can truly help
-              make the world a happier place.”
+          <div className="flex w-full justify-between">
+            <div className="w-7/12 px-4">
+              <div className="w-full">
+                <div className="text-2xl mt-10">
+                  <b>Dr. Paul Salins</b>
+                </div>
+                <p>
+                  Mazumdar Shaw Medical Foundation (MSMF) is established to
+                  provide philanthropic support, medical outreach and
+                  translational research. Our goal is to make advanced
+                  healthcare accessible and cutting-edge Medical Science
+                  applications affordable. MSMF with Narayana Health has
+                  established a unique hospital-based ecosystem for bringing our
+                  shared vision to fruition.
+                </p>
+              </div>
             </div>
+            <div className="w-5/12 px-4">
+              <img
+                src="https://cdn.ms-mf.org/images/People/dr paul photo 3.jpg"
+                alt="About Us"
+                className="rounded"
+              />
+            </div>
+          </div>
+          <div className="px-4">
+            <p>
+              Medical science has had the jurisdiction almost entirely for
+              healthcare until now and has made remarkable progress possible.
+              However, there is increasing recognition that the
+              physician-clinic-hospital centric healthcare must now make way for
+              a broader Personal-Community- Physician- Hospital model of
+              technology led healthcare. This shift mandates an approach that
+              creates a culture of shared ideation between engineering and
+              medical sciences. The expertise from disease biology encompassing
+              genomic and molecular research, big data analysis, clinical
+              research etc must be now seamlessly integrated through advanced
+              technology to socioeconomic factors to provide novel solutions of
+              future healthcare.
+            </p>
+            <p>
+              With this in mind MSMF has created an ecosystem for guided
+              innovation at multiple levels. Mazumdar Shaw Centre for
+              Translational Research (MSCTR), Mazumdar Shaw Technology Business
+              Incubator (MSMF-TBI) and the Mazumdar Shaw Cancer Outreach program
+              (MSCOP) with Narayana Health-Mazumdar Shaw Medical Centre (MSMC)
+              constitutes an eclectic scientific network that provides an
+              optimal setting for novel ideation, entrepreneurship and fast
+              track bench-side discoveries to bedside applications and smart
+              solutions.
+            </p>
+            <p>
+              Healthcare and the practise of medicine in recent times demands
+              more than addressing the physiological and/anatomical anomalies.
+              The knowledgebase that includes the underlying molecular basis of
+              disease conditions and its customization according to the genetic
+              framework of each individual, can be leveraged to develop
+              mandatory adjuncts that can enable precision medicine. Application
+              of advanced technologies for big data analysis, both molecular and
+              clinicopathological, is now a fast-advancing approach that can
+              intelligently optimize existing information to obtain accurate
+              diagnostics/prognostics. Finally, innovation is the primary
+              strategy that can enable the translation of research findings to
+              healthcare solutions. Fostering entrepreneurship in a healthcare
+              set up will ensure a synergism with the clinicians fastening the
+              process of deriving smart solutions. Given that medicine, today
+              demands a comprehensive understanding of all the various
+              stakeholders, the Mazumdar Shaw Medical Foundation has a focus on
+              integrative medicine that includes developing the knowledgebase,
+              and encouraging innovation for its optimal application towards
+              value addition in healthcare.
+            </p>
+            <p className="italic">
+              It is my view that we are embarking on one of the most exciting
+              enterprises where clinicians, scientists and entrepreneurs can
+              work under one roof for addressing healthcare issues by bringing
+              in new tools and strategies in the fast-changing scenario of
+              clinical practice.
+            </p>
           </div>
         </ContentCardNoBorder>
       </SectionContent>

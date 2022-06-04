@@ -1,9 +1,9 @@
 const ImpactCard = (props: {
   title: string;
   number: number;
-  about?: string;
+ // about?: string;
 }) => {
-  const { title, number, about } = props;
+  const { title, number} = props;
   return (
     <div className="flex my-12">
       <div id="impact-number" className="">
@@ -12,13 +12,13 @@ const ImpactCard = (props: {
             {number}+
           </p>
         </div>
-      </div>
-      <div id="about-number" className="ml-10 text-white ">
-        <p className="font-semibold text-xl m-0">{title}</p>
-        {about ? (
+        </div>
+      <div id="about-number" className="ml-10 text-white">
+        <p className="font-semibold text-xl m-5 mb-2">{title}</p>
+        {/* {about ? (
           <p className=" leading-relaxed m-0 px-3 w-8/12 text-sm">
             {about}</p>
-        ) : null}
+        ) : null} */}
       </div>
     </div>
   );

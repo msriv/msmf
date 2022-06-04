@@ -7,14 +7,14 @@ import {
 
 const MentoringEventsData = [
   {
-    name: "Dr Arjun Alva ",
+    name: "Dr. Arjun Alva ",
     position: " ",
     topic: "",
     date: "April 2021",
     image: "https://cdn.ms-mf.org/images/Incubation/msmf_logo1.jpg",
   },
   {
-    name: "Dr  Rohit Ranade - Dr. Subhash Narayanan ",
+    name: "Dr. Rohit Ranade - Dr. Subhash Narayanan ",
     position: "Founder & CEO -Sascan Meditech Pvt Ltd ",
     topic: "MSMF contributed greatly to our journey through clinical trials.",
     date: "May 2021",
@@ -49,35 +49,35 @@ const MentoringEventsData = [
     image: "https://cdn.ms-mf.org/images/Incubation/msmf_logo1.jpg",
   },
   {
-    name: "Dr Ravichandra - Vaidyanathan A",
+    name: "Dr. Ravichandra - Vaidyanathan A",
     position: "Founder  Personal Air Quality Systems Pvt Ltd",
     topic: "",
     date: "Oct 2021",
     image: "https://cdn.ms-mf.org/images/Incubation/msmf_logo1.jpg",
   },
   {
-    name: "Dr Murali Mohan - Subodh Gupta",
+    name: "Dr. Murali Mohan - Subodh Gupta",
     position: "",
     topic: "",
     date: "Nov 2021",
     image: "https://cdn.ms-mf.org/images/Incubation/msmf_logo1.jpg",
   },
   {
-    name: "Dr Anil Kumar Sapare - Rahul",
+    name: "Dr. Anil Kumar Sapare - Rahul",
     position: "MD Docturnal",
     topic: "",
     date: "Dec 2021",
     image: "https://cdn.ms-mf.org/images/Incubation/msmf_logo1.jpg",
   },
   {
-    name: "Dr Nitin Nair - Dr. Sivakumar Muthusamy",
+    name: "Dr. Nitin Nair - Dr. Sivakumar Muthusamy",
     position: "Founder, Ariviya",
     topic: "",
     date: "Jan 2022",
     image: "https://cdn.ms-mf.org/images/Incubation/January 2022.png",
   },
   {
-    name: "Dr Harish Mallapura - Dr Deepak",
+    name: "Dr. Harish Mallapura - Dr Deepak",
     position: "Sawant Lab",
     topic: "",
     date: "Feb 2022",
@@ -96,7 +96,8 @@ const WebinarsEventsData = [
   {
     name: "",
     position: " ",
-    topic: "Opportunities in MedTech Space: Frontline healthcare, safe surgery & pediatric cancer",
+    topic:
+      "Opportunities in MedTech Space: Frontline healthcare, safe surgery & pediatric cancer",
     date: "2nd April 2021",
     image: "https://cdn.ms-mf.org/images/Incubation/msmf_logo1.jpg",
   },
@@ -128,14 +129,13 @@ const WebinarsEventsData = [
     date: "5th March 2022",
     image: "https://cdn.ms-mf.org/images/Incubation/IPR in health Tech.jpg",
   },
-
 ];
 const Events = () => {
   return (
     <>
-          <div className="text-[38px] font-helvetica text-center mt-10">
-            <b>Events</b>
-          </div>
+      <div className="text-[38px] font-helvetica text-center mt-10">
+        <b>Events</b>
+      </div>
       <Section>
         <SectionTitle
           title={
@@ -148,28 +148,37 @@ const Events = () => {
         <SectionContent>
           <div className=" mt-8 flex flex-wrap w-full justify-evenly ">
             {MentoringEventsData.map((project, key) => (
-              <ContentCard
-                className="w-3/12 m-4 shadow-md rounded bg-white p-10 "
-                key={key}>
-                {/* image for news */}
-                <img className="font-bold text-[#6A6A6A] m-0" src= {project.image}/>
-                {/* Title for news */}
-                <p className="font-semibold text-3xl mt-0"> {project.name}</p>
-                <p className="font-3xl uppercase text-[#6A6A6A] m-0">
-                  {project.position}
-                </p>
-                <p className="font-bold uppercase text-[#6A6A6A] m-0">
-                  {project.date}
-                </p>
-                    {/* {project.members.map((member, key) => (
+              <div className="w-4/12 p-4 items-center">
+                <ContentCard
+                  className="shadow-md rounded bg-white p-10 h-full"
+                  key={key}
+                >
+                  {/* image for news */}
+                  <img
+                    className="place-self-center m-0"
+                    src={project.image}
+                  />
+                  {/* Title for news */}
+                  <p className="font-semibold text-2xl text-left mt-5">
+                    {" "}
+                    {project.name}
+                  </p>
+                  <p className="font-3xl uppercase text-[#6A6A6A] m-0">
+                    {project.position}
+                  </p>
+                  <p className="font-bold uppercase text-[#6A6A6A] m-0">
+                    {project.date}
+                  </p>
+                  {/* {project.members.map((member, key) => (
                   <p className="text-[#535050] m-0" key={key}>
                     {member}
                   </p>
                 ))} */}
-                    {/* text */}
-                    {/* <p className="mb-0 font-bold text-[#6A6A6A] uppercase">{" "}</p>
+                  {/* text */}
+                  {/* <p className="mb-0 font-bold text-[#6A6A6A] uppercase">{" "}</p>
                 <p className="m-0">{project.text}</p> */}
-              </ContentCard>
+                </ContentCard>
+              </div>
             ))}
           </div>
         </SectionContent>
@@ -186,28 +195,37 @@ const Events = () => {
         <SectionContent>
           <div className=" mt-8 flex flex-wrap w-full justify-evenly ">
             {WebinarsEventsData.map((project, key) => (
-              <ContentCard
-                className="w-3/12 m-4 shadow-md rounded bg-white p-10 "
-                key={key}>
-                {/* image for news */}
-                <img className="font-bold text-[#6A6A6A] m-0" src= {project.image}/>
-                {/* Title for news */}
-                <p className="font-semibold text-3xl mt-0"> {project.name}</p>
-                <p className="font-3xl uppercase text-[#6A6A6A] m-0">
-                  {project.position}
-                </p>
-                <p className="font-bold uppercase text-[#6A6A6A] m-0">
-                  {project.date}
-                </p>
-                    {/* {project.members.map((member, key) => (
+              <div className="w-4/12 p-4 items-center">
+                <ContentCard
+                  className="shadow-md rounded bg-white p-10 h-full"
+                  key={key}
+                >
+                  {/* image for news */}
+                  <img
+                    className="place-self-center m-0"
+                    src={project.image}
+                  />
+                  {/* Title for news */}
+                  <p className="font-semibold text-2xl text-left mt-5">
+                    {" "}
+                    {project.name}
+                  </p>
+                  <p className="font-3xl uppercase text-[#6A6A6A] m-0">
+                    {project.position}
+                  </p>
+                  <p className="font-bold uppercase text-[#6A6A6A] m-0">
+                    {project.date}
+                  </p>
+                  {/* {project.members.map((member, key) => (
                   <p className="text-[#535050] m-0" key={key}>
                     {member}
                   </p>
                 ))} */}
-                    {/* text */}
-                    {/* <p className="mb-0 font-bold text-[#6A6A6A] uppercase">{" "}</p>
+                  {/* text */}
+                  {/* <p className="mb-0 font-bold text-[#6A6A6A] uppercase">{" "}</p>
                 <p className="m-0">{project.text}</p> */}
-              </ContentCard>
+                </ContentCard>
+              </div>
             ))}
           </div>
         </SectionContent>

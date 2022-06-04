@@ -5,7 +5,6 @@ import {
   SectionContent,
   SectionTitle,
 } from "../../components/Common/Section";
-import Image from 'next/image'
 
 // Vision and Mission Updated
 
@@ -25,29 +24,61 @@ const AboutUs = () => {
             <div id="our-mission">
               <ContentCardNoBorder>
                 <div className="w-full flex space-x-10">
-                  <p className="w-6/12">
-                  •	To Facilitate research that transcends inter-disciplinary boundaries towards addressing challenges in treatment of various human diseases in a translational manner.
-                  •	Reach out to people in an exclusive manner thereby enabling healthier and happier lives all around. This is facilitated using a two prong approach, both treatment and financial support to the sick and needy.
+                  <div className="w-6/12">
+                    <div className="text-[38px] font-helvetica text-left py-4">
+                      Our <b>Mission</b>
+                    </div>
+                    <p className="text-[20px] ">
+                      To Facilitate research that transcends
+                      inter-disciplinary boundaries towards addressing
+                      challenges in treatment of various human diseases in a
+                      translational manner. • Reach out to people in an
+                      exclusive manner thereby enabling healthier and happier
+                      lives all around. This is facilitated using a two prong
+                      approach, both treatment and financial support to the sick
+                      and needy.
+                    </p>
+                  </div>
 
-                  </p>
-                  <Image src="" alt="About Us Photo" className="w-5/12" />
+                  <img
+                    src={
+                      "https://cdn.ms-mf.org/images/Homepage/Mission-About us.jpg"
+                    }
+                    alt="About Us Photo"
+                    className="w-5/12 h-[420px] object-cover rounded-[8px]"
+                  />
                 </div>
               </ContentCardNoBorder>
             </div>
             <div id="our-vision">
               <ContentCardNoBorder>
                 <div className="w-full flex space-x-10">
-                  <img src="" alt="Vision Photo" className="w-5/12" />
-                  <p className="w-6/12">
-                  •	Our vision is to develop a robust ecosystem where we are ready to anticipate the demands of today and answer tomorrows challenges in the medical spectrum with a unique blend of a new paradigm shift in the way diagnostic solutions are offered in close collaboration among researchers, pathologists, scientists, physicians and patients.
-                  </p>
+                  <img
+                    src={"https://cdn.ms-mf.org/images/Homepage/Vision.jpg"}
+                    alt="Vision Photo"
+                    className="w-5/12 h-[420px] object-cover rounded-[8px]"
+                  />
+                  <div className="w-6/12">
+                    <div className="text-[38px] font-helvetica text-left py-4">
+                      Our <b>Vision</b>
+                    </div>
+                    <p className="text-[20px] ">
+                      Our vision is to develop a robust ecosystem where we are
+                      ready to anticipate the demands of today and answer
+                      tomorrows challenges in the medical spectrum with a unique
+                      blend of a new paradigm shift in the way diagnostic
+                      solutions are offered in close collaboration among
+                      researchers, pathologists, scientists, physicians and
+                      patients.
+                    </p>
+                  </div>
                 </div>
               </ContentCardNoBorder>
             </div>
           </div>
         </SectionContent>
       </Section>
-          <People />
+      <People />
     </>
   );
 };

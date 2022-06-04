@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 interface SectionProps {
   children: ReactNode;
+  [key: string]: any
 }
 const Section = (props: SectionProps) => {
   const { children, ...rest } = props;
