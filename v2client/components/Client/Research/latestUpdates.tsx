@@ -43,10 +43,9 @@ const Updates = () => {
         <SectionContent>
           <div className=" mt-2  flex flex-wrap w-full justify-evenly">
             {LatestUpdates.map((project, key) => (
-              <div className="w-4/12 p-4 items-center">
+              <div key={key} className="w-4/12 p-4 items-center">
                 <ContentCard
                   className=" shadow-md rounded bg-white p-8 h-full"
-                  key={key}
                 >
                   {/* image for news */}
                   <img
