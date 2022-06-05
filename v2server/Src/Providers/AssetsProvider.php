@@ -62,6 +62,4 @@ class AssetsProvider extends Provider {
             }
         };
     }
-
-    
 }

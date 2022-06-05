@@ -8,36 +8,44 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="assets")
  */
 class AssetModel {
+    
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue
      */
     private $id;
+    
     /**
      * @ORM\Column(type="string")
      */
     private $name;
+    
     /**
      * @ORM\Column(type="string")
      */
     private $alt;
+    
     /**
      * @ORM\Column(type="string")
      */
     private $width;
+    
     /**
      * @ORM\Column(type="string")
      */
     private $height;
+    
     /**
      * @ORM\Column(type="string")
      */
     private $uri;
+    
     /**
      * @ORM\Column(type="string", length=400)
      */
     private $path;
+
     /**
      * @ORM\Column(type="string", length=400)
      */
@@ -66,5 +74,4 @@ class AssetModel {
             'mime' => $this->mime
         );
     }
-
 }
