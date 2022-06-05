@@ -1,6 +1,7 @@
 <?php
 
 namespace Server\Src\Providers;
+use Doctrine\Common\Collections\Criteria;
 use Server\Src\Models\PeopleModel;
 use Server\Src\Utils\Helpers;
 
@@ -14,8 +15,14 @@ class PeopleProvider extends Provider  {
         $this->peopleRepository = $this->db->getRepository('Server\Src\Models\PeopleModel');
     }
 
-    public function getPeopleByTeam($team){
-        $teamPeople  =  $this->peopleRepository->findBy(array('team' => $team));
+    public function getPeopleByTeam($vertical, $team, ?string $subteam){
+        $criteria = Criteria::create()
+            ->where(Criteria::expr()->eq("vertical", $vertical))
+            ->andWhere(Criteria::expr()->eq("team", $team));
+        if ($subteam) {
+            $criteria->andWhere(Criteria::expr()->eq("subteam", $subteam));
+        }
+        $teamPeople  =  $this->peopleRepository->matching($criteria);
         $result = array();
         foreach ($teamPeople as $people){
             array_push($result, $people->getPerson());
@@ -32,18 +39,21 @@ class PeopleProvider extends Provider  {
         return Helpers::createSuccessResponse(200, $result);
     }
 
-    public function createPeople(){
+    public function createPerson(){
         $people = new PeopleModel(
             $_POST["image"], 
             $_POST["position"],
-            $_POST[" linkedInProfile"],
+            $_POST["linkedInProfile"],
             $_POST["about"],
             $_POST["address"],
+            $_POST["vertical"],
+            $_POST["team"],
+            $_POST["subteam"],
         );
 
         $this->db->persist($people);
         $this->db->flush();
 
-        return Helpers::createSuccessResponse(200, $people->getPeople());
+        return Helpers::createSuccessResponse(200, $people->getPerson());
     }
 }

@@ -53,21 +53,72 @@ class IncubateeModel {
      * @ORM\Column(type="string")
      */
     private $incorporationYear;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $headquarters;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $sector;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $subSector;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $customerProblem;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $solution;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $solutionBetter;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $primaryBeneficiary;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $milestone;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $reasonToIncubate;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $earlierFunds;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $totalEarlierFunds;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $anyPatent;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $aboutPatent;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $otherDetails;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $pitchDeck;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $logo;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $gdpr;
 }

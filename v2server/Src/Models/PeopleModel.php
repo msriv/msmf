@@ -29,7 +29,10 @@ class PeopleModel {
      * @ORM\Column(type="string", length=400)
      */
     private $team;
-
+    /**
+     * @ORM\Column(type="string", length=400)
+     */
+    private $subteam;
     /**
      * @ORM\Column(type="string", length=100)
      */
@@ -46,23 +49,29 @@ class PeopleModel {
     private $address;
 
 
-    public function __construct($image, $position, $linkedInProfile, $about, $address)
+    public function __construct($image, $position, $linkedInProfile, $about, $address, $vertical, $team, $subteam)
     {
-        this->image = $image;
-        this->position = $position;
-        this->linkedInProfile = $linkedInProfile;
-        this->about = $about;
-        this->address = $address;
+        $this->image = $image;
+        $this->position = $position;
+        $this->linkedInProfile = $linkedInProfile;
+        $this->about = $about;
+        $this->address = $address;
+        $this->vertical = $vertical;
+        $this->team = $team;
+        $this->subteam = $subteam;
     }
 
     public function getPerson (): array{
         return array(
-            "id" => this->id,
-            "image" => this->image,
-            "position" => this->position,
-            "linkedInProfile" => this->linkedInProfile,
-            "about" => this->about,
-            "address" => this->address
+            "id" => $this->id,
+            "image" => $this->image,
+            "position" => $this->position,
+            "linkedInProfile" => $this->linkedInProfile,
+            "about" => $this->about,
+            "address" => $this->address,
+            "vertical" => $this->vertical,
+            "team" => $this->team,
+            "subteam" => $this->subteam
         );
     }
 }

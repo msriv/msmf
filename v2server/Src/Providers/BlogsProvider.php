@@ -1,7 +1,7 @@
 <?php
 
 namespace Server\Src\Providers;
-use Server\Src\Models\BlogModel;
+use Server\Src\Models\BlogsModel;
 use Server\Src\Utils\Helpers;
 
 class BlogsProvider extends Provider  {
@@ -23,7 +23,7 @@ class BlogsProvider extends Provider  {
         return Helpers::createSuccessResponse(200, $result);
     }
 
-    public function getAllBlog() {
+    public function getAllBlogs() {
         $allBlog =  $this->blogRepository->findAll();
         $result = array();
         foreach ($allBlog as $blog){
@@ -33,14 +33,14 @@ class BlogsProvider extends Provider  {
     }
 
     public function createBlog(){
-        $blog = new BlogModel(
-            $_POST["id"]
-            $_POST["author"]
-            $_POST["title"]
-            $_POST["body"]
-            $_POST["featuredImage"]
-            $_POST["likes"]
-            $_POST["createdOn"]
+        $blog = new BlogsModel(
+            $_POST["id"],
+            $_POST["author"],
+            $_POST["title"],
+            $_POST["body"],
+            $_POST["featuredImage"],
+            $_POST["likes"],
+            $_POST["createdOn"],
             $_POST["updatedOn"]
         );
 

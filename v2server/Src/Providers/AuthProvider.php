@@ -8,7 +8,7 @@ use Server\Src\Utils\Helpers;
 class AuthProvider extends Provider  {
     private $authService;
     public function __construct() {}
-    public function generateToken($userId) {
+    public function generate_token($userId) {
         $this->authService = new AuthService();
         return Helpers::createSuccessResponse(201, array("token" => $this->authService->generateToken($userId, null)));
     }

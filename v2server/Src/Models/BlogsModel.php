@@ -44,19 +44,19 @@ class BlogsModel {
     
     private $updatedOn;
 
-    private setCreated($timestamp){
+    private function setCreated ( $timestamp ) {
         $this->createdOn = $timestamp;
     }
 
-    private setModified($timestamp){
+    private function setModified($timestamp){
         $this->updatedOn = $timestamp;
     }
 
-    private getModified(){
+    private function getModified(){
         return $this->updatedOn;
     }
 
-    public function __construct($id, $author, $title, $body, $featuredImage){
+    public function __construct($author, $title, $body, $featuredImage){
         
         $this->author = $author;
         $this->title = $title;

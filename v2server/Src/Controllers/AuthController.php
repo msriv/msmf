@@ -19,7 +19,7 @@
             $authProvider = new AuthProvider($this->db);
             switch ($this->handler) {
                 case 'generate_token': {
-                    $response = $authProvider->generate_token();
+                    $response = $authProvider->generate_token($_POST["user_id"]);
                 } break;
                 case 'validate_token': {
                     $response = $authProvider->validate_token(Helpers::getBearerTokenFromHeader());
