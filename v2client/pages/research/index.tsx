@@ -10,6 +10,7 @@ import { ContentCardNoBorder } from "../../components/Common/ContentCardNoBorder
 import NewsSection from "../../components/Client/Research/news";
 
 const ResearchCarouselItems = [
+
   <div key={0}>
     <div className="relative w-screen h-[809px]">
       <div
@@ -20,25 +21,110 @@ const ResearchCarouselItems = [
           <p className="text-white text-xl">
             Mazumdar Shaw Centre for Translational Research (MSCTR)
           </p>
-          <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
-            “We aim to be a Center of Excellence for Translation of Biomedical
-            Research.”
+          <p className="mx-auto mt-14 text-4xl font-avenir-heavy text-white w-9/12 text-center">
+            “Specialization is not a limitation, but a pedestal.”
           </p>
         </div>
-        <button className="msmf__nav-cta font-avenir-book mt-20">
+
+        <button className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"  onClick={() => {
+            window.open("/research#research-programs", "_self");
+          }}>
           Learn More
         </button>
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Research/1_HomePage Banner_MSMF 8th floor.jpg"
+        src="https://cdn.ms-mf.org/images/Research/RFP Tagged oral cells (1).jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[809px]"
+      />
+    </div>
+  </div>,
+  <div key={1}>
+    <div className="relative w-screen h-[809px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[809px]"
+      >
+        <div className="font-avenir-book text-center w-full">
+          <p className="text-white text-xl">
+            Mazumdar Shaw Centre for Translational Research (MSCTR)
+          </p>
+          <p className="mx-auto mt-14 text-4xl font-avenir-heavy text-white w-9/12 text-center">
+            “A will, highly motivated by compassion directs science towards
+            intelligent innovations and affordable solutions.”
+          </p>
+        </div>
+        <button className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"  onClick={() => {
+            window.open("/research#research-programs", "_self");
+          }}>
+          Learn More
+        </button>
+      </div>
+      <img
+        src="https://cdn.ms-mf.org/images/Research/RFP-Tagged oral cells.jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[809px]"
+      />
+    </div>
+  </div>,
+  <div key={2}>
+    <div className="relative w-screen h-[809px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[809px]"
+      >
+        <div className="font-avenir-book text-center w-full">
+          <p className="text-white text-xl">
+            Mazumdar Shaw Centre for Translational Research (MSCTR)
+          </p>
+          <p className="mx-auto mt-14 text-4xl font-avenir-heavy text-white w-9/12 text-center">
+            “After a certain high level of technical skill is achieved, science
+            and art tends to coalesce in aesthetics, plasticity, and form. The
+            greatest scientists are artists as well – Albert Einstein”
+          </p>
+        </div>
+        <button className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"  onClick={() => {
+            window.open("/research#research-programs", "_self");
+          }}>
+          Learn More
+        </button>
+      </div>
+      <img
+        src="https://cdn.ms-mf.org/images/Research/Segmented single cells-1.jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[809px]"
+      />
+    </div>
+  </div>,
+  <div key={3}>
+    <div className="relative w-screen h-[809px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[809px]"
+      >
+        <div className="font-avenir-book text-center w-full">
+          <p className="text-white text-xl">
+            Mazumdar Shaw Centre for Translational Research (MSCTR)
+          </p>
+          <p className="mx-auto mt-14 text-4xl font-avenir-heavy text-white w-9/12 text-center">
+            “A seamless platform connecting and energizing multiple stake
+            holders towards excellence in healthcare”
+          </p>
+        </div>
+        <button className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"  onClick={() => {
+            window.open("/research#research-programs", "_self");
+          }}>
+          Learn More
+        </button>
+      </div>
+      <img
+        src="https://cdn.ms-mf.org/images/Research/Telecytology images-3.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />
     </div>
   </div>,
 ];
-
-
 
 const Research = () => {
   return (
@@ -49,7 +135,7 @@ const Research = () => {
         carouselItems={ResearchCarouselItems}
         classes={`h-[820px]`}
       />
-            <Section>
+      <Section>
         <SectionTitle
           title={
             <p>
@@ -63,7 +149,11 @@ const Research = () => {
               <ContentCardNoBorder>
                 <div className="w-full flex space-x-10">
                   <p className="w-6/12">
-                  Facilitate research that will contribute to early detection, diagnosis and treatment of various human diseases, which is translational in nature and be derived from knowledge gained through cellular, molecular, biochemical and genetic approaches.
+                    Facilitate research that will contribute to early detection,
+                    diagnosis and treatment of various human diseases, which is
+                    translational in nature and be derived from knowledge gained
+                    through cellular, molecular, biochemical and genetic
+                    approaches.
                   </p>
                   <img src="" alt="About Us Photo" className="w-5/12" />
                 </div>
@@ -74,8 +164,12 @@ const Research = () => {
                 <div className="w-full flex space-x-10">
                   <img src="" alt="Vision Photo" className="w-5/12" />
                   <p className="w-6/12">
-                  Translation of Biomedical Research, encouraging novel methods of technology deployment, with focus on healthcare challenges specific to South Asia, India in the fields of Oncology, Infectious diseases, Stem cell-based applications in Neurosciences, Gerontology and Regenerative medicine
-                 </p>
+                    Translation of Biomedical Research, encouraging novel
+                    methods of technology deployment, with focus on healthcare
+                    challenges specific to South Asia, India in the fields of
+                    Oncology, Infectious diseases, Stem cell-based applications
+                    in Neurosciences, Gerontology and Regenerative medicine
+                  </p>
                 </div>
               </ContentCardNoBorder>
             </div>
@@ -154,7 +248,7 @@ const Research = () => {
         </SectionContent>
       </Section>
       <ResearchImpact />
-      <NewsSection/>
+      <NewsSection />
     </div>
   );
 };

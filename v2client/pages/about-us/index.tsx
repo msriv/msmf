@@ -29,7 +29,7 @@ const AboutUs = () => {
                       Our <b>Mission</b>
                     </div>
                     <p className="text-[20px] ">
-                      To Facilitate research that transcends
+                      Facilitate research that transcends
                       inter-disciplinary boundaries towards addressing
                       challenges in treatment of various human diseases in a
                       translational manner. • Reach out to people in an

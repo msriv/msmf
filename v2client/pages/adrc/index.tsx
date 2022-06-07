@@ -32,21 +32,7 @@ const carouselItems: Array<React.ReactNode> = [
       </div>
     </div>
   </div>,
-  <div key={1} className="flex w-full h-full">
-    <div className="relative w-6/12">
-      <div className="absolute top-0 left-0 w-full h-full bg-gray-700/50 z-10"></div>
-      <img
-        src="https://cdn.ms-mf.org/images/ADRC/image 3.png"
-        className="block w-full h-full"
-        alt="..."
-      />
-    </div>
-    <div className="carousel-caption bg-black text-white text-center w-6/12 flex flex-col justify-center items-center">
-      <h5 className="text-xl">Second slide label</h5>
-      <p>Some representative placeholder content for the first slide.</p>
-    </div>
-  </div>,
-  <div key={2} className="flex w-full h-full">
+    <div key={1} className="flex w-full h-full">
     <div className="relative w-6/12">
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
       <img
@@ -56,10 +42,20 @@ const carouselItems: Array<React.ReactNode> = [
       />
     </div>
     <div className="carousel-caption bg-black text-white text-center w-6/12 flex flex-col justify-center items-center">
-      <h5 className="text-xl">Third slide label</h5>
-      <p>Some representative placeholder content for the first slide.</p>
+      <div className="w-8/12">
+        <p className="prose text-3xl text-white font-bold font-avenir-heavy font-center">
+        Research is formalized curiosity. It is poking and prying with a purpose
+        </p>
+        <p className="prose text-xl text-[#FBB604] italic font-bold font-avenir-heavy font-center mt-14">
+        Zora Neale Hurston
+        </p>
+        <button className="msmf__nav-cta font-avenir-book mt-6">
+          About Us
+        </button>
+      </div>
     </div>
   </div>,
+
 ];
 
 const ADRC = () => {
@@ -72,7 +68,6 @@ const ADRC = () => {
         classes="h-[542px]"
       />
       <Section>
-        
         <SectionContent>
           <ContentCard>
             <div className="w-full flex justify-between">
@@ -184,6 +179,8 @@ const ADRC = () => {
           </div>
         </SectionContent>
       </Section>
+     
+
     </div>
   );
 };

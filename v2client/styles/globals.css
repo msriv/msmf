@@ -68,8 +68,8 @@ body {
   .image-overlay {
     background: linear-gradient(
       180deg,
-      rgba(0, 39, 80, 0.68) 0%,
-      rgba(0, 25, 51, 0.68) 100%
+      rgba(0, 39, 80, 0.35) 0%,
+      rgba(0, 25, 51, 0.35) 100%
     );
     @apply absolute top-0 left-0 w-screen;
   }

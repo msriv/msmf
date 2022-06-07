@@ -214,11 +214,11 @@ const ResearchPeople: {
         image: "https://cdn.ms-mf.org/images/People/Gouri-233x300.jpg",
         position: "JRF",
       },
-      {
-        name: "Kiruthiga",
-        image: "https://cdn.ms-mf.org/images/People/Manjula Das Ph.D-PI-1.JPG",
-        position: "Trainee",
-      },
+      // {
+      //   name: "Kiruthiga",
+      //   image: "https://cdn.ms-mf.org/images/People/Manjula Das Ph.D-PI-1.JPG",
+      //   position: "Trainee",
+      // },
     ],
   },
   Collaborators: {
@@ -598,7 +598,7 @@ const ResearchPeople: {
       },
       {
         name: "Dr Nameeta Shah",
-        position: "Senior Research Fellow",
+        position: "PI",
       },
     ],
   },
