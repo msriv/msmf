@@ -83,6 +83,19 @@ class Server {
                 $rAssets->get("", [Constants::ASSETS_CONTROLLER, Constants::GET_ALL_ASSETS, Constants::PROTECTED]);
                 $rAssets->post("/upload", [Constants::ASSETS_CONTROLLER, Constants::CREATE_ASSETS, Constants::PROTECTED]);
             });
+
+            // Blogs routes
+            $r->addGroup("/v1/blogs", function (FastRoute\RouteCollector $rBlogs) {
+                $rBlogs->get("", [Constants::BLOGS_CONTROLLER, Constants::GET_ALL_BLOGS, Constants::OPEN]);
+                $rBlogs->get("/{id}", [Constants::BLOGS_CONTROLLER, Constants::GET_BLOG_BY_ID, Constants::OPEN]);
+                $rBlogs->post("", [Constants::BLOGS_CONTROLLER, Constants::CREATE_BLOG, Constants::OPEN]);
+            });
+
+            // People routes
+            $r->addGroup("/v1/people", function (FastRoute\RouteCollector $rPeople) {
+                $rPeople->get("/{vertical}/{team}/{subteam}", [Constants::PEOPLE_CONTROLLER, Constants::GET_PEOPLE_BY_TEAM, Constants::OPEN]);
+                $rPeople->post("", [Constants::PEOPLE_CONTROLLER, Constants::CREATE_PERSON, Constants::OPEN]);
+            });
         });
 
         return $this->routesDispatcher;

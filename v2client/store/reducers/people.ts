@@ -2,9 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 import { IPerson, ITeam } from "../../utils/Interfaces";
 
 const initialState: {
-  teams: ITeam[];
+  verticals: {
+    [vertical: string]: ITeam[];
+}
 } = {
-  teams: [],
+  verticals: {}
 };
 
 const peopleSlice = createSlice({

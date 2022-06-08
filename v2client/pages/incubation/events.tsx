@@ -148,10 +148,9 @@ const Events = () => {
         <SectionContent>
           <div className=" mt-8 flex flex-wrap w-full justify-evenly ">
             {MentoringEventsData.map((project, key) => (
-              <div className="w-4/12 p-4 items-center">
+              <div key={key} className="w-4/12 p-4 items-center">
                 <ContentCard
                   className="shadow-md rounded bg-white p-10 h-full"
-                  key={key}
                 >
                   {/* image for news */}
                   <img
@@ -195,10 +194,9 @@ const Events = () => {
         <SectionContent>
           <div className=" mt-8 flex flex-wrap w-full justify-evenly ">
             {WebinarsEventsData.map((project, key) => (
-              <div className="w-4/12 p-4 items-center">
+              <div key={key} className="w-4/12 p-4 items-center">
                 <ContentCard
                   className="shadow-md rounded bg-white p-10 h-full"
-                  key={key}
                 >
                   {/* image for news */}
                   <img
