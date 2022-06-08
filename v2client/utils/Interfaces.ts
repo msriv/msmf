@@ -10,8 +10,10 @@ export interface IPerson {
   address?:string;
 }
 export interface ITeam {
-  teamName: string;
-  members: IPerson[];
+  [teamName: string]: {
+    people: Array<IPerson>;
+    [subTeam: string]: Array<IPerson> | undefined;
+  };
 }
 
 export interface IFacility {

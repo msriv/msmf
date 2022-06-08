@@ -78,6 +78,20 @@ Dr. Salins studied art history at Cambridge University, has a significant intere
   },
   "Executive Management": {
     people: [
+
+      {
+        image: "https://cdn.ms-mf.org/images/People/dr paul photo 3.jpg",
+        name: "Dr. Paul C. Salins",
+        position:
+          "Managing Director / Vice President Narayana Hrudayalaya and Mazumdar Shaw Cancer Hospital",
+        about: `Dr. Paul C. Salins is the Managing Director and Vice-President of the Mazumdar Shaw Cancer Center and Narayana Hrudayalaya Multispecialty Hospital. At 1,400 beds, this is one of the biggest cancer center projects in the world. He is an internationally acclaimed authority in the specialty of Cranio-Maxillofacial Surgery having trained and worked across the globe.
+
+His surgical innovations and perspectives have been much acclaimed. Some of the key contributions made by Dr. Salins includes the technique of Naso-Orbito-Maxillary transposition to move parts of the facial skeleton to provide access to tumors hidden deep behind the face, soft and hard tissue composite corrections for management of severe bird face deformities, management of large vascular malformations of the face, the anatomical basis and orthomorphic techniques for 3-dimensional correction of facial asymmetries and also an emergency room angiographic technique for visualization of the major head and neck vessels.
+
+He has also key contributions in facial aesthetic surgery and his surgical work has restored self-respect and dignity to numerous people with deformities and mutilations of the facial region. He is a Fellow by the American College of Oral Maxillofacial Surgeon’s. Currently, his research interests are in the area of engineering applications, particularly of modelling based decision making processes to surgical practice. Dr. Salins has helped nurture several major medical institutions of repute in India and abroad and was instrumental in bringing the examinations of the Royal College of Physicians and Surgeons to India. He is the recipient of many international awards and citations.
+
+Dr. Salins studied art history at Cambridge University, has a significant interest in western classical music and is passionate about exploring the influence of culture in education as the vital substrate for creativity. Dr. Salins is convinced that, today India is ready to take decisive leadership and is indeed poised to provide solutions to global needs in healthcare.`,
+      },
       {
         image: "https://cdn.ms-mf.org/images/People/Amitha-Suresh-1.jpg",
         name: "Dr. Amritha Suresh",
@@ -93,19 +107,6 @@ Dr. Salins studied art history at Cambridge University, has a significant intere
               Center, Kochi during which period she was involved in setting up
               the research facility and the establishment of a Head and Neck
               tissue repository at the center.`,
-      },
-      {
-        image: "https://cdn.ms-mf.org/images/People/dr paul photo 3.jpg",
-        name: "Dr. Paul C. Salins",
-        position:
-          "Managing Director / Vice President Narayana Hrudayalaya and Mazumdar Shaw Cancer Hospital",
-        about: `Dr. Paul C. Salins is the Managing Director and Vice-President of the Mazumdar Shaw Cancer Center and Narayana Hrudayalaya Multispecialty Hospital. At 1,400 beds, this is one of the biggest cancer center projects in the world. He is an internationally acclaimed authority in the specialty of Cranio-Maxillofacial Surgery having trained and worked across the globe.
-
-His surgical innovations and perspectives have been much acclaimed. Some of the key contributions made by Dr. Salins includes the technique of Naso-Orbito-Maxillary transposition to move parts of the facial skeleton to provide access to tumors hidden deep behind the face, soft and hard tissue composite corrections for management of severe bird face deformities, management of large vascular malformations of the face, the anatomical basis and orthomorphic techniques for 3-dimensional correction of facial asymmetries and also an emergency room angiographic technique for visualization of the major head and neck vessels.
-
-He has also key contributions in facial aesthetic surgery and his surgical work has restored self-respect and dignity to numerous people with deformities and mutilations of the facial region. He is a Fellow by the American College of Oral Maxillofacial Surgeon’s. Currently, his research interests are in the area of engineering applications, particularly of modelling based decision making processes to surgical practice. Dr. Salins has helped nurture several major medical institutions of repute in India and abroad and was instrumental in bringing the examinations of the Royal College of Physicians and Surgeons to India. He is the recipient of many international awards and citations.
-
-Dr. Salins studied art history at Cambridge University, has a significant interest in western classical music and is passionate about exploring the influence of culture in education as the vital substrate for creativity. Dr. Salins is convinced that, today India is ready to take decisive leadership and is indeed poised to provide solutions to global needs in healthcare.`,
       },
     ],
   },

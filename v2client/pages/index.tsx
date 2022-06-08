@@ -32,19 +32,152 @@ const MainCarouselItems = [
         <button
           className="msmf__nav-cta font-avenir-book mt-20"
           onClick={() => {
-            window.open("/research#research-programs", "");
+            window.open("#our-wings", "_self");
           }}
         >
           Learn More
         </button>
       </div>
-      {/* <img
-        src="https://cdn.ms-mf.org/images/Research/1_HomePage Banner_MSMF 8th floor.jpg"
+      <img
+        src="https://cdn.ms-mf.org/images/Homepage/1_Banner1_Mazumdar Shaw Medical Center.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[693px]"
-      /> */}
+      />
     </div>
   </div>,
+  <div key={1}>
+    <div className="relative w-screen h-[693px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[693px]"
+      >
+        <div className="font-avenir-book text-center w-full">
+          <p className="text-white text-xl">
+            Mazumdar Shaw Medical Foundation (MSMF)
+          </p>
+          <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
+            “We aim to be a Center of Excellence for Translation of Biomedical
+            Research.”
+          </p>
+        </div>
+
+        {/* OnClick send to research programs */}
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20"
+          onClick={() => {
+            window.open("#our-wings", "_self");
+          }}
+        >
+          Learn More
+        </button>
+      </div>
+      <img
+        src="https://cdn.ms-mf.org/images/Homepage/1_Banner1_Mazumdar Shaw Medical Center.jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[693px]"
+      />
+    </div>
+  </div>,
+  <div key={2}>
+    <div className="relative w-screen h-[693px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[693px]"
+      >
+        <div className="font-avenir-book text-center w-full">
+          <p className="text-white text-xl">
+            Mazumdar Shaw Medical Foundation (MSMF)
+          </p>
+          <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
+            “We aim to be a Center of Excellence for Translation of Biomedical
+            Research.”
+          </p>
+        </div>
+
+        {/* OnClick send to research programs */}
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20"
+          onClick={() => {
+            window.open("#our-wings", "_self");
+          }}
+        >
+          Learn More
+        </button>
+      </div>
+      <img
+        src="https://cdn.ms-mf.org/images/Homepage/1_Banner2ADRC_HLA lab 1.jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[693px]"
+      />
+    </div>
+  </div>,
+  <div key={3}>
+    <div className="relative w-screen h-[693px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[693px]"
+      >
+        <div className="font-avenir-book text-center w-full">
+          <p className="text-white text-xl">
+            Mazumdar Shaw Medical Foundation (MSMF)
+          </p>
+          <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
+            “We aim to be a Center of Excellence for Translation of Biomedical
+            Research.”
+          </p>
+        </div>
+
+        {/* OnClick send to research programs */}
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20"
+          onClick={() => {
+            window.open("#our-wings", "_self");
+          }}
+        >
+          Learn More
+        </button>
+      </div>
+      <img
+        src="https://cdn.ms-mf.org/images/Homepage/1_Banner3Incubation_FMW09683+.jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[693px]"
+      />
+    </div>
+  </div>,
+  <div key={4}>
+    <div className="relative w-screen h-[693px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[693px]"
+      >
+        <div className="font-avenir-book text-center w-full">
+          <p className="text-white text-xl">
+            Mazumdar Shaw Medical Foundation (MSMF)
+          </p>
+          <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
+            “We aim to be a Center of Excellence for Translation of Biomedical
+            Research.”
+          </p>
+        </div>
+
+        {/* OnClick send to research programs */}
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20"
+          onClick={() => {
+            window.open("#our-wings", "_self");
+          }}
+        >
+          Learn More
+        </button>
+      </div>
+      <img
+        src="https://cdn.ms-mf.org/images/Homepage/1_Banner4Philan_MSCOP nutrition support 2.jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fit h-[693px]"
+      />
+    </div>
+  </div>,
+
 ];
 
 const LeadershipCarouselItems = [
@@ -145,7 +278,7 @@ const Home: NextPage = () => {
           carouselItems={MainCarouselItems}
           classes={`h-[693px]`}
         />
-        <div className="w-full mt-24">
+        <div className="w-full mt-24" id="our-wings">
           <div className="text-[38px] font-helvetica text-center">
             Our <b>Wings</b>
           </div>
@@ -311,46 +444,60 @@ const Home: NextPage = () => {
         />
         <SectionContent>
           <div className="flex flex-wrap justify-center items-center w-full mt-10">
-            <div className="flex justify-center w-4/12 my-2">
+            <div className="flex justify-center w-3/12 my-2">
               <img
-                src="https://cdn.ms-mf.org/images/Incubation/SIAMAF.jpg"
-                alt="SIAMAF logo"
+                src="https://cdn.ms-mf.org/images/Homepage/BIRAC.jpg"
+                alt="BIRAC Logo"
                 className="w-10/12"
               />
             </div>
-            <div className="flex justify-center w-4/12 my-2">
+            <div className="flex justify-center w-3/12 my-2">
               <img
-                src="https://cdn.ms-mf.org/images/Incubation/Thermaissance Logo -.png"
-                alt="Thermaissance logo"
+                src="https://cdn.ms-mf.org/images/Homepage/DBT.png"
+                alt="DBT logo"
                 className="w-10/12"
               />
             </div>
-            <div className="flex justify-center w-4/12 my-2">
+            <div className="flex justify-center w-3/12 my-2">
               <img
-                src="https://cdn.ms-mf.org/images/Incubation/logo_farcast_horizontal_4C.jpg"
-                alt="Farcast logo"
+                src="https://cdn.ms-mf.org/images/Homepage/DHR.jpg"
+                alt="DHR logo"
                 className="w-10/12"
               />
             </div>
 
-            <div className="flex justify-center w-4/12 my-2">
+            <div className="flex justify-center w-3/12 my-2">
               <img
-                src="https://cdn.ms-mf.org/images/Incubation/64 Codon - Grey (1).png"
-                alt="64 Codon logo"
+                src="https://cdn.ms-mf.org/images/Homepage/DST.png"
+                alt="DST logo"
                 className="w-10/12"
               />
             </div>
-            <div className="flex justify-center w-4/12 my-2">
+            <div className="flex justify-center w-3/12 my-2">
               <img
-                src="https://cdn.ms-mf.org/images/Incubation/TeraLumen Logo ARC.png"
-                alt="TeraLumen logo"
+                src="https://cdn.ms-mf.org/images/Homepage/ICMR.png"
+                alt="ICMR logo"
                 className="w-10/12 "
               />
             </div>
-            <div className="flex justify-center w-4/12 my-2">
+            <div className="flex justify-center w-3/12 my-2">
               <img
-                src="https://cdn.ms-mf.org/images/Incubation/Logo white owl(Oxyliv).JPG"
-                alt="Oxyliv logo"
+                src="https://cdn.ms-mf.org/images/Homepage/Wellcome trust.jpg"
+                alt="Welcome Trust logo"
+                className="w-10/12"
+              />
+            </div>
+            <div className="flex justify-center w-3/12 my-2">
+              <img
+                src="https://cdn.ms-mf.org/images/Homepage/SERB.jpg"
+                alt="SERB logo"
+                className="w-10/12"
+              />
+            </div>
+            <div className="flex justify-center w-3/12 my-2">
+              <img
+                src="https://cdn.ms-mf.org/images/Homepage/NIH.png"
+                alt="NIH logo"
                 className="w-10/12"
               />
             </div>
