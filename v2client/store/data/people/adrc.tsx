@@ -16,13 +16,13 @@ const ADRCPeople: {
       {
         name: "Dr. Sharat Damodar",
         image: "https://cdn.ms-mf.org/images/People/Dr. Sharat Damodar.jpg",
-        position: "Clinical Director",
+        position: "Advisor, MSMF, Clinical Director",
       },
       {
         name: "Dr. Murali Mohan B V",
         image:
           "https://cdn.ms-mf.org/images/People/Dr.Murali Mohan B V_0_1.jpg",
-        position: "Consultant, Pulmono",
+        position: "Consultant, Pulmonology, Mazumdar Shaw Medical Centre, NH",
       },
     ],
   },
@@ -33,11 +33,7 @@ const ADRCPeople: {
         image: "https://cdn.ms-mf.org/images/People/Dr.Rekha P R.jpg",
         position: "Lab Director, NH",
       },
-      {
-        name: "Dr. Amritha Suresh",
-        image: "https://cdn.ms-mf.org/images/People/Amitha-Suresh-1.jpg",
-        position: "Operational Head, MSMF",
-      },
+
       {
         name: "Dr. Samarth Shetty",
         image: "https://cdn.ms-mf.org/images/People/Dr Samarth Shetty.JPG",
@@ -58,7 +54,6 @@ const ADRCPeople: {
   // Directors have been removed and added to other sections
   // Directors: {
   //   people: [
-
 
   //   ],
   // },
@@ -110,6 +105,11 @@ const ADRCPeople: {
   },
   Administration: {
     people: [
+      {
+        name: "Dr. Amritha Suresh",
+        image: "https://cdn.ms-mf.org/images/People/Amitha-Suresh-1.jpg",
+        position: "Operational Head, MSMF",
+      },
       {
         name: "Ms. Archana Ann",
         image: "https://cdn.ms-mf.org/images/People/archana ann j.jpeg",

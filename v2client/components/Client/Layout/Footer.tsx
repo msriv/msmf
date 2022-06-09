@@ -161,13 +161,24 @@ const Footer = () => {
           <hr className="border-msmf-dark my-4" />
           <div className="flex items-center justify-between">
             <a
-              href="https://www.linkedin.com/company/67262314/admin/"
+              href="https://www.linkedin.com/company/mazumdar-shaw-medical-foundation/"
               target="_blank"
               rel="noreferrer"
             >
               <img
                 src="/assets/images/Common/icons8-linkedin-192.png"
                 alt="linkedin"
+                className="w-10 h-10"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/MSMFoundationindia/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/assets/images/Common/icons8-facebook-192.png"
+                alt="Facebook"
                 className="w-10 h-10"
               />
             </a>

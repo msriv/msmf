@@ -40,10 +40,11 @@ interface CarouselProps {
   alignIndicator: "left" | "center" | "right";
   carouselItems: Array<React.ReactNode>;
   classes?: string;
+  theme?: "light" | "dark" ;
 }
 
 const Carousel = (props: CarouselProps) => {
-  const { carouselID, alignIndicator, carouselItems, classes } = props;
+  const { carouselID, alignIndicator, carouselItems, classes, theme } = props;
   const [[page, direction], setPage] = useState([0, 0]);
 
   // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
@@ -94,7 +95,7 @@ const Carousel = (props: CarouselProps) => {
         className="absolute top-1/2 right-3 bg-transparent w-10 h-10 flex justify-center items-center cursor-pointer z-10"
         onClick={() => paginate(1)}
       >
-        <span className="text-4xl text-white material-icons-outlined">
+        <span className={`text-4xl ${theme === "dark" ? "text-black" : "text-white"} material-icons-outlined`}>
           chevron_right
         </span>
       </div>
@@ -102,7 +103,7 @@ const Carousel = (props: CarouselProps) => {
         className="absolute top-1/2 left-3 bg-transparent w-10 h-10 flex justify-center items-center cursor-pointer z-10"
         onClick={() => paginate(-1)}
       >
-        <span className="text-4xl text-white material-icons-outlined">
+        <span className={`text-4xl ${theme === "dark" ? "text-black" : "text-white"} material-icons-outlined`}>
           chevron_left
         </span>
       </div>

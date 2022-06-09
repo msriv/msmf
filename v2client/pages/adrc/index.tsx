@@ -9,12 +9,12 @@ import React from "react";
 import { ContentCard } from "../../components/Common/ContentCard";
 
 const carouselItems: Array<React.ReactNode> = [
-  <div key={0} className="flex w-full h-full">
+  <div key={0} className="flex w-full h-[542px]">
     <div className="relative w-6/12">
-      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-[542px] bg-black/50 z-10"></div>
       <img
         src="https://cdn.ms-mf.org/images/ADRC/image 1.png"
-        className="block w-full h-full"
+        className="object-fill w-full h-[542px]"
         alt="..."
       />
     </div>
@@ -26,18 +26,23 @@ const carouselItems: Array<React.ReactNode> = [
         <p className="prose text-xl text-[#FBB604] italic font-bold font-avenir-heavy font-center mt-14">
           Mahatma Gandhi
         </p>
-        <button className="msmf__nav-cta font-avenir-book mt-6">
+        <button className="msmf__nav-cta font-avenir-book mt-6"
+        onClick={() => {
+            window.open("/adrc/about-us", "_self");
+          }}
+          >
+         
           About Us
         </button>
       </div>
     </div>
   </div>,
-    <div key={1} className="flex w-full h-full">
+    <div key={1} className="flex w-full h-[542px]">
     <div className="relative w-6/12">
-      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-[542px] bg-black/50 z-10"></div>
       <img
         src="https://cdn.ms-mf.org/images/ADRC/image 4.png"
-        className="block w-full h-full"
+        className="w-full h-[542px] object-fill"
         alt="..."
       />
     </div>
@@ -49,7 +54,12 @@ const carouselItems: Array<React.ReactNode> = [
         <p className="prose text-xl text-[#FBB604] italic font-bold font-avenir-heavy font-center mt-14">
         Zora Neale Hurston
         </p>
-        <button className="msmf__nav-cta font-avenir-book mt-6">
+        <button className="msmf__nav-cta font-avenir-book mt-6"
+        onClick={() => {
+            window.open("/adrc/about-us", "_self");
+          }}
+          >
+         
           About Us
         </button>
       </div>

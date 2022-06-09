@@ -7,16 +7,16 @@ const PhilanthropyCarouselItems = [
         id="overlay"
         className="image-overlay flex flex-col items-center justify-center h-[809px]"
       >
-        <div className="prose font-avenir-heavy text-[47px] text-center">
+        <div className="prose font-avenir-heavy text-[47px] text-center mt-20">
           <p className="text-white m-0 leading-tight">Join the battle...</p>{" "}
-          <p className="text-[#fbb602] italic -m-2 font-bold">
+          <p className="text-[#fbb602] italic m-2 font-bold">
             Because they can&apos;t fight cancer alone
           </p>
         </div>
         <button
           className="msmf__nav-cta font-avenir mt-40 font-bold border-2"
           onClick={() => {
-            window.open("/donate", "_self");
+            window.open("/philanthropy/donate", "_self");
           }}
         >
           Donate
@@ -35,18 +35,18 @@ const PhilanthropyCarouselItems = [
         id="overlay"
         className="image-overlay flex flex-col items-center justify-center h-[809px]"
       >
-        <div className="prose font-avenir-heavy text-[47px] text-center">
+        <div className="prose font-avenir-heavy text-[47px] text-center mt-20">
           <p className="text-white m-0 leading-tight">
             Become a Guardian of Hope by...
           </p>{" "}
-          <p className="text-[#fbb602] italic -m-2 font-bold">
+          <p className="text-[#fbb602] italic m-2 font-bold">
             Putting a Smile to Their Face
           </p>
         </div>
         <button
           className="msmf__nav-cta font-avenir mt-40 font-bold border-2"
           onClick={() => {
-            window.open("/donate", "_self");
+            window.open("/philanthropy/donate", "_self");
           }}
         >
           Donate

@@ -197,6 +197,7 @@ const ResearchPeople: {
       },
       {
         name: "Ms. Sai Lakshmi",
+        image:" ", 
         position: "Research Technician",
         linkedInProfile: "https://www.linkedin.com/in/sai-lakshmi-08a410213",
       },
@@ -214,11 +215,6 @@ const ResearchPeople: {
         image: "https://cdn.ms-mf.org/images/People/Gouri-233x300.jpg",
         position: "JRF",
       },
-      // {
-      //   name: "Kiruthiga",
-      //   image: "https://cdn.ms-mf.org/images/People/Manjula Das Ph.D-PI-1.JPG",
-      //   position: "Trainee",
-      // },
     ],
   },
   Collaborators: {

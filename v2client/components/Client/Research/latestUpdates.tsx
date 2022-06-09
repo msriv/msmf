@@ -30,15 +30,9 @@ const Updates = () => {
   return (
     <>
       <Section>
-        <SectionTitle
-          title={
-            <span>
-              <div className="text-[38px] font-helvetica text-center py-4">
+      <div className="text-[38px] font-helvetica text-center py-4">
                 Our <b>Latest Updates</b>
               </div>
-            </span>
-          }
-        />
         {/* <div className="w-4/12 my-0 p-3 mx-auto bg-research flex"> */}
         <SectionContent>
           <div className=" mt-2  flex flex-wrap w-full justify-evenly">

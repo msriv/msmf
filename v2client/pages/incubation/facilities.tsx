@@ -302,6 +302,7 @@ const Facilities = () => {
                 <div className="w-full px-6 flex justify-center space-x-28">
                   {facility.thumbnails?.map((tn, key) => (
                     <img
+                      key={key}
                       src={tn}
                       alt={facility.facilityName + key}
                       className="w-4/12 aspect-auto"

@@ -127,8 +127,8 @@ export const Sitemap: Array<ISitemap> = [
         route: "/incubation/facilities",
       },
       {
-        page: "MSMF",
-        slug: "msmf",
+        page: "Wings",
+        slug: "wings",
         dropmenu: [
           {
             page: "Philanthropy",
@@ -197,8 +197,8 @@ export const Sitemap: Array<ISitemap> = [
         route: "/adrc/research",
       },
       {
-        page: "MSMF",
-        slug: "msmf",
+        page: "Wings",
+        slug: "wings",
         dropmenu: [
           {
             page: "Philanthropy",
@@ -484,8 +484,8 @@ export const Sitemap: Array<ISitemap> = [
         route: "/research/academics",
       },
       {
-        page: "MSMF",
-        slug: "msmf",
+        page: "Wings",
+        slug: "wings",
         dropmenu: [
           {
             page: "Philanthropy",
