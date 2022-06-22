@@ -10,7 +10,6 @@ import { ContentCardNoBorder } from "../../components/Common/ContentCardNoBorder
 import NewsSection from "../../components/Client/Research/news";
 
 const ResearchCarouselItems = [
-
   <div key={0}>
     <div className="relative w-screen h-[809px]">
       <div
@@ -26,16 +25,19 @@ const ResearchCarouselItems = [
           </p>
         </div>
 
-        <button className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"  onClick={() => {
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"
+          onClick={() => {
             window.open("/research#research-programs", "_self");
-          }}>
+          }}
+        >
           Learn More
         </button>
       </div>
       <img
         src="https://cdn.ms-mf.org/images/Research/RFP Tagged oral cells (1).jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fit h-[809px]"
+        className="w-screen object-fill h-[809px]"
       />
     </div>
   </div>,
@@ -54,16 +56,19 @@ const ResearchCarouselItems = [
             intelligent innovations and affordable solutions.”
           </p>
         </div>
-        <button className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"  onClick={() => {
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"
+          onClick={() => {
             window.open("/research#research-programs", "_self");
-          }}>
+          }}
+        >
           Learn More
         </button>
       </div>
       <img
         src="https://cdn.ms-mf.org/images/Research/RFP-Tagged oral cells.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fit h-[809px]"
+        className="w-screen object-fill h-[809px]"
       />
     </div>
   </div>,
@@ -83,16 +88,19 @@ const ResearchCarouselItems = [
             greatest scientists are artists as well – Albert Einstein”
           </p>
         </div>
-        <button className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"  onClick={() => {
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"
+          onClick={() => {
             window.open("/research#research-programs", "_self");
-          }}>
+          }}
+        >
           Learn More
         </button>
       </div>
       <img
         src="https://cdn.ms-mf.org/images/Research/Segmented single cells-1.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fit h-[809px]"
+        className="w-screen object-fill h-[809px]"
       />
     </div>
   </div>,
@@ -111,16 +119,19 @@ const ResearchCarouselItems = [
             holders towards excellence in healthcare”
           </p>
         </div>
-        <button className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"  onClick={() => {
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"
+          onClick={() => {
             window.open("/research#research-programs", "_self");
-          }}>
+          }}
+        >
           Learn More
         </button>
       </div>
       <img
         src="https://cdn.ms-mf.org/images/Research/Telecytology images-3.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fit h-[809px]"
+        className="w-screen object-fill h-[809px]"
       />
     </div>
   </div>,

@@ -29,7 +29,7 @@ const Academics = () => {
           </p>
           <p className="text-xl">
             For any details or clarifications please contact
-            <br /> Dr Manjula Das, PhD Coordinator (link can also be provided)
+            <br /> Dr Manjula Das, PhD Coordinator
             <br />
             Email:{" "}
             <a href="mailto:manjula.msmf@gmail.com">manjula.msmf@gmail.com</a>

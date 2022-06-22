@@ -294,7 +294,12 @@ const Home: NextPage = () => {
               resulting in more effective and affordable healthcare for a wide
               range of human diseases and conditions.{" "}
             </p>
-            <button className="msmf__nav-cta font-avenir-book mt-14">
+            <button
+              onClick={() => {
+                window.open("/research", "_self");
+              }}
+              className="msmf__nav-cta font-avenir-book mt-14"
+            >
               Learn More
             </button>
           </div>
@@ -318,7 +323,12 @@ const Home: NextPage = () => {
               prototyping, fabrication and research tools, and medtech expertise
               across a global network.
             </p>
-            <button className="msmf__nav-cta font-avenir-book mt-14">
+            <button
+              onClick={() => {
+                window.open("/incubation", "_self");
+              }}
+              className="msmf__nav-cta font-avenir-book mt-14"
+            >
               Learn More
             </button>
           </div>
@@ -343,7 +353,12 @@ const Home: NextPage = () => {
               research output to improvement of patient care through advanced
               and affordable molecular tests.
             </p>
-            <button className="msmf__nav-cta font-avenir-book mt-14">
+            <button
+              onClick={() => {
+                window.open("/adrc", "_self");
+              }}
+              className="msmf__nav-cta font-avenir-book mt-14"
+            >
               Learn More
             </button>
           </div>
@@ -368,7 +383,12 @@ const Home: NextPage = () => {
               programs. MSMF pushes the boundaries of discovery, transforms
               healthcare and creates hope for humanity
             </p>
-            <button className="msmf__nav-cta font-avenir-book mt-14">
+            <button
+              onClick={() => {
+                window.open("/philanthropy", "_self");
+              }}
+              className="msmf__nav-cta font-avenir-book mt-14"
+            >
               Learn More
             </button>
           </div>

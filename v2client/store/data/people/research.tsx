@@ -11,19 +11,19 @@ const ResearchPeople: {
       {
         name: "Nehanjali Dwivedi",
         image: "https://cdn.ms-mf.org/images/People/Nehanjali Dwivedi.jpg",
-        position: "SRF",
+        position: "Senior Research Fellow",
         linkedInProfile: "www.linkedin.com/in/nehanjali-dwivedi-83bb18132",
       },
       {
         name: "Kunal Biswas",
         image: "https://cdn.ms-mf.org/images/People/Kunal biswas.jpg",
-        position: "JRF",
+        position: "Junior Research Fellow",
         linkedInProfile: "https://www.linkedin.com/in/kunal-biswas-865726153/",
       },
       {
         name: "Pushkarni Suresh",
         image: "https://cdn.ms-mf.org/images/People/Pushkarni Suresh.jpg",
-        position: "JRF",
+        position: "Junior Research Fellow",
         linkedInProfile: "https://linkedin.com/in/pushkarni-suresh",
       },
       {
@@ -33,13 +33,13 @@ const ResearchPeople: {
       {
         name: "Gouri Raj",
         image: "https://cdn.ms-mf.org/images/People/Gouri raj.jpg",
-        position: "JRF",
+        position: "Junior Research Fellow",
         linkedInProfile: "https://www.linkedin.com/in/gouri-raj-26304a1b4",
       },
       {
         name: "Nidhi Shukla",
         image: "https://cdn.ms-mf.org/images/People/Nidhi Shukla.jpg",
-        position: "JRF",
+        position: "Junior Research Fellow",
         linkedInProfile: "https://www.linkedin.com/in/nidhi-shukla-5april96",
       },
     ],
@@ -179,7 +179,7 @@ const ResearchPeople: {
       {
         name: "Kunal Biswas",
         image: "https://cdn.ms-mf.org/images/People/Kunal biswas.jpg",
-        position: "JRF",
+        position: "Junior Research Fellow",
         linkedInProfile: "https://www.linkedin.com/in/kunal-biswas-865726153/",
       },
       {
@@ -197,7 +197,7 @@ const ResearchPeople: {
       },
       {
         name: "Ms. Sai Lakshmi",
-        image:" ", 
+        image: " ",
         position: "Research Technician",
         linkedInProfile: "https://www.linkedin.com/in/sai-lakshmi-08a410213",
       },
@@ -213,7 +213,7 @@ const ResearchPeople: {
       {
         name: "Gouri",
         image: "https://cdn.ms-mf.org/images/People/Gouri-233x300.jpg",
-        position: "JRF",
+        position: "Junior Research Fellow",
       },
     ],
   },
@@ -275,13 +275,12 @@ const ResearchPeople: {
       {
         name: "Dr. Rajeev Kumar",
         position: "Cachar Cancer Hospital and Research Centre",
-        address:"Silchar, Assam"
+        address: "Silchar, Assam",
       },
       {
         name: "Dr. Ravi Kannan",
-        position:
-          "Director, Cachar Cancer Hospital and Research Centre",
-          address:"Silchar, Assam"
+        position: "Director, Cachar Cancer Hospital and Research Centre",
+        address: "Silchar, Assam",
       },
       {
         name: "Dr. Coral Miriam Magdalene",
@@ -290,7 +289,7 @@ const ResearchPeople: {
       {
         name: "Dr. Praveen Birur",
         position: "KLE Institute of Dental Sciences",
-        address:"Bangalore"
+        address: "Bangalore",
       },
       {
         name: "Dr. Balaji Ramachandran",
@@ -329,14 +328,14 @@ const ResearchPeople: {
       },
       {
         name: "Dr. Praveen Birur",
-        position: "KLE Institute of Dental Sciences", 
+        position: "KLE Institute of Dental Sciences",
         address: "Bangalore",
       },
       {
         name: "Dr. Hardik Pandya",
         position:
           "Assistant Professor in the Department of Electronic Systems Engineering, Division of EECS, IISc,",
-          address:" Bangalore",
+        address: " Bangalore",
       },
       {
         name: "Dr. Christian Riley",
@@ -345,53 +344,51 @@ const ResearchPeople: {
       {
         name: "Dr. Prabhakar Kulkarni",
         position: "CEO, Neo-Dx",
-        address:" Hosur Road, Nabgalore, India",
+        address: " Hosur Road, Nabgalore, India",
       },
       {
         name: "Dr. Komal Prasad",
-        position:
-          "Consultant, Neuro Oncology, NH",
-          address: "Narayana Health City Bommasandra, Bangalore-100",
+        position: "Consultant, Neuro Oncology, NH",
+        address: "Narayana Health City Bommasandra, Bangalore-100",
       },
       {
         name: "Dr. Akhila",
-        position:
-          "Consultant, Pathology, NH", 
-          address: "Narayana Health City, Bommasandra, Bangalore-99",
+        position: "Consultant, Pathology, NH",
+        address: "Narayana Health City, Bommasandra, Bangalore-99",
       },
     ],
     "Computational Biology": [
       {
         name: "Dr Akhila L ",
-        position: "Dept of Histopathology, NH"
-      }
-    ]
+        position: "Dept of Histopathology, NH",
+      },
+    ],
   },
   Alumni: {
     "Molecular Immunology": [
       {
         name: "Divya CA",
-        position: "SRF",
+        position: "Senior Research Fellow",
       },
       {
         name: "Vishnupriyan",
-        position: "JRF",
+        position: "Junior Research Fellow",
       },
       {
         name: "Christopher Bathula",
-        position: "JRF",
+        position: "Junior Research Fellow",
       },
       {
         name: "Sreejeta Mandel",
-        position: "JRF",
+        position: "Junior Research Fellow",
       },
       {
         name: "Sowmya",
-        position: "JRF",
+        position: "Junior Research Fellow",
       },
       {
         name: "Smitha P K",
-        position: "SRF",
+        position: "Senior Research Fellow",
       },
       {
         name: "Neha Damodar",
@@ -402,15 +399,14 @@ const ResearchPeople: {
       },
       {
         name: "Kartik Sachdeva",
-        position: "JRF",
+        position: "Junior Research Fellow",
       },
     ],
     "Integrated Head and Neck Oncology": [
       {
         name: "Dr. Sindhu V G",
-        position:
-          "Senior Scientist, Farcast Biosciences India",
-        address:"Bangalore, India ",
+        position: "Senior Scientist, Farcast Biosciences India",
+        address: "Bangalore, India ",
         linkedInProfile: "https://www.linkedin.com/in/sindhu-govindan-918159aa",
       },
       {
@@ -425,40 +421,38 @@ const ResearchPeople: {
         name: "Ms. Priyanka Palit",
         position:
           "Science facilitator, Primary and Middle School, Mainadevi Bajaj International School",
-        address:"Mumbai, India ",
+        address: "Mumbai, India ",
         linkedInProfile: "https://www.linkedin.com/in/priyanka-palit-27768b103",
       },
       {
         name: "Dr. Roshan D'Cruz",
-        position:
-          "Resident Doctor, Vanderbilt University Medical Center",
+        position: "Resident Doctor, Vanderbilt University Medical Center",
         address: " Tennessee, USA",
         linkedInProfile: "https://www.linkedin.com/in/roshan-d-cruz-10a730b9",
       },
       {
         name: "Mr. Sudheendra H V",
-        position:
-          "Senior Associate Scientist, Syngene International Limited",
+        position: "Senior Associate Scientist, Syngene International Limited",
         address: " Bangalore, India",
         linkedInProfile: "https://www.linkedin.com/in/hvsudheendra",
       },
       {
         name: "Mr. Ravindra D R",
         position: "Lab Assistant, Biocon Research Limited",
-        address:"Bangalore, India ",
+        address: "Bangalore, India ",
         linkedInProfile: "https://www.linkedin.com/in/ravindra-dr-56599765",
       },
       {
         name: "Dr. Subin T Surendran",
         position:
           "Research Technologist, Department of Head and Neck Surgery, Roswell Park Comprehensive Cancer Center",
-        address:" Buffalo, New York, USA",
+        address: " Buffalo, New York, USA",
       },
       {
         name: "Ms. Amrutha Sherly Mohan",
         position:
           "Research Technologist, Department of Cancer Prevention and Control, Roswell Park Comprehensive Cancer Center",
-          address:" Buffalo, New York, USA",
+        address: " Buffalo, New York, USA",
       },
       {
         name: "Dr. Sujatha Darsi",
@@ -470,8 +464,7 @@ const ResearchPeople: {
       },
       {
         name: "Dr. Harshavardhan N R",
-        position:
-          "Senior Scientist, NeoDx Biotech Labs Private Limited",
+        position: "Senior Scientist, NeoDx Biotech Labs Private Limited",
         address: " Bangalore, India",
 
         linkedInProfile:
@@ -492,7 +485,7 @@ const ResearchPeople: {
         name: "Mr. Javaregowda G N (Manu Gowda)",
         position:
           "Quality Control Microbiologist, Anthem Biosciences Private Limited",
-          address: " Bangalore, India",
+        address: " Bangalore, India",
         linkedInProfile:
           "https://www.linkedin.com/in/javaregowda-g-n-manu-gowda-2694b884",
       },
@@ -506,8 +499,8 @@ const ResearchPeople: {
       {
         name: "Mr. Mohammed Awase Qarni Baig",
         position:
-          "Student, Department of Microbiology and Immunology, United Arab Emirates University", 
-          address: "UAE",
+          "Student, Department of Microbiology and Immunology, United Arab Emirates University",
+        address: "UAE",
         linkedInProfile:
           "https://www.linkedin.com/in/md-awase-qarni-baig-87ab6112b",
       },
@@ -594,7 +587,7 @@ const ResearchPeople: {
       },
       {
         name: "Dr Nameeta Shah",
-        position: "PI",
+        position: "Principal Investigator",
       },
     ],
   },

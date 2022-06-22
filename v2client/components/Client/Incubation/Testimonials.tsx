@@ -1,4 +1,3 @@
-import { TestimonialsData } from "../../../store/data/testimonials";
 import { Section, SectionTitle } from "../../Common/Section";
 import TestimonialList from "./TestimonialList";
 
@@ -14,7 +13,7 @@ const Testimonials = () => {
       />
       <div className="relative w-screen h-[680px]">
         <div id="overlay" className="image-overlay flex h-[680px] p-8">
-          <TestimonialList list={TestimonialsData} />
+          <TestimonialList />
         </div>
         <img
           src="https://cdn.ms-mf.org/images/Rectangle 1550.png"

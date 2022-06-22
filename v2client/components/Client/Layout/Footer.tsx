@@ -47,9 +47,7 @@ const GetInTouchContent: {
     phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
     email: (
       <>
-      <p>
-      adrc@ms-mf.org
-      </p>
+        <p>adrc@ms-mf.org</p>
         {/* <p>
           <b>Dr. Manjula Das</b> -{" "}
           <a
@@ -79,8 +77,9 @@ const GetInTouchContent: {
     ),
     phoneNumbers: <p>+91-807 122 2351, +91-802 780 3456</p>,
     email: (
-      <a href="mailto:msmf@ms-mf.org" target="_blank" rel="noreferrer">
-        msmf@ms-mf.org
+      <a href="mailto:tbi@ms-mf.org" target="_blank" rel="noreferrer">
+        {/* msmf@ms-mf.org */}
+        tbi@ms-mf.org
       </a>
     ),
     location:
@@ -231,9 +230,11 @@ const Footer = () => {
         <div id="sitemap" className="w-full">
           <p className="font-semibold text-white text-2xl">Sitemap</p>
           <hr className="border-msmf-dark my-4" />
-          <Link href={"/"}>
-            <p className="text-white text-lg mt-2 cursor-pointer">MSMF</p>
-          </Link>
+          {!(currentPath === "") && (
+            <Link href={"/"}>
+              <p className="text-white text-lg mt-2 cursor-pointer">MSMF</p>
+            </Link>
+          )}
           <Link href={`/${currentPath}`}>
             <p className="text-white text-lg mt-2 cursor-pointer">Home</p>
           </Link>

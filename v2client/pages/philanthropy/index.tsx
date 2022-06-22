@@ -26,13 +26,13 @@ const Philanthropy = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-philanthropy flex justify-center">
                   <img
-                    src="https://cdn.ms-mf.org/images/Philanthropy/food-donation 1.png"
-                    alt="food-donation"
+                    src="https://cdn.ms-mf.org/images/ADRC/kidney 1.png"
+                    alt="transplant"
                     className="m-0"
                   />
                 </div>
                 <p className="font-bold text-center text-2xl">
-                  Nutritional Support
+                  Activities for children in the Pediatric Oncology Wing
                 </p>
               </div>
             </Link>
@@ -52,13 +52,13 @@ const Philanthropy = () => {
               <div className="cursor-pointer transition duration-300 ease-in-out w-4/12 m-4 shadow-lg rounded bg-white p-10 hover:shadow-xl">
                 <div className="w-4/12 my-0 p-3 mx-auto bg-philanthropy flex justify-center">
                   <img
-                    src="https://cdn.ms-mf.org/images/ADRC/kidney 1.png"
-                    alt="transplant"
+                    src="https://cdn.ms-mf.org/images/Philanthropy/food-donation 1.png"
+                    alt="food-donation"
                     className="m-0"
                   />
                 </div>
                 <p className="font-bold text-center text-2xl">
-                  Support for Medical Care
+                  Nutritional Support
                 </p>
               </div>
             </Link>
@@ -72,7 +72,7 @@ const Philanthropy = () => {
                   />
                 </div>
                 <p className="font-bold text-center text-2xl">
-                  Activities for children in the Pediatric Oncology Wing
+                  Support for Medical Care
                 </p>
               </div>
             </Link>

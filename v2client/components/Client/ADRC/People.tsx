@@ -6,8 +6,7 @@ import { Section, SectionContent, SectionTitle } from "../../Common/Section";
 import { Tab, TabPanel } from "../../Common/TabPanel";
 
 const People = () => {
-
-  const [selectedTeam, setSelectedTeam] = useState("No Team Selected");
+  const [selectedTeam, setSelectedTeam] = useState("Management");
 
   return (
     <Section>
@@ -21,31 +20,36 @@ const People = () => {
       <SectionContent>
         <label className="flex flex-1 items-center mb-4">
           <span className="text-gray-700 mr-2">Team</span>
-          <select className=" w-full mt-1" onChange={(event) => setSelectedTeam(event.target.value)}>
-            <option value="No Team Selected">No Team Selected</option>
+          <select
+            className=" w-full mt-1"
+            onChange={(event) => setSelectedTeam(event.target.value)}
+          >
             {Object.keys(ADRCPeople).map((team, key) => (
-              <option key={key} value={team}>{team}</option>
+              <option key={key} value={team}>
+                {team}
+              </option>
             ))}
           </select>
         </label>
-        {ADRCPeople[selectedTeam] && Object.keys(ADRCPeople[selectedTeam]).map((subTeam, key) =>
-          subTeam === "people" ? (
-            <div className="w-full flex flex-wrap ">
-              {ADRCPeople[selectedTeam][subTeam].map((person, key) => (
-                <PeopleCard key={key} {...person} />
-              ))}
-            </div>
-          ) : subTeam && subTeam !== "people" ? (
-            <div className="mt-6">
-              <SectionTitle title={<b>{subTeam}</b>} />
+        {ADRCPeople[selectedTeam] &&
+          Object.keys(ADRCPeople[selectedTeam]).map((subTeam, key) =>
+            subTeam === "people" ? (
               <div className="w-full flex flex-wrap ">
-                {ADRCPeople[selectedTeam][subTeam]?.map((person, key) => (
+                {ADRCPeople[selectedTeam][subTeam].map((person, key) => (
                   <PeopleCard key={key} {...person} />
                 ))}
               </div>
-            </div>
-          ) : null
-        )}
+            ) : subTeam && subTeam !== "people" ? (
+              <div className="mt-6">
+                <SectionTitle title={<b>{subTeam}</b>} />
+                <div className="w-full flex flex-wrap ">
+                  {ADRCPeople[selectedTeam][subTeam]?.map((person, key) => (
+                    <PeopleCard key={key} {...person} />
+                  ))}
+                </div>
+              </div>
+            ) : null
+          )}
       </SectionContent>
     </Section>
   );

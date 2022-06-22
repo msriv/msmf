@@ -37,7 +37,7 @@ const PortfoliosData: Array<IPortfolios> = [
   {
     logo: "https://cdn.ms-mf.org/images/Incubation/tutle logo.jpg",
     incubateeName: "TUTLE",
-    companyLink: "www.tutletest.com",
+    companyLink: "https://www.tutletest.com",
     about: (
       <p>
         TUTLE help students and professionals in making a career choice and
@@ -64,7 +64,7 @@ const PortfoliosData: Array<IPortfolios> = [
   {
     logo: "https://cdn.ms-mf.org/images/Incubation/FSD logo.png",
     incubateeName: "Fastsense diagnostics",
-    companyLink: "www.fastsensediagnostics.com",
+    companyLink: "https://www.fastsensediagnostics.com",
     about: (
       <p>
         Our business has a primary focus on affordable and preventive

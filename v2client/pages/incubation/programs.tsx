@@ -52,7 +52,14 @@ const IncubationPrograms: NextPage = () => {
               </div>
             </div>
             <div className="flex justify-center mt-12">
-              <button className="msmf__cta-btn">Apply Now</button>
+              <button
+                onClick={() => {
+                  window.open("/incubation/get-incubated", "_self");
+                }}
+                className="msmf__cta-btn"
+              >
+                Apply Now
+              </button>
             </div>
           </ContentCard>
           <ContentCard id={"InCITE"}>
@@ -78,13 +85,20 @@ const IncubationPrograms: NextPage = () => {
               </div>
             </div>
             <div className="flex justify-center mt-12">
-              <button className="msmf__cta-btn">Apply Now</button>
+              <button
+                onClick={() => {
+                  window.open("/incubation/get-incubated", "_self");
+                }}
+                className="msmf__cta-btn"
+              >
+                Apply Now
+              </button>
             </div>
           </ContentCard>
           <ContentCard id={"CIP"}>
             <div className="flex items-start justify-between">
               <img
-                src="https://cdn.ms-mf.org/images/Incubation/CIP Logo.PNG"
+                src="https://cdn.ms-mf.org/images/Incubation/CIP Logo.png"
                 alt="CIP"
                 className="w-[200px]"
               />
@@ -113,7 +127,14 @@ const IncubationPrograms: NextPage = () => {
               </div>
             </div>
             <div className="flex justify-center mt-12">
-              <button className="msmf__cta-btn">Apply Now</button>
+              <button
+                onClick={() => {
+                  window.open("/incubation/get-incubated", "_self");
+                }}
+                className="msmf__cta-btn"
+              >
+                Apply Now
+              </button>
             </div>
           </ContentCard>
           <ContentCard id={"PhD"}>
@@ -142,7 +163,14 @@ const IncubationPrograms: NextPage = () => {
               </div>
             </div>
             <div className="flex justify-center mt-12">
-              <button className="msmf__cta-btn">Apply Now</button>
+              <button
+                onClick={() => {
+                  window.open("/incubation/get-incubated", "_self");
+                }}
+                className="msmf__cta-btn"
+              >
+                Apply Now
+              </button>
             </div>
           </ContentCard>
         </SectionContent>

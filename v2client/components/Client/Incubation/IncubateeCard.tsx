@@ -16,19 +16,34 @@ const IncubateeCard = (props: IncubateeCardProps) => {
     >
       {logo && (
         <div className="w-4/12 h-52 p-4 flex justify-center items-center">
-          <img
-            src={logo}
-            alt={`${incubateeName} Logo`}
-            className="w-9/12  object-scale-down"
-          />
+          {companyLink ? (
+            <a
+              className="text-gray-500 font-normal"
+              href={companyLink}
+              target="_blank"
+            >
+              <img
+                src={logo}
+                alt={`${incubateeName} Logo`}
+                className="w-9/12  object-scale-down"
+              />
+            </a>
+          ) : (
+            <img
+              src={logo}
+              alt={`${incubateeName} Logo`}
+              className="w-9/12  object-scale-down"
+            />
+          )}
         </div>
       )}
       <div className="w-8/12 px-8 py-6">
         <p className=" text-4xl m-0 font-medium">{incubateeName}</p>
         {companyLink && (
           <a
-            className="text-gray-500 no-underline font-normal"
+            className="text-gray-500 font-normal"
             href={companyLink}
+            target="_blank"
           >
             {companyLink}
           </a>
