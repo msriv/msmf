@@ -29,7 +29,7 @@ const PhilanthropyCarouselItems = [
       />
     </div>
   </div>,
-  <div key={0}>
+  <div key={1}>
     <div className="relative w-screen h-[809px]">
       <div
         id="overlay"

@@ -7,7 +7,7 @@ const ImpactCard = (props: {
   return (
     <div className="flex my-12">
       <div id="impact-number" className="">
-        <div className="bg-incubation relative w-20 h-20 rounded">
+        <div className="bg-incubation relative w-40 h-20 rounded">
           <p className="absolute m-0 top-4 left-3 text-white font-semibold font-helvetica text-5xl">
             {number}+
           </p>

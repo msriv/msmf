@@ -16,13 +16,13 @@ const ADRCPeople: {
       {
         name: "Dr. Sharat Damodar",
         image: "https://cdn.ms-mf.org/images/People/Dr. Sharat Damodar.jpg",
-        position: "Advisor, MSMF, Clinical Director",
+        position: "Advisor, MSMF, Clinical Director, Mazumdar Shaw Medical Centre, NH",
       },
       {
         name: "Dr. Murali Mohan B V",
         image:
           "https://cdn.ms-mf.org/images/People/Dr.Murali Mohan B V_0_1.jpg",
-        position: "Consultant, Pulmonology, Mazumdar Shaw Medical Centre, NH",
+        position: "Advisor, MSMF. Consultant, Pulmonology, Mazumdar Shaw Medical Centre, NH ",
       },
     ],
   },

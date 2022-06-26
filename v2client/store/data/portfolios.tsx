@@ -198,6 +198,7 @@ const PortfoliosData: Array<IPortfolios> = [
   },
   {
     incubateeName: "VISBIO",
+    logo: "https://cdn.ms-mf.org/images/Incubation/visbo_logo_fix.png",
     about: (
       <p>
         VisBio Technologies Private Limited has developed Smart ColpoSpec, a
@@ -228,6 +229,86 @@ const PortfoliosData: Array<IPortfolios> = [
         Fitknees is a wearable technology that captures clinically relevant data
         in chronic knee injuries for assessment and progress monitoring, with
         potential for remote monitoring in near future.
+      </p>
+    ),
+  },
+  {
+    logo: "https://cdn.ms-mf.org/images/Incubation/Janitri Logo with Transparent Background.png",
+    incubateeName: "Janitri ",
+    companyLink: "https://janitri.in/",
+    about: (
+      <p>
+        Janitri has received BIRAC SIIP Fellowship, BIRAC IIPME & SBIRI Grant.
+        The company has been granted seven patents filed in India. KEYAR is an
+        affordable and super easy to use patch-based wearable maternal-fetal
+        monitoring device for the intrapartum period, which also communicates
+        with DAKSH intrapartum monitoring mobile application for intelligent
+        alerts and remote monitoring. The product is for the staff
+        nurses/midwives/doctors, which help them in monitoring the mother and
+        fetus during labor phase. The intelligent alerts also help them in
+        making early decisions, which eventually save lives during the labor
+        phase.
+      </p>
+    ),
+  },
+  {
+    logo: "https://cdn.ms-mf.org/images/Incubation/YOSTRA_.png",
+    incubateeName: "Yostra ",
+    companyLink: "http://www.yostra.com",
+    about: (
+      <p>
+        Yostra has received BIG Grant, SBIRI, and Sparsh Grant. It has been
+        granted patent towards the device for Dermatological & Sub-cutaneous
+        Tissue Treatment. Kadam is a medical device developed for the treatment
+        of Diabetic Foot Ulcers. The medical equipment in the proposed therapy
+        involves exposing the patient’s foot with diabetes to a constant stream
+        of warm oxygen inside a disposable therapy bag. Kadam consists of a
+        warmer unit and a therapy bag which is used along with an off the shelf
+        oxygen concentrator.
+      </p>
+    ),
+  },
+  {
+    logo: "https://cdn.ms-mf.org/images/Incubation/nemologo-300x61.png",
+    incubateeName: "Nemocare",
+    companyLink: " http://www.nemo.care",
+    about: (
+      <p>
+        The Nemocare Raksha is an IoT enabled smart wearable on the baby’s foot
+        which monitors vital parameters like spo2, Heart Rate,Respiration Rate
+        ,body temperature, body position that will give the complete picture of
+        the baby’s health. And all the information is relayed over to the hub
+        and the data is pushed onto the cloud and this data can be accessed at a
+        central monitor by which the nurse or doctor can continuously and
+        remotely monitor all the babies through a single interface
+      </p>
+    ),
+  },
+  {
+    logo: "https://cdn.ms-mf.org/images/Incubation/Docturnal-logo.png",
+    incubateeName: "Docturnal",
+    companyLink: "https://www.docturnal.com",
+    about: (
+      <p>
+        Docturnal is a MedTech startup that Provides Point of Care &
+        Non-Invasive Screening for Pulmonary Tuberculosis, Pneumonia & NCOVID19
+        offering Real-Time results leveraging Machine Learning over Aural and
+        Clinical inputs. Additionally management of Asthma/COPD are part of the
+        product portfolio. Flagship products are TimBre (for PTB) & CoVawe (for
+        ncovid19).
+      </p>
+    ),
+  },
+  {
+    logo: "https://cdn.ms-mf.org/images/Incubation/",
+    incubateeName: "Waferchips",
+    companyLink: "http://waferchips.co.in/",
+    about: (
+      <p>
+        Got funding from BPCL. Partnered with Capgemini and Google. On boarded
+        well known cardiologists as advisors and board members. We combine
+        wearable biosensing technologies with machine learning and AI
+        capabilities to provide remote cardiac monitoring to masses.
       </p>
     ),
   },

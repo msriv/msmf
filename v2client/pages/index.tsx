@@ -181,6 +181,30 @@ const MainCarouselItems = [
 
 const LeadershipCarouselItems = [
   <div key={0}>
+  <div className="relative w-screen h-[540px] ">
+    <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] rounded-lg shadow-lg">
+      <div id="content" className="bg-white w-5/12 p-10 pt-10">
+        <p className="text-black text-3xl font-semibold font-helvetica my-2">
+          Ms. Kiran Mazumdar Shaw
+        </p>
+        <p className="text-black text-2xl font-semibold font-helvetica my-2">
+        Chairman & Managing Director of Biocon Limited
+        </p>
+        <p className="text-black text-xl font-helvetica my-2">
+        A successful technocrat of global standing, Ms. Shaw heads India’s leading Biotechnology enterprise, Biocon. She is highly respected in the corporate world and has been named among TIME magazine’s 100 most influential people in the world. 
+        </p>
+      </div>
+      <div id="image" className="w-8/12 h-[420px] rounded-[12px] pb-10 m-0">
+        <img
+          src={"https://cdn.ms-mf.org/images/People/Dr. KMS.jpeg"}
+          alt="Research"
+          className="w-full h-[420px] object-cover rounded-lg m-0"
+        />
+      </div>
+    </div>
+  </div>
+</div>,
+  <div key={1}>
     <div className="relative w-screen h-[540px] ">
       <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] rounded-lg shadow-lg">
         <div id="content" className="bg-white w-5/12 p-10 pt-10">
@@ -208,12 +232,12 @@ const LeadershipCarouselItems = [
       </div>
     </div>
   </div>,
-  <div key={1}>
+  <div key={2}>
     <div className="relative w-screen h-[540px] ">
       <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] rounded-lg shadow-lg">
         <div id="content" className="bg-white w-5/12 p-10 -pt-10">
           <p className="text-black text-3xl font-semibold font-helvetica my-2">
-            Mr. John Shaw
+            Dr. John Shaw
           </p>
           <p className="text-black text-2xl font-semibold font-helvetica my-2">
             Vice Chairman Biocon Limited
@@ -236,7 +260,7 @@ const LeadershipCarouselItems = [
       </div>
     </div>
   </div>,
-  <div key={2}>
+  <div key={3}>
     <div className="relative w-screen h-[540px] ">
       <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] rounded-lg shadow-lg">
         <div id="content" className="bg-white w-5/12 p-10 pt-10">

@@ -26,6 +26,16 @@ const People = () => {
   };
 
   return (
+    <>
+    <Section>
+    <div>
+          <img
+            src="https://cdn.ms-mf.org/images/Incubation/TBI GROUP PIC.jpg"
+            alt="molecular-immunology-team"
+          />
+        </div>
+    </Section>
+
     <Section>
       <SectionTitle
         title={
@@ -67,7 +77,8 @@ const People = () => {
         </TabPanel>
       </SectionContent>
     </Section>
-  );
+</>);
+
 };
 
 export default People;

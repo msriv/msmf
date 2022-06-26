@@ -80,7 +80,7 @@ const IncubationCarouselItems = [
         </button>
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Incubation/Banner 2_TBI hot seats 2.jpg"
+        src="https://cdn.ms-mf.org/images/Incubation/START UP SPACE.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />
@@ -109,7 +109,7 @@ const IncubationCarouselItems = [
         </button>
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Incubation/Banner 2_TBI hot seats 2.jpg"
+        src="https://cdn.ms-mf.org/images/Incubation/Video conferencing room.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />
@@ -139,7 +139,7 @@ const IncubationCarouselItems = [
         </button>
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Incubation/Banner 2_TBI hot seats 2.jpg"
+        src="https://cdn.ms-mf.org/images/Incubation/Single seater cubicle.jpg"
         alt="philanthropy-banner"
         className="w-screen object-fit h-[809px]"
       />

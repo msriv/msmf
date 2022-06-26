@@ -30,7 +30,9 @@ const SupportStories = () => {
           />
         </div>
         <div className="flex justify-center mt-12">
-          <button className="msmf__cta-btn">Support Us</button>
+          <button className="msmf__cta-btn"           onClick={() => {
+            window.open("/philanthropy/donate", "_self");
+          }}>Support Us</button>
         </div>
       </SectionContent>
     </Section>
