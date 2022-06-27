@@ -27,17 +27,18 @@ const Programs = () => {
             alt="Activities for Children in the Pediatric Oncology Wing"
           />
           <p className="text-[#535050] text-xl">
-            Health care is many a times a luxury that a majority on the country
-            cannot afford. MSMF, with the support of the medical practitioners
-            identifies patients who need financial and emotional support in
-            going initiating and completing treatment. The hospital team along
-            with social workers guide patients to avail support from various
-            government programs and crowdfunding platforms. However these
-            options are often time consuming and it is critical for the
-            treatment to start at the earliest. MSMF with the help of our
-            generous donors lends a helping hand to those patients in need. We
-            reach out to people in an exclusive manner thereby enabling
-            healthier and happier lives.
+            Children who are taking cancer treatment are away for a long time
+            from school and friends. MSCC has a playroom for the children
+            providing them with entertainment options during their hospital
+            stay. MSMF has provided children with some board games, indoor
+            games, books and toys so their stay in the hospital is made more
+            interesting and fun filled during their free time. We initiate
+            volunteer activities for children where people from different walks
+            of life take part in creating memorable moments for the children. We
+            organize Christmas program for children every year, when the whole
+            team comes together to entertain children with music, dance, games
+            and gifts. The activities for children are also a calming experience
+            for the parents who are always at the bedside of their children.
           </p>
         </ContentCard>
         <ContentCard>
@@ -73,7 +74,7 @@ const Programs = () => {
             essential for a healthy living; particularly for patients undergoing
             cancer treatment. Most of the patients who come for treatment are
             from below poverty line and underprivileged families who cannot
-            afford a well-balanced nutritional diet as they struggle to make
+            afford a well- balanced nutritional diet as they struggle to make
             ends meet. MSMF supports such patients during their chemotherapy
             sessions by providing them with a healthy balanced diet (bananas,
             almonds and threptin diskettes). We regularly provide support for
