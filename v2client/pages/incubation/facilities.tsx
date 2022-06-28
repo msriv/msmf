@@ -299,13 +299,13 @@ const Facilities = () => {
                   {facility.facilityName}:{" "}
                 </p>
                 <p className="text-xl">{facility.aboutFacility}</p>
-                <div className="w-full px-6 flex justify-center space-x-28">
+                <div className="w-full px-6 flex justify-center space-x-20">
                   {facility.thumbnails?.map((tn, key) => (
                     <img
                       key={key}
                       src={tn}
                       alt={facility.facilityName + key}
-                      className="w-4/12 aspect-auto"
+                      className="w-5/12 object-scale-down"
                     />
                   ))}
                 </div>

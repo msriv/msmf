@@ -20,7 +20,10 @@ const Impact = () => {
         />
         <SectionContent>
           {ImpactStories.map((story, key) => (
-            <ContentCard key={key}>
+            <ContentCard
+              id={story.name.split(" ").join("-").toLowerCase()}
+              key={key}
+            >
               <div className="w-full px-6">
                 <p className="font-semibold text-4xl">{story.name}</p>
                 <p>{story.about}</p>
@@ -38,7 +41,14 @@ const Impact = () => {
             </ContentCard>
           ))}
           <div className="flex justify-center mt-12">
-            <button className="msmf__cta-btn">Support Us</button>
+            <button
+              onClick={() => {
+                window.open("/philanthropy/donate", "_self");
+              }}
+              className="msmf__cta-btn"
+            >
+              Support Us
+            </button>
           </div>
         </SectionContent>
       </Section>

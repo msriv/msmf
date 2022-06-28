@@ -1,18 +1,18 @@
-const ImpactCard = (props: {
+const StatsCard = (props: {
   title: string;
   number: number;
- // about?: string;
+  // about?: string;
 }) => {
-  const { title, number} = props;
+  const { title, number } = props;
   return (
     <div className="flex my-12">
       <div id="impact-number" className="">
-        <div className="bg-incubation relative w-40 h-20 rounded">
+        <div className="bg-incubation relative w-32 h-20 rounded">
           <p className="absolute m-0 top-4 left-3 text-white font-semibold font-helvetica text-5xl">
             {number}+
           </p>
         </div>
-        </div>
+      </div>
       <div id="about-number" className="ml-10 text-white">
         <p className="font-semibold text-xl m-5 mb-2">{title}</p>
         {/* {about ? (
@@ -24,4 +24,4 @@ const ImpactCard = (props: {
   );
 };
 
-export default ImpactCard;
+export default StatsCard;

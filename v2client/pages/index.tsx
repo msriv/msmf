@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import ImpactCard from "../components/Client/Home/ImpactCard";
+import StatsCard from "../components/Client/Home/StatsCard";
 import Carousel from "../components/Common/Carousel";
 import {
   Section,
@@ -23,8 +23,7 @@ const MainCarouselItems = [
             Mazumdar Shaw Medical Foundation (MSMF)
           </p>
           <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
-            “We aim to be a Center of Excellence for Translation of Biomedical
-            Research.”
+            Centre of Excellence in Translational Research
           </p>
         </div>
 
@@ -56,8 +55,8 @@ const MainCarouselItems = [
             Mazumdar Shaw Medical Foundation (MSMF)
           </p>
           <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
-            “We aim to be a Center of Excellence for Translation of Biomedical
-            Research.”
+            Bring hope to people in an exclusive manner thereby enabling
+            healthier and happier lives
           </p>
         </div>
 
@@ -89,8 +88,8 @@ const MainCarouselItems = [
             Mazumdar Shaw Medical Foundation (MSMF)
           </p>
           <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
-            “We aim to be a Center of Excellence for Translation of Biomedical
-            Research.”
+            Unique creative ecosystem to inspire researchers/engineers to
+            generate innovations
           </p>
         </div>
 
@@ -122,8 +121,7 @@ const MainCarouselItems = [
             Mazumdar Shaw Medical Foundation (MSMF)
           </p>
           <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
-            “We aim to be a Center of Excellence for Translation of Biomedical
-            Research.”
+            Advanced diagnostic solutions tailored to the current medical needs
           </p>
         </div>
 
@@ -144,66 +142,69 @@ const MainCarouselItems = [
       />
     </div>
   </div>,
-  <div key={4}>
-    <div className="relative w-screen h-[693px]">
-      <div
-        id="overlay"
-        className="image-overlay flex flex-col items-center justify-center h-[693px]"
-      >
-        <div className="font-avenir-book text-center w-full">
-          <p className="text-white text-xl">
-            Mazumdar Shaw Medical Foundation (MSMF)
-          </p>
-          <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
-            “We aim to be a Center of Excellence for Translation of Biomedical
-            Research.”
-          </p>
-        </div>
+  // <div key={4}>
+  //   <div className="relative w-screen h-[693px]">
+  //     <div
+  //       id="overlay"
+  //       className="image-overlay flex flex-col items-center justify-center h-[693px]"
+  //     >
+  //       <div className="font-avenir-book text-center w-full">
+  //         <p className="text-white text-xl">
+  //           Mazumdar Shaw Medical Foundation (MSMF)
+  //         </p>
+  //         <p className="mx-auto mt-14 text-5xl font-avenir-heavy text-white w-9/12 text-center">
+  //           “We aim to be a Center of Excellence for Translation of Biomedical
+  //           Research.”
+  //         </p>
+  //       </div>
 
-        {/* OnClick send to research programs */}
-        <button
-          className="msmf__nav-cta font-avenir-book mt-20"
-          onClick={() => {
-            window.open("#our-wings", "_self");
-          }}
-        >
-          Learn More
-        </button>
-      </div>
-      <img
-        src="https://cdn.ms-mf.org/images/Homepage/1_Banner5Research_.jpg"
-        alt="philanthropy-banner"
-        className="w-screen object-fit h-[693px]"
-      />
-    </div>
-  </div>,
+  //       {/* OnClick send to research programs */}
+  //       <button
+  //         className="msmf__nav-cta font-avenir-book mt-20"
+  //         onClick={() => {
+  //           window.open("#our-wings", "_self");
+  //         }}
+  //       >
+  //         Learn More
+  //       </button>
+  //     </div>
+  //     <img
+  //       src="https://cdn.ms-mf.org/images/Homepage/1_Banner5Research_.jpg"
+  //       alt="philanthropy-banner"
+  //       className="w-screen object-fit h-[693px]"
+  //     />
+  //   </div>
+  // </div>,
 ];
 
 const LeadershipCarouselItems = [
   <div key={0}>
-  <div className="relative w-screen h-[540px] ">
-    <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] rounded-lg shadow-lg">
-      <div id="content" className="bg-white w-5/12 p-10 pt-10">
-        <p className="text-black text-3xl font-semibold font-helvetica my-2">
-          Ms. Kiran Mazumdar Shaw
-        </p>
-        <p className="text-black text-2xl font-semibold font-helvetica my-2">
-        Chairman & Managing Director of Biocon Limited
-        </p>
-        <p className="text-black text-xl font-helvetica my-2">
-        A successful technocrat of global standing, Ms. Shaw heads India’s leading Biotechnology enterprise, Biocon. She is highly respected in the corporate world and has been named among TIME magazine’s 100 most influential people in the world. 
-        </p>
-      </div>
-      <div id="image" className="w-8/12 h-[420px] rounded-[12px] pb-10 m-0">
-        <img
-          src={"https://cdn.ms-mf.org/images/People/Dr. KMS.jpeg"}
-          alt="Research"
-          className="w-full h-[420px] object-cover rounded-lg m-0"
-        />
+    <div className="relative w-screen h-[540px] ">
+      <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] rounded-lg shadow-lg">
+        <div id="content" className="bg-white w-5/12 p-10 pt-10">
+          <p className="text-black text-3xl font-semibold font-helvetica my-2">
+            Ms. Kiran Mazumdar Shaw
+          </p>
+          <p className="text-black text-2xl font-semibold font-helvetica my-2">
+            Chairman & Managing Director of Biocon Limited
+          </p>
+          <p className="text-black text-xl font-helvetica my-2">
+            A successful technocrat of global standing, Ms. Shaw heads India’s
+            leading Biotechnology enterprise, Biocon. She is highly respected in
+            the corporate world and has been named among TIME magazine’s 100
+            most influential people in the world.
+          </p>
+        </div>
+        <div id="image" className="w-8/12 h-[420px] rounded-[12px] pb-10 m-0">
+          <img
+            src={"https://cdn.ms-mf.org/images/People/Dr. KMS.jpeg"}
+            alt="Research"
+            className="w-full h-[420px] object-cover rounded-lg m-0"
+          />
+        </div>
       </div>
     </div>
-  </div>
-</div>,
+  </div>,
   <div key={1}>
     <div className="relative w-screen h-[540px] ">
       <div className="flex flex-row-reverse h-[420px] mt-10 mx-auto w-10/12 bg-[#F9F9F9] rounded-lg shadow-lg">
@@ -433,23 +434,23 @@ const Home: NextPage = () => {
             <div className="text-[38px] text-white font-helvetica text-center py-4">
               Our <b>Impact</b>
             </div>
-            <div className="text-[24px] text-white font-helvetica text-center py-4">
+            <div className="text-[24px] text-white font-helvetica text-center pb-4">
               Multi-disciplinary Ecosystem for transformation of Healthcare at
               grass-root level
             </div>
             <div className="w-full flex flex-wrap justify-self-center">
               <div className="w-6/12">
-                <ImpactCard title={"Publication"} number={70} />
-                <ImpactCard title={"Patents (Granted)"} number={2} />
-                <ImpactCard title={"Incubatees"} number={26} />
-                <ImpactCard title={"Patients Under Support"} number={675} />
-                <ImpactCard title={"Diagnostic Tests"} number={28} />
+                <StatsCard title={"Publication"} number={70} />
+                <StatsCard title={"Patents (Granted)"} number={2} />
+                <StatsCard title={"Incubatees"} number={26} />
+                <StatsCard title={"Patients Under Support"} number={675} />
+                <StatsCard title={"Diagnostic Tests"} number={28} />
               </div>
               <div className="w-6/12">
-                <ImpactCard title={"Patents (Filed)"} number={10} />
-                <ImpactCard title={"Grants"} number={25} />
-                <ImpactCard title={"Mentors"} number={55} />
-                <ImpactCard title={"Collaboration"} number={20} />
+                <StatsCard title={"Patents (Filed)"} number={10} />
+                <StatsCard title={"Grants"} number={25} />
+                <StatsCard title={"Mentors"} number={55} />
+                <StatsCard title={"Collaboration"} number={20} />
               </div>
             </div>
           </SectionContent>

@@ -99,7 +99,7 @@ const SupportUs = () => {
           </span>
         }
       />
-      <SupportStories />
+      {/* <SupportStories /> */}
     </div>
   );
 };

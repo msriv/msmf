@@ -300,7 +300,7 @@ const PortfoliosData: Array<IPortfolios> = [
     ),
   },
   {
-    logo: "https://cdn.ms-mf.org/images/Incubation/",
+    logo: "https://cdn.ms-mf.org/images/Incubation/Waferchips.png",
     incubateeName: "Waferchips",
     companyLink: "http://waferchips.co.in/",
     about: (

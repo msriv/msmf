@@ -107,7 +107,14 @@ const Programs = () => {
           </p>
         </ContentCard>
         <div className="flex justify-center mt-12">
-          <button className="msmf__cta-btn">Support Us</button>
+          <button
+            onClick={() => {
+              window.open("/philanthropy/donate", "_self");
+            }}
+            className="msmf__cta-btn"
+          >
+            Support Us
+          </button>
         </div>
       </SectionContent>
     </Section>

@@ -61,7 +61,7 @@ const IncubateeCarouselItems = [
         />
       </div>
     </div>
-  </div>, 
+  </div>,
   //2nd slide
   <div key={1} className="w-full">
     <div className="flex flex-wrap justify-center items-center w-10/12 mx-auto mt-10">
@@ -125,65 +125,58 @@ const IncubateeCarouselItems = [
   </div>,
   //3rd slide
   <div key={2} className="w-full">
-  <div className="flex flex-wrap justify-center items-center w-10/12 mx-auto mt-10">
-    <div className="flex justify-center w-3/12 my-2">
-      <img
-        src="https://cdn.ms-mf.org/images/Incubation/sparclife logo.png"
-        alt="Sparclife logo"
-        className="w-4/12"
-      />
+    <div className="flex flex-wrap justify-center items-center w-10/12 mx-auto mt-10">
+      <div className="flex justify-center w-3/12 my-2">
+        <img
+          src="https://cdn.ms-mf.org/images/Incubation/sparclife logo.png"
+          alt="Sparclife logo"
+          className="w-4/12"
+        />
+      </div>
+      <div className="flex justify-center w-3/12 my-2">
+        <img
+          src="https://cdn.ms-mf.org/images/Incubation/sunfox.jpg"
+          alt="Sunfox logo"
+          className="w-8/12"
+        />
+      </div>
+      <div className="flex justify-center w-3/12 my-2">
+        <img
+          src="https://cdn.ms-mf.org/images/Incubation/Docturnal-logo.png"
+          alt="Docturnal logo"
+          className="w-8/12"
+        />
+      </div>
+      <div className="flex justify-center w-3/12 my-2">
+        <img
+          src="https://cdn.ms-mf.org/images/Incubation/Janitri Logo with Transparent Background.png"
+          alt="Janitri logo"
+          className="w-8/12"
+        />
+      </div>
+      <div className="flex justify-center w-3/12 my-2">
+        <img
+          src="https://cdn.ms-mf.org/images/Incubation/NemocareLOGO.png"
+          alt="Nemocare logo"
+          className="w-6/12"
+        />
+      </div>
+      <div className="flex justify-center w-3/12 my-2">
+        <img
+          src="https://cdn.ms-mf.org/images/Incubation/omix_labs-transparentbg.png"
+          alt="omix Labs logo"
+          className="w-8/12"
+        />
+      </div>
+      <div className="flex justify-center w-3/12 my-2">
+        <img
+          src="https://cdn.ms-mf.org/images/Incubation/YOSTRA_.png"
+          alt="Yostra logo"
+          className="w-8/12"
+        />
+      </div>
     </div>
-    <div className="flex justify-center w-3/12 my-2">
-      <img
-        src="https://cdn.ms-mf.org/images/Incubation/sunfox.jpg"
-        alt="Sunfox logo"
-        className="w-8/12"
-      />
-    </div>
-    <div className="flex justify-center w-3/12 my-2">
-      <img
-        src="https://cdn.ms-mf.org/images/Incubation/Docturnal-logo.png"
-        alt="Docturnal logo"
-        className="w-8/12"
-      />
-    </div>
-    <div className="flex justify-center w-3/12 my-2">
-      <img
-        src="https://cdn.ms-mf.org/images/Incubation/Janitri Logo with Transparent Background.png"
-        alt="Janitri logo"
-        className="w-8/12"
-      />
-    </div>  
-    <div className="flex justify-center w-3/12 my-2">
-      <img
-        src="https://cdn.ms-mf.org/images/Incubation/NemocareLOGO.png"
-        alt="Nemocare logo"
-        className="w-6/12"
-      />
-    </div>
-    <div className="flex justify-center w-3/12 my-2">
-      <img
-        src="https://cdn.ms-mf.org/images/Incubation/nemologo-300x61.png"
-        alt="Nemologo logo"
-        className="w-8/12"
-      />
-    </div>
-    <div className="flex justify-center w-3/12 my-2">
-      <img
-        src="https://cdn.ms-mf.org/images/Incubation/omix_labs-transparentbg.png"
-        alt="omix Labs logo"
-        className="w-8/12"
-      />
-    </div>
-    <div className="flex justify-center w-3/12 my-2">
-      <img
-        src="https://cdn.ms-mf.org/images/Incubation/YOSTRA_.png"
-        alt="Yostra logo"
-        className="w-8/12"
-      />
-    </div>
-  </div>
-</div>,
+  </div>,
 ];
 
 const Incubatees = (): JSX.Element => {

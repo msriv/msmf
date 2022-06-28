@@ -8,9 +8,69 @@ import Link from "next/link";
 import ResearchImpact from "../../components/Client/Research/Impact";
 import { ContentCardNoBorder } from "../../components/Common/ContentCardNoBorder";
 import NewsSection from "../../components/Client/Research/news";
+import { GalleryItems } from "../../store/data/GalleryItems";
+import GalleryItem from "../../components/Common/GalleryItem";
+
+let galleryList: Array<{ title: string; image: string }[]> = [],
+  GalleryCarouselItems: Array<JSX.Element> = [];
+
+const prepareGalleryCarouselItems = () => {
+  let i = 0;
+  while (i < GalleryItems.length) {
+    galleryList.push(
+      GalleryItems.filter((item, key) => key >= i && key < i + 6)
+    );
+    i += 6;
+  }
+
+  GalleryCarouselItems = galleryList.map((GArray, key) => (
+    <div
+      key={key}
+      className="flex flex-wrap justify-center items-center w-10/12 mx-auto mt-10"
+    >
+      {GArray.map((Item, Key) => (
+        <div className=" flex justify-center w-3/12 my-2 mx-2">
+          <GalleryItem image={Item.image} title={Item.title} />
+        </div>
+      ))}
+    </div>
+  ));
+  return GalleryCarouselItems;
+};
 
 const ResearchCarouselItems = [
   <div key={0}>
+    <div className="relative w-screen h-[809px]">
+      <div
+        id="overlay"
+        className="image-overlay flex flex-col items-center justify-center h-[809px]"
+      >
+        <div className="font-avenir-book text-center w-full">
+          <p className="text-white text-xl">
+            Mazumdar Shaw Centre for Translational Research (MSCTR)
+          </p>
+          <p className="mx-auto mt-14 text-4xl font-avenir-heavy text-white w-9/12 text-center">
+            “A seamless platform connecting and energizing multiple stake
+            holders towards excellence in healthcare”
+          </p>
+        </div>
+        <button
+          className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"
+          onClick={() => {
+            window.open("/research#research-programs", "_self");
+          }}
+        >
+          Learn More
+        </button>
+      </div>
+      <img
+        src="https://cdn.ms-mf.org/images/Research/Telecytology images-3.jpg"
+        alt="philanthropy-banner"
+        className="w-screen object-fill h-[809px]"
+      />
+    </div>
+  </div>,
+  <div key={1}>
     <div className="relative w-screen h-[809px]">
       <div
         id="overlay"
@@ -41,7 +101,7 @@ const ResearchCarouselItems = [
       />
     </div>
   </div>,
-  <div key={1}>
+  <div key={2}>
     <div className="relative w-screen h-[809px]">
       <div
         id="overlay"
@@ -72,7 +132,7 @@ const ResearchCarouselItems = [
       />
     </div>
   </div>,
-  <div key={2}>
+  <div key={3}>
     <div className="relative w-screen h-[809px]">
       <div
         id="overlay"
@@ -104,37 +164,6 @@ const ResearchCarouselItems = [
       />
     </div>
   </div>,
-  <div key={3}>
-    <div className="relative w-screen h-[809px]">
-      <div
-        id="overlay"
-        className="image-overlay flex flex-col items-center justify-center h-[809px]"
-      >
-        <div className="font-avenir-book text-center w-full">
-          <p className="text-white text-xl">
-            Mazumdar Shaw Centre for Translational Research (MSCTR)
-          </p>
-          <p className="mx-auto mt-14 text-4xl font-avenir-heavy text-white w-9/12 text-center">
-            “A seamless platform connecting and energizing multiple stake
-            holders towards excellence in healthcare”
-          </p>
-        </div>
-        <button
-          className="msmf__nav-cta font-avenir-book mt-20  font-bold border-2"
-          onClick={() => {
-            window.open("/research#research-programs", "_self");
-          }}
-        >
-          Learn More
-        </button>
-      </div>
-      <img
-        src="https://cdn.ms-mf.org/images/Research/Telecytology images-3.jpg"
-        alt="philanthropy-banner"
-        className="w-screen object-fill h-[809px]"
-      />
-    </div>
-  </div>,
 ];
 
 const Research = () => {
@@ -150,7 +179,7 @@ const Research = () => {
         <SectionTitle
           title={
             <p>
-              <b>About Us</b>
+              <b>Introduction</b>
             </p>
           }
         />
@@ -158,7 +187,8 @@ const Research = () => {
           <div id="our-mission-and-vision">
             <div id="our-mission">
               <ContentCardNoBorder>
-                <div className="w-full flex space-x-10">
+                <p className="font-semibold text-3xl">About Us</p>
+                <div className="w-full flex space-x-10 items-center">
                   <p className="w-6/12">
                     Facilitate research that will contribute to early detection,
                     diagnosis and treatment of various human diseases, which is
@@ -166,14 +196,49 @@ const Research = () => {
                     through cellular, molecular, biochemical and genetic
                     approaches.
                   </p>
-                  <img src="" alt="About Us Photo" className="w-5/12" />
+                  <div className="container grid grid-cols-2 gap-2 mx-auto">
+                    <div className="w-full rounded">
+                      <img
+                        src="https://cdn.ms-mf.org/images/Research/Image 1.jpg"
+                        alt="image"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="w-full rounded">
+                      <img
+                        src="https://cdn.ms-mf.org/images/Research/Image 2.jpg"
+                        alt="image"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="w-full rounded">
+                      <img
+                        src="https://cdn.ms-mf.org/images/Research/Image 3.jpg"
+                        alt="image"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="w-full rounded">
+                      <img
+                        src="https://cdn.ms-mf.org/images/Research/Image 4.jpg"
+                        alt="image"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
                 </div>
               </ContentCardNoBorder>
             </div>
             <div id="our-vision">
               <ContentCardNoBorder>
-                <div className="w-full flex space-x-10">
-                  <img src="" alt="Vision Photo" className="w-5/12" />
+                <p className="font-semibold text-3xl">Our Vision</p>
+                <div className="w-full flex space-x-10 items-center">
+                  <img
+                    src="https://cdn.ms-mf.org/images/Research/Vision_2.jpg"
+                    alt="image"
+                    className="w-5/12"
+                  />
+
                   <p className="w-6/12">
                     Translation of Biomedical Research, encouraging novel
                     methods of technology deployment, with focus on healthcare
@@ -260,6 +325,21 @@ const Research = () => {
       </Section>
       <ResearchImpact />
       <NewsSection />
+      <Section>
+        <SectionTitle
+          title={
+            <p>
+              <b>Gallery</b>
+            </p>
+          }
+        />
+        <Carousel
+          alignIndicator="center"
+          carouselID="gallery-carousel"
+          carouselItems={prepareGalleryCarouselItems()}
+          theme={"dark"}
+        />
+      </Section>
     </div>
   );
 };
