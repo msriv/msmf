@@ -6,8 +6,8 @@ export interface IPerson {
   image?: string;
   position?: string;
   linkedInProfile?: string;
-  about?: string; 
-  address?:string;
+  about?: string;
+  address?: string;
 }
 export interface ITeam {
   [teamName: string]: {
@@ -74,8 +74,8 @@ export interface IPortfolios {
 
 export interface INews {
   title: string;
-  image?: string;
-  about?: string; 
+  image: string;
+  about: string;
 }
 
 export interface IEvents {

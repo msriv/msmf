@@ -7,7 +7,7 @@ import {
 import Link from "next/link";
 import ResearchImpact from "../../components/Client/Research/Impact";
 import { ContentCardNoBorder } from "../../components/Common/ContentCardNoBorder";
-import NewsSection from "../../components/Client/Research/news";
+import NewsList from "../../components/Client/Research/NewsList";
 import { GalleryItems } from "../../store/data/GalleryItems";
 import GalleryItem from "../../components/Common/GalleryItem";
 
@@ -324,7 +324,7 @@ const Research = () => {
         </SectionContent>
       </Section>
       <ResearchImpact />
-      <NewsSection />
+      <NewsList />
       <Section>
         <SectionTitle
           title={

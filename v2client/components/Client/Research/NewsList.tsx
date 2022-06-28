@@ -1,9 +1,36 @@
-import { INews } from "../../../utils/Interfaces"
+import { INews } from "../../../utils/Interfaces";
 import { ContentCard } from "../../Common/ContentCard";
-import { newsCardData } from "../../../store/data/news";
-import { Section, SectionContent, SectionTitle } from "../../Common/Section"
+import { NewsData } from "../../../store/data/NewsData";
+import { Section, SectionContent, SectionTitle } from "../../Common/Section";
 import NewsCard from "../../Common/NewsCard";
-import {ReactNode} from "react";
+import { ReactNode } from "react";
+import Carousel from "../../Common/Carousel";
+
+let newsList: Array<INews[]> = [],
+  NewsCarouselItems: Array<JSX.Element> = [];
+
+const prepareNewsCarouselItems = () => {
+  let i = 0;
+  while (i < NewsData.length) {
+    newsList.push(NewsData.filter((item, key) => key >= i && key < i + 3));
+    i += 3;
+  }
+
+  NewsCarouselItems = newsList.map((NArray, key) => (
+    <div key={key} className="flex justify-around items-start w-10/12 mx-auto">
+      {NArray.map((NewsItem, Key) => (
+        <div key={Key} className=" mx-2">
+          <NewsCard
+            image={NewsItem.image}
+            title={NewsItem.title}
+            about={NewsItem.about}
+          />
+        </div>
+      ))}
+    </div>
+  ));
+  return NewsCarouselItems;
+};
 
 interface NewsProp {
   title?: ReactNode;
@@ -17,22 +44,17 @@ const News = (props: NewsProp) => {
         title={
           title || (
             <span>
-               <b>News</b>
+              <b>News</b>
             </span>
           )
         }
       />
-      <SectionContent>
-        <div className="flex justify-between w-full">
-          {newsCardData.map((story, key) => ( key < 3 &&
-            <NewsCard key={key} 
-              image={story.image![0]} 
-              title={`Support ${story.title}`}
-              about={`${story.about}...`}
-            />
-          ))}
-        </div>
-      </SectionContent>
+      <Carousel
+        alignIndicator="center"
+        carouselID="news-carousel"
+        carouselItems={prepareNewsCarouselItems()}
+        theme={"dark"}
+      />
     </Section>
   );
 };
@@ -81,8 +103,6 @@ export default News;
 
 // export default News;
 
-
-
 // import { ContentCard } from "../../Common/ContentCard";
 // import {
 //   Section,
@@ -123,7 +143,7 @@ export default News;
 //       <SectionContent >
 //       <div className=" mt-8 flex flex-wrap w-full justify-between">
 //         {newsCardsData.map((project, key) => (
-          
+
 //           <ContentCard className ="w-3/12 m-4 shadow-md rounded bg-white p-10" key={key}>
 //             {/* image for news */}
 //             <img className="font-bold text-[#6A6A6A] m-0" src= {project.image}/>
@@ -145,13 +165,11 @@ export default News;
 //       </SectionContent>
 
 //     </Section>
-    
-          
+
 //         </>
 //   );
 // };
 // export default NewsSection;
-
 
 // const NewsSection = (): JSX.Element => {
 //   return (
@@ -224,7 +242,7 @@ export default News;
 //                     className="m-0"
 //                   /> */}
 //                 </div>
-      
+
 //                 <p className="font-bold text-center text-2xl">
 //                   Product Research
 //                 </p>
