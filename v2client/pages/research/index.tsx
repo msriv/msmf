@@ -28,8 +28,8 @@ const prepareGalleryCarouselItems = () => {
       key={key}
       className="flex flex-wrap justify-center items-center w-10/12 mx-auto mt-10"
     >
-      {GArray.map((Item, Key) => (
-        <div className=" flex justify-center w-3/12 my-2 mx-2">
+      {GArray.map((Item, key) => (
+        <div key={key} className=" flex justify-center w-3/12 my-2 mx-2">
           <GalleryItem image={Item.image} title={Item.title} />
         </div>
       ))}
@@ -62,11 +62,16 @@ const ResearchCarouselItems = [
         >
           Learn More
         </button>
+        <div className=" absolute bottom-0 right-0 mr-20">
+      <p className="text-white text-l">
+        Telecytology Image
+      </p>
+    </div>
       </div>
       <img
         src="https://cdn.ms-mf.org/images/Research/Telecytology images-3.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fill h-[809px]"
+        className="w-screen object-contain h-[809px] bg-black"
       />
     </div>
   </div>,
@@ -83,6 +88,11 @@ const ResearchCarouselItems = [
           <p className="mx-auto mt-14 text-4xl font-avenir-heavy text-white w-9/12 text-center">
             “Specialization is not a limitation, but a pedestal.”
           </p>
+          <div className=" absolute bottom-0 right-0 mr-20">
+      <p className="text-white text-l">
+        Tagged Oral Cells image
+      </p>
+    </div>
         </div>
 
         <button
@@ -93,11 +103,12 @@ const ResearchCarouselItems = [
         >
           Learn More
         </button>
+
       </div>
       <img
         src="https://cdn.ms-mf.org/images/Research/RFP Tagged oral cells (1).jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fill h-[809px]"
+        className="w-screen object-contain h-[809px] bg-black"
       />
     </div>
   </div>,
@@ -124,11 +135,16 @@ const ResearchCarouselItems = [
         >
           Learn More
         </button>
+        <div className=" absolute bottom-0 right-0 mr-20">
+      <p className="text-white text-l">
+        RFP tagged Oral Cells image
+      </p>
+    </div>
       </div>
       <img
         src="https://cdn.ms-mf.org/images/Research/RFP-Tagged oral cells.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fill h-[809px]"
+        className="w-screen  object-contain h-[809px] bg-black"
       />
     </div>
   </div>,
@@ -156,13 +172,20 @@ const ResearchCarouselItems = [
         >
           Learn More
         </button>
+        <div className=" absolute bottom-0 right-0 mr-20">
+      <p className="text-white text-l">
+        Segmented Single Cells image
+      </p>
+    </div>
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Research/Segmented single cells-1.jpg"
+        src="https://cdn.ms-mf.org/images/Research/Segmented single cells_1-1.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fill h-[809px]"
+        className="w-screen  object-contain h-[809px] bg-black"
       />
+
     </div>
+
   </div>,
 ];
 

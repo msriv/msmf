@@ -21,6 +21,7 @@ const IncubateeCard = (props: IncubateeCardProps) => {
               className="text-gray-500 font-normal"
               href={companyLink}
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 src={logo}
@@ -44,6 +45,7 @@ const IncubateeCard = (props: IncubateeCardProps) => {
             className="text-gray-500 font-normal"
             href={companyLink}
             target="_blank"
+            rel="noreferrer"
           >
             {companyLink}
           </a>
