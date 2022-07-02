@@ -64,7 +64,7 @@ const ResearchCarouselItems = [
         </button>
         <div className=" absolute bottom-0 right-0 mr-20">
       <p className="text-white text-l">
-        Telecytology Image
+        Telecytology
       </p>
     </div>
       </div>
@@ -90,7 +90,7 @@ const ResearchCarouselItems = [
           </p>
           <div className=" absolute bottom-0 right-0 mr-20">
       <p className="text-white text-l">
-        Tagged Oral Cells image
+        Tagged Oral Cells
       </p>
     </div>
         </div>
@@ -137,7 +137,7 @@ const ResearchCarouselItems = [
         </button>
         <div className=" absolute bottom-0 right-0 mr-20">
       <p className="text-white text-l">
-        RFP tagged Oral Cells image
+        RFP tagged Oral Cells
       </p>
     </div>
       </div>
@@ -174,7 +174,7 @@ const ResearchCarouselItems = [
         </button>
         <div className=" absolute bottom-0 right-0 mr-20">
       <p className="text-white text-l">
-        Segmented Single Cells image
+        Segmented Single Cells
       </p>
     </div>
       </div>
