@@ -9,6 +9,7 @@ class Constants {
     const ASSETS_CONTROLLER = "assets_controller";
     const PEOPLE_CONTROLLER = "people_controller";
     const BLOGS_CONTROLLER = "blogs_controller";
+    const INCUBATEES_CONTROLLER = "incubatees_controller";
     const OPEN = "open";
     const PROTECTED = "protected";
 
@@ -28,6 +29,10 @@ class Constants {
     const GET_BLOG_BY_ID = "get_blog_by_id";
     const CREATE_BLOG = "create_blog";
     const UPDATE_BLOG = "update_blog";
+    const CREATE_INCUBATEE = "create_incubatee";
+    const UPDATE_INCUBATEE = "update_incubatee";
+    const GET_INCUBATEE_BY_ID = "get_incubatee_by_id";
+    const GET_ALL_INCUBATEES = "get_all_incubatees";
 }
 
 

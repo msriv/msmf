@@ -96,6 +96,14 @@ class Server {
                 $rPeople->get("/{vertical}/{team}/{subteam}", [Constants::PEOPLE_CONTROLLER, Constants::GET_PEOPLE_BY_TEAM, Constants::OPEN]);
                 $rPeople->post("", [Constants::PEOPLE_CONTROLLER, Constants::CREATE_PERSON, Constants::OPEN]);
             });
+
+            // Incubatees routes
+            $r->addGroup("/v1/incubatees", function (FastRoute\RouteCollector $rIncubatees) {
+                $rIncubatees->get("", [Constants::INCUBATEES_CONTROLLER, Constants::GET_ALL_INCUBATEES, Constants::OPEN]);
+                $rIncubatees->get("/{id}", [Constants::INCUBATEES_CONTROLLER, Constants::GET_INCUBATEE_BY_ID, Constants::OPEN]);
+                $rIncubatees->post("", [Constants::INCUBATEES_CONTROLLER, Constants::CREATE_INCUBATEE, Constants::OPEN]);
+                $rIncubatees->put("", [Constants::INCUBATEES_CONTROLLER, Constants::UPDATE_INCUBATEE, Constants::OPEN]);
+            });
         });
 
         return $this->routesDispatcher;

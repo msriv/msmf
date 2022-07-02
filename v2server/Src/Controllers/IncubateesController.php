@@ -1,10 +1,10 @@
 <?php
 namespace Server\Src\Controllers;
 
-use Server\Src\Providers\AssetsProvider;
+use Server\Src\Providers\IncubateesProvider;
 use Server\Src\Utils\Constants;
 
-class AssetsController {
+class IncubateesController {
   private $db;
   private $handler;
   private $args;
@@ -16,16 +16,16 @@ class AssetsController {
   }
 
   public function processRequest() {
-        $assetsProvider = new AssetsProvider($this->db);
+        $incubateesProvider = new IncubateesProvider($this->db);
         switch ($this->handler) {
-            case Constants::CREATE_ASSETS:
-            $response = $assetsProvider->createAssets();
+            case Constants::CREATE_INCUBATEE:
+            $response = $incubateesProvider->createIncubatee();
             break;
-            case Constants::GET_ALL_ASSETS:
-            $response = $assetsProvider->getAllAssets();
+            case Constants::GET_ALL_INCUBATEES:
+            $response = $incubateesProvider->getAllIncubatees();
             break;
             default:
-            $response = $assetsProvider->notFoundResponse();
+            $response = $incubateesProvider->notFoundResponse();
             break;
         }
         

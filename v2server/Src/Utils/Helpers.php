@@ -2,7 +2,7 @@
 
 namespace Server\Src\Utils;
 
-
+use Error;
 
 class Helpers {
 
@@ -84,4 +84,8 @@ class Helpers {
 
         return $number * (1024 ** $exponent);
     }
+
+    public static function NotImplementedError() {
+        return new Error("Method Not Implemented", -1);
+    } 
 }
