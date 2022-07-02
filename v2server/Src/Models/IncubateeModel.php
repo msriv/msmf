@@ -51,12 +51,12 @@ class IncubateeModel {
     private $stage;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean", options={"default":"0"})
      */
     private $isNonProfit;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean", options={"default":"0"})
      */
     private $mcaRegistration;
     
@@ -81,37 +81,37 @@ class IncubateeModel {
     private $subSector;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text", length=65535)
      */
     private $customerProblem;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text", length=65535)
      */
     private $solution;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text", length=65535)
      */
     private $solutionBetter;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text", length=65535)
      */
     private $primaryBeneficiary;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text", length=65535)
      */
     private $milestone;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text", length=65535)
      */
     private $reasonToIncubate;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean", options={"default":"0"})
      */
     private $earlierFunds;
     
@@ -121,7 +121,7 @@ class IncubateeModel {
     private $totalEarlierFunds;
     
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean", options={"default":"0"})
      */
     private $anyPatent;
     
