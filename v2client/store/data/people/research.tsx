@@ -16,7 +16,7 @@ const ResearchPeople: {
       },
       {
         name: "Kunal Biswas",
-        image: "https://cdn.ms-mf.org/images/People/Kunal biswas.jpg",
+        image: "https://cdn.ms-mf.org/images/People/Kunal Biswas.jpg",
         position: "Junior Research Fellow",
         linkedInProfile: "https://www.linkedin.com/in/kunal-biswas-865726153/",
       },
@@ -115,6 +115,7 @@ const ResearchPeople: {
       },
       {
         name: "Ms. Sai Lakshmi",
+        image: "https://cdn.ms-mf.org/images/People/Sai Lakshmi.jpg",
         position: "Research Technician",
         linkedInProfile: "https://www.linkedin.com/in/sai-lakshmi-08a410213",
       },
@@ -178,7 +179,7 @@ const ResearchPeople: {
     "Product Research": [
       {
         name: "Kunal Biswas",
-        image: "https://cdn.ms-mf.org/images/People/Kunal biswas.jpg",
+        image: "https://cdn.ms-mf.org/images/People/Kunal Biswas.jpg",
         position: "Junior Research Fellow",
         linkedInProfile: "https://www.linkedin.com/in/kunal-biswas-865726153/",
       },
@@ -197,7 +198,7 @@ const ResearchPeople: {
       },
       {
         name: "Ms. Sai Lakshmi",
-        image: " ",
+        image: "https://cdn.ms-mf.org/images/People/Sai Lakshmi.jpg",
         position: "Research Technician",
         linkedInProfile: "https://www.linkedin.com/in/sai-lakshmi-08a410213",
       },

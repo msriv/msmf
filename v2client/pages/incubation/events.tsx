@@ -227,15 +227,15 @@ const Events = () => {
           <div className=" mt-8 flex flex-wrap w-full justify-evenly ">
             {GalleryData.map((project, key) => (
               <div key={key} className="w-4/12 p-4 items-center">
-                <ContentCard className="shadow-md rounded bg-white p-10 h-full">
+                <ContentCard className="shadow-md rounded bg-white p-4 h-full ">
                   {/* image for news */}
                   <img className="place-self-center m-0" src={project.image} />
                   {/* Title for news */}
-                  <p className="font-semibold text-2xl text-left mt-5">
+                  <p className="font-semibold text-xl text-left mt-5 px-6">
                     {" "}
                     {project.topic}
                   </p>
-                  <p className="font-bold uppercase text-[#6A6A6A] m-0">
+                  <p className="font-bold uppercase text-[#6A6A6A] m-0 px-6">
                     {project.date}
                   </p>
                   {/* {project.members.map((member, key) => (

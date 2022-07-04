@@ -44,9 +44,9 @@ const IncubationIntroduction = (): JSX.Element => {
           functionaries of this ecosystem incorporating a unique layer of
           Innovation into the DNA of the organisation.
         </p>
-        <div className="flex justify-center mt-12">
+        {/* <div className="flex justify-center mt-12">
           <button className="msmf__cta-btn">Apply Now</button>
-        </div>
+        </div> */}
       </SectionContent>
     </Section>
   );

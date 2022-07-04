@@ -64,14 +64,14 @@ const ResearchCarouselItems = [
         </button>
         <div className=" absolute bottom-0 right-0 mr-20">
       <p className="text-white text-l">
-        Telecytology
+        Telecytology module 
       </p>
     </div>
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Research/Telecytology images-3.jpg"
+        src="https://cdn.ms-mf.org/images/Research/Tele cytology module_new.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-contain h-[809px] bg-black"
+        className="w-screen object-contain h-[809px] bg-white"
       />
     </div>
   </div>,
@@ -90,7 +90,7 @@ const ResearchCarouselItems = [
           </p>
           <div className=" absolute bottom-0 right-0 mr-20">
       <p className="text-white text-l">
-        Tagged Oral Cells
+        RFP Tagged Oral Cells
       </p>
     </div>
         </div>
@@ -106,7 +106,7 @@ const ResearchCarouselItems = [
 
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Research/RFP Tagged oral cells (1).jpg"
+        src="https://cdn.ms-mf.org/images/Research/RFP-Tagged oral cells_new.jpg"
         alt="philanthropy-banner"
         className="w-screen object-contain h-[809px] bg-black"
       />
@@ -137,14 +137,14 @@ const ResearchCarouselItems = [
         </button>
         <div className=" absolute bottom-0 right-0 mr-20">
       <p className="text-white text-l">
-        RFP tagged Oral Cells
+        ACE2
       </p>
     </div>
       </div>
       <img
-        src="https://cdn.ms-mf.org/images/Research/RFP-Tagged oral cells.jpg"
+        src="https://cdn.ms-mf.org/images/Research/Ace2_new.jpg"
         alt="philanthropy-banner"
-        className="w-screen  object-contain h-[809px] bg-black"
+        className="w-screen  object-contain h-[809px] bg-white"
       />
     </div>
   </div>,

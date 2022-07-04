@@ -88,7 +88,14 @@ const SupportUs = () => {
             }}
           />
           <div className="flex justify-start mt-12">
-            <button className="msmf__cta-btn">Become a volunteer</button>
+            <button
+              className="msmf__cta-btn"
+              onClick={() => {
+                window.open("/philanthropy/donate", "_self");
+              }}
+            >
+              Become a volunteer
+            </button>
           </div>
         </SectionContent>
       </Section>
