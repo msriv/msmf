@@ -38,7 +38,7 @@ const People = () => {
         <SectionContent>
           <div>
             <img
-              src="https://cdn.ms-mf.org/images/Incubation/TBI GROUP PIC.jpg"
+              src="https://cdn.ms-mf.org/images/Incubation/cropped_TBI GROUP PIC.jpg"
               alt="molecular-immunology-team"
             />
           </div>

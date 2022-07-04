@@ -60,9 +60,9 @@ const Impact = (): JSX.Element => {
         We are combining corporate and general hospital cultures, health care challenges with state-of-the-art technology, and opportunities for business. 
 
         </p>
-        <div className="flex justify-center mt-12">
+        {/* <div className="flex justify-center mt-12">
           <button className="msmf__cta-btn">Apply Now</button>
-        </div>
+        </div> */}
       </SectionContent>
     </Section>
 </>
