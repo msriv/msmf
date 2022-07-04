@@ -1,0 +1,17 @@
+FROM php:7.4.27-fpm-alpine3.15
+
+COPY . /server
+
+WORKDIR /server
+
+RUN apk add php7-cli php7-json php7-common php7-mysqli php7-pdo php7-zip php7-gd php7-mbstring php7-curl php7-xml php7-bcmath
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+RUN composer install
+
+# VOLUME /server/vendor
+
+EXPOSE 8000
