@@ -25,7 +25,7 @@ const IncubationCarouselItems = [
       <img
         src="https://cdn.ms-mf.org/images/Incubation/Banner 1_International wing building.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fit h-[809px]"
+        className="w-screen object-cover h-[809px]"
       />
     </div>
   </div>,
@@ -55,7 +55,7 @@ const IncubationCarouselItems = [
       <img
         src="https://cdn.ms-mf.org/images/Incubation/START UP SPACE.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fit h-[809px]"
+        className="w-screen object-cover h-[809px]"
       />
     </div>
   </div>,
@@ -86,7 +86,7 @@ const IncubationCarouselItems = [
       <img
         src="https://cdn.ms-mf.org/images/Incubation/Video conferencing room.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fit h-[809px]"
+        className="w-screen object-cover h-[809px]"
       />
     </div>
   </div>,
@@ -118,7 +118,7 @@ const IncubationCarouselItems = [
       <img
         src="https://cdn.ms-mf.org/images/Incubation/Single seater cubicle.jpg"
         alt="philanthropy-banner"
-        className="w-screen object-fit h-[809px]"
+        className="w-screen object-cover h-[809px]"
       />
     </div>
   </div>,
