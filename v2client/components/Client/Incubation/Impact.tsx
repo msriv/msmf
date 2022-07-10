@@ -11,13 +11,13 @@ const Impact = (): JSX.Element => {
             </p>
             <div className="flex flex-wrap justify-center w-full">
               <div className="text-white text-center  w-4/12 my-16">
-                <p className="text-[45px] m-0 font-bold ">26</p>
+                <p className="text-[45px] m-0 font-bold ">40</p>
                 <p className="text-[19px] uppercase font-bold m-0">
                   Total startup incubated
                 </p>
               </div>
               <div className="text-white text-center w-4/12 my-16">
-                <p className="text-[45px] m-0 font-bold ">21</p>
+                <p className="text-[45px] m-0 font-bold ">23</p>
                 <p className="text-[19px] uppercase font-bold m-0">
                   Currently incubated startups
                 </p>
