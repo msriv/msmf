@@ -27,7 +27,7 @@ const GalleryData = [
   },
   {
     topic: "NEC GLOBAL JAPAN TEAM visit to TBI ",
-    date: "MAY 6th 2022.",
+    date: "May 6th 2022.",
     image:
       "https://cdn.ms-mf.org/images/Incubation/events/NEC Global Japan team.jpeg",
   },
@@ -78,8 +78,8 @@ const GalleryData = [
   },
   {
     topic:
-      "TBDC (TORONTO BUSINESS DEVELOPMENT CENTRE) team visit on 31st March 2022 ",
-    date: "",
+      "TBDC (TORONTO BUSINESS DEVELOPMENT CENTRE) team visit ",
+    date: "31st March 2022",
     image: "https://cdn.ms-mf.org/images/Incubation/events/TBDC.jpeg",
   },
 ];
@@ -226,16 +226,16 @@ const Events = () => {
         <SectionContent>
           <div className=" mt-8 flex flex-wrap w-full justify-evenly ">
             {GalleryData.map((project, key) => (
-              <div key={key} className="w-4/12 p-4 items-center">
+              <div key={key} className="w-6/12 p-4 items-center">
                 <ContentCard className="shadow-md rounded bg-white p-4 h-full ">
                   {/* image for news */}
                   <img className="place-self-center m-0" src={project.image} />
                   {/* Title for news */}
-                  <p className="font-semibold text-xl text-left mt-5 px-6">
+                  <p className="font-semibold text-left mt-5 px-6">
                     {" "}
                     {project.topic}
                   </p>
-                  <p className="font-bold uppercase text-[#6A6A6A] m-0 px-6">
+                  <p className="text-[#6A6A6A] m-0 px-6">
                     {project.date}
                   </p>
                   {/* {project.members.map((member, key) => (

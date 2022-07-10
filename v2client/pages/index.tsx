@@ -315,9 +315,8 @@ const Home: NextPage = () => {
             </p>
             <p className="text-white text-xl font-helvetica my-2">
               Mazumdar Shaw Center for Translational Research (MSCTR) has been
-              established with the aim of developing scientific breakthroughs
-              resulting in more effective and affordable healthcare for a wide
-              range of human diseases and conditions.{" "}
+              established to combine excellence in research with excellence in
+              clinical care as the foundation for future health care leadership.
             </p>
             <button
               onClick={() => {
@@ -344,9 +343,11 @@ const Home: NextPage = () => {
               Business Incubation
             </p>
             <p className="text-white text-xl font-helvetica my-2">
-              TBI functions as a workshop for various users to have access to
-              prototyping, fabrication and research tools, and medtech expertise
-              across a global network.
+              The innovation centre functions as an invention hub for Startups
+              to connect with the ground realities, emerging challenges and
+              aspirations of the doctors and other experts in health care. TBI
+              provides access to research tools, prototyping, fabrication and
+              Medtech expertise across a global network.
             </p>
             <button
               onClick={() => {
@@ -374,9 +375,8 @@ const Home: NextPage = () => {
             </p>
             <p className="text-white text-xl font-helvetica my-2">
               Advanced Diagnostic Research Centre (ADRC) is a unit of Mazumdar
-              Shaw Medical Foundation established towards translation of
-              research output to improvement of patient care through advanced
-              and affordable molecular tests.
+              Shaw Medical Foundation established to provide new generation
+              diagnostics tailored for specific unmet diagnostic needs.
             </p>
             <button
               onClick={() => {
@@ -403,10 +403,10 @@ const Home: NextPage = () => {
               Philanthropy
             </p>
             <p className="text-white text-xl font-helvetica my-2">
-              Our mission is to improve the health of the community by setting a
-              standard of excellence in research and community outreach
-              programs. MSMF pushes the boundaries of discovery, transforms
-              healthcare and creates hope for humanity
+              Our mission is to improve the health and welfare of the community
+              by setting a standard of excellence in research and community
+              outreach programs. MSMF pushes the boundaries of discovery,
+              transforms healthcare and creates hope for humanity
             </p>
             <button
               onClick={() => {
