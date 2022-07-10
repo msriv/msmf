@@ -14,7 +14,7 @@ const GalleryData = [
       "https://cdn.ms-mf.org/images/Incubation/events/Adichunchunagiri visit.jpg",
   },
   {
-    topic: "",
+    topic: "Dr Suresh Nair Visit at SCTIMST",
     date: "",
     image:
       "https://cdn.ms-mf.org/images/Incubation/events/Dr Suresh Nair Visit.jpg",
@@ -66,7 +66,7 @@ const GalleryData = [
   },
   {
     topic: "SWISSNEX TEAM VISIT ",
-    date: "4th APRIL 2022.",
+    date: "4th April 2022.",
     image:
       "https://cdn.ms-mf.org/images/Incubation/events/Swissnex team Visit.jpeg",
   },
@@ -227,7 +227,7 @@ const Events = () => {
           <div className=" mt-8 flex flex-wrap w-full justify-evenly ">
             {GalleryData.map((project, key) => (
               <div key={key} className="w-6/12 p-4 items-center">
-                <ContentCard className="shadow-md rounded bg-white p-4 h-full ">
+                <ContentCard className="shadow-md rounded bg-white p-4 ">
                   {/* image for news */}
                   <img className="place-self-center m-0" src={project.image} />
                   {/* Title for news */}
@@ -269,7 +269,7 @@ const Events = () => {
                   {/* image for news */}
                   <img className="place-self-center m-0" src={project.image} />
                   {/* Title for news */}
-                  <p className="font-3xl uppercase text-black m-0">
+                  <p className="font-2xl uppercase text-black m-0">
                     {project.topic}
                   </p>
                   <p className="font-semibold text-2xl text-left mt-5">
@@ -279,7 +279,7 @@ const Events = () => {
                   <p className="font-3xl uppercase text-[#6A6A6A] m-0">
                     {project.position}
                   </p>
-                  <p className="font-bold uppercase text-[#6A6A6A] m-0">
+                  <p className="font text-[#6A6A6A] m-0">
                     {project.date}
                   </p>
                   {/* {project.members.map((member, key) => (
@@ -317,10 +317,10 @@ const Events = () => {
                     {" "}
                     {project.name}
                   </p>
-                  <p className="font-3xl uppercase text-[#6A6A6A] m-0">
-                    {project.position}
+                  <p className="font-3xl font-semibold uppercase text-[#6A6A6A] m-0">
+                    {project.topic}
                   </p>
-                  <p className="font-bold uppercase text-[#6A6A6A] m-0">
+                  <p className="font text-[#6A6A6A] m-0">
                     {project.date}
                   </p>
                   {/* {project.members.map((member, key) => (
