@@ -9,6 +9,7 @@ class Constants {
     const ASSETS_CONTROLLER = "assets_controller";
     const PEOPLE_CONTROLLER = "people_controller";
     const BLOGS_CONTROLLER = "blogs_controller";
+    const INCUBATEES_CONTROLLER = "incubatees_controller";
     const OPEN = "open";
     const PROTECTED = "protected";
 

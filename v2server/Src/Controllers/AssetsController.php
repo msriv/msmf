@@ -34,25 +34,4 @@ class AssetsController {
             echo $response['body'];
         }
     }
-
-   
-    private function getAllAssets() {
-         $query = "
-            SELECT
-                uid, name, alt, width, height, uri, path, mime
-            FROM
-                assets;
-            ";
-
-        try {
-        $statement = $this->db->query($query);
-        $result = $statement->fetchAll(\PDO::FETCH_ASSOC);
-        } catch (\PDOException $e) {
-        exit($e->getMessage());
-        }
-
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
-        $response['body'] = json_encode($result);
-        return $response;
-    }
 }    

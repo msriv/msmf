@@ -2,7 +2,7 @@
 
 namespace Server\Src\Utils;
 
-
+use Error;
 
 class Helpers {
 

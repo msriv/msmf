@@ -14,7 +14,7 @@ const GalleryData = [
       "https://cdn.ms-mf.org/images/Incubation/events/Adichunchunagiri visit.jpg",
   },
   {
-    topic: "",
+    topic: "Dr Suresh Nair Visit at SCTIMST",
     date: "",
     image:
       "https://cdn.ms-mf.org/images/Incubation/events/Dr Suresh Nair Visit.jpg",
@@ -27,7 +27,7 @@ const GalleryData = [
   },
   {
     topic: "NEC GLOBAL JAPAN TEAM visit to TBI ",
-    date: "MAY 6th 2022.",
+    date: "May 6th 2022.",
     image:
       "https://cdn.ms-mf.org/images/Incubation/events/NEC Global Japan team.jpeg",
   },
@@ -66,7 +66,7 @@ const GalleryData = [
   },
   {
     topic: "SWISSNEX TEAM VISIT ",
-    date: "4th APRIL 2022.",
+    date: "4th April 2022.",
     image:
       "https://cdn.ms-mf.org/images/Incubation/events/Swissnex team Visit.jpeg",
   },
@@ -78,8 +78,8 @@ const GalleryData = [
   },
   {
     topic:
-      "TBDC (TORONTO BUSINESS DEVELOPMENT CENTRE) team visit on 31st March 2022 ",
-    date: "",
+      "TBDC (TORONTO BUSINESS DEVELOPMENT CENTRE) team visit ",
+    date: "31st March 2022",
     image: "https://cdn.ms-mf.org/images/Incubation/events/TBDC.jpeg",
   },
 ];
@@ -226,16 +226,16 @@ const Events = () => {
         <SectionContent>
           <div className=" mt-8 flex flex-wrap w-full justify-evenly ">
             {GalleryData.map((project, key) => (
-              <div key={key} className="w-4/12 p-4 items-center">
-                <ContentCard className="shadow-md rounded bg-white p-10 h-full">
+              <div key={key} className="w-6/12 p-4 items-center">
+                <ContentCard className="shadow-md rounded bg-white p-4 ">
                   {/* image for news */}
                   <img className="place-self-center m-0" src={project.image} />
                   {/* Title for news */}
-                  <p className="font-semibold text-2xl text-left mt-5">
+                  <p className="font-semibold text-left mt-5 px-6">
                     {" "}
                     {project.topic}
                   </p>
-                  <p className="font-bold uppercase text-[#6A6A6A] m-0">
+                  <p className="text-[#6A6A6A] m-0 px-6">
                     {project.date}
                   </p>
                   {/* {project.members.map((member, key) => (
@@ -269,7 +269,7 @@ const Events = () => {
                   {/* image for news */}
                   <img className="place-self-center m-0" src={project.image} />
                   {/* Title for news */}
-                  <p className="font-3xl uppercase text-black m-0">
+                  <p className="font-2xl uppercase text-black m-0">
                     {project.topic}
                   </p>
                   <p className="font-semibold text-2xl text-left mt-5">
@@ -279,7 +279,7 @@ const Events = () => {
                   <p className="font-3xl uppercase text-[#6A6A6A] m-0">
                     {project.position}
                   </p>
-                  <p className="font-bold uppercase text-[#6A6A6A] m-0">
+                  <p className="font text-[#6A6A6A] m-0">
                     {project.date}
                   </p>
                   {/* {project.members.map((member, key) => (
@@ -317,10 +317,10 @@ const Events = () => {
                     {" "}
                     {project.name}
                   </p>
-                  <p className="font-3xl uppercase text-[#6A6A6A] m-0">
-                    {project.position}
+                  <p className="font-3xl font-semibold uppercase text-[#6A6A6A] m-0">
+                    {project.topic}
                   </p>
-                  <p className="font-bold uppercase text-[#6A6A6A] m-0">
+                  <p className="font text-[#6A6A6A] m-0">
                     {project.date}
                   </p>
                   {/* {project.members.map((member, key) => (

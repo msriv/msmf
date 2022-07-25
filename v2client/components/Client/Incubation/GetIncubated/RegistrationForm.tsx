@@ -1,6 +1,7 @@
+import { Snackbar } from "@mui/material";
 import axios from "axios";
 import { useFormik } from "formik";
-import { ChangeEvent } from "react";
+import { ChangeEvent, useState } from "react";
 import * as Yup from "yup";
 import { createRoute, ServerRoutes } from "../../../../utils/API";
 
@@ -61,7 +62,9 @@ const RegistrationForm = () => {
       subSector: Yup.string().required("Sub Sector missing"),
       customerProblem: Yup.string().required("Problem missing"),
       solution: Yup.string().required("Solution missing"),
-      solutionBetter: Yup.string().required("Why is it better? missing"),
+      solutionBetter: Yup.string().required(
+        "Please mention why your solution is better?"
+      ),
       primaryBeneficiary: Yup.string().required("Primary Beneficiary missing"),
       milestone: Yup.string().required("Milestone missing"),
       reasonToIncubate: Yup.string().required("Reason to Incubate missing"),
@@ -75,6 +78,10 @@ const RegistrationForm = () => {
       gdpr: Yup.bool().oneOf([true], "Must accept GDPR"),
     }),
     onSubmit: async (values: any, { resetForm }) => {
+      if (Object.keys(formik.errors).length > 0) {
+        return;
+      }
+
       const formData = new FormData();
 
       Object.keys(values).forEach((val: string) => {
@@ -108,12 +115,16 @@ const RegistrationForm = () => {
           placeholder="Enter Organisation Name..."
           value={formik.values.orgName}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
+            formik.touched.orgName &&
             formik.errors.orgName &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.orgName && formik.errors.orgName ? (
+          <span>{formik.errors.orgName}</span>
+        ) : null}
       </label>
       <label className="block mt-6" htmlFor="applicantName">
         <span className="text-gray-700 text-xl">
@@ -126,12 +137,16 @@ const RegistrationForm = () => {
           placeholder="Your name?"
           value={formik.values.applicantName}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
+            formik.touched.applicantName &&
             formik.errors.applicantName &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.applicantName && formik.errors.applicantName ? (
+          <span>{formik.errors.applicantName}</span>
+        ) : null}
       </label>
       <div className="flex flex-grow-1 space-x-10 w-full">
         <label className="block mt-6 w-full" htmlFor="email">
@@ -143,12 +158,16 @@ const RegistrationForm = () => {
             placeholder="Organisation Email Address..."
             value={formik.values.email}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
+              formik.touched.email &&
               formik.errors.email &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
+          {formik.touched.email && formik.errors.email ? (
+            <span>{formik.errors.email}</span>
+          ) : null}
         </label>
         <label className="block mt-6 w-full" htmlFor="phoneNumber">
           <span className="text-gray-700 text-xl">Mobile Number</span>
@@ -159,12 +178,16 @@ const RegistrationForm = () => {
             placeholder="Mobile Number of Point of Contact"
             value={formik.values.phoneNumber}
             className={`mt-1 block w-full text-xl ${
-              formik.errors && formik.errors.phoneNumber
+              formik.touched.phoneNumber && formik.errors.phoneNumber
                 ? "border-red-500 border-2 ring-2 ring-red-200"
                 : ""
             }`}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
+          {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+            <span>{formik.errors.phoneNumber}</span>
+          ) : null}
         </label>
       </div>
       <div className="flex flex-grow-1 space-x-10 w-full">
@@ -177,12 +200,16 @@ const RegistrationForm = () => {
             placeholder="Organisation LinkedIn Profile"
             value={formik.values.linkedInProfile}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
+              formik.touched.linkedInProfile &&
               formik.errors.linkedInProfile &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
+          {formik.touched.linkedInProfile && formik.errors.linkedInProfile ? (
+            <span>{formik.errors.linkedInProfile}</span>
+          ) : null}
         </label>
         <label className="block mt-6 w-full" htmlFor="alternateContact">
           <span className="text-gray-700 text-xl">
@@ -195,12 +222,15 @@ const RegistrationForm = () => {
             placeholder="Any other way to contact?"
             value={formik.values.alternateContact}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
+              formik.touched.alternateContact &&
               formik.errors.alternateContact &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
           />
+          {formik.touched.linkedInProfile && formik.errors.linkedInProfile ? (
+            <span>{formik.errors.linkedInProfile}</span>
+          ) : null}
         </label>
       </div>
       <label className="block mt-6" htmlFor="stage">
@@ -212,12 +242,16 @@ const RegistrationForm = () => {
           placeholder="Enter Startup Stage"
           value={formik.values.stage}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
+            formik.touched.stage &&
             formik.errors.stage &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.linkedInProfile && formik.errors.linkedInProfile ? (
+          <span>{formik.errors.linkedInProfile}</span>
+        ) : null}
       </label>
       <div className="mt-6">
         <span className="text-gray-700 text-xl">
@@ -233,6 +267,7 @@ const RegistrationForm = () => {
               onChange={(event) => {
                 formik.setFieldValue("isNonProfit", true);
               }}
+              onBlur={formik.handleBlur}
             />
             <span className="text-gray-700 text-xl ml-4">Yes</span>
           </label>
@@ -245,11 +280,12 @@ const RegistrationForm = () => {
               onChange={(event) => {
                 formik.setFieldValue("isNonProfit", false);
               }}
+              onBlur={formik.handleBlur}
             />
             <span className="text-gray-700 text-xl ml-4">No</span>
           </label>
         </div>
-        {formik.errors && formik.errors.isNonProfit && (
+        {formik.touched.isNonProfit && formik.errors.isNonProfit && (
           <p className="text-red-500 text-base">{formik.errors.isNonProfit}</p>
         )}
       </div>
@@ -270,6 +306,7 @@ const RegistrationForm = () => {
               onChange={(event) => {
                 formik.setFieldValue("mcaRegistration", true);
               }}
+              onBlur={formik.handleBlur}
             />
             <span className="text-gray-700 text-xl ml-4">Yes</span>
           </label>
@@ -282,11 +319,12 @@ const RegistrationForm = () => {
               onChange={(event) => {
                 formik.setFieldValue("mcaRegistration", false);
               }}
+              onBlur={formik.handleBlur}
             />
             <span className="text-gray-700 text-xl ml-4">No</span>
           </label>
         </div>
-        {formik.errors && formik.errors.mcaRegistration && (
+        {formik.touched.mcaRegistration && formik.errors.mcaRegistration && (
           <p className="text-red-500 text-base">
             {formik.errors.mcaRegistration}
           </p>
@@ -302,12 +340,17 @@ const RegistrationForm = () => {
             placeholder="Enter year of incorporation"
             value={formik.values.incorporationYear}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
-              formik.errors.orgName &&
+              formik.touched.incorporationYear &&
+              formik.errors.incorporationYear &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
+          {formik.touched.incorporationYear &&
+          formik.errors.incorporationYear ? (
+            <span>{formik.errors.incorporationYear}</span>
+          ) : null}
         </label>
         <label className="block mt-6 w-full" htmlFor="headquarters">
           <span className="text-gray-700 text-xl">Headquarter City</span>
@@ -318,12 +361,16 @@ const RegistrationForm = () => {
             placeholder="Your headquarter's based out of..."
             value={formik.values.headquarters}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
-              formik.errors.orgName &&
+              formik.touched.headquarters &&
+              formik.errors.headquarters &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
+          {formik.touched.headquarters && formik.errors.headquarters ? (
+            <span>{formik.errors.headquarters}</span>
+          ) : null}
         </label>
       </div>
       <div className="flex flex-grow-1 space-x-10 w-full">
@@ -336,12 +383,16 @@ const RegistrationForm = () => {
             placeholder="Enter sector..."
             value={formik.values.sector}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
-              formik.errors.orgName &&
+              formik.touched.sector &&
+              formik.errors.sector &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
+          {formik.touched.sector && formik.errors.sector ? (
+            <span>{formik.errors.sector}</span>
+          ) : null}
         </label>
         <label className="block mt-6 w-full" htmlFor="subSector">
           <span className="text-gray-700 text-xl">Sub-sector</span>
@@ -352,12 +403,16 @@ const RegistrationForm = () => {
             placeholder="Enter sub-sector..."
             value={formik.values.subSector}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
-              formik.errors.orgName &&
+              formik.touched.subSector &&
+              formik.errors.subSector &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
+          {formik.touched.subSector && formik.errors.subSector ? (
+            <span>{formik.errors.subSector}</span>
+          ) : null}
         </label>
       </div>
       <label className="block mt-6" htmlFor="customerProblem">
@@ -370,12 +425,16 @@ const RegistrationForm = () => {
           rows={3}
           value={formik.values.customerProblem}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
-            formik.errors.orgName &&
+            formik.touched.customerProblem &&
+            formik.errors.customerProblem &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.customerProblem && formik.errors.customerProblem ? (
+          <span>{formik.errors.customerProblem}</span>
+        ) : null}
       </label>
       <label className="block mt-6" htmlFor="solution">
         <span className="text-gray-700 text-xl">
@@ -387,12 +446,16 @@ const RegistrationForm = () => {
           rows={3}
           value={formik.values.solution}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
-            formik.errors.orgName &&
+            formik.touched.solution &&
+            formik.errors.solution &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.solution && formik.errors.solution ? (
+          <span>{formik.errors.solution}</span>
+        ) : null}
       </label>
       <label className="block mt-6" htmlFor="solutionBetter">
         <span className="text-gray-700 text-xl">
@@ -404,12 +467,16 @@ const RegistrationForm = () => {
           rows={3}
           value={formik.values.solutionBetter}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
-            formik.errors.orgName &&
+            formik.touched.solutionBetter &&
+            formik.errors.solutionBetter &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.solutionBetter && formik.errors.solutionBetter ? (
+          <span>{formik.errors.solutionBetter}</span>
+        ) : null}
       </label>
       <label className="block mt-6" htmlFor="primaryBeneficiary">
         <span className="text-gray-700 text-xl">
@@ -421,12 +488,17 @@ const RegistrationForm = () => {
           rows={3}
           value={formik.values.primaryBeneficiary}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
-            formik.errors.orgName &&
+            formik.touched.primaryBeneficiary &&
+            formik.errors.primaryBeneficiary &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.primaryBeneficiary &&
+        formik.errors.primaryBeneficiary ? (
+          <span>{formik.errors.primaryBeneficiary}</span>
+        ) : null}
       </label>
       <label className="block mt-6" htmlFor="milestone">
         <span className="text-gray-700 text-xl">
@@ -438,12 +510,16 @@ const RegistrationForm = () => {
           rows={3}
           value={formik.values.milestone}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
-            formik.errors.orgName &&
+            formik.touched.milestone &&
+            formik.errors.milestone &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.milestone && formik.errors.milestone ? (
+          <span>{formik.errors.milestone}</span>
+        ) : null}
       </label>
       <label className="block mt-6" htmlFor="reasonToIncubate">
         <span className="text-gray-700 text-xl">
@@ -455,12 +531,16 @@ const RegistrationForm = () => {
           rows={3}
           value={formik.values.reasonToIncubate}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
-            formik.errors.orgName &&
+            formik.touched.reasonToIncubate &&
+            formik.errors.reasonToIncubate &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.reasonToIncubate && formik.errors.reasonToIncubate ? (
+          <span>{formik.errors.reasonToIncubate}</span>
+        ) : null}
       </label>
       <div className="mt-6">
         <span className="text-gray-700 text-xl">
@@ -476,6 +556,7 @@ const RegistrationForm = () => {
               onChange={(event) => {
                 formik.setFieldValue("earlierFunds", true);
               }}
+              onBlur={formik.handleBlur}
             />
             <span className="text-gray-700 text-xl ml-4">Yes</span>
           </label>
@@ -488,11 +569,12 @@ const RegistrationForm = () => {
               onChange={(event) => {
                 formik.setFieldValue("earlierFunds", false);
               }}
+              onBlur={formik.handleBlur}
             />
             <span className="text-gray-700 text-xl ml-4">No</span>
           </label>
         </div>
-        {formik.errors && formik.errors.earlierFunds && (
+        {formik.touched.earlierFunds && formik.errors.earlierFunds && (
           <p className="text-red-500 text-base">{formik.errors.earlierFunds}</p>
         )}
       </div>
@@ -505,12 +587,16 @@ const RegistrationForm = () => {
             id="totalEarlierFunds"
             value={formik.values.totalEarlierFunds}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
-              formik.errors.orgName &&
+              formik.touched.totalEarlierFunds &&
+              formik.errors.totalEarlierFunds &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
           />
+          {formik.touched.totalEarlierFunds &&
+          formik.errors.totalEarlierFunds ? (
+            <span>{formik.errors.totalEarlierFunds}</span>
+          ) : null}
         </label>
       ) : null}
       <div className="mt-6">
@@ -527,6 +613,7 @@ const RegistrationForm = () => {
               onChange={(event) => {
                 formik.setFieldValue("anyPatent", true);
               }}
+              onBlur={formik.handleBlur}
             />
             <span className="text-gray-700 text-xl ml-4">Yes</span>
           </label>
@@ -539,11 +626,12 @@ const RegistrationForm = () => {
               onChange={(event) => {
                 formik.setFieldValue("anyPatent", false);
               }}
+              onBlur={formik.handleBlur}
             />
             <span className="text-gray-700 text-xl ml-4">No</span>
           </label>
         </div>
-        {formik.errors && formik.errors.anyPatent && (
+        {formik.touched.anyPatent && formik.errors.anyPatent && (
           <p className="text-red-500 text-base">{formik.errors.anyPatent}</p>
         )}
       </div>
@@ -558,12 +646,16 @@ const RegistrationForm = () => {
             rows={3}
             value={formik.values.aboutPatent}
             className={`mt-1 block w-full text-xl ${
-              formik.errors &&
-              formik.errors.orgName &&
+              formik.touched.aboutPatent &&
+              formik.errors.aboutPatent &&
               "border-red-500 border-2 ring-2 ring-red-200"
             }`}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
+          {formik.touched.aboutPatent && formik.errors.aboutPatent ? (
+            <span>{formik.errors.aboutPatent}</span>
+          ) : null}
         </label>
       ) : null}
       <label className="block mt-6" htmlFor="otherDetails">
@@ -574,12 +666,15 @@ const RegistrationForm = () => {
           rows={3}
           value={formik.values.otherDetails}
           className={`mt-1 block w-full text-xl ${
-            formik.errors &&
-            formik.errors.orgName &&
+            formik.touched.otherDetails &&
+            formik.errors.otherDetails &&
             "border-red-500 border-2 ring-2 ring-red-200"
           }`}
           onChange={formik.handleChange}
         />
+        {formik.touched.otherDetails && formik.errors.otherDetails ? (
+          <span>{formik.errors.otherDetails}</span>
+        ) : null}
       </label>
       <label className="block mt-6" htmlFor="pitchDeck">
         <span className="text-gray-700 text-xl">Upload your pitch deck</span>
@@ -588,7 +683,7 @@ const RegistrationForm = () => {
           name="pitchDeck"
           id="pitchDeck"
           className={`mt-1 block w-full text-xl p-4 ${
-            formik.errors && formik.errors.pitchDeck
+            formik.touched.pitchDeck && formik.errors.pitchDeck
               ? "border-red-500 border-2 ring-2 ring-red-200"
               : "border border-[#6b7280]"
           }`}
@@ -599,7 +694,11 @@ const RegistrationForm = () => {
               event.currentTarget.files ? event.currentTarget.files[0] : null
             );
           }}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.pitchDeck && formik.errors.pitchDeck ? (
+          <span>{formik.errors.pitchDeck}</span>
+        ) : null}
       </label>
       <label className="block mt-6" htmlFor="logo">
         <span className="text-gray-700 text-xl">Upload logo</span>
@@ -608,7 +707,7 @@ const RegistrationForm = () => {
           name="logo"
           id="logo"
           className={`mt-1 block w-full text-xl p-4 ${
-            formik.errors && formik.errors.logo
+            formik.touched.logo && formik.errors.logo
               ? "border-red-500 border-2 ring-2 ring-red-200"
               : "border border-[#6b7280]"
           }`}
@@ -619,7 +718,11 @@ const RegistrationForm = () => {
               event.currentTarget.files ? event.currentTarget.files[0] : null
             );
           }}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.logo && formik.errors.logo ? (
+          <span>{formik.errors.logo}</span>
+        ) : null}
       </label>
       <div className="mt-6">
         <span className="text-gray-700 text-xl">GDPR</span>
@@ -630,19 +733,25 @@ const RegistrationForm = () => {
             id="gdpr"
             checked={formik.values.gdpr}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
           />
           <span className="text-gray-700 text-xl ml-4">
             Yes, I agree with the privacy policy and terms and conditions.
           </span>
         </label>
-        {formik.errors && formik.errors.gdpr && (
+        {formik.errors.gdpr && (
           <p className="text-red-500 text-base">{formik.errors.gdpr}</p>
         )}
       </div>
-      <div className="flex justify-center mt-12">
+      <div className="flex flex-col items-center justify-center mt-12">
         <button type="submit" className="msmf__cta-btn">
           Register
         </button>
+        {Object.keys(formik.errors).length > 0 ? (
+          <p className="text-red-500 text-base">
+            Please make sure all fields are filled correctly.
+          </p>
+        ) : null}
       </div>
     </form>
   );
