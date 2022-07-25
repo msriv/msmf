@@ -269,13 +269,11 @@ const LeadershipCarouselItems = [
             Dr. Paul C. Salins
           </p>
           <p className="text-black text-2xl font-semibold font-helvetica my-2">
-            MD / VP - NH and Mazumdar Shaw Cancer Hospital
+            Managing Director - MSMF, Medical Director - Mazumdar Shaw Medical Center, Sr.
+            Vice President - Narayana Hrudayalaya, Chairman-MSMF TBI
           </p>
           <p className="text-black text-xl font-helvetica my-2">
-            Dr. Salins is the MD and VP of the Mazumdar Shaw Cancer Center and
-            NH Multispecialty Hospital. At 1,400 beds, this is one of the
-            biggest cancer center projects in the world. He is an
-            internationally acclaimed authority in the specialty of
+            He is an internationally acclaimed authority in the specialty of
             Cranio-Maxillofacial Surgery having trained and worked across the
             globe.
           </p>
