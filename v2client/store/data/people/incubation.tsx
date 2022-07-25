@@ -91,6 +91,14 @@ const IncubationPeople: {
   "Management Team": {
     people: [
       {
+        name: "N V V Kiran Vuppala",
+        image: "https://cdn.ms-mf.org/images/People/Vupalla.jpeg",
+        linkedInProfile:"https://in.linkedin.com/in/kiranvuppala" ,
+        position:
+          "Head Of Operations",
+      }, 
+
+      {
         name: "Dr. Paul C Salins",
         image: "https://cdn.ms-mf.org/images/People/dr paul photo 3.jpg",
         position:
