@@ -83,13 +83,13 @@ const RegistrationForm = () => {
 
       try {
         const response = await axios.post(
-          createRoute(
-            ServerRoutes.BASE_ROUTE,
-            ServerRoutes.IncubationRoutes.Incubatees
-          ),
-          formData
+          "https://script.google.com/macros/s/AKfycbyKwtqrjyLmRQFQOszL4-D2RjceKwUuCHXgzzZt4je_32r1GksfN4D5a9tUlTMWetwH/exec",
+          formData,
+          {
+            
+          }
         );
-        resetForm({ ...formik.initialValues });
+        // resetForm({ ...formik.initialValues });
       } catch (error) {
         console.error(error);
       }

@@ -150,8 +150,7 @@ class IncubateeModel {
      */
     private $gdpr;
 
-    public function __construct($id, $orgName, $applicantName, $email, $phoneNumber, $linkedInProfile, $alternateContact, $stage, $isNonProfit, $mcaRegistration, $incorporationYear, $headquarters, $sector, $subSector, $customerProblem, $solution, $solutionBetter, $primaryBeneficiary, $milestone, $reasonToIncubate, $earlierFunds, $totalEarlierFunds, $anyPatent, $aboutPatent, $otherDetails, $pitchDeck, $logo, $gdpr){
-        $this->id = $id;
+    public function __construct($orgName, $applicantName, $email, $phoneNumber, $linkedInProfile, $alternateContact, $stage, $isNonProfit, $mcaRegistration, $incorporationYear, $headquarters, $sector, $subSector, $customerProblem, $solution, $solutionBetter, $primaryBeneficiary, $milestone, $reasonToIncubate, $earlierFunds, $totalEarlierFunds, $anyPatent, $aboutPatent, $otherDetails, $pitchDeck, $logo, $gdpr){
         $this->orgName = $orgName;
         $this->applicantName = $applicantName;
         $this->email = $email;
@@ -183,7 +182,6 @@ class IncubateeModel {
 
     public function getIncubatee (): array{
         return array(
-            "id" => $this->id,
             "orgName" => $this->orgName,
             "applicantName" => $this->applicantName,
             "email" => $this->email,
@@ -211,6 +209,6 @@ class IncubateeModel {
             "pitchDeck" => $this->pitchDeck,
             "logo" => $this->logo,
             "gdpr" => $this->gdpr
-        )
+        );
     }
 }

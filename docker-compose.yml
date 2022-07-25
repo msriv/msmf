@@ -4,12 +4,12 @@ services:
   db:
     build:
       context: ./v2server
-      dockerfile: Dockerfile.database
+      dockerfile: Dockerfile.database.local
     restart: always
     ports:
       - 3306:3306
     volumes:
-      - ./v2server/database/mysqldata:/var/lib/mysql
+      - ./database/mysqldata:/var/lib/mysql
   phpmyadmin:
     image: phpmyadmin
     restart: always
@@ -24,19 +24,19 @@ services:
       - ./v2server/.env
     build:
       context: ./v2server
-      dockerfile: Dockerfile.server
+      dockerfile: Dockerfile.server.local
     restart: always
     ports:
       - 8000:8000
     volumes:
-      - ./v2server:/v2server
-    entrypoint: php -S 0.0.0.0:8000
+      - ./v2server:/server
+    entrypoint: php -S localhost:8000
     links:
       - db
   client:
     build:
       context: ./v2client
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.client.local
     image: msmf/client
     restart: always
     volumes:

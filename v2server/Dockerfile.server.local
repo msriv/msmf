@@ -1,0 +1,17 @@
+FROM php:7.4.27-fpm-alpine3.15
+
+WORKDIR /server
+
+COPY . .
+
+RUN curl -s https://getcomposer.org/installer | php
+RUN alias composer='php composer.phar'
+
+# RUN export PATH="/usr/local/bin/composer:$PATH"
+RUN php composer.phar install
+RUN apk add php7-cli php7-json php7-common php7-mysqli php7-pdo php7-zip php7-gd php7-mbstring php7-curl php7-xml php7-bcmath
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+VOLUME /server/vendor
+
+EXPOSE 8000

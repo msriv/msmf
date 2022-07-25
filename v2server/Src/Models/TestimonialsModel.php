@@ -29,7 +29,7 @@ class TestimonialsModel {
      */
     private $testimonialContent;
 
-    public funcion __construct($name, $company, $avatar, $testimonialContent){
+    public function __construct($name, $company, $avatar, $testimonialContent){
         $this->name = $name;
         $this->company = $company;
         $this->avatar = $avatar;
@@ -42,6 +42,6 @@ class TestimonialsModel {
             "company" => $this->company,
             "avatar" => $this->avatar,
             "testimonialContent" => $this->testimonialContent
-        )
+        );
     }
 }

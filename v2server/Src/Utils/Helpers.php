@@ -84,4 +84,22 @@ class Helpers {
 
         return $number * (1024 ** $exponent);
     }
+
+    public static function sendPost(string $url, array $body, ?array $options = null) {
+        $curl = curl_init($url);
+
+        // default options
+        curl_setopt($curl, CURLOPT_POST, true);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($body));
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+        if ($options) {
+            foreach($options as $opt) {
+                curl_setopt($curl, $opt->type, $opt->val);
+            }
+        } 
+
+        $response = curl_exec($curl);
+        return Helpers::createSuccessResponse(201, $response);
+    }
 }

@@ -4,6 +4,7 @@ namespace Server\Src;
 use Server\Src\Controllers\AuthController;
 use Server\Src\Controllers\FacilityController;
 use Server\Src\Controllers\AssetsController;
+use Server\Src\Controllers\IncubateeController;
 use Server\Src\Utils\Constants;
 
 class RootController {
@@ -40,6 +41,10 @@ class RootController {
                 $assetsController->processRequest();
             } break;
 
+            case Constants::INCUBATEE_CONTROLLER : {
+                $incubateeController = new IncubateeController($this->database, $controllerFunction, $this->args);
+                $incubateeController->processRequest();
+            }break;
         }
     }
 }

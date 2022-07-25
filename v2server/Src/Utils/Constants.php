@@ -28,6 +28,9 @@ class Constants {
     const GET_BLOG_BY_ID = "get_blog_by_id";
     const CREATE_BLOG = "create_blog";
     const UPDATE_BLOG = "update_blog";
+    const INCUBATEE_CONTROLLER = "incubatee_controller";
+    const CREATE_INCUBATEE = "create_incubatee";
+    const INCUBATEE_SHEET_URL = "https://script.google.com/macros/s/AKfycbyKwtqrjyLmRQFQOszL4-D2RjceKwUuCHXgzzZt4je_32r1GksfN4D5a9tUlTMWetwH/exec";
 }
 
 
