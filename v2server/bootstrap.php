@@ -13,6 +13,5 @@ $dotenv->safeLoad();
 $database = new DatabaseService($_ENV['HOST'], $_ENV['DATABASE'], $_ENV['USERNAME'], $_ENV['PASSWORD']);
 $configuration = $database->createConfig(false, null, null, false);
 $connection = $database->createConnection();
-$connection->createSchemaManager()->get;
 $entityManager = $database->createEntityManager($connection, $configuration);
 

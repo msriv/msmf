@@ -6,7 +6,7 @@ use Server\Src\Utils\Headers;
 use Server\Src\Utils\Helpers;
 use Server\Src\Server;
 
-// error_reporting(0);
+error_reporting(0);
 $_POST = json_decode(file_get_contents("php://input"), true);
 
 Headers::setResponseHeaders();
