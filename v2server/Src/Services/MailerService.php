@@ -18,12 +18,12 @@ class MailerService {
     $this->mail->addAddress($to);
     $this->mail->SMTPDebug = 0;                     //Enable verbose debug output
     $this->mail->isSMTP();                                            //Send using SMTP
-    $this->mail->Host       = 'mail.ms-mf.org';                     //Set the SMTP server to send through
+    $this->mail->Host       = $_ENV['SMTP_HOST'];                     //Set the SMTP server to send through
     $this->mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $this->mail->Username   = 'msmf@ms-mf.org';                     //SMTP username
-    $this->mail->Password   = 'msmf@2022';                               //SMTP password
+    $this->mail->Username   = $_ENV['SMTP_USERNAME'];                     //SMTP username
+    $this->mail->Password   = $_ENV['SMTP_PASSWORD'];                               //SMTP password
     $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $this->mail->Port       = 465;    
+    $this->mail->Port       = $_ENV['SMTP_PORT'];    
   }
 
 
