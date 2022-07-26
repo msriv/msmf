@@ -1,13 +1,15 @@
 <?php
 
 namespace Server;
-require_once("bootstrap.php");
+
 use Server\Src\Utils\Headers;
 use Server\Src\Utils\Helpers;
 use Server\Src\Server;
 
+require_once("bootstrap.php");
+
 error_reporting(0);
-$_POST = json_decode(file_get_contents("php://input"), true);
+// $_POST = json_decode(file_get_contents("php://input"), true);
 
 Headers::setResponseHeaders();
 

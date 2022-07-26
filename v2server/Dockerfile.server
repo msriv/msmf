@@ -10,10 +10,10 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN curl -s https://getcomposer.org/installer | php
 RUN alias composer='php composer.phar'
 
-RUN export PATH="/usr/local/bin/composer:$PATH"
-# RUN php composer.phar install
-RUN composer install --no-autoloader
-RUN composer dump-autoload
+# RUN export PATH="/usr/local/bin/composer:$PATH"
+RUN php composer.phar install
+# RUN composer install --no-autoloader
+RUN php composer.phar dump-autoload
 
 
 VOLUME /server/vendor

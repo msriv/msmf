@@ -33,13 +33,23 @@ class StorageService {
             $this->setServiceStatus(StorageService::SERVICE_INACTIVE);
             throw new Exception(StorageService::NULL_FILES_EXCEPTION);
         }
-        foreach($files["name"] as $key=>$file) {
-            $this->files[$key] = array(
-                'name' => $files['name'][$key],
-                'type' => $files['type'][$key],
-                'tmp_name' => $files['tmp_name'][$key],
-                'error' => $files['error'][$key],
-                'size' => $files['size'][$key]
+        if (count($files["name"]) > 1) {
+            foreach($files["name"] as $key=>$file) {
+                $this->files[$key] = array(
+                    'name' => $files['name'][$key],
+                    'type' => $files['type'][$key],
+                    'tmp_name' => $files['tmp_name'][$key],
+                    'error' => $files['error'][$key],
+                    'size' => $files['size'][$key]
+                );
+            }
+        } else {
+            $this->files[0] = array(
+                'name' => $files['name'],
+                'type' => $files['type'],
+                'tmp_name' => $files['tmp_name'],
+                'error' => $files['error'],
+                'size' => $files['size']
             );
         }
         $this->server = $server;
@@ -83,7 +93,7 @@ class StorageService {
     }
 
     private function validateType($file) {
-        return in_array($this->getFileExtension($file), $this->allowedFileTypes, TRUE);    
+        return in_array($this->getFileExtension($file), $this->allowedFileTypes, FALSE);    
     }
 
     private function isFileExists($file) {
@@ -109,40 +119,48 @@ class StorageService {
         if ($this->serviceStatus == StorageService::SERVICE_INACTIVE) {
             throw new Exception(StorageService::SERVICE_INACTIVE);
         }
-        foreach($this->files as $file) {
-            if($this->validateSize($file)) {
-                $this->setServiceStatus(StorageService::UPLOAD_FAILURE);
-                return (StorageService::FILE_SIZE_EXCEED_MAX_SIZE_EXCEPTION);
-            } else if (!$this->validateType($file)) {
-                $this->setServiceStatus(StorageService::UPLOAD_FAILURE);
-                return (StorageService::FILE_TYPE_NOT_ALLOWED_EXCEPTION);
-            } else if ($this->isFileExists($file)) {
-                $this->setServiceStatus(StorageService::UPLOAD_FAILURE);
-                return (StorageService::FILE_ALREADY_EXISTS_EXCEPTION);
-            } else {
-                $this->setServiceStatus(StorageService::UPLOAD_READY);
-                return StorageService::UPLOAD_READY;
+        try {
+            foreach($this->files as $file) {
+                if($this->validateSize($file)) {
+                    $this->setServiceStatus(StorageService::UPLOAD_FAILURE);
+                    return (StorageService::FILE_SIZE_EXCEED_MAX_SIZE_EXCEPTION);
+                } else if (!$this->validateType($file)) {
+                    $this->setServiceStatus(StorageService::UPLOAD_FAILURE);
+                    return (StorageService::FILE_TYPE_NOT_ALLOWED_EXCEPTION);
+                } else if ($this->isFileExists($file)) {
+                    $this->setServiceStatus(StorageService::UPLOAD_FAILURE);
+                    return (StorageService::FILE_ALREADY_EXISTS_EXCEPTION);
+                } else {
+                    $this->setServiceStatus(StorageService::UPLOAD_READY);
+                    return StorageService::UPLOAD_READY;
+                }
             }
+        } catch (Exception $e) {
+            throw new Exception($e);
         }
     }
 
     public function upload() {
-        foreach($this->files as $file) {
-            if ($this->serviceStatus == StorageService::UPLOAD_FAILURE) {
-                throw new Exception("Upload Service Failed", StorageService::UPLOAD_FAILURE);
-            } else {
-                if (move_uploaded_file($file["tmp_name"], $this->getFileTargetName($file))) {
-                    $this->setServiceStatus(StorageService::UPLOAD_SUCCESS);
+        try {
+            foreach($this->files as $file) {
+                if ($this->serviceStatus == StorageService::UPLOAD_FAILURE) {
+                    throw new Exception("Upload Service Failed", StorageService::UPLOAD_FAILURE);
                 } else {
-                    $this->setServiceStatus(StorageService::UPLOAD_FAILURE);
-                    break;
+                    if (move_uploaded_file($file["tmp_name"], $this->getFileTargetName($file))) {
+                        $this->setServiceStatus(StorageService::UPLOAD_SUCCESS);
+                    } else {
+                        $this->setServiceStatus(StorageService::UPLOAD_FAILURE);
+                        break;
+                    }
                 }
             }
-        }
 
-        if ($this->serviceStatus == StorageService::UPLOAD_SUCCESS) {
-            return StorageService::UPLOAD_SUCCESS;
-        } else {
+            if ($this->serviceStatus == StorageService::UPLOAD_SUCCESS) {
+                return StorageService::UPLOAD_SUCCESS;
+            } else {
+                return StorageService::UPLOAD_FAILURE;
+            }
+        } catch (Exception $e) {
             return StorageService::UPLOAD_FAILURE;
         }
     }

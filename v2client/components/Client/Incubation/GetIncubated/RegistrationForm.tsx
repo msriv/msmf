@@ -78,6 +78,7 @@ const RegistrationForm = () => {
       gdpr: Yup.bool().oneOf([true], "Must accept GDPR"),
     }),
     onSubmit: async (values: any, { resetForm }) => {
+
       if (Object.keys(formik.errors).length > 0) {
         return;
       }
@@ -89,11 +90,14 @@ const RegistrationForm = () => {
       });
 
       try {
-        const response = await axios.post(
-          "https://script.google.com/macros/s/AKfycbyKwtqrjyLmRQFQOszL4-D2RjceKwUuCHXgzzZt4je_32r1GksfN4D5a9tUlTMWetwH/exec",
-          formData,
+        const response = await fetch(
+          "https://api.ms-mf.org/v1/incubatee",
+          // "http://localhost:8000/v1/incubatee",
           {
-            
+            body: formData,
+            method: "post",
+            mode: "cors",
+
           }
         );
         // resetForm({ ...formik.initialValues });

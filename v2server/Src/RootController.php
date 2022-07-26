@@ -41,7 +41,7 @@ class RootController {
                 $assetsController->processRequest();
             } break;
 
-            case Constants::INCUBATEES_CONTROLLER : {
+            case Constants::INCUBATEE_CONTROLLER : {
                 $incubateesController = new IncubateesController($this->database, $controllerFunction, $this->args);
                 $incubateesController->processRequest();
             } break;

@@ -102,4 +102,8 @@ class Helpers {
         $response = curl_exec($curl);
         return Helpers::createSuccessResponse(201, $response);
     }
+
+    public static function NotImplementedError() {
+        throw new Error("NotImplementedMethodException");
+    }
 }
